@@ -1,110 +1,111 @@
 <meta charset="utf-8">
-<title>Кристаллы SBC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Сборщик SBC</title>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap">
 <style>
-  /* Макет: шапка с переключателем платформы, ниже сетка карточек SBC.
-     В каждой карточке крупно кристаллы, под ними самая дешёвая сборка. */
+  /* Макет: компактная шапка, ряд управления в виде таблеток, ниже спокойные карточки без рамок.
+     Один акцент — цвет кристалла из иконки; всё остальное нейтральное. */
   :root {
-    --bg: #f3f5f8;
+    --bg: #f3f4f6;
     --surface: #ffffff;
-    --fg: #14202e;
-    --muted: #5d6c7e;
-    --line: #dde3ea;
-    --crystal: #0a84c6;
-    --crystal-soft: #e3f2fb;
-    --coin: #a8660a;
-    --warn: #b4540a;
-    --font-ui: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
-    --font-num: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    --surface-2: #eceef1;
+    --fg: #12161b;
+    --muted: #6a7482;
+    --line: rgba(18, 22, 27, 0.08);
+    --accent: #12967a;
+    --accent-soft: rgba(18, 150, 122, 0.12);
+    --font: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
     color-scheme: light;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #0e151d; --surface: #16202b; --fg: #e8eef5; --muted: #90a0b2; --line: #26333f;
-      --crystal: #4cc2ff; --crystal-soft: #12303f; --coin: #f0b45a; --warn: #f08a4b;
+      --bg: #0d0f12; --surface: #15181d; --surface-2: #1d2128; --fg: #eef1f4; --muted: #8a94a2;
+      --line: rgba(255, 255, 255, 0.07); --accent: #5fd3b4; --accent-soft: rgba(95, 211, 180, 0.14);
       color-scheme: dark;
     }
   }
   :root[data-theme="dark"] {
-    --bg: #0e151d; --surface: #16202b; --fg: #e8eef5; --muted: #90a0b2; --line: #26333f;
-    --crystal: #4cc2ff; --crystal-soft: #12303f; --coin: #f0b45a; --warn: #f08a4b;
+    --bg: #0d0f12; --surface: #15181d; --surface-2: #1d2128; --fg: #eef1f4; --muted: #8a94a2;
+    --line: rgba(255, 255, 255, 0.07); --accent: #5fd3b4; --accent-soft: rgba(95, 211, 180, 0.14);
     color-scheme: dark;
   }
 
   * { box-sizing: border-box; }
   body {
     background: var(--bg); color: var(--fg);
-    font: 15px/1.45 var(--font-ui);
-    padding-block: 24px 48px;
+    font: 500 15px/1.45 var(--font);
+    font-variant-numeric: tabular-nums;
+    padding-block: 28px 56px;
     padding-left: max(16px, env(safe-area-inset-left, 0px));
     padding-right: max(16px, env(safe-area-inset-right, 0px));
   }
-  .wrap { max-width: 1180px; margin: 0 auto; }
-  h1 { font-size: 1.75rem; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 4px; text-wrap: balance; }
-  .lead { color: var(--muted); margin: 0 0 20px; max-width: 62ch; }
+  .wrap { max-width: 1160px; margin: 0 auto; }
+  h1 { font-size: 1.9rem; font-weight: 800; letter-spacing: -0.035em; margin: 0 0 6px; text-wrap: balance; }
+  .lead { color: var(--muted); margin: 0 0 24px; max-width: 60ch; }
 
-  .bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 20px; }
-  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); padding: 3px; }
+  .bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 8px; }
+  .seg { display: inline-flex; gap: 2px; background: var(--surface); border-radius: 999px; padding: 4px; }
   .seg button {
-    font: 700 0.85rem var(--font-ui); color: var(--muted); background: none; border: 0;
-    padding: 7px 14px; border-radius: 7px; cursor: pointer;
+    font: 700 0.84rem var(--font); color: var(--muted); background: none; border: 0;
+    padding: 8px 16px; border-radius: 999px; cursor: pointer;
   }
-  .seg button[aria-pressed="true"] { background: var(--crystal); color: #fff; }
-  .seg button:disabled { opacity: 0.4; cursor: not-allowed; }
+  .seg button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); }
+  .seg button:disabled { opacity: 0.35; cursor: not-allowed; }
   input[type="search"], select {
-    font: 500 0.9rem var(--font-ui); color: var(--fg); background: var(--surface);
-    border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px; min-width: 0;
+    font: 600 0.88rem var(--font); color: var(--fg); background: var(--surface);
+    border: 0; border-radius: 999px; padding: 11px 18px; min-width: 0;
   }
-  input[type="search"] { flex: 1 1 200px; max-width: 320px; }
-  :focus-visible { outline: 2px solid var(--crystal); outline-offset: 2px; }
-  .upd { margin-left: auto; color: var(--muted); font-size: 0.8rem; }
+  input[type="search"]::placeholder { color: var(--muted); }
+  input[type="search"] { flex: 1 1 180px; max-width: 300px; }
+  select { padding-right: 12px; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .upd { color: var(--muted); font-size: 0.78rem; margin: 0 0 22px 4px; }
 
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: 16px; }
-  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
-  .art {
-    aspect-ratio: 16 / 9; max-width: 100%; background: var(--crystal-soft);
-    display: grid; place-items: center; overflow: hidden;
-  }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 14px; }
+  .card { background: var(--surface); border-radius: 22px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
+  .art { position: relative; aspect-ratio: 16 / 9; max-width: 100%; background: var(--surface-2); display: grid; place-items: center; overflow: hidden; }
   .art img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .art .ph { font: 800 2.4rem var(--font-ui); color: var(--crystal); opacity: 0.55; }
-  .body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 12px; flex: 1; min-width: 0; }
-  .name { font-weight: 800; font-size: 1.05rem; margin: 0; overflow-wrap: anywhere; }
+  .art::after { content: ""; position: absolute; inset: auto 0 0 0; height: 55%; background: linear-gradient(to bottom, transparent, var(--surface)); }
+  .art .ph { font: 800 2.4rem var(--font); color: var(--muted); opacity: 0.5; }
+  .body { padding: 0 20px 20px; margin-top: -6px; display: flex; flex-direction: column; gap: 14px; flex: 1; min-width: 0; position: relative; z-index: 1; }
+  .name { font-weight: 700; font-size: 1.05rem; letter-spacing: -0.01em; margin: 0; overflow-wrap: anywhere; }
   .name a { color: inherit; text-decoration: none; }
-  .name a:hover { text-decoration: underline; }
-  .need { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
-  .need svg { width: 18px; height: 18px; flex: none; align-self: center; }
-  .big { font: 600 1.7rem var(--font-num); color: var(--crystal); font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
-  .unit { color: var(--muted); font-size: 0.85rem; }
-  .chip { font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
-  .chip.warn { color: var(--warn); border-color: var(--warn); }
+  .name a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .need { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .need img { width: 22px; height: auto; flex: none; display: block; }
+  .big { font-size: 2rem; font-weight: 800; letter-spacing: -0.04em; color: var(--accent); line-height: 1; }
+  .unit { color: var(--muted); font-size: 0.82rem; font-weight: 600; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 999px; background: var(--surface-2); color: var(--muted); }
 
-  .build { border-top: 1px dashed var(--line); padding-top: 10px; display: flex; flex-direction: column; gap: 6px; }
-  .cost { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
-  .cost b { font: 600 1.2rem var(--font-num); color: var(--coin); font-variant-numeric: tabular-nums; }
-  .cost span { color: var(--muted); font-size: 0.82rem; }
-  ul.lines { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 3px; font-size: 0.88rem; }
-  ul.lines li { display: flex; justify-content: space-between; gap: 8px; }
-  ul.lines .q { font: 600 0.88rem var(--font-num); font-variant-numeric: tabular-nums; }
-  ul.lines .p { color: var(--muted); font: 500 0.82rem var(--font-num); font-variant-numeric: tabular-nums; white-space: nowrap; }
-  .more { font: 700 0.8rem var(--font-ui); background: none; border: 0; color: var(--crystal); padding: 0; cursor: pointer; text-align: left; }
-  .mode { display: flex; border: 1px solid var(--line); border-radius: 9px; padding: 2px; background: var(--bg); }
+  .mode { display: flex; gap: 4px; background: var(--surface-2); border-radius: 999px; padding: 3px; }
   .mode button {
-    flex: 1; font: 700 0.78rem var(--font-ui); color: var(--muted); background: none; border: 0;
-    padding: 6px 4px; border-radius: 7px; cursor: pointer; min-width: 0; font-size: 0.74rem; line-height: 1.2; text-align: center;
+    flex: 1; font: 700 0.72rem/1.15 var(--font); color: var(--muted); background: none; border: 0;
+    padding: 7px 4px; border-radius: 999px; cursor: pointer; min-width: 0; text-align: center;
   }
-  .mode button[aria-pressed="true"] { background: var(--surface); color: var(--fg); box-shadow: 0 0 0 1px var(--crystal); }
-  .diff { margin: 0; color: var(--muted); font-size: 0.8rem; }
-  .none { color: var(--muted); font-size: 0.88rem; }
+  .mode button[aria-pressed="true"] { background: var(--surface); color: var(--fg); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12); }
+
+  .build { display: flex; flex-direction: column; gap: 10px; }
+  .cost { display: flex; align-items: baseline; gap: 6px; flex-wrap: wrap; }
+  .cost b { font-size: 1.45rem; font-weight: 800; letter-spacing: -0.03em; }
+  .cost .coin { color: var(--muted); font-size: 0.85rem; font-weight: 600; }
+  .meta { margin: 0; color: var(--muted); font-size: 0.8rem; }
+  ul.lines { list-style: none; margin: 0; padding: 10px 0 0; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 5px; font-size: 0.88rem; }
+  ul.lines li { display: flex; justify-content: space-between; gap: 8px; }
+  ul.lines .q { font-weight: 800; }
+  ul.lines .p { color: var(--muted); white-space: nowrap; font-size: 0.82rem; }
+  .more { font: 700 0.8rem var(--font); background: none; border: 0; color: var(--accent); padding: 0; cursor: pointer; text-align: left; }
+  .none { color: var(--muted); font-size: 0.88rem; margin: 0; }
   .empty { color: var(--muted); padding: 40px 0; text-align: center; }
-  .note { color: var(--muted); font-size: 0.78rem; margin-top: 28px; max-width: 80ch; }
-  @media (prefers-reduced-motion: no-preference) { .card { transition: border-color .15s; } .card:hover { border-color: var(--crystal); } }
+  .note { color: var(--muted); font-size: 0.76rem; margin-top: 32px; max-width: 80ch; }
+  @media (prefers-reduced-motion: no-preference) { .card { transition: transform .18s ease; } .card:hover { transform: translateY(-2px); } }
 </style>
 
 <div class="wrap">
-  <h1>Кристаллы SBC в FC 27</h1>
-  <p class="lead">Сколько кристаллов нужно для каждого SBC и самая дешёвая сборка за монеты по ценам самых дешёвых карт нужного рейтинга.</p>
+  <h1>Сборщик SBC в FC 27</h1>
+  <p class="lead">Сколько кристаллов нужно для каждого SBC и во сколько монет обойдётся самая дешёвая сборка.</p>
 
   <div class="bar">
     <div class="seg" role="group" aria-label="Платформа">
@@ -119,8 +120,8 @@
       <option value="cost-asc">Дешевле в монетах</option>
       <option value="cost-desc">Дороже в монетах</option>
     </select>
-    <span class="upd" id="upd"></span>
   </div>
+  <p class="upd" id="upd"></p>
 
   <div class="grid" id="grid" aria-live="polite"></div>
   <p class="empty" id="empty" hidden>Ничего не найдено.</p>
@@ -128,7 +129,6 @@
 </div>
 
 <script>
-
   // Telegram Mini App: подгоняем тему, раскрываем окно, внешние ссылки открываем средствами Telegram
   (function () {
     var tg = window.Telegram && window.Telegram.WebApp;
@@ -143,8 +143,9 @@
       });
     } catch (err) {}
   })();
+
   var RARITY = { "Common": "Обычная", "Future Stars": "Future Stars", "Destined for Glory": "Destined for Glory", "Base Hero": "Базовый Hero" };
-  var DIAMOND = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12l4 6-10 12L2 9z" fill="var(--crystal)"/><path d="M2 9h20M9 3l3 6 3-6M12 21 9 9m3 12 3-12" stroke="var(--bg)" stroke-width="1" fill="none" opacity=".55"/></svg>';
+  var CRYSTAL = '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA4CAYAAABNGP5yAAAXQElEQVR42s17SXCc2ZHel/nev9UGFDaSYIOkyGh1Gxh1U6Is9UieIGes0WHs0EngHHocodDFhwnNxb74BGBuPuhknzpiFOHtYNZNMdoshwPwhOymbKrbFAH1QoJEowmQBLH/Vf/2XqYPBbLBpTd1t6QfUYEq/KhX7+XL78sv82URPqtLlc7PzhoANmw0jJmacj/9i78oPspbf/zjH0eLi4s2TVMPwM3Oznoi0s9imvyZGYAIFwAB4LZarTJLLvuP+tbLSeJbrVYJwAEQIvrspvmpj6f6wABP2zHz5//qr2IJBuJjwyPmyJEjaKAB3L2L+5ubPq6q/PvffycHOv5Jh1LqD0sA8Kl5g/00Vz89Pc3Lr7zC5wC8ouoeN8Jz3/paLUN9YsAk47Bhg8gSG4HUIh3MB1Lp5Wvf/W5z9Qc/wP7ji3/llVfswWdIp9Pxf4gGoOVvtPkY1oI1AOfn53Wh78IPr/gffWHY1BuTYoKzFEWjJgop4AAUBlrG4YYN7Out8Nke8KgB5ufnDYBgDcA3vvGNqtPpyKflBZ+mATRbO0ZFI6VBHpdkY+PRCV6aCeMVd4pt8EUi86dUi54xtRoiCsG5R1jh3ZiYwgG+f+3StbU/uvhH5YO3bly4oOmvNrQhOa+lN+gPCQKPYH4JcFP/+qu+Qxc9AEwD5va3vlXjk8NxsGnGpV3/All7lpW/VD/xTDQ4fASjFCFq7iN9d32sBrNNkDuXNy9vf+9731tbWVnJf/jDH/YuEnkA2SVVszg7q58mJ3wiEpy+dMkAi2YRwPQ03BzNyeH750+eHOQ///oZGmufwMQzJzA6+EUK468NtFrPfu7UKXx+8ChOUYzWfhfZ6hpkL327KvL/9c7t26+9cWv5nbt37rzzo/n5G7srKzuPcQLPdjp2qv/SX7x40f8+PIAWFxfN8TON4PhdYB5fFtDfykOPAMBfefEINZtnKU6+zGEwoc3GM9xqjvHwMHR4EFxrIkaCto3R9kARbY3t7GyftWE0Uoui1Waz+X9fevHF9GeHDHAQEbmRrwQ5juDGjRtAP9zq79oADz9wq5XqaTyK+cnp6dCePHqSWvELaNS+TvXaMTQaMQ23Y20PwMUxhENnYBHFbOuDgygFdVeVZ2r15Hi92TwhQBlau7o6OXlzaWmpPOS02spaiuShB+vvygOexPy/OOl/Thf9lX/Zj/Pnp88nmHguNkePjQdB8Dyi4HmJo+fCo0dDHR2FtAeAZsOzbeUBojIG0GQO661mLArrfNU4mvUau+l+K4rj9YGBgRsvv/zync3NzbXV1dW80+lk1OeEnqqa2U/ICfZjYp7RmTWLi8C0zrg5mpPO3Hv3T59uN0ozcjowPGGScMIMt89SkpwygwOhmXgGfmgQvhbDhiEY9iFYDKAxADTqGCaFI0Lhfbi1vX2qKMuzexubfnNnf9XE8Wr79Onl7eXl3YPF+oecMDtrp6amcOnSpY/FCfa3wnzjAPP4Wzls7MYLXzqC4fpZxNE5isMJHmpP2PbgmBkZAUaG4WsJjDVggAll4MAmR4iyL8kZhlGr1zEKQiketVptbHd392zRzYZrcbLabrWvvPTcC92fHBjg0I5zo9EI8jz/2JxgPxHmD0XkycnJsHHq5Kmg0TjLjcafcD0Z54FmbMZGEx4ehqvVoCbwBM8sntRlYaVOc46RmZgcM1lA2Rip12tmbGwUbEyTgGd3tnYmGo3GmpL6KAhvr6xM31pa6pSH59ZqtfRQVPvUIPChmJ+cPp+MTjwXm+HhcYrpeQqi5ylJno+PHQnDsRGY4SFos+kJSUGAEvKAXBGgElIIeWY4NXA2UMtcAaiMMdRqDUREbEi1UeZlo9ftteJadGdwYODGyy+P3dncnFi7srqaL3xCTqAPxvy0ASb7mAfc3Nyjcf706fbAka//2eng6OhEcuL4hGm3zlEUft20Bz+fnDoBOzoGag1AELkKtnBwIGRBvcyCsQp0CgE+zwnOmBrGbajJgQEOho+cqk3TFBsb93Hz5gp2dnbeysvsF5ubO1fevX1zde32ndWf/eLvl7eXt3cPz2tGZxizsFNTUx+qE/iDMT9pdlbS4HijEcxfuPDE/zZe+NIRtFpnqRZ9k+Lom8Fw+2wwfuRIdOI4eHQIqNcAGCg8A1mg6AUqmQE5ghGQUbABmOnBVhkAwcGDLREa9TpGR0Zw4sQExsePHhkeGjpbi6Nv1qL4m61W6+xLz7105PEtvYBZbjQawUqeB4v9Mem3gUDfbY4AW1mqpx/T9n3MnzllWrWz3Gz8CdVr4zzQioMjIwkPt6H1BGqsVwgBjgV5oFUFwPcHZgMmgJnBxA/JDAIGA9rXPGKZtV6vm7GxURhrGkR4dnt7e6LRbK2pko+C4PbkysqtwzphA9C01dIzAKUfwgn0AX9TqNJ0p8Od91zovTg/PDxOcXxBQ/PPOI4v1M+cDKMT4+CRNmig7oF6oWBlVIGXXuB8TpVUIHg0iHGUQpyhOp7nJs5QHWMUIBaFisKpB4xBwFweQIIEiPb29s3G/Q2srq7ixo3rZa+XzVdl+aMyz+c3NzfXVq+s5p2FTgbAA8ClS5fM9PS0HFSTnkqQj3rAzAxPT01RZ3FRMTenINLOwWAA8BxQy6hxOgFPmLh+gocHXtRadNIOtEJzfBw0PAzUEygiryAPVBCUKlKo+AIqFQCBGKMChqonJQGgpCrwCkAFqgoVUfBD1CkD2mjUoSqAKrxz4fbO9qk8y89ubmx5YHNVRmQVwDKAXQA4jP2ZmRmampqixcVFPcxljxhgemqK2tvbfB7QhX4sfeSKvvLCiBkYeAFJdM7U4gkz3D5BA60RHhoE2oOQOAHYqMKTwlmggoEjwIuSkJCAVAABlDyUBOo9CQuU5OADFSBAoVR5ZwLzcIpsmFGrJRgeHoLzHlEcH9nd2TmbdrvDYRyvDg4OXvnq2a+ml1+/vPs0vtve3qapqSl5Xw+4t7hI+0NDnI6Py9MGaL305dO2OfBF02qc52ZjPGi3YxobSTA4CG0kKnFSETwrcqNSMqkDGQXIERsFE+Fgw3GwSiLu45+J+4xs3vNQEeGyqpiYYY0hAiQKQqUGGYARWNtg4md3d/YmBlsDa6Tkv/TH4e3Lr1++dSiaAADGx8cpz3NeXFx8DAKqhKfEyunpaZNNtqMsGkqoGUVR3DwmXl5U8IsUR1+onzxhgonjwMgQfK0GRVgRSBQ9CxAT90FnQICxIDAAAUEQqEWACAESBBSh//MoIRkAwoYgAoAe3HMAqtAGNDQ4ECVhaAK2DfW+4aqy1W6373h/4sbf/d1/vBsEWN/c3CxFpNjb23taNZpUFebc+HjwT5IES0tL+pW//ms66hz219aUR12UIXiGyUySDc8Gg+0vRsND/9gODZ6tf+7UQP3MGUTj47DBEBg1MNgYiLEgDg5cKwAjgIWFBcOCEMIiQkIJBinBGNVxDH3pW3sfNiaiw2JG8B40TRAE3KrVEUUhrDWmXq9Xg4NDpU2iaLebDnWrqpE7JztxnJf37/t2u40TJ05op9PRGVXG/LyxQfqGnZycrACgs7io01NTsrC2pi/t1eOoVp2wBl8l0ReIcMwOtI7xwMDReGICdngUjBYe0KuBAeCJQCCYB3t/IDT04R4SCAECWEQwiMDgj1qbf6ATHtEwHFqMjo1CoNjd2xtJe9kL+ca9YS9yF0K/ERG00nQbQNFut+khBObn+datW9Y2R8d5aS/tz2FuTjsHUKj9m78JvPCIQp5lxZcUOIrQhmZo0GgS92MTChAIigqKEoQKgIP2PRUE/xBZcgAAAsND4UAoYZDBoAuL+oH6eXC5w17wXvxiRT82HCBMAIgGga0NDaIy3Np37vO5cydzV90rXMWV6u0MePP7c3Oqqnrx4sU+JzSbZO7fN7bcS+lpCY+vHJGFUTWheKl752rOew9fFlWRObKmZFsJytJq3g3gShA5EAtgBDh4Tv2UCU5UnRAgDCBCipB3OOH73DORibg0ISUHiy1V4CAHEABICQqFeCGvAlLAGqtJlLjIhpUDXEqIMsthbiisDKFbFs2sKm6Vrmj6qjIA9PABy9ryMtVE2G5nqT63vv+kUhLn1Ae7qPy6WHezKvJM9/eIt0MRXzl0dysCKRUVI8+JXKXEDsRKaoX6BzpCdJCUOCXxXlWVtdSQDYVhaKKETVRPOUju2sBEzIAqKvHw6vVBMkMgUlV47+C9gBQahJHW4oZGSQ1gRlkUVOU5dvIetssc23kvKorMFFXFjOypmLoPwO6m9/32du+JsFcZV3Ah65DgKiRzfmfvWM+gLr292MWBFQMiZWGnwlXlSdSBPAhq1IBVPRMpkwqDSCtR8aJOBQgpNJmJ6lkUtffCBE0bhPUwNIFlQBSVd/DeAURKICICVBTivYqoEghBGGkcNciGiTVsjHqBzzKkW1vYXl/DTnfvftXLdypX9YzLnljf0uIiRgG1KzjlVjpzT3jA8Vv7xT3UbnfjVKrE3NN052h+3466kEYqqy0PjRgEEvYsVJJydVCHsMpgqBhiYmJhCOBEnKtKJ0JqbRA0k9rg/kALW/VGvRbHA1ESwwYG4gXeOXjnVKFKzCCAoICKhwjARDA2ojBIjDURWJhRCVzaRba9JeXu7kbZ677ps+wdKd228b3q8fUtr69rduyYPCDqpwkfOodz9iZuJnh2uOkHMZrF5rhtBOMSmlGypklsApAho+xA1gEMKDGMEjyIDDETG5BS5SpX5lkpXtUmYdQYHBwaGBt+ptEe/FxSbxwP6kmNQwvxAqkq+KoSgQoRMYH4oBaqCiiD2XAAQxHYG3ApkNxVkmX7Vbe74XvdWy7P30KZ/VoK93qI7M1f/pef7h1QjD4o6f/yRz8K7GMC6BFCvIIr/fz87a0UQAbAlROmQruZcxwOc1RrUBRHniyzCaWv3vo4gIOyIWZrLEjJlaX3Wa8UEUgeowxsmec1Z8tENAoReAsWhYjA+xLeVxCFUt8IfTKwpGACQ2EAcOVBPQ90q0qzatvnxbtVXtxwefZGVeXLKLJ3XMmbYnYqVaXZ2VmanZ0FEWlncVHPRZE3H7FAog8yLLDCJKGGYQ1BmLANY2vDOLQ2stZYY61ByKw2CCSwlqLAMocBGTBIodYGCOIwSFqtejLQGIgajXYQxwM2iQIOLcAEUoUCykTSl8pMJjDKYQAOLIwxzCBQ5aBpJugVu+jm7yLL3nRZ/npRla/lvrxeFMWdNN3dmdyLslvfuYX5efCt+XksLCwoFhawfvr0x6oJegC99vjp7WSgwdqKWKPEoh4FaihkNjFDWUBsIEzKRCBDgTVCyr6sJExiFVE1kbVxs2VrtaZJ4hqFSYQgikGh7XsAGJ7tQZbYl1psmRCYvoG8B+UOcL4i7/dQlWuoymUUxVJYVP9Pc13aG+StpOy6e5uVW7jyqh/rjHG63iYcO/bepnY6Yj+kDNrPyw4C43e+851ivWfTLCrMvpY2j9S6iIxTNcSkgMZEMAxhwBgGMVmwABAnasOQRIQ4DExcq3EUxxxHMQVBhCAIQPbAAKLwZKAEAikxmNn0R4YKtFLASQmRbfKyTt4tm7J8w1TFm/F2fuPVn/zkHfpohVG1H1YI1n4eqqQEL76cnZ3H8v2f0S1KwZxLoWUFcQUDbWVpKdBgIFKQ7fMXgUgdkThiqkgNEbNnJiFi7SsdenDoB4hCVRWMfgQwDGamfi4okMIB3dxpr9yhXrlqquotqtxvbFm9Hae9Gy+8fePO0xY/OT2p9xaf/Lt9v9L3g0owHSp9M7HIjJR/w1eV95Y9tTnn3KfWuT0HPwLiMWH1on4QhkNhYhJWQCtXVbkrXCVeyDCMq6TyXrz3XlkELB7wff3lnFclKBtSZe7XxkSgeQm/3VV0s33t5neQFW9L7l43RXENvd4q0r17s9evp3NP2co5zCkwIwtzc/rxzgX0sC8ANEei0PLi9EW30UOv3N/vkjEp1ZH5OPDKysKwJNIgpgDGqIjzrnLOu6rypWNYduKcE+e8iBfxXr0XgADvhbz3UFJSIWIREqhq4Uj2e07TbF92u3c0zW5qr3pDy/KadcVibbvcfGfrf5d0OKRPTxvtdKRfeYACcx9SEvvgyrE+SP0IpOjAHxBjef7kyfLOs8+qHzEBhYhVJQIxCTgh8VYVpCpGIUYUUFVVFek/VFQEij4aYPoqGoAhUZDzgPfQXlVSVuxKt7yjaXFT9/I3ZC9722TFzV+c+2/v4j89KCj165j7//ADm+3V6ML58w4LC+79Dkw+epfYDAizM/Q0avmfKyu5Wav2XOm3UMmGEb0H8Vuk2lUlB4BVKVBQoEQMFVXA93Me8aoqCogaFlgGAgPivixGXkL3eqL72Z7uF+9qVvwGefUa0uKq3+3eSK+u38Xco0Lu3uIiZUNH6NNqk1MAijkcFEqfNIECGF1CXtvNdwNXbaB0d4zTu0Z0y0B6AIRBTArLLAfaQ4UgXlU8qQpIFYYF1giY+oXRooLs9qC7vVS3u3eRZm9Tr3wNhf8/2iuuYXN3deidX+8/uiI+qGfecmkU+QsXLsgnPRvUj3KStIAF/0z3pd4Q0zbVa1pBPTGTsg2U1PgHn6UglQN5y0T9wA4icD9oCPpCqKwgaVFRmvUoLe5St7hFefWGOPdr5OW1LPf3XZZVVw43Yk1Pm5nJSZ2bm5MFQIEFXPmQcGh/y7aafmyYmekbZHZOQcAfv/pquXzuWMrmjAIRKGLrFKFXECkSFm+9CoPEKlNEbCKyHBEHARvLBANIBV9U0KzKkBW7SPP71C1WNC3e8L3qLanc8mUJ3sXPf+4ftIxMf/vbZv/ovs32ajQ/P+8+zunwb98pOjNDWFrqP2ZnCIB2AP/Pr6zn8Y5Lw25vh9VthKrrlvmOcf6+lH5fvVYqMCCK1JgENoooCKyxAYwQOHeg/s5vU5qvIC+uaa+8Ivv5VdpNb9DKnbt4rE/w3uQkZXsZ/S5bZft80OkIJjv95w/jLWTi1VfLYKtM27Z+P9Fw3Tp9F7lfd5Xb9M71FCpEHMDYCDYIyARMYFAhwG4O2sn2abe3pnu9N6Sb/Qpl9UvuFVd1c++d6tVX9x+fygIgOAWHW7fch2H+k0JAn6Iwnrg6gMeVK/n3vjbq3+w1feW0yLIy06KoYNhSQwdV2fdrHUwEFpTeaDcH9rOU0mKddnrLSHu/0Sq/aku7xDvd7Y2dnXLpcL1/ZoZnALyHefQTnd9Xp+hjhpJ//+9+WvyPmRn/b69fd93uuvNVD1JLIlUZgPoeOSnJOa9l5bWsSNOs1KxcRze/wWn2pt9K3+Z0Z/kf/vvldx8a/xDmr29tYf7qVf9JusQ+3W5xffLlP52bc98tyy5uY4+LfItKf4897hkn96mo9tDNMuynueynqfTyO8jLtyl3V2k/X6TN3Vv6q7fvPj7yvclJyoYy+kNrl9enBUkF8Jedjh+47jPa5Z1yv7jHlbvNpb/Nvewu9vY3sbO35Xf370q3u6xl+Wup/BVK8yXdTm//cmur+1jbOA7OLd3xoav+42L+s4CAfpSbV3DF4Tq6mByVoBo2YVbWje0OcVXV1ZqegApSXFfvrnqPa01H691r10ocOp1+KuaxoH8w7fKPeZY+taq0tJHa5IQxYa9myDW1ikiY7ihxroSbGuDNzdrR1Vd//p+Lh5j/r9826MC8trVFnxTzvysDHMof8IR8nrhypZuP/9kG7WchuSpXsk0hLdnSuu91b1//D53iUW0/ScnRy/RYF/0f5Fdm9JHfc3hq7rAAOLe2u+8Lv2Z6/i0ty2tIqyXt5ivmzRu7T8N8807THb+afWLMf9ZfmfkYzgHuTE/aJEtsI2nw9k6oPXPTXf/p9er9yvSftC/4920Aejh9+uCFTE9PGwDoTE4+UJmKz5CsfleLJ0xPMy5OM+iDF7TcbvP+0X17bv3vzUw/4frMNur/A4Op/eTiGBioAAAAAElFTkSuQmCC" alt="" width="22" height="19">';
   var nf = new Intl.NumberFormat("ru-RU");
   var state = { data: null, platform: "console", expanded: {}, mode: {} };
   var $ = function (id) { return document.getElementById(id); };
@@ -156,36 +157,36 @@
     var pb = s.builds && s.builds[state.platform];
     var mode = state.mode[s.id] || "cheap";
     var b = pb && (pb[mode] || pb.cheap);
-    var img =s.image ? '<img src="' + esc(s.image) + '" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),{className:\'ph\',textContent:\'' + esc(s.name.charAt(0)).replace(/'/g, "") + '\'}))">' : '<span class="ph">' + esc(s.name.charAt(0)) + '</span>';
+    var img = s.image ? '<img src="' + esc(s.image) + '" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),{className:\'ph\',textContent:\'' + esc(s.name.charAt(0)).replace(/'/g, "") + '\'}))">' : '<span class="ph">' + esc(s.name.charAt(0)) + '</span>';
     var chips = '';
     if (s.min_rating && s.min_rating > 45) chips += '<span class="chip">карты от ' + s.min_rating + '</span>';
-    (s.notes || []).filter(function (n) { return n.length <= 40; }).forEach(function (n) { chips += '<span class="chip warn">' + esc(n) + '</span>'; });
+    (s.notes || []).filter(function (n) { return n.length <= 40; }).forEach(function (n) { chips += '<span class="chip">' + esc(n) + '</span>'; });
     var build;
     if (!b) {
       build = '<p class="none">Для этой платформы нет цен или нет подходящих карт.</p>';
     } else {
       var open = state.expanded[s.id], lines = b.lines, shown = open ? lines : lines.slice(0, 3);
+      var meta = b.players + ' ' + plural(b.players, "карта", "карты", "карт") + (b.surplus ? ' · запас ' + nf.format(b.surplus) : '');
+      if (b.estimate) meta += ' · оценка';
       var diff = '';
-      if (b.estimate) diff = '<p class="diff">Оценка: цены ПК пересчитаны по цене этого SBC на ПК и консоли.</p>';
       if (mode !== "cheap" && pb.cheap) {
         var dc = b.cost - pb.cheap.cost, dn = pb.cheap.players - b.players;
-        if (dn > 0) diff += '<p class="diff">На ' + nf.format(dn) + ' ' + plural(dn, "карту", "карты", "карт") + ' меньше, чем в дешёвой сборке, но на ' + nf.format(dc) + ' монет дороже.</p>';
+        if (dn > 0) diff = '<p class="meta">На ' + nf.format(dn) + ' ' + plural(dn, "карту", "карты", "карт") + ' меньше, чем в дешёвой сборке, но на ' + nf.format(dc) + ' монет дороже.</p>';
       }
-      build = '<div class="cost"><b>' + (b.estimate ? '≈ ' : '') + nf.format(b.cost) + ' монет</b><span>' + b.players + ' ' + plural(b.players, "карта", "карты", "карт") + (b.surplus ? ', запас ' + nf.format(b.surplus) : '') + '</span></div>' + diff +
+      build = '<div class="cost"><b>' + (b.estimate ? '≈ ' : '') + nf.format(b.cost) + '</b><span class="coin">монет</span></div>' +
+        '<p class="meta">' + meta + '</p>' + diff +
         '<ul class="lines">' + shown.map(function (l) {
           return '<li><span><span class="q">' + nf.format(l.qty) + ' ×</span> ' + l.rating + ' ' + esc(RARITY[l.rarity] || l.rarity) + '</span><span class="p">по ' + nf.format(l.price) + '</span></li>';
         }).join('') + '</ul>' +
         (lines.length > 3 ? '<button class="more" type="button" data-id="' + s.id + '">' + (open ? 'Свернуть' : 'Ещё ' + (lines.length - 3)) + '</button>' : '');
     }
+    function tab(m, label) { return '<button type="button" data-mode="' + m + '" data-id="' + s.id + '" aria-pressed="' + (mode === m) + '">' + label + '</button>'; }
     return '<article class="card"><div class="art">' + img + '</div><div class="body">' +
       '<h2 class="name"><a href="' + esc(s.url || '#') + '" target="_blank" rel="noopener">' + esc(s.name) + '</a></h2>' +
-      '<div class="need">' + DIAMOND + '<span class="big">' + nf.format(s.score) + '</span><span class="unit">кристаллов</span></div>' +
-      (chips ? '<div>' + chips + '</div>' : '') +
-      '<div class="build"><div class="mode" role="group" aria-label="Способ сборки">' +
-        '<button type="button" data-mode="cheap" data-id="' + s.id + '" aria-pressed="' + (mode === "cheap") + '">Самый дешёвый</button>' +
-        '<button type="button" data-mode="optimal" data-id="' + s.id + '" aria-pressed="' + (mode === "optimal") + '">Оптимальный</button>' +
-        '<button type="button" data-mode="fast" data-id="' + s.id + '" aria-pressed="' + (mode === "fast") + '">Самый быстрый</button></div>' +
-        build + '</div></div></article>';
+      '<div class="need">' + CRYSTAL + '<span class="big">' + nf.format(s.score) + '</span><span class="unit">кристаллов</span></div>' +
+      (chips ? '<div class="chips">' + chips + '</div>' : '') +
+      '<div class="mode" role="group" aria-label="Способ сборки">' + tab("cheap", "Самый дешёвый") + tab("optimal", "Оптимальный") + tab("fast", "Самый быстрый") + '</div>' +
+      '<div class="build">' + build + '</div></div></article>';
   }
 
   function render() {
@@ -214,8 +215,8 @@
     state.data = d;
     $("p-pc").disabled = d.platforms.indexOf("pc") === -1;
     if (d.platforms.indexOf("pc") === -1) $("p-pc").title = "Цены для ПК пока не собраны";
-    try { $("upd").textContent = "Цены от " + new Date(d.updated).toLocaleString("ru-RU", { dateStyle: "medium", timeStyle: "short", timeZone: "Asia/Novosibirsk" }); } catch (e) {}
-    $("note").textContent = "«Самый дешёвый» — минимум монет, обычно это много карт низкого рейтинга. «Оптимальный» — золотая середина: к цене каждой карты добавляется 300 монет за потраченное время, поэтому карт заметно меньше, а переплата умеренная. «Самый быстрый» — минимум карт: берутся карты, у которых цена за кристалл не больше чем в 1,5 раза выше самой выгодной, и среди них подбирается самая дешёвая сборка. Цена берётся по самой дешёвой карте на рынке; при массовой покупке реальная цена будет выше. " + ((d.estimates || []).indexOf("pc") !== -1 ? " Цены для ПК приблизительные: они пересчитаны по соотношению цены SBC на ПК и консоли." : "") + " Источник данных: " + (d.source || "—") + ".";
+    try { $("upd").textContent = "Цены от " + new Date(d.updated).toLocaleString("ru-RU", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Moscow" }) + " МСК"; } catch (e) {}
+    $("note").textContent = "«Самый дешёвый» — минимум монет, обычно это много карт низкого рейтинга. «Оптимальный» — золотая середина: к цене каждой карты добавляется 300 монет за потраченное время, поэтому карт заметно меньше, а переплата умеренная. «Самый быстрый» — минимум карт: берутся карты, у которых цена за кристалл не больше чем в 1,5 раза выше самой выгодной, и среди них подбирается самая дешёвая сборка. Цены округлены до 50 монет и берутся по самой дешёвой карте на рынке; при массовой покупке реальная цена будет выше." + ((d.estimates || []).indexOf("pc") !== -1 ? " Цены для ПК приблизительные: они пересчитаны по соотношению цены SBC на ПК и консоли." : "") + " Источник данных: " + (d.source || "—") + ".";
     render();
   }).catch(function () { $("empty").hidden = false; $("empty").textContent = "Не удалось загрузить data.json."; });
 
