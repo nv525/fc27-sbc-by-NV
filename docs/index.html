@@ -1,0 +1,232 @@
+<meta charset="utf-8">
+<title>Кристаллы SBC</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+  /* Макет: шапка с переключателем платформы, ниже сетка карточек SBC.
+     В каждой карточке крупно кристаллы, под ними самая дешёвая сборка. */
+  :root {
+    --bg: #f3f5f8;
+    --surface: #ffffff;
+    --fg: #14202e;
+    --muted: #5d6c7e;
+    --line: #dde3ea;
+    --crystal: #0a84c6;
+    --crystal-soft: #e3f2fb;
+    --coin: #a8660a;
+    --warn: #b4540a;
+    --font-ui: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-num: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0e151d; --surface: #16202b; --fg: #e8eef5; --muted: #90a0b2; --line: #26333f;
+      --crystal: #4cc2ff; --crystal-soft: #12303f; --coin: #f0b45a; --warn: #f08a4b;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0e151d; --surface: #16202b; --fg: #e8eef5; --muted: #90a0b2; --line: #26333f;
+    --crystal: #4cc2ff; --crystal-soft: #12303f; --coin: #f0b45a; --warn: #f08a4b;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--fg);
+    font: 15px/1.45 var(--font-ui);
+    padding-block: 24px 48px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; }
+  h1 { font-size: 1.75rem; font-weight: 800; letter-spacing: -0.02em; margin: 0 0 4px; text-wrap: balance; }
+  .lead { color: var(--muted); margin: 0 0 20px; max-width: 62ch; }
+
+  .bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 20px; }
+  .seg { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); padding: 3px; }
+  .seg button {
+    font: 700 0.85rem var(--font-ui); color: var(--muted); background: none; border: 0;
+    padding: 7px 14px; border-radius: 7px; cursor: pointer;
+  }
+  .seg button[aria-pressed="true"] { background: var(--crystal); color: #fff; }
+  .seg button:disabled { opacity: 0.4; cursor: not-allowed; }
+  input[type="search"], select {
+    font: 500 0.9rem var(--font-ui); color: var(--fg); background: var(--surface);
+    border: 1px solid var(--line); border-radius: 10px; padding: 9px 12px; min-width: 0;
+  }
+  input[type="search"] { flex: 1 1 200px; max-width: 320px; }
+  :focus-visible { outline: 2px solid var(--crystal); outline-offset: 2px; }
+  .upd { margin-left: auto; color: var(--muted); font-size: 0.8rem; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: 16px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
+  .art {
+    aspect-ratio: 16 / 9; max-width: 100%; background: var(--crystal-soft);
+    display: grid; place-items: center; overflow: hidden;
+  }
+  .art img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .art .ph { font: 800 2.4rem var(--font-ui); color: var(--crystal); opacity: 0.55; }
+  .body { padding: 14px 16px 16px; display: flex; flex-direction: column; gap: 12px; flex: 1; min-width: 0; }
+  .name { font-weight: 800; font-size: 1.05rem; margin: 0; overflow-wrap: anywhere; }
+  .name a { color: inherit; text-decoration: none; }
+  .name a:hover { text-decoration: underline; }
+  .need { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .need svg { width: 18px; height: 18px; flex: none; align-self: center; }
+  .big { font: 600 1.7rem var(--font-num); color: var(--crystal); font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+  .unit { color: var(--muted); font-size: 0.85rem; }
+  .chip { font-size: 0.72rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+  .chip.warn { color: var(--warn); border-color: var(--warn); }
+
+  .build { border-top: 1px dashed var(--line); padding-top: 10px; display: flex; flex-direction: column; gap: 6px; }
+  .cost { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .cost b { font: 600 1.2rem var(--font-num); color: var(--coin); font-variant-numeric: tabular-nums; }
+  .cost span { color: var(--muted); font-size: 0.82rem; }
+  ul.lines { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 3px; font-size: 0.88rem; }
+  ul.lines li { display: flex; justify-content: space-between; gap: 8px; }
+  ul.lines .q { font: 600 0.88rem var(--font-num); font-variant-numeric: tabular-nums; }
+  ul.lines .p { color: var(--muted); font: 500 0.82rem var(--font-num); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .more { font: 700 0.8rem var(--font-ui); background: none; border: 0; color: var(--crystal); padding: 0; cursor: pointer; text-align: left; }
+  .mode { display: flex; border: 1px solid var(--line); border-radius: 9px; padding: 2px; background: var(--bg); }
+  .mode button {
+    flex: 1; font: 700 0.78rem var(--font-ui); color: var(--muted); background: none; border: 0;
+    padding: 6px 4px; border-radius: 7px; cursor: pointer; min-width: 0; font-size: 0.74rem;
+  }
+  .mode button[aria-pressed="true"] { background: var(--surface); color: var(--fg); box-shadow: 0 0 0 1px var(--crystal); }
+  .diff { margin: 0; color: var(--muted); font-size: 0.8rem; }
+  .none { color: var(--muted); font-size: 0.88rem; }
+  .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+  .note { color: var(--muted); font-size: 0.78rem; margin-top: 28px; max-width: 80ch; }
+  @media (prefers-reduced-motion: no-preference) { .card { transition: border-color .15s; } .card:hover { border-color: var(--crystal); } }
+</style>
+
+<div class="wrap">
+  <h1>Кристаллы SBC в FC 27</h1>
+  <p class="lead">Сколько кристаллов нужно для каждого SBC и самая дешёвая сборка за монеты по ценам самых дешёвых карт нужного рейтинга.</p>
+
+  <div class="bar">
+    <div class="seg" role="group" aria-label="Платформа">
+      <button id="p-console" type="button" aria-pressed="true">PS / Xbox</button>
+      <button id="p-pc" type="button" aria-pressed="false">ПК</button>
+    </div>
+    <input id="q" type="search" placeholder="Найти SBC" aria-label="Найти SBC">
+    <select id="sort" aria-label="Сортировка">
+      <option value="score-asc">Меньше кристаллов</option>
+      <option value="score-desc">Больше кристаллов</option>
+      <option value="cost-asc">Дешевле в монетах</option>
+      <option value="cost-desc">Дороже в монетах</option>
+      <option value="name">По названию</option>
+    </select>
+    <span class="upd" id="upd"></span>
+  </div>
+
+  <div class="grid" id="grid" aria-live="polite"></div>
+  <p class="empty" id="empty" hidden>Ничего не найдено.</p>
+  <p class="note" id="note"></p>
+</div>
+
+<script>
+
+  // Telegram Mini App: подгоняем тему, раскрываем окно, внешние ссылки открываем средствами Telegram
+  (function () {
+    var tg = window.Telegram && window.Telegram.WebApp;
+    if (!tg || !tg.initData) return; // вне Telegram ничего не меняем
+    try {
+      tg.ready();
+      tg.expand();
+      if (tg.colorScheme) document.documentElement.setAttribute("data-theme", tg.colorScheme);
+      document.addEventListener("click", function (e) {
+        var a = e.target.closest && e.target.closest("a[href^='http']");
+        if (a && tg.openLink) { e.preventDefault(); tg.openLink(a.href); }
+      });
+    } catch (err) {}
+  })();
+  var RARITY = { "Common": "Обычная", "Future Stars": "Future Stars", "Destined for Glory": "Destined for Glory", "Base Hero": "Базовый Hero" };
+  var DIAMOND = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12l4 6-10 12L2 9z" fill="var(--crystal)"/><path d="M2 9h20M9 3l3 6 3-6M12 21 9 9m3 12 3-12" stroke="var(--bg)" stroke-width="1" fill="none" opacity=".55"/></svg>';
+  var nf = new Intl.NumberFormat("ru-RU");
+  var state = { data: null, platform: "console", expanded: {}, mode: {} };
+  var $ = function (id) { return document.getElementById(id); };
+
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function plural(n, a, b, c) { var m = n % 100, d = n % 10; return (m > 10 && m < 15) ? c : d === 1 ? a : (d > 1 && d < 5) ? b : c; }
+
+  function cardHtml(s) {
+    var pb = s.builds && s.builds[state.platform];
+    var mode = state.mode[s.id] || "cheap";
+    var b = pb && (pb[mode] || pb.cheap);
+    var img =s.image ? '<img src="' + esc(s.image) + '" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),{className:\'ph\',textContent:\'' + esc(s.name.charAt(0)).replace(/'/g, "") + '\'}))">' : '<span class="ph">' + esc(s.name.charAt(0)) + '</span>';
+    var chips = '';
+    if (s.min_rating && s.min_rating > 45) chips += '<span class="chip">карты от ' + s.min_rating + '</span>';
+    (s.notes || []).forEach(function (n) { chips += '<span class="chip warn">' + esc(n) + '</span>'; });
+    var build;
+    if (!b) {
+      build = '<p class="none">Для этой платформы нет цен или нет подходящих карт.</p>';
+    } else {
+      var open = state.expanded[s.id], lines = b.lines, shown = open ? lines : lines.slice(0, 3);
+      var diff = '';
+      if (mode !== "cheap" && pb.cheap) {
+        var dc = b.cost - pb.cheap.cost, dn = pb.cheap.players - b.players;
+        if (dn > 0) diff = '<p class="diff">На ' + nf.format(dn) + ' ' + plural(dn, "карту", "карты", "карт") + ' меньше, чем в дешёвой сборке, но на ' + nf.format(dc) + ' монет дороже.</p>';
+      }
+      build = '<div class="cost"><b>' + nf.format(b.cost) + ' монет</b><span>' + b.players + ' ' + plural(b.players, "карта", "карты", "карт") + (b.surplus ? ', запас ' + nf.format(b.surplus) : '') + '</span></div>' + diff +
+        '<ul class="lines">' + shown.map(function (l) {
+          return '<li><span><span class="q">' + nf.format(l.qty) + ' ×</span> ' + l.rating + ' ' + esc(RARITY[l.rarity] || l.rarity) + '</span><span class="p">по ' + nf.format(l.price) + '</span></li>';
+        }).join('') + '</ul>' +
+        (lines.length > 3 ? '<button class="more" type="button" data-id="' + s.id + '">' + (open ? 'Свернуть' : 'Ещё ' + (lines.length - 3)) + '</button>' : '');
+    }
+    return '<article class="card"><div class="art">' + img + '</div><div class="body">' +
+      '<h2 class="name"><a href="' + esc(s.url || '#') + '" target="_blank" rel="noopener">' + esc(s.name) + '</a></h2>' +
+      '<div class="need">' + DIAMOND + '<span class="big">' + nf.format(s.score) + '</span><span class="unit">кристаллов</span></div>' +
+      (chips ? '<div>' + chips + '</div>' : '') +
+      '<div class="build"><div class="mode" role="group" aria-label="Способ сборки">' +
+        '<button type="button" data-mode="cheap" data-id="' + s.id + '" aria-pressed="' + (mode === "cheap") + '">Самый дешёвый</button>' +
+        '<button type="button" data-mode="optimal" data-id="' + s.id + '" aria-pressed="' + (mode === "optimal") + '">Оптимальный</button>' +
+        '<button type="button" data-mode="fast" data-id="' + s.id + '" aria-pressed="' + (mode === "fast") + '">Самый быстрый</button></div>' +
+        build + '</div></div></article>';
+  }
+
+  function render() {
+    var d = state.data, q = $("q").value.trim().toLowerCase(), sort = $("sort").value;
+    var list = d.sbcs.filter(function (s) { return !q || s.name.toLowerCase().indexOf(q) !== -1; });
+    var cost = function (s) { var b = s.builds && s.builds[state.platform]; b = b && (b[state.mode[s.id] || "cheap"] || b.cheap); return b ? b.cost : Infinity; };
+    list.sort(function (a, b) {
+      if (sort === "score-asc") return a.score - b.score;
+      if (sort === "score-desc") return b.score - a.score;
+      if (sort === "cost-asc") return cost(a) - cost(b);
+      if (sort === "cost-desc") return (cost(b) === Infinity ? -1 : cost(b)) - (cost(a) === Infinity ? -1 : cost(a));
+      return a.name.localeCompare(b.name, "ru");
+    });
+    $("grid").innerHTML = list.map(cardHtml).join('');
+    $("empty").hidden = list.length > 0;
+  }
+
+  function setPlatform(p) {
+    state.platform = p;
+    $("p-console").setAttribute("aria-pressed", p === "console");
+    $("p-pc").setAttribute("aria-pressed", p === "pc");
+    render();
+  }
+
+  fetch("data.json").then(function (r) { return r.json(); }).then(function (d) {
+    state.data = d;
+    $("p-pc").disabled = d.platforms.indexOf("pc") === -1;
+    if (d.platforms.indexOf("pc") === -1) $("p-pc").title = "Цены для ПК пока не собраны";
+    try { $("upd").textContent = "Цены от " + new Date(d.updated).toLocaleString("ru-RU", { dateStyle: "medium", timeStyle: "short", timeZone: "Asia/Novosibirsk" }); } catch (e) {}
+    $("note").textContent = "«Самый дешёвый» — минимум монет, обычно это много карт низкого рейтинга. «Оптимальный» — золотая середина: к цене каждой карты добавляется 300 монет за потраченное время, поэтому карт заметно меньше, а переплата умеренная. «Самый быстрый» — минимум карт: берутся карты, у которых цена за кристалл не больше чем в 1,5 раза выше самой выгодной, и среди них подбирается самая дешёвая сборка. Цена берётся по самой дешёвой карте на рынке; при массовой покупке реальная цена будет выше. Источник данных: " + (d.source || "—") + ".";
+    render();
+  }).catch(function () { $("empty").hidden = false; $("empty").textContent = "Не удалось загрузить data.json."; });
+
+  $("p-console").onclick = function () { setPlatform("console"); };
+  $("p-pc").onclick = function () { if (!this.disabled) setPlatform("pc"); };
+  $("q").oninput = render;
+  $("sort").onchange = render;
+  $("grid").onclick = function (e) {
+    var t = e.target, id = t && t.getAttribute && t.getAttribute("data-id");
+    if (!id) return;
+    var m = t.getAttribute("data-mode");
+    if (m) state.mode[id] = m; else state.expanded[id] = !state.expanded[id];
+    render();
+  };
+</script>
