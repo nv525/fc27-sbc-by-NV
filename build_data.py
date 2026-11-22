@@ -28,8 +28,16 @@ def scaled(build, ratio):
     return dict(build, lines=lines, cost=sum(l["price"] * l["qty"] for l in lines), estimate=True)
 
 
+def round50(build):
+    """Округляет цену каждой карты до 50 монет и пересчитывает итог."""
+    if not build:
+        return None
+    lines = [dict(l, price=max(50, int(l["price"] / 50 + 0.5) * 50)) for l in build["lines"]]
+    return dict(build, lines=lines, cost=sum(l["price"] * l["qty"] for l in lines))
+
+
 for s in raw["sbcs"]:
-    item = {k: s.get(k) for k in ("id", "name", "score", "min_rating", "url", "image", "expires", "notes")}
+    item ={k: s.get(k) for k in ("id", "name", "score", "min_rating", "url", "image", "expires", "notes")}
     item["builds"] = {}
     for key in out["platforms"]:
         cards, mr = raw["platforms"][key]["cards"], s.get("min_rating") or 0
@@ -46,6 +54,9 @@ for s in raw["sbcs"]:
             item["builds"]["pc"] = {m: scaled(b, r) for m, b in base.items()}
         else:
             item["builds"]["pc"] = None
+    for per_platform in item["builds"].values():
+        for key, b in (per_platform or {}).items():
+            per_platform[key] = round50(b)
     out["sbcs"].append(item)
 
 if "pc" not in out["platforms"] and any(s["builds"].get("pc") for s in out["sbcs"]):
