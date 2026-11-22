@@ -85,15 +85,18 @@ def read_sbc(page, sbc_id, slug):
     title = soup.title.get_text() if soup.title else slug
     name = re.sub(r"\s*-\s*SBC\s*\|.*$", "", title).strip()
     mr = re.search(r"OVR Min:\s*(\d+)", text)
-    req = re.search(r"Requirements\s*(.*?)\s*Cheapest combinations", text, re.S)
-    notes = []
-    if req:
-        notes = [l for l in req.group(1).split("\n") if l and not l.startswith("OVR Min")]
+    # дополнительные условия вида «Players from the same Club Min: 2» (строго по шаблону, без мусора)
+    notes = [l for l in text.split("\n")
+             if re.fullmatch(r"[A-Za-z' ]{3,40}(?:Min|Max):\s*\d+", l) and not l.startswith("OVR")]
+    # два числа перед «Rewards»: цена SBC на консоли и на ПК по данным сайта
+    tot = re.search(r"([\d,]{3,})\s+([\d,]{3,})\s+Rewards", text)
     ex = re.search(r"Expires In\s*\n?(.+)", text)
     return {
         "id": sbc_id, "name": name, "score": NUM(m.group(1)),
         "min_rating": int(mr.group(1)) if mr else 0,
         "notes": notes, "expires": ex.group(1).strip() if ex else None,
+        "console_total": NUM(tot.group(1)) if tot else None,
+        "pc_total": NUM(tot.group(2)) if tot else None,
         "url": url, "image": f"{BASE}/image-generator/sbc/{sbc_id}.png",
     }
 
