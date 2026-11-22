@@ -92,7 +92,7 @@
   .mode { display: flex; border: 1px solid var(--line); border-radius: 9px; padding: 2px; background: var(--bg); }
   .mode button {
     flex: 1; font: 700 0.78rem var(--font-ui); color: var(--muted); background: none; border: 0;
-    padding: 6px 4px; border-radius: 7px; cursor: pointer; min-width: 0; font-size: 0.74rem;
+    padding: 6px 4px; border-radius: 7px; cursor: pointer; min-width: 0; font-size: 0.74rem; line-height: 1.2; text-align: center;
   }
   .mode button[aria-pressed="true"] { background: var(--surface); color: var(--fg); box-shadow: 0 0 0 1px var(--crystal); }
   .diff { margin: 0; color: var(--muted); font-size: 0.8rem; }
@@ -113,11 +113,11 @@
     </div>
     <input id="q" type="search" placeholder="Найти SBC" aria-label="Найти SBC">
     <select id="sort" aria-label="Сортировка">
+      <option value="new">Сначала новые</option>
       <option value="score-asc">Меньше кристаллов</option>
       <option value="score-desc">Больше кристаллов</option>
       <option value="cost-asc">Дешевле в монетах</option>
       <option value="cost-desc">Дороже в монетах</option>
-      <option value="name">По названию</option>
     </select>
     <span class="upd" id="upd"></span>
   </div>
@@ -159,18 +159,19 @@
     var img =s.image ? '<img src="' + esc(s.image) + '" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),{className:\'ph\',textContent:\'' + esc(s.name.charAt(0)).replace(/'/g, "") + '\'}))">' : '<span class="ph">' + esc(s.name.charAt(0)) + '</span>';
     var chips = '';
     if (s.min_rating && s.min_rating > 45) chips += '<span class="chip">карты от ' + s.min_rating + '</span>';
-    (s.notes || []).forEach(function (n) { chips += '<span class="chip warn">' + esc(n) + '</span>'; });
+    (s.notes || []).filter(function (n) { return n.length <= 40; }).forEach(function (n) { chips += '<span class="chip warn">' + esc(n) + '</span>'; });
     var build;
     if (!b) {
       build = '<p class="none">Для этой платформы нет цен или нет подходящих карт.</p>';
     } else {
       var open = state.expanded[s.id], lines = b.lines, shown = open ? lines : lines.slice(0, 3);
       var diff = '';
+      if (b.estimate) diff = '<p class="diff">Оценка: цены ПК пересчитаны по цене этого SBC на ПК и консоли.</p>';
       if (mode !== "cheap" && pb.cheap) {
         var dc = b.cost - pb.cheap.cost, dn = pb.cheap.players - b.players;
-        if (dn > 0) diff = '<p class="diff">На ' + nf.format(dn) + ' ' + plural(dn, "карту", "карты", "карт") + ' меньше, чем в дешёвой сборке, но на ' + nf.format(dc) + ' монет дороже.</p>';
+        if (dn > 0) diff += '<p class="diff">На ' + nf.format(dn) + ' ' + plural(dn, "карту", "карты", "карт") + ' меньше, чем в дешёвой сборке, но на ' + nf.format(dc) + ' монет дороже.</p>';
       }
-      build = '<div class="cost"><b>' + nf.format(b.cost) + ' монет</b><span>' + b.players + ' ' + plural(b.players, "карта", "карты", "карт") + (b.surplus ? ', запас ' + nf.format(b.surplus) : '') + '</span></div>' + diff +
+      build = '<div class="cost"><b>' + (b.estimate ? '≈ ' : '') + nf.format(b.cost) + ' монет</b><span>' + b.players + ' ' + plural(b.players, "карта", "карты", "карт") + (b.surplus ? ', запас ' + nf.format(b.surplus) : '') + '</span></div>' + diff +
         '<ul class="lines">' + shown.map(function (l) {
           return '<li><span><span class="q">' + nf.format(l.qty) + ' ×</span> ' + l.rating + ' ' + esc(RARITY[l.rarity] || l.rarity) + '</span><span class="p">по ' + nf.format(l.price) + '</span></li>';
         }).join('') + '</ul>' +
@@ -196,7 +197,7 @@
       if (sort === "score-desc") return b.score - a.score;
       if (sort === "cost-asc") return cost(a) - cost(b);
       if (sort === "cost-desc") return (cost(b) === Infinity ? -1 : cost(b)) - (cost(a) === Infinity ? -1 : cost(a));
-      return a.name.localeCompare(b.name, "ru");
+      return (b.id || 0) - (a.id || 0);
     });
     $("grid").innerHTML = list.map(cardHtml).join('');
     $("empty").hidden = list.length > 0;
@@ -214,7 +215,7 @@
     $("p-pc").disabled = d.platforms.indexOf("pc") === -1;
     if (d.platforms.indexOf("pc") === -1) $("p-pc").title = "Цены для ПК пока не собраны";
     try { $("upd").textContent = "Цены от " + new Date(d.updated).toLocaleString("ru-RU", { dateStyle: "medium", timeStyle: "short", timeZone: "Asia/Novosibirsk" }); } catch (e) {}
-    $("note").textContent = "«Самый дешёвый» — минимум монет, обычно это много карт низкого рейтинга. «Оптимальный» — золотая середина: к цене каждой карты добавляется 300 монет за потраченное время, поэтому карт заметно меньше, а переплата умеренная. «Самый быстрый» — минимум карт: берутся карты, у которых цена за кристалл не больше чем в 1,5 раза выше самой выгодной, и среди них подбирается самая дешёвая сборка. Цена берётся по самой дешёвой карте на рынке; при массовой покупке реальная цена будет выше. Источник данных: " + (d.source || "—") + ".";
+    $("note").textContent = "«Самый дешёвый» — минимум монет, обычно это много карт низкого рейтинга. «Оптимальный» — золотая середина: к цене каждой карты добавляется 300 монет за потраченное время, поэтому карт заметно меньше, а переплата умеренная. «Самый быстрый» — минимум карт: берутся карты, у которых цена за кристалл не больше чем в 1,5 раза выше самой выгодной, и среди них подбирается самая дешёвая сборка. Цена берётся по самой дешёвой карте на рынке; при массовой покупке реальная цена будет выше. " + ((d.estimates || []).indexOf("pc") !== -1 ? " Цены для ПК приблизительные: они пересчитаны по соотношению цены SBC на ПК и консоли." : "") + " Источник данных: " + (d.source || "—") + ".";
     render();
   }).catch(function () { $("empty").hidden = false; $("empty").textContent = "Не удалось загрузить data.json."; });
 
