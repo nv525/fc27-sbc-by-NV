@@ -1,4 +1,10 @@
-"""raw.json (то, что собрал scrape.py) -> docs/data.json со сборками для каждого SBC."""
+"""raw.json (то, что собрал scrape.py) -> docs/data.json со сборками для каждого SBC.
+
+Цены для ПК: если сборщик не смог получить таблицу цен для ПК, но у SBC есть
+две цены на странице futmind (консоль и ПК), сборка для ПК считается по
+консольной с поправочным коэффициентом (цена ПК / цена консоли этого SBC).
+Такие сборки помечаются estimate=True, и на странице показываются как оценка.
+"""
 import json
 import sys
 from pathlib import Path
@@ -8,10 +14,19 @@ from solver import solve
 root = Path(__file__).parent
 raw = json.loads((root / "raw.json").read_text(encoding="utf-8"))
 
-out = {"updated": raw["updated"], "source": raw.get("source", ""), "platforms": [], "sbcs": []}
+out = {"updated": raw["updated"], "source": raw.get("source", ""), "platforms": [], "estimates": [], "sbcs": []}
 for key, block in raw["platforms"].items():
     if block and block.get("cards"):
         out["platforms"].append(key)
+
+
+def scaled(build, ratio):
+    """Копия сборки с ценами, умноженными на ratio."""
+    if not build:
+        return None
+    lines = [dict(l, price=round(l["price"] * ratio)) for l in build["lines"]]
+    return dict(build, lines=lines, cost=sum(l["price"] * l["qty"] for l in lines), estimate=True)
+
 
 for s in raw["sbcs"]:
     item = {k: s.get(k) for k in ("id", "name", "score", "min_rating", "url", "image", "expires", "notes")}
@@ -23,8 +38,20 @@ for s in raw["sbcs"]:
             "optimal": solve(cards, s["score"], mr, "optimal"),
             "fast": solve(cards, s["score"], mr, "fast"),
         }
+    if "pc" not in out["platforms"] and "console" in out["platforms"]:
+        con, pc = s.get("console_total"), s.get("pc_total")
+        base = item["builds"]["console"]
+        if con and pc:
+            r = pc / con
+            item["builds"]["pc"] = {m: scaled(b, r) for m, b in base.items()}
+        else:
+            item["builds"]["pc"] = None
     out["sbcs"].append(item)
+
+if "pc" not in out["platforms"] and any(s["builds"].get("pc") for s in out["sbcs"]):
+    out["platforms"].append("pc")
+    out["estimates"].append("pc")
 
 (root / "docs").mkdir(exist_ok=True)
 (root / "docs" / "data.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
-print(f"SBC: {len(out['sbcs'])}, платформы: {out['platforms']}", file=sys.stderr)
+print(f"SBC: {len(out['sbcs'])}, платформы: {out['platforms']}, оценки: {out['estimates']}", file=sys.stderr)
