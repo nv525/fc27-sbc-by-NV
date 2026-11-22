@@ -7,13 +7,19 @@
     {
      "rating": 84,
      "rarity": "Common",
-     "price": 800,
+     "price": 900,
      "score": 830
+    },
+    {
+     "rating": 88,
+     "rarity": "Common",
+     "price": 10000,
+     "score": 8300
     },
     {
      "rating": 86,
      "rarity": "Common",
-     "price": 4500,
+     "price": 5200,
      "score": 4100
     },
     {
@@ -25,14 +31,14 @@
     {
      "rating": 87,
      "rarity": "Common",
-     "price": 7300,
+     "price": 7200,
      "score": 5500
     },
     {
-     "rating": 88,
-     "rarity": "Common",
-     "price": 12500,
-     "score": 8300
+     "rating": 86,
+     "rarity": "Ultimate Scream",
+     "price": 13750,
+     "score": 9225
     },
     {
      "rating": 83,
@@ -42,27 +48,27 @@
     },
     {
      "rating": 87,
-     "rarity": "Future Stars",
-     "price": 13750,
-     "score": 8250
-    },
-    {
-     "rating": 86,
-     "rarity": "Ultimate Scream",
-     "price": 16000,
-     "score": 9225
+     "rarity": "Destined for Glory",
+     "price": 11750,
+     "score": 6875
     },
     {
      "rating": 89,
      "rarity": "Common",
-     "price": 19750,
+     "price": 19250,
      "score": 11000
     },
     {
      "rating": 87,
+     "rarity": "Future Stars",
+     "price": 14500,
+     "score": 8250
+    },
+    {
+     "rating": 86,
      "rarity": "Destined for Glory",
-     "price": 12500,
-     "score": 6875
+     "price": 14500,
+     "score": 7688
     },
     {
      "rating": 86,
@@ -77,28 +83,22 @@
      "score": 340
     },
     {
-     "rating": 86,
-     "rarity": "Destined for Glory",
-     "price": 14750,
-     "score": 7688
+     "rating": 87,
+     "rarity": "Future Stars",
+     "price": 24500,
+     "score": 12375
     },
     {
      "rating": 87,
-     "rarity": "Future Stars",
-     "price": 24750,
-     "score": 12375
+     "rarity": "Destined for Glory",
+     "price": 20750,
+     "score": 10313
     },
     {
      "rating": 90,
      "rarity": "Common",
-     "price": 28750,
+     "price": 28500,
      "score": 14000
-    },
-    {
-     "rating": 87,
-     "rarity": "Destined for Glory",
-     "price": 21500,
-     "score": 10313
     },
     {
      "rating": 88,
@@ -121,31 +121,31 @@
     {
      "rating": 91,
      "rarity": "Common",
-     "price": 47000,
+     "price": 48000,
      "score": 19000
     },
     {
      "rating": 89,
      "rarity": "Base Hero",
-     "price": 34500,
+     "price": 35500,
      "score": 13750
     },
     {
      "rating": 91,
      "rarity": "Team of the Week",
-     "price": 65500,
+     "price": 65000,
      "score": 23750
     },
     {
      "rating": 85,
-     "rarity": "Future Stars",
-     "price": 13750,
+     "rarity": "Ultimate Scream",
+     "price": 13500,
      "score": 4725
     },
     {
      "rating": 88,
      "rarity": "Destined for Glory",
-     "price": 51000,
+     "price": 48750,
      "score": 15563
     },
     {
@@ -169,19 +169,13 @@
     {
      "rating": 88,
      "rarity": "Future Stars",
-     "price": 46000,
+     "price": 48500,
      "score": 12450
-    },
-    {
-     "rating": 91,
-     "rarity": "Team of the Week",
-     "price": 140000,
-     "score": 35625
     },
     {
      "rating": 89,
      "rarity": "Base Hero",
-     "price": 83500,
+     "price": 81000,
      "score": 20625
     },
     {
@@ -191,16 +185,22 @@
      "score": 160
     },
     {
-     "rating": 85,
-     "rarity": "Destined for Glory",
-     "price": 11500,
-     "score": 2625
+     "rating": 91,
+     "rarity": "Team of the Week",
+     "price": 147000,
+     "score": 35625
     },
     {
      "rating": 88,
      "rarity": "Thunderstruck",
-     "price": 82000,
+     "price": 80000,
      "score": 18675
+    },
+    {
+     "rating": 85,
+     "rarity": "Destined for Glory",
+     "price": 11500,
+     "score": 2625
     },
     {
      "rating": 78,
@@ -211,13 +211,13 @@
     {
      "rating": 92,
      "rarity": "Base Icon",
-     "price": 213000,
+     "price": 217000,
      "score": 45000
     },
     {
      "rating": 90,
      "rarity": "Team of the Week",
-     "price": 93500,
+     "price": 90000,
      "score": 17500
     },
     {
@@ -229,7 +229,7 @@
     {
      "rating": 92,
      "rarity": "Base Icon",
-     "price": 171000,
+     "price": 170000,
      "score": 30000
     },
     {
@@ -241,7 +241,7 @@
     {
      "rating": 89,
      "rarity": "Base Icon",
-     "price": 149000,
+     "price": 150000,
      "score": 24750
     },
     {
@@ -251,9 +251,15 @@
      "score": 100
     },
     {
+     "rating": 90,
+     "rarity": "Thunderstruck",
+     "price": 219000,
+     "score": 31500
+    },
+    {
      "rating": 89,
      "rarity": "Thunderstruck",
-     "price": 118000,
+     "price": 119000,
      "score": 16500
     },
     {
@@ -263,37 +269,25 @@
      "score": 90
     },
     {
-     "rating": 90,
-     "rarity": "Thunderstruck",
-     "price": 228000,
-     "score": 31500
-    },
-    {
      "rating": 91,
      "rarity": "Base Icon",
-     "price": 335000,
+     "price": 334000,
      "score": 42750
     },
     {
      "rating": 90,
      "rarity": "Team of the Week",
-     "price": 230000,
+     "price": 227000,
      "score": 26250
     },
     {
      "rating": 90,
      "rarity": "Thunderstruck",
-     "price": 190000,
+     "price": 183000,
      "score": 21000
     },
     {
-     "rating": 91,
-     "rarity": "Base Icon",
-     "price": 280000,
-     "score": 28500
-    },
-    {
-     "rating": 62,
+     "rating": 64,
      "rarity": "Common",
      "price": 200,
      "score": 20
@@ -301,8 +295,20 @@
     {
      "rating": 84,
      "rarity": "Team of the Week",
-     "price": 16000,
+     "price": 16750,
      "score": 1556
+    },
+    {
+     "rating": 91,
+     "rarity": "Base Icon",
+     "price": 308000,
+     "score": 28500
+    },
+    {
+     "rating": 92,
+     "rarity": "Team of the Week",
+     "price": 307000,
+     "score": 25000
     },
     {
      "rating": 89,
@@ -311,16 +317,16 @@
      "score": 28875
     },
     {
-     "rating": 92,
-     "rarity": "Team of the Week",
-     "price": 311000,
-     "score": 25000
-    },
-    {
      "rating": 89,
      "rarity": "Ultimate Scream Hero",
-     "price": 254000,
+     "price": 255000,
      "score": 19250
+    },
+    {
+     "rating": 91,
+     "rarity": "Thunderstruck ICON",
+     "price": 830000,
+     "score": 57000
     },
     {
      "rating": 84,
@@ -329,52 +335,52 @@
      "score": 1038
     },
     {
-     "rating": 91,
-     "rarity": "Thunderstruck ICON",
-     "price": 875000,
-     "score": 57000
-    },
-    {
      "rating": 92,
      "rarity": "Team of the Week",
-     "price": 610000,
+     "price": 572000,
      "score": 37500
     },
     {
      "rating": 91,
      "rarity": "Thunderstruck ICON",
-     "price": 681000,
+     "price": 685000,
      "score": 38000
     },
     {
      "rating": 83,
      "rarity": "Team of the Week",
-     "price": 16000,
+     "price": 15750,
      "score": 769
     },
     {
      "rating": 92,
      "rarity": "Thunderstruck ICON",
-     "price": 1269000,
+     "price": 1270000,
      "score": 60000
     },
     {
      "rating": 82,
      "rarity": "Team of the Week",
-     "price": 16000,
+     "price": 16250,
      "score": 638
     },
     {
      "rating": 92,
      "rarity": "Thunderstruck ICON",
-     "price": 1120000,
+     "price": 1115000,
      "score": 40000
     },
     {
      "rating": 81,
      "rarity": "Team of the Week",
-     "price": 16000,
+     "price": 15750,
      "score": 525
+    },
+    {
+     "rating": 87,
+     "rarity": "Ultimate Scream Hero",
+     "price": 435000,
+     "score": 14438
     },
     {
      "rating": 83,
@@ -383,15 +389,9 @@
      "score": 513
     },
     {
-     "rating": 87,
-     "rarity": "Ultimate Scream Hero",
-     "price": 445000,
-     "score": 14438
-    },
-    {
      "rating": 93,
      "rarity": "Base Icon",
-     "price": 1830000,
+     "price": 1825000,
      "score": 56250
     },
     {
@@ -403,7 +403,7 @@
     {
      "rating": 87,
      "rarity": "Ultimate Scream Hero",
-     "price": 359000,
+     "price": 365000,
      "score": 9625
     },
     {
@@ -425,16 +425,16 @@
      "score": 67500
     },
     {
-     "rating": 95,
-     "rarity": "Base Icon",
-     "price": 5999000,
-     "score": 90000
-    },
-    {
      "rating": 80,
      "rarity": "Team of the Week",
-     "price": 15000,
+     "price": 15500,
      "score": 225
+    },
+    {
+     "rating": 95,
+     "rarity": "Base Icon",
+     "price": 6999000,
+     "score": 90000
     },
     {
      "rating": 90,
@@ -445,13 +445,13 @@
     {
      "rating": 88,
      "rarity": "Ultimate Scream Hero",
-     "price": 1619000,
+     "price": 1598000,
      "score": 14525
     },
     {
      "rating": 90,
      "rarity": "Ultimate Scream Hero",
-     "price": 2820000,
+     "price": 2840000,
      "score": 24500
     },
     {
@@ -471,7 +471,9 @@
    "score": 1000,
    "min_rating": 0,
    "notes": [],
-   "expires": "3193 Days 2 Hours",
+   "expires": "3192 Days 23 Hours",
+   "console_total": 8000,
+   "pc_total": 8250,
    "url": "https://futmind.com/squad-building-challenges/7/intro-to-streamlined-sbcs",
    "image": "https://futmind.com/image-generator/sbc/7.png"
   },
@@ -480,10 +482,10 @@
    "name": "Bronze and Silver Re-roll",
    "score": 500,
    "min_rating": 0,
-   "notes": [
-    "OVR Max: 74"
-   ],
+   "notes": [],
    "expires": "3192 Days 23 Hours",
+   "console_total": 3700,
+   "pc_total": 5000,
    "url": "https://futmind.com/squad-building-challenges/8/bronze-and-silver-re-roll",
    "image": "https://futmind.com/image-generator/sbc/8.png"
   },
@@ -492,10 +494,10 @@
    "name": "Gold Re-Roll",
    "score": 1250,
    "min_rating": 0,
-   "notes": [
-    "OVR Max: 83"
-   ],
-   "expires": "3193 Days 0 Hours",
+   "notes": [],
+   "expires": "3192 Days 23 Hours",
+   "console_total": 2300,
+   "pc_total": 2300,
    "url": "https://futmind.com/squad-building-challenges/9/gold-re-roll",
    "image": "https://futmind.com/image-generator/sbc/9.png"
   },
@@ -505,7 +507,9 @@
    "score": 4000,
    "min_rating": 45,
    "notes": [],
-   "expires": "3204 Days 0 Hours",
+   "expires": "3203 Days 23 Hours",
+   "console_total": null,
+   "pc_total": null,
    "url": "https://futmind.com/squad-building-challenges/20/intro-to-player-sbcs",
    "image": "https://futmind.com/image-generator/sbc/20.png"
   },
@@ -515,7 +519,9 @@
    "score": 5000,
    "min_rating": 45,
    "notes": [],
-   "expires": "14 Days 3 Hours",
+   "expires": "14 Days 1 Hours",
+   "console_total": 5500,
+   "pc_total": 6100,
    "url": "https://futmind.com/squad-building-challenges/91/bundesliga-and-google-pixel-frauen-bundesliga",
    "image": "https://futmind.com/image-generator/sbc/91.png"
   },
@@ -525,7 +531,9 @@
    "score": 5000,
    "min_rating": 45,
    "notes": [],
-   "expires": "14 Days 1 Hours",
+   "expires": "14 Days 0 Hours",
+   "console_total": 5800,
+   "pc_total": 6100,
    "url": "https://futmind.com/squad-building-challenges/92/ligue-1-and-arkema-premiere-ligue",
    "image": "https://futmind.com/image-generator/sbc/92.png"
   },
@@ -536,6 +544,8 @@
    "min_rating": 45,
    "notes": [],
    "expires": "14 Days 0 Hours",
+   "console_total": 10400,
+   "pc_total": 10500,
    "url": "https://futmind.com/squad-building-challenges/93/premier-league-and-barclays-wsl",
    "image": "https://futmind.com/image-generator/sbc/93.png"
   },
@@ -545,7 +555,9 @@
    "score": 6000,
    "min_rating": 45,
    "notes": [],
-   "expires": "14 Days 1 Hours",
+   "expires": "14 Days 0 Hours",
+   "console_total": 7200,
+   "pc_total": 7600,
    "url": "https://futmind.com/squad-building-challenges/94/laliga-and-liga-f",
    "image": "https://futmind.com/image-generator/sbc/94.png"
   },
@@ -555,7 +567,9 @@
    "score": 3000,
    "min_rating": 45,
    "notes": [],
-   "expires": "14 Days 1 Hours",
+   "expires": "14 Days 2 Hours",
+   "console_total": 3400,
+   "pc_total": 3800,
    "url": "https://futmind.com/squad-building-challenges/99/serie-a-and-roshn-saudi-league",
    "image": "https://futmind.com/image-generator/sbc/99.png"
   },
@@ -565,7 +579,9 @@
    "score": 3000,
    "min_rating": 45,
    "notes": [],
-   "expires": "14 Days 1 Hours",
+   "expires": "14 Days 0 Hours",
+   "console_total": 3400,
+   "pc_total": 3800,
    "url": "https://futmind.com/squad-building-challenges/100/mls-and-nwsl",
    "image": "https://futmind.com/image-generator/sbc/100.png"
   },
@@ -574,13 +590,10 @@
    "name": "Liga F POTM October",
    "score": 14000,
    "min_rating": 45,
-   "notes": [
-    ", and Ainhoa Marín Player Review",
-    "The  Liga F POTM October SBC  has officially landed in FC 27 Ultimate Team, giving players a fantastic opportu...",
-    "Read more",
-    "Requirements"
-   ],
-   "expires": "36 Days 0 Hours",
+   "notes": [],
+   "expires": "35 Days 23 Hours",
+   "console_total": 15300,
+   "pc_total": 16050,
    "url": "https://futmind.com/squad-building-challenges/121/liga-f-potm-october",
    "image": "https://futmind.com/image-generator/sbc/121.png"
   },
@@ -589,13 +602,10 @@
    "name": "LALIGA POTM October",
    "score": 5200000,
    "min_rating": 45,
-   "notes": [
-    ", Cost, and Kylian Mbappé Player Review",
-    "The brand-new  LALIGA POTM October  Squad Building Challenge has officially landed in FC 27 Ultimate Team, giv...",
-    "Read more",
-    "Requirements"
-   ],
-   "expires": "15 Days 3 Hours",
+   "notes": [],
+   "expires": "15 Days 0 Hours",
+   "console_total": 5952200,
+   "pc_total": 5942950,
    "url": "https://futmind.com/squad-building-challenges/128/laliga-potm-october",
    "image": "https://futmind.com/image-generator/sbc/128.png"
   },
@@ -604,13 +614,10 @@
    "name": "Arnaut Danjuma",
    "score": 50000,
    "min_rating": 45,
-   "notes": [
-    ", Score System & Analysis",
-    "Welcome to the ultimate guide for the newly released  Arnaut Danjuma  FC Heritage Squad Building Challenge in ...",
-    "Read more",
-    "Requirements"
-   ],
-   "expires": "1 Days 19 Hours",
+   "notes": [],
+   "expires": "21 Min",
+   "console_total": 54650,
+   "pc_total": 57200,
    "url": "https://futmind.com/squad-building-challenges/147/arnaut-danjuma",
    "image": "https://futmind.com/image-generator/sbc/147.png"
   },
@@ -620,7 +627,9 @@
    "score": 17000,
    "min_rating": 45,
    "notes": [],
-   "expires": "18 Days 19 Hours",
+   "expires": "18 Days 18 Hours",
+   "console_total": 18700,
+   "pc_total": 19500,
    "url": "https://futmind.com/squad-building-challenges/148/premier-league-potm-october",
    "image": "https://futmind.com/image-generator/sbc/148.png"
   },
@@ -629,13 +638,10 @@
    "name": "Federico Chiesa",
    "score": 150000,
    "min_rating": 45,
-   "notes": [
-    "& Score Analysis",
-    "Welcome to the ultimate guide for the newly released score-based Squad Building Challenge in FC 27 Ultimate Te...",
-    "Read more",
-    "Requirements"
-   ],
+   "notes": [],
    "expires": "4 Days 0 Hours",
+   "console_total": 162900,
+   "pc_total": 171500,
    "url": "https://futmind.com/squad-building-challenges/150/federico-chiesa",
    "image": "https://futmind.com/image-generator/sbc/150.png"
   },
@@ -644,13 +650,10 @@
    "name": "Serie A POTM October",
    "score": 23000,
    "min_rating": 45,
-   "notes": [
-    ", Solutions, and Giacomo Calò Player Review",
-    "EA Sports has officially launched the  Serie A POTM October  in FC 27 Ultimate Team, highlighting the standout...",
-    "Read more",
-    "Requirements"
-   ],
-   "expires": "17 Days 20 Hours",
+   "notes": [],
+   "expires": "17 Days 19 Hours",
+   "console_total": 25200,
+   "pc_total": 26300,
    "url": "https://futmind.com/squad-building-challenges/152/serie-a-potm-october",
    "image": "https://futmind.com/image-generator/sbc/152.png"
   },
@@ -659,13 +662,10 @@
    "name": "Bundesliga POTM October",
    "score": 12000,
    "min_rating": 45,
-   "notes": [
-    "& Solution",
-    "Welcome to the ultimate guide for the newly released  Bundesliga POTM October  in FC 27 Ultimate Team. EA Spor...",
-    "Read more",
-    "Requirements"
-   ],
-   "expires": "17 Days 22 Hours",
+   "notes": [],
+   "expires": "17 Days 21 Hours",
+   "console_total": 13300,
+   "pc_total": 13750,
    "url": "https://futmind.com/squad-building-challenges/154/bundesliga-potm-october",
    "image": "https://futmind.com/image-generator/sbc/154.png"
   },
@@ -674,13 +674,10 @@
    "name": "Alessandro Florenzi",
    "score": 380000,
    "min_rating": 45,
-   "notes": [
-    ", and Score Guide",
-    "Welcome to the ultimate guide for the newly released score-based  Alessandro Florenzi  Squad Building Challeng...",
-    "Read more",
-    "Requirements"
-   ],
-   "expires": "12 Days 1 Hours",
+   "notes": [],
+   "expires": "12 Days 0 Hours",
+   "console_total": 412200,
+   "pc_total": 434300,
    "url": "https://futmind.com/squad-building-challenges/155/alessandro-florenzi",
    "image": "https://futmind.com/image-generator/sbc/155.png"
   },
@@ -689,12 +686,10 @@
    "name": "Base Icon Matchday Player Pick",
    "score": 300000,
    "min_rating": 45,
-   "notes": [
-    "Welcome to the ultimate guide for the newly released  Base Icon Matchday Player Pick  in FC 27 Ultimate Team. ...",
-    "Read more",
-    "Requirements"
-   ],
-   "expires": "9 Days 1 Hours",
+   "notes": [],
+   "expires": "9 Days 0 Hours",
+   "console_total": null,
+   "pc_total": null,
    "url": "https://futmind.com/squad-building-challenges/159/base-icon-matchday-player-pick",
    "image": "https://futmind.com/image-generator/sbc/159.png"
   },
@@ -703,12 +698,10 @@
    "name": "2x 84+ Upgrade",
    "score": 9000,
    "min_rating": 45,
-   "notes": [
-    "Welcome to the latest Ultimate Team squad building update! EA Sports has dropped an exciting new score-based S...",
-    "Read more",
-    "Requirements"
-   ],
-   "expires": "16 Days 1 Hours",
+   "notes": [],
+   "expires": "16 Days 0 Hours",
+   "console_total": 9900,
+   "pc_total": 10450,
    "url": "https://futmind.com/squad-building-challenges/161/2x-84+-upgrade",
    "image": "https://futmind.com/image-generator/sbc/161.png"
   },
@@ -717,13 +710,10 @@
    "name": "3 of 10 80+ Gold Player Pick",
    "score": 6000,
    "min_rating": 45,
-   "notes": [
-    ", Score System & Solution",
-    "Welcome to the latest FC 27 Ultimate Team Squad Building Challenge guide! EA Sports has just dropped the  3 of...",
-    "Read more",
-    "Requirements"
-   ],
+   "notes": [],
    "expires": "12 Days 0 Hours",
+   "console_total": null,
+   "pc_total": null,
    "url": "https://futmind.com/squad-building-challenges/164/3-of-10-80+-gold-player-pick",
    "image": "https://futmind.com/image-generator/sbc/164.png"
   },
@@ -732,12 +722,10 @@
    "name": "Moussa Diaby",
    "score": 42000,
    "min_rating": 45,
-   "notes": [
-    "Welcome to the ultimate guide for the newly released  Moussa Diaby  Squad Building Challenge in FC 27 Ultimate...",
-    "Read more",
-    "Requirements"
-   ],
+   "notes": [],
    "expires": "5 Days 0 Hours",
+   "console_total": 43350,
+   "pc_total": 48000,
    "url": "https://futmind.com/squad-building-challenges/168/moussa-diaby",
    "image": "https://futmind.com/image-generator/sbc/168.png"
   },
@@ -746,13 +734,10 @@
    "name": "Dunga",
    "score": 420000,
    "min_rating": 45,
-   "notes": [
-    ", Solutions, and Cost",
-    "Welcome to our comprehensive guide for the newly released Thunderstruck Icon  Dunga SBC  in FC 27 Ultimate Tea...",
-    "Read more",
-    "Requirements"
-   ],
-   "expires": "19 Days 1 Hours",
+   "notes": [],
+   "expires": "19 Days 0 Hours",
+   "console_total": 430300,
+   "pc_total": 480000,
    "url": "https://futmind.com/squad-building-challenges/169/dunga",
    "image": "https://futmind.com/image-generator/sbc/169.png"
   },
@@ -761,13 +746,10 @@
    "name": "Mitchell van Bergen",
    "score": 25000,
    "min_rating": 45,
-   "notes": [
-    "& Stats",
-    "Welcome to the ultimate guide for the newly released  Mitchell van Bergen SBC  in FC 27 Ultimate Team. This sc...",
-    "Read more",
-    "Requirements"
-   ],
+   "notes": [],
    "expires": "6 Days 0 Hours",
+   "console_total": 26150,
+   "pc_total": 28600,
    "url": "https://futmind.com/squad-building-challenges/170/mitchell-van-bergen",
    "image": "https://futmind.com/image-generator/sbc/170.png"
   },
@@ -776,13 +758,10 @@
    "name": "Alphonso Davies",
    "score": 270000,
    "min_rating": 45,
-   "notes": [
-    ", Score System & Solution",
-    "Welcome to the ultimate guide for the brand new  Alphonso Davies  Squad Building Challenge in FC 27 Ultimate T...",
-    "Read more",
-    "Requirements"
-   ],
-   "expires": "20 Days 1 Hours",
+   "notes": [],
+   "expires": "20 Days 0 Hours",
+   "console_total": 276900,
+   "pc_total": 308600,
    "url": "https://futmind.com/squad-building-challenges/171/alphonso-davies",
    "image": "https://futmind.com/image-generator/sbc/171.png"
   },
@@ -791,13 +770,10 @@
    "name": "Max. 88 Base Icon Upgrade",
    "score": 200000,
    "min_rating": 45,
-   "notes": [
-    ", Score System & Cheap Solutions",
-    "EA Sports has dropped an exciting new squad building challenge in FC 27 Ultimate Team: the  Max. 88 Base Icon ...",
-    "Read more",
-    "Requirements"
-   ],
-   "expires": "1 Days 1 Hours",
+   "notes": [],
+   "expires": "1 Days 0 Hours",
+   "console_total": 216900,
+   "pc_total": 228650,
    "url": "https://futmind.com/squad-building-challenges/185/max.-88-base-icon-upgrade",
    "image": "https://futmind.com/image-generator/sbc/185.png"
   },
@@ -806,13 +782,10 @@
    "name": "Paulo Dybala",
    "score": 375000,
    "min_rating": 45,
-   "notes": [
-    "& Flashback Review",
-    "Welcome to the ultimate guide for the newly released  Paulo Dybala  Squad Building Challenge in FC 27 Ultimate...",
-    "Read more",
-    "Requirements"
-   ],
-   "expires": "19 Days 1 Hours",
+   "notes": [],
+   "expires": "19 Days 0 Hours",
+   "console_total": 384200,
+   "pc_total": 428600,
    "url": "https://futmind.com/squad-building-challenges/189/paulo-dybala",
    "image": "https://futmind.com/image-generator/sbc/189.png"
   },
@@ -821,13 +794,10 @@
    "name": "Base Hero Upgrade",
    "score": 60000,
    "min_rating": 45,
-   "notes": [
-    ", Solutions, and Cost for FC 27",
-    "Welcome to the latest addition in FC 27 Ultimate Team! EA Sports has just dropped the  Base Hero Upgrade  Squa...",
-    "Read more",
-    "Requirements"
-   ],
-   "expires": "5 Days 1 Hours",
+   "notes": [],
+   "expires": "5 Days 0 Hours",
+   "console_total": 61850,
+   "pc_total": 68600,
    "url": "https://futmind.com/squad-building-challenges/190/base-hero-upgrade",
    "image": "https://futmind.com/image-generator/sbc/190.png"
   },
@@ -836,13 +806,10 @@
    "name": "Campaign Mix Upgrade",
    "score": 40000,
    "min_rating": 45,
-   "notes": [
-    ", Score System & Rewards",
-    "Welcome to the latest FC 27 Ultimate Team squad building challenge breakdown! EA Sports has just dropped an ex...",
-    "Read more",
-    "Requirements"
-   ],
-   "expires": "5 Days 1 Hours",
+   "notes": [],
+   "expires": "5 Days 0 Hours",
+   "console_total": 41450,
+   "pc_total": 45800,
    "url": "https://futmind.com/squad-building-challenges/191/campaign-mix-upgrade",
    "image": "https://futmind.com/image-generator/sbc/191.png"
   },
@@ -851,13 +818,10 @@
    "name": "1 of 3 Year in Review Player Pick",
    "score": 23000,
    "min_rating": 45,
-   "notes": [
-    ", Solutions, and Rewards",
-    "Welcome to the ultimate guide for the newly released  1 of 3 Year in Review Player Pick  SBC in FC 27 Ultimate...",
-    "Read more",
-    "Requirements"
-   ],
-   "expires": "12 Days 1 Hours",
+   "notes": [],
+   "expires": "12 Days 0 Hours",
+   "console_total": null,
+   "pc_total": null,
    "url": "https://futmind.com/squad-building-challenges/196/1-of-3-year-in-review-player-pick",
    "image": "https://futmind.com/image-generator/sbc/196.png"
   },
@@ -866,13 +830,10 @@
    "name": "82+ TOTW 1-10 Upgrade",
    "score": 15000,
    "min_rating": 45,
-   "notes": [
-    "& Rewards in FC 27",
-    "Welcome to the latest score-based Squad Building Challenge in FC 27 Ultimate Team! The  82+ TOTW 1-10 Upgrade ...",
-    "Read more",
-    "Requirements"
-   ],
-   "expires": "5 Days 1 Hours",
+   "notes": [],
+   "expires": "5 Days 2 Hours",
+   "console_total": 15800,
+   "pc_total": 17700,
    "url": "https://futmind.com/squad-building-challenges/201/82+-totw-1-10-upgrade",
    "image": "https://futmind.com/image-generator/sbc/201.png"
   }
