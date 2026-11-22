@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T22:00+00:00",
+ "updated": "2026-11-22T23:00+00:00",
  "source": "futmind.com",
  "platforms": [
   "console",
@@ -16,7 +16,7 @@
    "min_rating": 0,
    "url": "https://futmind.com/squad-building-challenges/7/intro-to-streamlined-sbcs",
    "image": "https://futmind.com/image-generator/sbc/7.png",
-   "expires": "3192 Days 21 Hours",
+   "expires": "3192 Days 19 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -26,13 +26,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 1
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 2
+        "qty": 1
        }
       ],
-      "cost": 1300,
-      "score": 1660,
-      "surplus": 660,
+      "cost": 1350,
+      "score": 1240,
+      "surplus": 240,
       "players": 2
      },
      "optimal": {
@@ -41,13 +48,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 1
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 2
+        "qty": 1
        }
       ],
-      "cost": 1300,
-      "score": 1660,
-      "surplus": 660,
+      "cost": 1350,
+      "score": 1240,
+      "surplus": 240,
       "players": 2
      },
      "fast": {
@@ -56,11 +70,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 2
        }
       ],
-      "cost": 1300,
+      "cost": 1400,
       "score": 1660,
       "surplus": 660,
       "players": 2
@@ -73,13 +87,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 1
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 2
+        "qty": 1
        }
       ],
-      "cost": 1300,
-      "score": 1660,
-      "surplus": 660,
+      "cost": 1350,
+      "score": 1240,
+      "surplus": 240,
       "players": 2,
       "estimate": true
      },
@@ -89,13 +110,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 1
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 2
+        "qty": 1
        }
       ],
-      "cost": 1300,
-      "score": 1660,
-      "surplus": 660,
+      "cost": 1350,
+      "score": 1240,
+      "surplus": 240,
       "players": 2,
       "estimate": true
      },
@@ -105,11 +133,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 2
        }
       ],
-      "cost": 1300,
+      "cost": 1400,
       "score": 1660,
       "surplus": 660,
       "players": 2,
@@ -125,7 +153,7 @@
    "min_rating": 0,
    "url": "https://futmind.com/squad-building-challenges/8/bronze-and-silver-re-roll",
    "image": "https://futmind.com/image-generator/sbc/8.png",
-   "expires": "3192 Days 19 Hours",
+   "expires": "3192 Days 18 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -135,11 +163,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 1
        }
       ],
-      "cost": 650,
+      "cost": 700,
       "score": 830,
       "surplus": 330,
       "players": 1
@@ -150,11 +178,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 1
        }
       ],
-      "cost": 650,
+      "cost": 700,
       "score": 830,
       "surplus": 330,
       "players": 1
@@ -165,11 +193,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 1
        }
       ],
-      "cost": 650,
+      "cost": 700,
       "score": 830,
       "surplus": 330,
       "players": 1
@@ -182,11 +210,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 950,
         "qty": 1
        }
       ],
-      "cost": 900,
+      "cost": 950,
       "score": 830,
       "surplus": 330,
       "players": 1,
@@ -198,11 +226,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 950,
         "qty": 1
        }
       ],
-      "cost": 900,
+      "cost": 950,
       "score": 830,
       "surplus": 330,
       "players": 1,
@@ -214,11 +242,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 950,
         "qty": 1
        }
       ],
-      "cost": 900,
+      "cost": 950,
       "score": 830,
       "surplus": 330,
       "players": 1,
@@ -234,7 +262,7 @@
    "min_rating": 0,
    "url": "https://futmind.com/squad-building-challenges/9/gold-re-roll",
    "image": "https://futmind.com/image-generator/sbc/9.png",
-   "expires": "3192 Days 19 Hours",
+   "expires": "3192 Days 18 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -244,11 +272,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 2
        }
       ],
-      "cost": 1300,
+      "cost": 1400,
       "score": 1660,
       "surplus": 410,
       "players": 2
@@ -259,11 +287,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 2
        }
       ],
-      "cost": 1300,
+      "cost": 1400,
       "score": 1660,
       "surplus": 410,
       "players": 2
@@ -274,11 +302,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 2
        }
       ],
-      "cost": 1300,
+      "cost": 1400,
       "score": 1660,
       "surplus": 410,
       "players": 2
@@ -291,11 +319,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 2
        }
       ],
-      "cost": 1300,
+      "cost": 1400,
       "score": 1660,
       "surplus": 410,
       "players": 2,
@@ -307,11 +335,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 2
        }
       ],
-      "cost": 1300,
+      "cost": 1400,
       "score": 1660,
       "surplus": 410,
       "players": 2,
@@ -323,11 +351,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 2
        }
       ],
-      "cost": 1300,
+      "cost": 1400,
       "score": 1660,
       "surplus": 410,
       "players": 2,
@@ -343,7 +371,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/20/intro-to-player-sbcs",
    "image": "https://futmind.com/image-generator/sbc/20.png",
-   "expires": "3203 Days 19 Hours",
+   "expires": "3203 Days 18 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -353,11 +381,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 5
        }
       ],
-      "cost": 3250,
+      "cost": 3500,
       "score": 4150,
       "surplus": 150,
       "players": 5
@@ -368,11 +396,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 5
        }
       ],
-      "cost": 3250,
+      "cost": 3500,
       "score": 4150,
       "surplus": 150,
       "players": 5
@@ -383,11 +411,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 5
        }
       ],
-      "cost": 3250,
+      "cost": 3500,
       "score": 4150,
       "surplus": 150,
       "players": 5
@@ -403,7 +431,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/91/bundesliga-and-google-pixel-frauen-bundesliga",
    "image": "https://futmind.com/image-generator/sbc/91.png",
-   "expires": "13 Days 22 Hours",
+   "expires": "13 Days 20 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -413,18 +441,18 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 6
        },
        {
-        "rating": 68,
+        "rating": 70,
         "rarity": "Common",
         "score": 35,
         "price": 200,
         "qty": 1
        }
       ],
-      "cost": 4100,
+      "cost": 4400,
       "score": 5015,
       "surplus": 15,
       "players": 7
@@ -435,18 +463,18 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 6
        },
        {
-        "rating": 68,
+        "rating": 70,
         "rarity": "Common",
         "score": 35,
         "price": 200,
         "qty": 1
        }
       ],
-      "cost": 4100,
+      "cost": 4400,
       "score": 5015,
       "surplus": 15,
       "players": 7
@@ -457,11 +485,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 7
        }
       ],
-      "cost": 4550,
+      "cost": 4900,
       "score": 5810,
       "surplus": 810,
       "players": 7
@@ -474,18 +502,18 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 6
        },
        {
-        "rating": 68,
+        "rating": 70,
         "rarity": "Common",
         "score": 35,
         "price": 200,
         "qty": 1
        }
       ],
-      "cost": 4100,
+      "cost": 4400,
       "score": 5015,
       "surplus": 15,
       "players": 7,
@@ -497,18 +525,18 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 6
        },
        {
-        "rating": 68,
+        "rating": 70,
         "rarity": "Common",
         "score": 35,
         "price": 200,
         "qty": 1
        }
       ],
-      "cost": 4100,
+      "cost": 4400,
       "score": 5015,
       "surplus": 15,
       "players": 7,
@@ -520,11 +548,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 7
        }
       ],
-      "cost": 4550,
+      "cost": 4900,
       "score": 5810,
       "surplus": 810,
       "players": 7,
@@ -540,7 +568,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/92/ligue-1-and-arkema-premiere-ligue",
    "image": "https://futmind.com/image-generator/sbc/92.png",
-   "expires": "13 Days 20 Hours",
+   "expires": "13 Days 19 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -550,18 +578,18 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 6
        },
        {
-        "rating": 68,
+        "rating": 70,
         "rarity": "Common",
         "score": 35,
         "price": 200,
         "qty": 1
        }
       ],
-      "cost": 4100,
+      "cost": 4400,
       "score": 5015,
       "surplus": 15,
       "players": 7
@@ -572,18 +600,18 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 6
        },
        {
-        "rating": 68,
+        "rating": 70,
         "rarity": "Common",
         "score": 35,
         "price": 200,
         "qty": 1
        }
       ],
-      "cost": 4100,
+      "cost": 4400,
       "score": 5015,
       "surplus": 15,
       "players": 7
@@ -594,11 +622,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 7
        }
       ],
-      "cost": 4550,
+      "cost": 4900,
       "score": 5810,
       "surplus": 810,
       "players": 7
@@ -611,18 +639,18 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 6
        },
        {
-        "rating": 68,
+        "rating": 70,
         "rarity": "Common",
         "score": 35,
-        "price": 200,
+        "price": 250,
         "qty": 1
        }
       ],
-      "cost": 4100,
+      "cost": 5050,
       "score": 5015,
       "surplus": 15,
       "players": 7,
@@ -634,18 +662,18 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 6
        },
        {
-        "rating": 68,
+        "rating": 70,
         "rarity": "Common",
         "score": 35,
-        "price": 200,
+        "price": 250,
         "qty": 1
        }
       ],
-      "cost": 4100,
+      "cost": 5050,
       "score": 5015,
       "surplus": 15,
       "players": 7,
@@ -657,11 +685,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 7
        }
       ],
-      "cost": 4550,
+      "cost": 5600,
       "score": 5810,
       "surplus": 810,
       "players": 7,
@@ -677,7 +705,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/93/premier-league-and-barclays-wsl",
    "image": "https://futmind.com/image-generator/sbc/93.png",
-   "expires": "13 Days 20 Hours",
+   "expires": "13 Days 19 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -687,11 +715,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 11
        }
       ],
-      "cost": 7150,
+      "cost": 7700,
       "score": 9130,
       "surplus": 130,
       "players": 11
@@ -702,11 +730,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 11
        }
       ],
-      "cost": 7150,
+      "cost": 7700,
       "score": 9130,
       "surplus": 130,
       "players": 11
@@ -717,11 +745,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 11
        }
       ],
-      "cost": 7150,
+      "cost": 7700,
       "score": 9130,
       "surplus": 130,
       "players": 11
@@ -734,11 +762,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 11
        }
       ],
-      "cost": 7150,
+      "cost": 8800,
       "score": 9130,
       "surplus": 130,
       "players": 11,
@@ -750,11 +778,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 11
        }
       ],
-      "cost": 7150,
+      "cost": 8800,
       "score": 9130,
       "surplus": 130,
       "players": 11,
@@ -766,11 +794,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 11
        }
       ],
-      "cost": 7150,
+      "cost": 8800,
       "score": 9130,
       "surplus": 130,
       "players": 11,
@@ -786,7 +814,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/94/laliga-and-liga-f",
    "image": "https://futmind.com/image-generator/sbc/94.png",
-   "expires": "13 Days 20 Hours",
+   "expires": "13 Days 19 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -796,13 +824,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 7
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 8
+        "qty": 1
        }
       ],
-      "cost": 5200,
-      "score": 6640,
-      "surplus": 640,
+      "cost": 5550,
+      "score": 6220,
+      "surplus": 220,
       "players": 8
      },
      "optimal": {
@@ -811,13 +846,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 7
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 8
+        "qty": 1
        }
       ],
-      "cost": 5200,
-      "score": 6640,
-      "surplus": 640,
+      "cost": 5550,
+      "score": 6220,
+      "surplus": 220,
       "players": 8
      },
      "fast": {
@@ -826,11 +868,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 8
        }
       ],
-      "cost": 5200,
+      "cost": 5600,
       "score": 6640,
       "surplus": 640,
       "players": 8
@@ -843,13 +885,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
-        "qty": 8
+        "price": 800,
+        "qty": 7
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
        }
       ],
-      "cost": 5200,
-      "score": 6640,
-      "surplus": 640,
+      "cost": 6350,
+      "score": 6220,
+      "surplus": 220,
       "players": 8,
       "estimate": true
      },
@@ -859,13 +908,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
-        "qty": 8
+        "price": 800,
+        "qty": 7
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
        }
       ],
-      "cost": 5200,
-      "score": 6640,
-      "surplus": 640,
+      "cost": 6350,
+      "score": 6220,
+      "surplus": 220,
       "players": 8,
       "estimate": true
      },
@@ -875,11 +931,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 8
        }
       ],
-      "cost": 5200,
+      "cost": 6400,
       "score": 6640,
       "surplus": 640,
       "players": 8,
@@ -905,11 +961,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 4
        }
       ],
-      "cost": 2600,
+      "cost": 2800,
       "score": 3320,
       "surplus": 320,
       "players": 4
@@ -920,11 +976,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 4
        }
       ],
-      "cost": 2600,
+      "cost": 2800,
       "score": 3320,
       "surplus": 320,
       "players": 4
@@ -935,11 +991,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 4
        }
       ],
-      "cost": 2600,
+      "cost": 2800,
       "score": 3320,
       "surplus": 320,
       "players": 4
@@ -952,11 +1008,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 4
        }
       ],
-      "cost": 2600,
+      "cost": 2800,
       "score": 3320,
       "surplus": 320,
       "players": 4,
@@ -968,11 +1024,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 4
        }
       ],
-      "cost": 2600,
+      "cost": 2800,
       "score": 3320,
       "surplus": 320,
       "players": 4,
@@ -984,11 +1040,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 4
        }
       ],
-      "cost": 2600,
+      "cost": 2800,
       "score": 3320,
       "surplus": 320,
       "players": 4,
@@ -1004,7 +1060,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/100/mls-and-nwsl",
    "image": "https://futmind.com/image-generator/sbc/100.png",
-   "expires": "13 Days 22 Hours",
+   "expires": "13 Days 20 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -1014,11 +1070,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 4
        }
       ],
-      "cost": 2600,
+      "cost": 2800,
       "score": 3320,
       "surplus": 320,
       "players": 4
@@ -1029,11 +1085,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 4
        }
       ],
-      "cost": 2600,
+      "cost": 2800,
       "score": 3320,
       "surplus": 320,
       "players": 4
@@ -1044,11 +1100,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 4
        }
       ],
-      "cost": 2600,
+      "cost": 2800,
       "score": 3320,
       "surplus": 320,
       "players": 4
@@ -1061,11 +1117,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 4
        }
       ],
-      "cost": 2600,
+      "cost": 2800,
       "score": 3320,
       "surplus": 320,
       "players": 4,
@@ -1077,11 +1133,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 4
        }
       ],
-      "cost": 2600,
+      "cost": 2800,
       "score": 3320,
       "surplus": 320,
       "players": 4,
@@ -1093,11 +1149,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 4
        }
       ],
-      "cost": 2600,
+      "cost": 2800,
       "score": 3320,
       "surplus": 320,
       "players": 4,
@@ -1113,7 +1169,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/121/liga-f-potm-october",
    "image": "https://futmind.com/image-generator/sbc/121.png",
-   "expires": "35 Days 19 Hours",
+   "expires": "35 Days 18 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -1123,11 +1179,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 17
        }
       ],
-      "cost": 11050,
+      "cost": 11900,
       "score": 14110,
       "surplus": 110,
       "players": 17
@@ -1138,11 +1194,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 17
        }
       ],
-      "cost": 11050,
+      "cost": 11900,
       "score": 14110,
       "surplus": 110,
       "players": 17
@@ -1153,11 +1209,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 17
        }
       ],
-      "cost": 11050,
+      "cost": 11900,
       "score": 14110,
       "surplus": 110,
       "players": 17
@@ -1170,11 +1226,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 17
        }
       ],
-      "cost": 11050,
+      "cost": 13600,
       "score": 14110,
       "surplus": 110,
       "players": 17,
@@ -1186,11 +1242,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 17
        }
       ],
-      "cost": 11050,
+      "cost": 13600,
       "score": 14110,
       "surplus": 110,
       "players": 17,
@@ -1202,11 +1258,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 17
        }
       ],
-      "cost": 11050,
+      "cost": 13600,
       "score": 14110,
       "surplus": 110,
       "players": 17,
@@ -1222,7 +1278,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/128/laliga-potm-october",
    "image": "https://futmind.com/image-generator/sbc/128.png",
-   "expires": "14 Days 19 Hours",
+   "expires": "14 Days 18 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -1232,18 +1288,18 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 6265
        },
        {
-        "rating": 68,
+        "rating": 70,
         "rarity": "Common",
         "score": 35,
         "price": 200,
         "qty": 2
        }
       ],
-      "cost": 4072650,
+      "cost": 4385900,
       "score": 5200020,
       "surplus": 20,
       "players": 6267
@@ -1254,13 +1310,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 6265
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 6266
+        "qty": 1
        }
       ],
-      "cost": 4072900,
-      "score": 5200780,
-      "surplus": 780,
+      "cost": 4386150,
+      "score": 5200360,
+      "surplus": 360,
       "players": 6266
      },
      "fast": {
@@ -1269,11 +1332,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 6266
        }
       ],
-      "cost": 4072900,
+      "cost": 4386200,
       "score": 5200780,
       "surplus": 780,
       "players": 6266
@@ -1290,7 +1353,7 @@
         "qty": 6265
        },
        {
-        "rating": 68,
+        "rating": 70,
         "rarity": "Common",
         "score": 35,
         "price": 250,
@@ -1310,12 +1373,19 @@
         "rarity": "Common",
         "score": 830,
         "price": 800,
-        "qty": 6266
+        "qty": 6265
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
        }
       ],
-      "cost": 5012800,
-      "score": 5200780,
-      "surplus": 780,
+      "cost": 5012750,
+      "score": 5200360,
+      "surplus": 360,
       "players": 6266,
       "estimate": true
      },
@@ -1345,7 +1415,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/148/premier-league-potm-october",
    "image": "https://futmind.com/image-generator/sbc/148.png",
-   "expires": "18 Days 14 Hours",
+   "expires": "18 Days 12 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -1355,13 +1425,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 20
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 21
+        "qty": 1
        }
       ],
-      "cost": 13650,
-      "score": 17430,
-      "surplus": 430,
+      "cost": 14650,
+      "score": 17010,
+      "surplus": 10,
       "players": 21
      },
      "optimal": {
@@ -1370,13 +1447,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 20
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 21
+        "qty": 1
        }
       ],
-      "cost": 13650,
-      "score": 17430,
-      "surplus": 430,
+      "cost": 14650,
+      "score": 17010,
+      "surplus": 10,
       "players": 21
      },
      "fast": {
@@ -1385,11 +1469,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 21
        }
       ],
-      "cost": 13650,
+      "cost": 14700,
       "score": 17430,
       "surplus": 430,
       "players": 21
@@ -1402,13 +1486,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
-        "qty": 21
+        "price": 750,
+        "qty": 20
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 700,
+        "qty": 1
        }
       ],
-      "cost": 13650,
-      "score": 17430,
-      "surplus": 430,
+      "cost": 15700,
+      "score": 17010,
+      "surplus": 10,
       "players": 21,
       "estimate": true
      },
@@ -1418,13 +1509,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
-        "qty": 21
+        "price": 750,
+        "qty": 20
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 700,
+        "qty": 1
        }
       ],
-      "cost": 13650,
-      "score": 17430,
-      "surplus": 430,
+      "cost": 15700,
+      "score": 17010,
+      "surplus": 10,
       "players": 21,
       "estimate": true
      },
@@ -1434,11 +1532,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 750,
         "qty": 21
        }
       ],
-      "cost": 13650,
+      "cost": 15750,
       "score": 17430,
       "surplus": 430,
       "players": 21,
@@ -1454,7 +1552,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/150/federico-chiesa",
    "image": "https://futmind.com/image-generator/sbc/150.png",
-   "expires": "3 Days 20 Hours",
+   "expires": "3 Days 19 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -1464,11 +1562,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 181
        }
       ],
-      "cost": 117650,
+      "cost": 126700,
       "score": 150230,
       "surplus": 230,
       "players": 181
@@ -1479,11 +1577,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 181
        }
       ],
-      "cost": 117650,
+      "cost": 126700,
       "score": 150230,
       "surplus": 230,
       "players": 181
@@ -1494,11 +1592,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 181
        }
       ],
-      "cost": 117650,
+      "cost": 126700,
       "score": 150230,
       "surplus": 230,
       "players": 181
@@ -1511,11 +1609,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 181
        }
       ],
-      "cost": 117650,
+      "cost": 144800,
       "score": 150230,
       "surplus": 230,
       "players": 181,
@@ -1527,11 +1625,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 181
        }
       ],
-      "cost": 117650,
+      "cost": 144800,
       "score": 150230,
       "surplus": 230,
       "players": 181,
@@ -1543,11 +1641,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 181
        }
       ],
-      "cost": 117650,
+      "cost": 144800,
       "score": 150230,
       "surplus": 230,
       "players": 181,
@@ -1563,7 +1661,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/152/serie-a-potm-october",
    "image": "https://futmind.com/image-generator/sbc/152.png",
-   "expires": "17 Days 15 Hours",
+   "expires": "17 Days 14 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -1573,11 +1671,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 28
        }
       ],
-      "cost": 18200,
+      "cost": 19600,
       "score": 23240,
       "surplus": 240,
       "players": 28
@@ -1588,11 +1686,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 28
        }
       ],
-      "cost": 18200,
+      "cost": 19600,
       "score": 23240,
       "surplus": 240,
       "players": 28
@@ -1603,11 +1701,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 28
        }
       ],
-      "cost": 18200,
+      "cost": 19600,
       "score": 23240,
       "surplus": 240,
       "players": 28
@@ -1620,11 +1718,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 28
        }
       ],
-      "cost": 18200,
+      "cost": 22400,
       "score": 23240,
       "surplus": 240,
       "players": 28,
@@ -1636,11 +1734,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 28
        }
       ],
-      "cost": 18200,
+      "cost": 22400,
       "score": 23240,
       "surplus": 240,
       "players": 28,
@@ -1652,11 +1750,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 28
        }
       ],
-      "cost": 18200,
+      "cost": 22400,
       "score": 23240,
       "surplus": 240,
       "players": 28,
@@ -1672,7 +1770,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/154/bundesliga-potm-october",
    "image": "https://futmind.com/image-generator/sbc/154.png",
-   "expires": "17 Days 17 Hours",
+   "expires": "17 Days 16 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -1682,13 +1780,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 14
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 15
+        "qty": 1
        }
       ],
-      "cost": 9750,
-      "score": 12450,
-      "surplus": 450,
+      "cost": 10450,
+      "score": 12030,
+      "surplus": 30,
       "players": 15
      },
      "optimal": {
@@ -1697,13 +1802,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 14
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 15
+        "qty": 1
        }
       ],
-      "cost": 9750,
-      "score": 12450,
-      "surplus": 450,
+      "cost": 10450,
+      "score": 12030,
+      "surplus": 30,
       "players": 15
      },
      "fast": {
@@ -1712,11 +1824,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 15
        }
       ],
-      "cost": 9750,
+      "cost": 10500,
       "score": 12450,
       "surplus": 450,
       "players": 15
@@ -1729,13 +1841,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
-        "qty": 15
+        "price": 800,
+        "qty": 14
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
        }
       ],
-      "cost": 9750,
-      "score": 12450,
-      "surplus": 450,
+      "cost": 11950,
+      "score": 12030,
+      "surplus": 30,
       "players": 15,
       "estimate": true
      },
@@ -1745,13 +1864,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
-        "qty": 15
+        "price": 800,
+        "qty": 14
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
        }
       ],
-      "cost": 9750,
-      "score": 12450,
-      "surplus": 450,
+      "cost": 11950,
+      "score": 12030,
+      "surplus": 30,
       "players": 15,
       "estimate": true
      },
@@ -1761,11 +1887,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 15
        }
       ],
-      "cost": 9750,
+      "cost": 12000,
       "score": 12450,
       "surplus": 450,
       "players": 15,
@@ -1781,7 +1907,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/155/alessandro-florenzi",
    "image": "https://futmind.com/image-generator/sbc/155.png",
-   "expires": "11 Days 20 Hours",
+   "expires": "11 Days 19 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -1791,11 +1917,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 458
        }
       ],
-      "cost": 297700,
+      "cost": 320600,
       "score": 380140,
       "surplus": 140,
       "players": 458
@@ -1806,11 +1932,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 458
        }
       ],
-      "cost": 297700,
+      "cost": 320600,
       "score": 380140,
       "surplus": 140,
       "players": 458
@@ -1821,11 +1947,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 458
        }
       ],
-      "cost": 297700,
+      "cost": 320600,
       "score": 380140,
       "surplus": 140,
       "players": 458
@@ -1838,11 +1964,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 458
        }
       ],
-      "cost": 297700,
+      "cost": 366400,
       "score": 380140,
       "surplus": 140,
       "players": 458,
@@ -1854,11 +1980,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 458
        }
       ],
-      "cost": 297700,
+      "cost": 366400,
       "score": 380140,
       "surplus": 140,
       "players": 458,
@@ -1870,11 +1996,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 458
        }
       ],
-      "cost": 297700,
+      "cost": 366400,
       "score": 380140,
       "surplus": 140,
       "players": 458,
@@ -1890,7 +2016,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/159/base-icon-matchday-player-pick",
    "image": "https://futmind.com/image-generator/sbc/159.png",
-   "expires": "8 Days 20 Hours",
+   "expires": "8 Days 18 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -1900,13 +2026,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 361
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 362
+        "qty": 1
        }
       ],
-      "cost": 235300,
-      "score": 300460,
-      "surplus": 460,
+      "cost": 253350,
+      "score": 300040,
+      "surplus": 40,
       "players": 362
      },
      "optimal": {
@@ -1915,13 +2048,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 361
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 362
+        "qty": 1
        }
       ],
-      "cost": 235300,
-      "score": 300460,
-      "surplus": 460,
+      "cost": 253350,
+      "score": 300040,
+      "surplus": 40,
       "players": 362
      },
      "fast": {
@@ -1930,11 +2070,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 362
        }
       ],
-      "cost": 235300,
+      "cost": 253400,
       "score": 300460,
       "surplus": 460,
       "players": 362
@@ -1950,7 +2090,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/161/2x-84+-upgrade",
    "image": "https://futmind.com/image-generator/sbc/161.png",
-   "expires": "15 Days 20 Hours",
+   "expires": "15 Days 18 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -1960,11 +2100,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 11
        }
       ],
-      "cost": 7150,
+      "cost": 7700,
       "score": 9130,
       "surplus": 130,
       "players": 11
@@ -1975,11 +2115,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 11
        }
       ],
-      "cost": 7150,
+      "cost": 7700,
       "score": 9130,
       "surplus": 130,
       "players": 11
@@ -1990,11 +2130,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 11
        }
       ],
-      "cost": 7150,
+      "cost": 7700,
       "score": 9130,
       "surplus": 130,
       "players": 11
@@ -2007,11 +2147,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 800,
+        "price": 750,
         "qty": 11
        }
       ],
-      "cost": 8800,
+      "cost": 8250,
       "score": 9130,
       "surplus": 130,
       "players": 11,
@@ -2023,11 +2163,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 800,
+        "price": 750,
         "qty": 11
        }
       ],
-      "cost": 8800,
+      "cost": 8250,
       "score": 9130,
       "surplus": 130,
       "players": 11,
@@ -2039,11 +2179,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 800,
+        "price": 750,
         "qty": 11
        }
       ],
-      "cost": 8800,
+      "cost": 8250,
       "score": 9130,
       "surplus": 130,
       "players": 11,
@@ -2059,7 +2199,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/162/tradeable-10x-80+-upgrade",
    "image": "https://futmind.com/image-generator/sbc/162.png",
-   "expires": "4 Days 19 Hours",
+   "expires": "4 Days 18 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -2069,11 +2209,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 17
        }
       ],
-      "cost": 11050,
+      "cost": 11900,
       "score": 14110,
       "surplus": 110,
       "players": 17
@@ -2084,11 +2224,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 17
        }
       ],
-      "cost": 11050,
+      "cost": 11900,
       "score": 14110,
       "surplus": 110,
       "players": 17
@@ -2099,11 +2239,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 17
        }
       ],
-      "cost": 11050,
+      "cost": 11900,
       "score": 14110,
       "surplus": 110,
       "players": 17
@@ -2116,11 +2256,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 750,
+        "price": 800,
         "qty": 17
        }
       ],
-      "cost": 12750,
+      "cost": 13600,
       "score": 14110,
       "surplus": 110,
       "players": 17,
@@ -2132,11 +2272,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 750,
+        "price": 800,
         "qty": 17
        }
       ],
-      "cost": 12750,
+      "cost": 13600,
       "score": 14110,
       "surplus": 110,
       "players": 17,
@@ -2148,11 +2288,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 750,
+        "price": 800,
         "qty": 17
        }
       ],
-      "cost": 12750,
+      "cost": 13600,
       "score": 14110,
       "surplus": 110,
       "players": 17,
@@ -2178,13 +2318,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 7
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 8
+        "qty": 1
        }
       ],
-      "cost": 5200,
-      "score": 6640,
-      "surplus": 640,
+      "cost": 5550,
+      "score": 6220,
+      "surplus": 220,
       "players": 8
      },
      "optimal": {
@@ -2193,13 +2340,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 7
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 8
+        "qty": 1
        }
       ],
-      "cost": 5200,
-      "score": 6640,
-      "surplus": 640,
+      "cost": 5550,
+      "score": 6220,
+      "surplus": 220,
       "players": 8
      },
      "fast": {
@@ -2208,11 +2362,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 8
        }
       ],
-      "cost": 5200,
+      "cost": 5600,
       "score": 6640,
       "surplus": 640,
       "players": 8
@@ -2228,7 +2382,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/168/moussa-diaby",
    "image": "https://futmind.com/image-generator/sbc/168.png",
-   "expires": "4 Days 20 Hours",
+   "expires": "4 Days 18 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -2238,11 +2392,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 51
        }
       ],
-      "cost": 33150,
+      "cost": 35700,
       "score": 42330,
       "surplus": 330,
       "players": 51
@@ -2253,11 +2407,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 51
        }
       ],
-      "cost": 33150,
+      "cost": 35700,
       "score": 42330,
       "surplus": 330,
       "players": 51
@@ -2268,11 +2422,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 51
        }
       ],
-      "cost": 33150,
+      "cost": 35700,
       "score": 42330,
       "surplus": 330,
       "players": 51
@@ -2285,11 +2439,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 51
        }
       ],
-      "cost": 33150,
+      "cost": 40800,
       "score": 42330,
       "surplus": 330,
       "players": 51,
@@ -2301,11 +2455,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 51
        }
       ],
-      "cost": 33150,
+      "cost": 40800,
       "score": 42330,
       "surplus": 330,
       "players": 51,
@@ -2317,11 +2471,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 51
        }
       ],
-      "cost": 33150,
+      "cost": 40800,
       "score": 42330,
       "surplus": 330,
       "players": 51,
@@ -2337,7 +2491,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/169/dunga",
    "image": "https://futmind.com/image-generator/sbc/169.png",
-   "expires": "18 Days 21 Hours",
+   "expires": "18 Days 18 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -2347,72 +2501,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
-        "qty": 506
-       },
-       {
-        "rating": 68,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 1
-       }
-      ],
-      "cost": 329100,
-      "score": 420015,
-      "surplus": 15,
-      "players": 507
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 650,
-        "qty": 506
-       },
-       {
-        "rating": 68,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 1
-       }
-      ],
-      "cost": 329100,
-      "score": 420015,
-      "surplus": 15,
-      "players": 507
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 650,
-        "qty": 507
-       }
-      ],
-      "cost": 329550,
-      "score": 420810,
-      "surplus": 810,
-      "players": 507
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
         "price": 700,
         "qty": 506
        },
        {
-        "rating": 68,
+        "rating": 70,
         "rarity": "Common",
         "score": 35,
         "price": 200,
@@ -2422,8 +2515,7 @@
       "cost": 354400,
       "score": 420015,
       "surplus": 15,
-      "players": 507,
-      "estimate": true
+      "players": 507
      },
      "optimal": {
       "lines": [
@@ -2435,7 +2527,7 @@
         "qty": 506
        },
        {
-        "rating": 68,
+        "rating": 70,
         "rarity": "Common",
         "score": 35,
         "price": 200,
@@ -2445,8 +2537,7 @@
       "cost": 354400,
       "score": 420015,
       "surplus": 15,
-      "players": 507,
-      "estimate": true
+      "players": 507
      },
      "fast": {
       "lines": [
@@ -2459,6 +2550,69 @@
        }
       ],
       "cost": 354900,
+      "score": 420810,
+      "surplus": 810,
+      "players": 507
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 750,
+        "qty": 506
+       },
+       {
+        "rating": 70,
+        "rarity": "Common",
+        "score": 35,
+        "price": 200,
+        "qty": 1
+       }
+      ],
+      "cost": 379700,
+      "score": 420015,
+      "surplus": 15,
+      "players": 507,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 750,
+        "qty": 506
+       },
+       {
+        "rating": 70,
+        "rarity": "Common",
+        "score": 35,
+        "price": 200,
+        "qty": 1
+       }
+      ],
+      "cost": 379700,
+      "score": 420015,
+      "surplus": 15,
+      "players": 507,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 750,
+        "qty": 507
+       }
+      ],
+      "cost": 380250,
       "score": 420810,
       "surplus": 810,
       "players": 507,
@@ -2474,7 +2628,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/170/mitchell-van-bergen",
    "image": "https://futmind.com/image-generator/sbc/170.png",
-   "expires": "5 Days 20 Hours",
+   "expires": "5 Days 19 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -2484,18 +2638,18 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 30
        },
        {
-        "rating": 68,
+        "rating": 70,
         "rarity": "Common",
         "score": 35,
         "price": 200,
         "qty": 3
        }
       ],
-      "cost": 20100,
+      "cost": 21600,
       "score": 25005,
       "surplus": 5,
       "players": 33
@@ -2506,13 +2660,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 30
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 31
+        "qty": 1
        }
       ],
-      "cost": 20150,
-      "score": 25730,
-      "surplus": 730,
+      "cost": 21650,
+      "score": 25310,
+      "surplus": 310,
       "players": 31
      },
      "fast": {
@@ -2521,11 +2682,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 31
        }
       ],
-      "cost": 20150,
+      "cost": 21700,
       "score": 25730,
       "surplus": 730,
       "players": 31
@@ -2538,18 +2699,18 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 30
        },
        {
-        "rating": 68,
+        "rating": 70,
         "rarity": "Common",
         "score": 35,
-        "price": 200,
+        "price": 250,
         "qty": 3
        }
       ],
-      "cost": 20100,
+      "cost": 24750,
       "score": 25005,
       "surplus": 5,
       "players": 33,
@@ -2561,13 +2722,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
-        "qty": 31
+        "price": 800,
+        "qty": 30
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
        }
       ],
-      "cost": 20150,
-      "score": 25730,
-      "surplus": 730,
+      "cost": 24750,
+      "score": 25310,
+      "surplus": 310,
       "players": 31,
       "estimate": true
      },
@@ -2577,11 +2745,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 31
        }
       ],
-      "cost": 20150,
+      "cost": 24800,
       "score": 25730,
       "surplus": 730,
       "players": 31,
@@ -2597,7 +2765,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/171/alphonso-davies",
    "image": "https://futmind.com/image-generator/sbc/171.png",
-   "expires": "19 Days 20 Hours",
+   "expires": "19 Days 19 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -2607,13 +2775,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 325
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 326
+        "qty": 1
        }
       ],
-      "cost": 211900,
-      "score": 270580,
-      "surplus": 580,
+      "cost": 228150,
+      "score": 270160,
+      "surplus": 160,
       "players": 326
      },
      "optimal": {
@@ -2622,13 +2797,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 325
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 326
+        "qty": 1
        }
       ],
-      "cost": 211900,
-      "score": 270580,
-      "surplus": 580,
+      "cost": 228150,
+      "score": 270160,
+      "surplus": 160,
       "players": 326
      },
      "fast": {
@@ -2637,11 +2819,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 326
        }
       ],
-      "cost": 211900,
+      "cost": 228200,
       "score": 270580,
       "surplus": 580,
       "players": 326
@@ -2654,13 +2836,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
-        "qty": 326
+        "price": 800,
+        "qty": 325
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
        }
       ],
-      "cost": 211900,
-      "score": 270580,
-      "surplus": 580,
+      "cost": 260750,
+      "score": 270160,
+      "surplus": 160,
       "players": 326,
       "estimate": true
      },
@@ -2670,13 +2859,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
-        "qty": 326
+        "price": 800,
+        "qty": 325
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
        }
       ],
-      "cost": 211900,
-      "score": 270580,
-      "surplus": 580,
+      "cost": 260750,
+      "score": 270160,
+      "surplus": 160,
       "players": 326,
       "estimate": true
      },
@@ -2686,11 +2882,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 326
        }
       ],
-      "cost": 211900,
+      "cost": 260800,
       "score": 270580,
       "surplus": 580,
       "players": 326,
@@ -2706,7 +2902,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/185/max.-88-base-icon-upgrade",
    "image": "https://futmind.com/image-generator/sbc/185.png",
-   "expires": "21 Days 19 Hours",
+   "expires": "18 Days 28 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -2716,11 +2912,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 241
        }
       ],
-      "cost": 156650,
+      "cost": 168700,
       "score": 200030,
       "surplus": 30,
       "players": 241
@@ -2731,11 +2927,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 241
        }
       ],
-      "cost": 156650,
+      "cost": 168700,
       "score": 200030,
       "surplus": 30,
       "players": 241
@@ -2746,11 +2942,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 241
        }
       ],
-      "cost": 156650,
+      "cost": 168700,
       "score": 200030,
       "surplus": 30,
       "players": 241
@@ -2763,11 +2959,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 700,
+        "price": 750,
         "qty": 241
        }
       ],
-      "cost": 168700,
+      "cost": 180750,
       "score": 200030,
       "surplus": 30,
       "players": 241,
@@ -2779,11 +2975,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 700,
+        "price": 750,
         "qty": 241
        }
       ],
-      "cost": 168700,
+      "cost": 180750,
       "score": 200030,
       "surplus": 30,
       "players": 241,
@@ -2795,11 +2991,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 700,
+        "price": 750,
         "qty": 241
        }
       ],
-      "cost": 168700,
+      "cost": 180750,
       "score": 200030,
       "surplus": 30,
       "players": 241,
@@ -2815,7 +3011,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/189/paulo-dybala",
    "image": "https://futmind.com/image-generator/sbc/189.png",
-   "expires": "18 Days 20 Hours",
+   "expires": "18 Days 18 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -2825,11 +3021,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 452
        }
       ],
-      "cost": 293800,
+      "cost": 316400,
       "score": 375160,
       "surplus": 160,
       "players": 452
@@ -2840,11 +3036,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 452
        }
       ],
-      "cost": 293800,
+      "cost": 316400,
       "score": 375160,
       "surplus": 160,
       "players": 452
@@ -2855,11 +3051,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 452
        }
       ],
-      "cost": 293800,
+      "cost": 316400,
       "score": 375160,
       "surplus": 160,
       "players": 452
@@ -2872,11 +3068,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 750,
         "qty": 452
        }
       ],
-      "cost": 293800,
+      "cost": 339000,
       "score": 375160,
       "surplus": 160,
       "players": 452,
@@ -2888,11 +3084,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 750,
         "qty": 452
        }
       ],
-      "cost": 293800,
+      "cost": 339000,
       "score": 375160,
       "surplus": 160,
       "players": 452,
@@ -2904,11 +3100,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 750,
         "qty": 452
        }
       ],
-      "cost": 293800,
+      "cost": 339000,
       "score": 375160,
       "surplus": 160,
       "players": 452,
@@ -2924,7 +3120,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/190/base-hero-upgrade",
    "image": "https://futmind.com/image-generator/sbc/190.png",
-   "expires": "4 Days 20 Hours",
+   "expires": "4 Days 19 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -2934,13 +3130,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 72
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 73
+        "qty": 1
        }
       ],
-      "cost": 47450,
-      "score": 60590,
-      "surplus": 590,
+      "cost": 51050,
+      "score": 60170,
+      "surplus": 170,
       "players": 73
      },
      "optimal": {
@@ -2949,13 +3152,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 72
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 73
+        "qty": 1
        }
       ],
-      "cost": 47450,
-      "score": 60590,
-      "surplus": 590,
+      "cost": 51050,
+      "score": 60170,
+      "surplus": 170,
       "players": 73
      },
      "fast": {
@@ -2964,11 +3174,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 73
        }
       ],
-      "cost": 47450,
+      "cost": 51100,
       "score": 60590,
       "surplus": 590,
       "players": 73
@@ -2981,13 +3191,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
-        "qty": 73
+        "price": 800,
+        "qty": 72
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
        }
       ],
-      "cost": 47450,
-      "score": 60590,
-      "surplus": 590,
+      "cost": 58350,
+      "score": 60170,
+      "surplus": 170,
       "players": 73,
       "estimate": true
      },
@@ -2997,13 +3214,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
-        "qty": 73
+        "price": 800,
+        "qty": 72
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
        }
       ],
-      "cost": 47450,
-      "score": 60590,
-      "surplus": 590,
+      "cost": 58350,
+      "score": 60170,
+      "surplus": 170,
       "players": 73,
       "estimate": true
      },
@@ -3013,11 +3237,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 73
        }
       ],
-      "cost": 47450,
+      "cost": 58400,
       "score": 60590,
       "surplus": 590,
       "players": 73,
@@ -3033,7 +3257,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/191/campaign-mix-upgrade",
    "image": "https://futmind.com/image-generator/sbc/191.png",
-   "expires": "4 Days 20 Hours",
+   "expires": "4 Days 18 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -3043,13 +3267,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 48
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 49
+        "qty": 1
        }
       ],
-      "cost": 31850,
-      "score": 40670,
-      "surplus": 670,
+      "cost": 34250,
+      "score": 40250,
+      "surplus": 250,
       "players": 49
      },
      "optimal": {
@@ -3058,13 +3289,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 48
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 49
+        "qty": 1
        }
       ],
-      "cost": 31850,
-      "score": 40670,
-      "surplus": 670,
+      "cost": 34250,
+      "score": 40250,
+      "surplus": 250,
       "players": 49
      },
      "fast": {
@@ -3073,11 +3311,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 49
        }
       ],
-      "cost": 31850,
+      "cost": 34300,
       "score": 40670,
       "surplus": 670,
       "players": 49
@@ -3090,13 +3328,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
-        "qty": 49
+        "price": 750,
+        "qty": 48
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 700,
+        "qty": 1
        }
       ],
-      "cost": 31850,
-      "score": 40670,
-      "surplus": 670,
+      "cost": 36700,
+      "score": 40250,
+      "surplus": 250,
       "players": 49,
       "estimate": true
      },
@@ -3106,13 +3351,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
-        "qty": 49
+        "price": 750,
+        "qty": 48
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 700,
+        "qty": 1
        }
       ],
-      "cost": 31850,
-      "score": 40670,
-      "surplus": 670,
+      "cost": 36700,
+      "score": 40250,
+      "surplus": 250,
       "players": 49,
       "estimate": true
      },
@@ -3122,11 +3374,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 750,
         "qty": 49
        }
       ],
-      "cost": 31850,
+      "cost": 36750,
       "score": 40670,
       "surplus": 670,
       "players": 49,
@@ -3142,7 +3394,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/196/1-of-3-year-in-review-player-pick",
    "image": "https://futmind.com/image-generator/sbc/196.png",
-   "expires": "11 Days 19 Hours",
+   "expires": "11 Days 18 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -3152,11 +3404,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 28
        }
       ],
-      "cost": 18200,
+      "cost": 19600,
       "score": 23240,
       "surplus": 240,
       "players": 28
@@ -3167,11 +3419,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 28
        }
       ],
-      "cost": 18200,
+      "cost": 19600,
       "score": 23240,
       "surplus": 240,
       "players": 28
@@ -3182,11 +3434,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 28
        }
       ],
-      "cost": 18200,
+      "cost": 19600,
       "score": 23240,
       "surplus": 240,
       "players": 28
@@ -3202,7 +3454,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/197/ultimate-scream-upgrade",
    "image": "https://futmind.com/image-generator/sbc/197.png",
-   "expires": "4 Days 19 Hours",
+   "expires": "4 Days 18 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -3212,13 +3464,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 36
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 37
+        "qty": 1
        }
       ],
-      "cost": 24050,
-      "score": 30710,
-      "surplus": 710,
+      "cost": 25850,
+      "score": 30290,
+      "surplus": 290,
       "players": 37
      },
      "optimal": {
@@ -3227,13 +3486,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 36
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 37
+        "qty": 1
        }
       ],
-      "cost": 24050,
-      "score": 30710,
-      "surplus": 710,
+      "cost": 25850,
+      "score": 30290,
+      "surplus": 290,
       "players": 37
      },
      "fast": {
@@ -3242,11 +3508,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 37
        }
       ],
-      "cost": 24050,
+      "cost": 25900,
       "score": 30710,
       "surplus": 710,
       "players": 37
@@ -3259,13 +3525,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 750,
+        "qty": 36
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 700,
-        "qty": 37
+        "qty": 1
        }
       ],
-      "cost": 25900,
-      "score": 30710,
-      "surplus": 710,
+      "cost": 27700,
+      "score": 30290,
+      "surplus": 290,
       "players": 37,
       "estimate": true
      },
@@ -3275,13 +3548,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 750,
+        "qty": 36
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 700,
-        "qty": 37
+        "qty": 1
        }
       ],
-      "cost": 25900,
-      "score": 30710,
-      "surplus": 710,
+      "cost": 27700,
+      "score": 30290,
+      "surplus": 290,
       "players": 37,
       "estimate": true
      },
@@ -3291,11 +3571,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 700,
+        "price": 750,
         "qty": 37
        }
       ],
-      "cost": 25900,
+      "cost": 27750,
       "score": 30710,
       "surplus": 710,
       "players": 37,
@@ -3311,7 +3591,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/199/joao-felix",
    "image": "https://futmind.com/image-generator/sbc/199.png",
-   "expires": "20 Days 19 Hours",
+   "expires": "20 Days 18 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -3321,13 +3601,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 301
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 302
+        "qty": 1
        }
       ],
-      "cost": 196300,
-      "score": 250660,
-      "surplus": 660,
+      "cost": 211350,
+      "score": 250240,
+      "surplus": 240,
       "players": 302
      },
      "optimal": {
@@ -3336,13 +3623,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 301
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 302
+        "qty": 1
        }
       ],
-      "cost": 196300,
-      "score": 250660,
-      "surplus": 660,
+      "cost": 211350,
+      "score": 250240,
+      "surplus": 240,
       "players": 302
      },
      "fast": {
@@ -3351,11 +3645,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 302
        }
       ],
-      "cost": 196300,
+      "cost": 211400,
       "score": 250660,
       "surplus": 660,
       "players": 302
@@ -3368,13 +3662,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 750,
+        "qty": 301
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 700,
-        "qty": 302
+        "qty": 1
        }
       ],
-      "cost": 211400,
-      "score": 250660,
-      "surplus": 660,
+      "cost": 226450,
+      "score": 250240,
+      "surplus": 240,
       "players": 302,
       "estimate": true
      },
@@ -3384,13 +3685,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 750,
+        "qty": 301
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 700,
-        "qty": 302
+        "qty": 1
        }
       ],
-      "cost": 211400,
-      "score": 250660,
-      "surplus": 660,
+      "cost": 226450,
+      "score": 250240,
+      "surplus": 240,
       "players": 302,
       "estimate": true
      },
@@ -3400,11 +3708,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 700,
+        "price": 750,
         "qty": 302
        }
       ],
-      "cost": 211400,
+      "cost": 226500,
       "score": 250660,
       "surplus": 660,
       "players": 302,
@@ -3420,7 +3728,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/200/base-icon-matchday-player-pick",
    "image": "https://futmind.com/image-generator/sbc/200.png",
-   "expires": "20 Days 19 Hours",
+   "expires": "20 Days 18 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -3430,13 +3738,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 602
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 603
+        "qty": 1
        }
       ],
-      "cost": 391950,
-      "score": 500490,
-      "surplus": 490,
+      "cost": 422050,
+      "score": 500070,
+      "surplus": 70,
       "players": 603
      },
      "optimal": {
@@ -3445,13 +3760,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 602
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 603
+        "qty": 1
        }
       ],
-      "cost": 391950,
-      "score": 500490,
-      "surplus": 490,
+      "cost": 422050,
+      "score": 500070,
+      "surplus": 70,
       "players": 603
      },
      "fast": {
@@ -3460,11 +3782,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 603
        }
       ],
-      "cost": 391950,
+      "cost": 422100,
       "score": 500490,
       "surplus": 490,
       "players": 603
@@ -3480,7 +3802,7 @@
    "min_rating": 45,
    "url": "https://futmind.com/squad-building-challenges/201/82+-totw-1-10-upgrade",
    "image": "https://futmind.com/image-generator/sbc/201.png",
-   "expires": "4 Days 20 Hours",
+   "expires": "4 Days 19 Hours",
    "notes": [],
    "builds": {
     "console": {
@@ -3490,18 +3812,18 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 18
        },
        {
-        "rating": 68,
+        "rating": 70,
         "rarity": "Common",
         "score": 35,
         "price": 200,
         "qty": 2
        }
       ],
-      "cost": 12100,
+      "cost": 13000,
       "score": 15010,
       "surplus": 10,
       "players": 20
@@ -3512,13 +3834,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
+        "price": 700,
+        "qty": 18
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
         "price": 650,
-        "qty": 19
+        "qty": 1
        }
       ],
-      "cost": 12350,
-      "score": 15770,
-      "surplus": 770,
+      "cost": 13250,
+      "score": 15350,
+      "surplus": 350,
       "players": 19
      },
      "fast": {
@@ -3527,11 +3856,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 700,
         "qty": 19
        }
       ],
-      "cost": 12350,
+      "cost": 13300,
       "score": 15770,
       "surplus": 770,
       "players": 19
@@ -3544,18 +3873,18 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 18
        },
        {
-        "rating": 68,
+        "rating": 70,
         "rarity": "Common",
         "score": 35,
-        "price": 200,
+        "price": 250,
         "qty": 2
        }
       ],
-      "cost": 12100,
+      "cost": 14900,
       "score": 15010,
       "surplus": 10,
       "players": 20,
@@ -3567,13 +3896,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
-        "qty": 19
+        "price": 800,
+        "qty": 18
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
        }
       ],
-      "cost": 12350,
-      "score": 15770,
-      "surplus": 770,
+      "cost": 15150,
+      "score": 15350,
+      "surplus": 350,
       "players": 19,
       "estimate": true
      },
@@ -3583,11 +3919,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 650,
+        "price": 800,
         "qty": 19
        }
       ],
-      "cost": 12350,
+      "cost": 15200,
       "score": 15770,
       "surplus": 770,
       "players": 19,
