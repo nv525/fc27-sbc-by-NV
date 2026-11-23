@@ -37,7 +37,9 @@ def round50(build):
 
 
 for s in raw["sbcs"]:
-    item ={k: s.get(k) for k in ("id", "name", "score", "min_rating", "url", "image", "expires", "notes")}
+    item = {k: s.get(k) for k in ("id", "name", "score", "min_rating", "url", "image", "expires", "notes")}
+    rw = s.get("reward") or {"kind": "pack"}
+    item["reward"] = {"kind": rw.get("kind", "pack"), "player": raw.get("players", {}).get(str(rw.get("player_id")))}
     item["builds"] = {}
     for key in out["platforms"]:
         cards, mr = raw["platforms"][key]["cards"], s.get("min_rating") or 0
