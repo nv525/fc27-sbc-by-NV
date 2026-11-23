@@ -5,34 +5,34 @@
   "console": {
    "cards": [
     {
-     "rating": 85,
-     "rarity": "Common",
-     "price": 2400,
-     "score": 2100
-    },
-    {
      "rating": 84,
      "rarity": "Common",
-     "price": 950,
+     "price": 800,
      "score": 830
     },
     {
-     "rating": 89,
+     "rating": 88,
      "rarity": "Common",
-     "price": 16500,
-     "score": 11000
+     "price": 11000,
+     "score": 8300
     },
     {
-     "rating": 87,
+     "rating": 85,
      "rarity": "Common",
-     "price": 8300,
-     "score": 5500
+     "price": 2800,
+     "score": 2100
     },
     {
      "rating": 86,
      "rarity": "Common",
-     "price": 6200,
+     "price": 5900,
      "score": 4100
+    },
+    {
+     "rating": 87,
+     "rarity": "Common",
+     "price": 8000,
+     "score": 5500
     },
     {
      "rating": 83,
@@ -41,28 +41,40 @@
      "score": 410
     },
     {
-     "rating": 88,
-     "rarity": "Common",
-     "price": 14000,
-     "score": 8300
-    },
-    {
-     "rating": 87,
-     "rarity": "Destined for Glory",
-     "price": 12000,
-     "score": 6875
-    },
-    {
      "rating": 86,
      "rarity": "Ultimate Scream",
-     "price": 16750,
+     "price": 15750,
      "score": 9225
     },
     {
      "rating": 87,
+     "rarity": "Destined for Glory",
+     "price": 11750,
+     "score": 6875
+    },
+    {
+     "rating": 87,
      "rarity": "Future Stars",
-     "price": 15500,
+     "price": 14750,
      "score": 8250
+    },
+    {
+     "rating": 89,
+     "rarity": "Common",
+     "price": 20000,
+     "score": 11000
+    },
+    {
+     "rating": 86,
+     "rarity": "Destined for Glory",
+     "price": 14500,
+     "score": 7688
+    },
+    {
+     "rating": 87,
+     "rarity": "Destined for Glory",
+     "price": 19500,
+     "score": 10313
     },
     {
      "rating": 86,
@@ -77,33 +89,21 @@
      "score": 340
     },
     {
-     "rating": 87,
-     "rarity": "Destined for Glory",
-     "price": 20000,
-     "score": 10313
-    },
-    {
-     "rating": 86,
-     "rarity": "Destined for Glory",
-     "price": 15000,
-     "score": 7688
-    },
-    {
-     "rating": 87,
-     "rarity": "Ultimate Scream",
-     "price": 25000,
-     "score": 12375
-    },
-    {
      "rating": 88,
      "rarity": "Destined for Glory",
-     "price": 22250,
+     "price": 20000,
      "score": 10375
+    },
+    {
+     "rating": 87,
+     "rarity": "Thunderstruck",
+     "price": 27750,
+     "score": 12375
     },
     {
      "rating": 90,
      "rarity": "Common",
-     "price": 31000,
+     "price": 32000,
      "score": 14000
     },
     {
@@ -121,32 +121,38 @@
     {
      "rating": 89,
      "rarity": "Base Hero",
-     "price": 34250,
+     "price": 32500,
      "score": 13750
     },
     {
      "rating": 91,
-     "rarity": "Common",
-     "price": 48250,
-     "score": 19000
+     "rarity": "Team of the Week",
+     "price": 60000,
+     "score": 23750
     },
     {
      "rating": 91,
-     "rarity": "Team of the Week",
-     "price": 63000,
-     "score": 23750
+     "rarity": "Common",
+     "price": 49500,
+     "score": 19000
     },
     {
      "rating": 85,
      "rarity": "Ultimate Scream",
-     "price": 14250,
+     "price": 14000,
      "score": 4725
     },
     {
      "rating": 88,
      "rarity": "Destined for Glory",
-     "price": 49250,
+     "price": 47250,
      "score": 15563
+    },
+    {
+     "rating": 85,
+     "rarity": "Destined for Glory",
+     "price": 14000,
+     "score": 3938
     },
     {
      "rating": 80,
@@ -155,40 +161,34 @@
      "score": 180
     },
     {
+     "rating": 88,
+     "rarity": "Future Stars",
+     "price": 45000,
+     "score": 12450
+    },
+    {
      "rating": 85,
      "rarity": "Future Stars",
      "price": 11500,
      "score": 3150
     },
     {
-     "rating": 85,
-     "rarity": "Destined for Glory",
-     "price": 14500,
-     "score": 3938
+     "rating": 89,
+     "rarity": "Base Hero",
+     "price": 79000,
+     "score": 20625
     },
     {
      "rating": 91,
      "rarity": "Team of the Week",
-     "price": 137000,
+     "price": 138000,
      "score": 35625
     },
     {
      "rating": 88,
-     "rarity": "Future Stars",
-     "price": 48000,
-     "score": 12450
-    },
-    {
-     "rating": 88,
      "rarity": "Thunderstruck",
-     "price": 73000,
+     "price": 75000,
      "score": 18675
-    },
-    {
-     "rating": 89,
-     "rarity": "Base Hero",
-     "price": 83000,
-     "score": 20625
     },
     {
      "rating": 79,
@@ -205,7 +205,7 @@
     {
      "rating": 92,
      "rarity": "Base Icon",
-     "price": 205000,
+     "price": 199000,
      "score": 45000
     },
     {
@@ -215,39 +215,39 @@
      "score": 140
     },
     {
+     "rating": 92,
+     "rarity": "Base Icon",
+     "price": 158000,
+     "score": 30000
+    },
+    {
+     "rating": 89,
+     "rarity": "Thunderstruck",
+     "price": 89000,
+     "score": 16500
+    },
+    {
+     "rating": 90,
+     "rarity": "Team of the Week",
+     "price": 94500,
+     "score": 17500
+    },
+    {
      "rating": 77,
      "rarity": "Common",
      "price": 650,
      "score": 120
     },
     {
-     "rating": 90,
-     "rarity": "Team of the Week",
-     "price": 95500,
-     "score": 17500
-    },
-    {
      "rating": 89,
      "rarity": "Thunderstruck",
-     "price": 91000,
-     "score": 16500
-    },
-    {
-     "rating": 92,
-     "rarity": "Base Icon",
-     "price": 168000,
-     "score": 30000
-    },
-    {
-     "rating": 89,
-     "rarity": "Thunderstruck",
-     "price": 146000,
+     "price": 138000,
      "score": 24750
     },
     {
      "rating": 90,
      "rarity": "Thunderstruck",
-     "price": 200000,
+     "price": 198000,
      "score": 31500
     },
     {
@@ -257,7 +257,7 @@
      "score": 100
     },
     {
-     "rating": 70,
+     "rating": 74,
      "rarity": "Common",
      "price": 250,
      "score": 35
@@ -269,9 +269,15 @@
      "score": 90
     },
     {
+     "rating": 90,
+     "rarity": "Thunderstruck",
+     "price": 161000,
+     "score": 21000
+    },
+    {
      "rating": 91,
      "rarity": "Base Icon",
-     "price": 335000,
+     "price": 331000,
      "score": 42750
     },
     {
@@ -281,15 +287,9 @@
      "score": 26250
     },
     {
-     "rating": 90,
-     "rarity": "Thunderstruck",
-     "price": 176000,
-     "score": 21000
-    },
-    {
      "rating": 91,
      "rarity": "Base Icon",
-     "price": 274000,
+     "price": 271000,
      "score": 28500
     },
     {
@@ -299,82 +299,82 @@
      "score": 20
     },
     {
+     "rating": 92,
+     "rarity": "Team of the Week",
+     "price": 288000,
+     "score": 25000
+    },
+    {
      "rating": 84,
      "rarity": "Team of the Week",
-     "price": 17250,
+     "price": 18000,
      "score": 1556
     },
     {
      "rating": 89,
      "rarity": "Ultimate Scream Hero",
-     "price": 339000,
+     "price": 335000,
      "score": 28875
-    },
-    {
-     "rating": 92,
-     "rarity": "Team of the Week",
-     "price": 294000,
-     "score": 25000
     },
     {
      "rating": 91,
      "rarity": "Thunderstruck ICON",
-     "price": 769000,
+     "price": 749000,
      "score": 57000
     },
     {
      "rating": 92,
      "rarity": "Team of the Week",
-     "price": 517000,
+     "price": 512000,
      "score": 37500
     },
     {
      "rating": 89,
      "rarity": "Ultimate Scream Hero",
-     "price": 296000,
+     "price": 270000,
      "score": 19250
     },
     {
      "rating": 91,
      "rarity": "Thunderstruck ICON",
-     "price": 640000,
+     "price": 618000,
      "score": 38000
     },
     {
      "rating": 84,
      "rarity": "Team of the Week",
-     "price": 17500,
+     "price": 17750,
      "score": 1038
     },
     {
      "rating": 92,
      "rarity": "Thunderstruck ICON",
-     "price": 1150000,
+     "price": 1130000,
      "score": 60000
-    },
-    {
-     "rating": 83,
-     "rarity": "Team of the Week",
-     "price": 17500,
-     "score": 769
     },
     {
      "rating": 92,
      "rarity": "Thunderstruck ICON",
-     "price": 969000,
+     "price": 935000,
      "score": 40000
     },
     {
-     "rating": 82,
+     "rating": 83,
      "rarity": "Team of the Week",
-     "price": 17750,
-     "score": 638
+     "price": 18000,
+     "score": 769
     },
     {
      "rating": 87,
      "rarity": "Ultimate Scream Hero",
-     "price": 430000,
+     "price": 399000,
      "score": 14438
+    },
+    {
+     "rating": 82,
+     "rarity": "Team of the Week",
+     "price": 18000,
+     "score": 638
     },
     {
      "rating": 93,
@@ -383,16 +383,16 @@
      "score": 56250
     },
     {
-     "rating": 81,
-     "rarity": "Team of the Week",
-     "price": 17750,
-     "score": 525
-    },
-    {
      "rating": 83,
      "rarity": "Team of the Week",
      "price": 17500,
      "score": 513
+    },
+    {
+     "rating": 81,
+     "rarity": "Team of the Week",
+     "price": 18250,
+     "score": 525
     },
     {
      "rating": 87,
@@ -403,13 +403,13 @@
     {
      "rating": 82,
      "rarity": "Team of the Week",
-     "price": 17500,
+     "price": 18000,
      "score": 425
     },
     {
      "rating": 81,
      "rarity": "Team of the Week",
-     "price": 17500,
+     "price": 18000,
      "score": 350
     },
     {
@@ -421,7 +421,7 @@
     {
      "rating": 94,
      "rarity": "Base Icon",
-     "price": 4050000,
+     "price": 4040000,
      "score": 67500
     },
     {
@@ -433,20 +433,20 @@
     {
      "rating": 80,
      "rarity": "Team of the Week",
-     "price": 17250,
+     "price": 17000,
      "score": 225
-    },
-    {
-     "rating": 88,
-     "rarity": "Ultimate Scream Hero",
-     "price": 1650000,
-     "score": 14525
     },
     {
      "rating": 90,
      "rarity": "Ultimate Scream Hero",
-     "price": 2900000,
-     "score": 24500
+     "price": 3550000,
+     "score": 36750
+    },
+    {
+     "rating": 88,
+     "rarity": "Ultimate Scream Hero",
+     "price": 1599000,
+     "score": 14525
     },
     {
      "rating": 88,
@@ -457,8 +457,8 @@
     {
      "rating": 90,
      "rarity": "Ultimate Scream Hero",
-     "price": 5249000,
-     "score": 36750
+     "price": 3000000,
+     "score": 24500
     }
    ]
   },
@@ -1595,7 +1595,7 @@
    "score": 1000,
    "min_rating": 0,
    "notes": [],
-   "expires": "3192 Days 0 Hours",
+   "expires": "3191 Days 22 Hours",
    "console_total": 8000,
    "pc_total": 8250,
    "url": "https://futmind.com/squad-building-challenges/7/intro-to-streamlined-sbcs",
@@ -1612,7 +1612,7 @@
    "score": 500,
    "min_rating": 0,
    "notes": [],
-   "expires": "3191 Days 23 Hours",
+   "expires": "3191 Days 22 Hours",
    "console_total": 3700,
    "pc_total": 5000,
    "url": "https://futmind.com/squad-building-challenges/8/bronze-and-silver-re-roll",
@@ -1629,7 +1629,7 @@
    "score": 1250,
    "min_rating": 0,
    "notes": [],
-   "expires": "3191 Days 23 Hours",
+   "expires": "3191 Days 22 Hours",
    "console_total": 2300,
    "pc_total": 2300,
    "url": "https://futmind.com/squad-building-challenges/9/gold-re-roll",
@@ -1646,7 +1646,7 @@
    "score": 4000,
    "min_rating": 45,
    "notes": [],
-   "expires": "3202 Days 23 Hours",
+   "expires": "3202 Days 22 Hours",
    "console_total": null,
    "pc_total": null,
    "url": "https://futmind.com/squad-building-challenges/20/intro-to-player-sbcs",
@@ -1663,7 +1663,7 @@
    "score": 5000,
    "min_rating": 45,
    "notes": [],
-   "expires": "13 Days 1 Hours",
+   "expires": "13 Days 0 Hours",
    "console_total": 6400,
    "pc_total": 7000,
    "url": "https://futmind.com/squad-building-challenges/91/bundesliga-and-google-pixel-frauen-bundesliga",
@@ -1680,7 +1680,7 @@
    "score": 5000,
    "min_rating": 45,
    "notes": [],
-   "expires": "13 Days 0 Hours",
+   "expires": "12 Days 23 Hours",
    "console_total": 6400,
    "pc_total": 7000,
    "url": "https://futmind.com/squad-building-challenges/92/ligue-1-and-arkema-premiere-ligue",
@@ -1697,7 +1697,7 @@
    "score": 9000,
    "min_rating": 45,
    "notes": [],
-   "expires": "13 Days 0 Hours",
+   "expires": "12 Days 23 Hours",
    "console_total": 11400,
    "pc_total": 12400,
    "url": "https://futmind.com/squad-building-challenges/93/premier-league-and-barclays-wsl",
@@ -1714,7 +1714,7 @@
    "score": 6000,
    "min_rating": 45,
    "notes": [],
-   "expires": "13 Days 0 Hours",
+   "expires": "12 Days 23 Hours",
    "console_total": 8000,
    "pc_total": 8800,
    "url": "https://futmind.com/squad-building-challenges/94/laliga-and-liga-f",
@@ -1731,7 +1731,7 @@
    "score": 3000,
    "min_rating": 45,
    "notes": [],
-   "expires": "13 Days 1 Hours",
+   "expires": "13 Days 0 Hours",
    "console_total": 4000,
    "pc_total": 4400,
    "url": "https://futmind.com/squad-building-challenges/99/serie-a-and-roshn-saudi-league",
@@ -1748,7 +1748,7 @@
    "score": 3000,
    "min_rating": 45,
    "notes": [],
-   "expires": "13 Days 1 Hours",
+   "expires": "12 Days 23 Hours",
    "console_total": 4000,
    "pc_total": 4400,
    "url": "https://futmind.com/squad-building-challenges/100/mls-and-nwsl",
@@ -1765,7 +1765,7 @@
    "score": 14000,
    "min_rating": 45,
    "notes": [],
-   "expires": "34 Days 23 Hours",
+   "expires": "34 Days 22 Hours",
    "console_total": 17000,
    "pc_total": 18700,
    "url": "https://futmind.com/squad-building-challenges/121/liga-f-potm-october",
@@ -1782,7 +1782,7 @@
    "score": 5200000,
    "min_rating": 45,
    "notes": [],
-   "expires": "13 Days 23 Hours",
+   "expires": "14 Days 0 Hours",
    "console_total": 6265450,
    "pc_total": 6892000,
    "url": "https://futmind.com/squad-building-challenges/128/laliga-potm-october",
@@ -1799,7 +1799,7 @@
    "score": 17000,
    "min_rating": 45,
    "notes": [],
-   "expires": "17 Days 18 Hours",
+   "expires": "17 Days 17 Hours",
    "console_total": 20700,
    "pc_total": 22700,
    "url": "https://futmind.com/squad-building-challenges/148/premier-league-potm-october",
@@ -1816,7 +1816,7 @@
    "score": 150000,
    "min_rating": 45,
    "notes": [],
-   "expires": "3 Days 2 Hours",
+   "expires": "2 Days 23 Hours",
    "console_total": 181000,
    "pc_total": 199100,
    "url": "https://futmind.com/squad-building-challenges/150/federico-chiesa",
@@ -1833,7 +1833,7 @@
    "score": 23000,
    "min_rating": 45,
    "notes": [],
-   "expires": "16 Days 19 Hours",
+   "expires": "16 Days 18 Hours",
    "console_total": 28000,
    "pc_total": 30800,
    "url": "https://futmind.com/squad-building-challenges/152/serie-a-potm-october",
@@ -1850,7 +1850,7 @@
    "score": 12000,
    "min_rating": 45,
    "notes": [],
-   "expires": "16 Days 21 Hours",
+   "expires": "16 Days 20 Hours",
    "console_total": 14700,
    "pc_total": 16100,
    "url": "https://futmind.com/squad-building-challenges/154/bundesliga-potm-october",
@@ -1867,7 +1867,7 @@
    "score": 380000,
    "min_rating": 45,
    "notes": [],
-   "expires": "11 Days 0 Hours",
+   "expires": "10 Days 23 Hours",
    "console_total": 458000,
    "pc_total": 503800,
    "url": "https://futmind.com/squad-building-challenges/155/alessandro-florenzi",
@@ -1884,7 +1884,7 @@
    "score": 300000,
    "min_rating": 45,
    "notes": [],
-   "expires": "8 Days 0 Hours",
+   "expires": "7 Days 23 Hours",
    "console_total": null,
    "pc_total": null,
    "url": "https://futmind.com/squad-building-challenges/159/base-icon-matchday-player-pick",
@@ -1901,7 +1901,7 @@
    "score": 9000,
    "min_rating": 45,
    "notes": [],
-   "expires": "15 Days 0 Hours",
+   "expires": "14 Days 23 Hours",
    "console_total": 11000,
    "pc_total": 12100,
    "url": "https://futmind.com/squad-building-challenges/161/2x-84+-upgrade",
@@ -1919,8 +1919,8 @@
    "min_rating": 45,
    "notes": [],
    "expires": "3 Days 23 Hours",
-   "console_total": 18700,
-   "pc_total": 20400,
+   "console_total": 17000,
+   "pc_total": 18700,
    "url": "https://futmind.com/squad-building-challenges/162/tradeable-10x-80+-upgrade",
    "image": "https://futmind.com/image-generator/sbc/162.png"
   },
@@ -1952,7 +1952,7 @@
    "score": 42000,
    "min_rating": 45,
    "notes": [],
-   "expires": "4 Days 0 Hours",
+   "expires": "3 Days 23 Hours",
    "console_total": 51000,
    "pc_total": 56100,
    "url": "https://futmind.com/squad-building-challenges/168/moussa-diaby",
@@ -1969,7 +1969,7 @@
    "score": 420000,
    "min_rating": 45,
    "notes": [],
-   "expires": "18 Days 0 Hours",
+   "expires": "17 Days 23 Hours",
    "console_total": 506200,
    "pc_total": 556800,
    "url": "https://futmind.com/squad-building-challenges/169/dunga",
@@ -1986,9 +1986,9 @@
    "score": 25000,
    "min_rating": 45,
    "notes": [],
-   "expires": "5 Days 0 Hours",
+   "expires": "4 Days 23 Hours",
    "console_total": 30650,
-   "pc_total": 33650,
+   "pc_total": 33600,
    "url": "https://futmind.com/squad-building-challenges/170/mitchell-van-bergen",
    "image": "https://futmind.com/image-generator/sbc/170.png"
   },
@@ -2003,7 +2003,7 @@
    "score": 270000,
    "min_rating": 45,
    "notes": [],
-   "expires": "19 Days 0 Hours",
+   "expires": "19 Days 1 Hours",
    "console_total": 325650,
    "pc_total": 358150,
    "url": "https://futmind.com/squad-building-challenges/171/alphonso-davies",
@@ -2037,9 +2037,9 @@
    "score": 375000,
    "min_rating": 45,
    "notes": [],
-   "expires": "18 Days 0 Hours",
-   "console_total": 452000,
-   "pc_total": 497200,
+   "expires": "17 Days 23 Hours",
+   "console_total": 429400,
+   "pc_total": 452000,
    "url": "https://futmind.com/squad-building-challenges/189/paulo-dybala",
    "image": "https://futmind.com/image-generator/sbc/189.png"
   },
@@ -2054,7 +2054,7 @@
    "score": 60000,
    "min_rating": 45,
    "notes": [],
-   "expires": "4 Days 0 Hours",
+   "expires": "3 Days 23 Hours",
    "console_total": 72650,
    "pc_total": 79850,
    "url": "https://futmind.com/squad-building-challenges/190/base-hero-upgrade",
@@ -2071,7 +2071,7 @@
    "score": 40000,
    "min_rating": 45,
    "notes": [],
-   "expires": "4 Days 0 Hours",
+   "expires": "3 Days 23 Hours",
    "console_total": 48650,
    "pc_total": 53450,
    "url": "https://futmind.com/squad-building-challenges/191/campaign-mix-upgrade",
@@ -2105,7 +2105,7 @@
    "score": 23000,
    "min_rating": 45,
    "notes": [],
-   "expires": "11 Days 0 Hours",
+   "expires": "10 Days 23 Hours",
    "console_total": null,
    "pc_total": null,
    "url": "https://futmind.com/squad-building-challenges/196/1-of-3-year-in-review-player-pick",
@@ -2123,8 +2123,8 @@
    "min_rating": 45,
    "notes": [],
    "expires": "3 Days 23 Hours",
-   "console_total": 40250,
-   "pc_total": 43850,
+   "console_total": 36650,
+   "pc_total": 40250,
    "url": "https://futmind.com/squad-building-challenges/197/ultimate-scream-upgrade",
    "image": "https://futmind.com/image-generator/sbc/197.png"
   },
@@ -2173,7 +2173,7 @@
    "score": 15000,
    "min_rating": 45,
    "notes": [],
-   "expires": "4 Days 1 Hours",
+   "expires": "4 Days 0 Hours",
    "console_total": 18500,
    "pc_total": 20300,
    "url": "https://futmind.com/squad-building-challenges/201/82+-totw-1-10-upgrade",
