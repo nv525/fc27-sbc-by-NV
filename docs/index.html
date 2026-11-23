@@ -165,6 +165,50 @@
   .top .pp { color: var(--muted); font-weight: 700; font-size: 0.72rem; }
   .top b { text-align: right; color: var(--accent); }
   @media (max-width: 420px) { .six { grid-template-columns: repeat(3, 1fr); } .plhead { grid-template-columns: auto minmax(0, 1fr); } .plimg { display: none; } }
+  .sel { position: relative; display: inline-flex; flex: 0 0 auto; }
+  .sel::after { content: ""; position: absolute; right: 18px; top: 50%; width: 7px; height: 7px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: translateY(-70%) rotate(45deg); pointer-events: none; }
+  .sel select { appearance: none; -webkit-appearance: none; padding: 0 40px 0 18px; cursor: pointer; }
+  input[type="search"], select { height: 42px; padding-block: 0; }
+  .seg button { line-height: 1.2; }
+  .sqb { all: unset; box-sizing: border-box; cursor: pointer; position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 4px; width: 100%; margin: 0 0 18px; padding: 22px 22px 20px; border-radius: 24px; color: #fff;
+    background: linear-gradient(115deg, #05213d 0%, #0a4a73 34%, #0b8a87 68%, #35e3b2 100%); isolation: isolate; }
+  .sqb::before, .sqb::after, .sqhero::before, .sqhero::after { content: ""; position: absolute; z-index: -1; pointer-events: none; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent); height: 2px; width: 140%; left: -20%; transform: rotate(-24deg); }
+  .sqb::before, .sqhero::before { top: 62%; opacity: 0.55; }
+  .sqb::after, .sqhero::after { top: 82%; height: 26px; opacity: 0.18; transform: rotate(-24deg); }
+  .sqb-t, .sqt { font-size: clamp(1.7rem, 7.5vw, 2.7rem); font-weight: 800; font-style: italic; letter-spacing: -0.04em; line-height: 1; text-transform: uppercase; }
+  .sqb-t em, .sqt em { font-style: italic; color: #6dffd5; }
+  .sqb-s { font-weight: 600; font-size: 0.9rem; opacity: 0.85; max-width: 32ch; }
+  .sqb-go { margin-top: 10px; align-self: flex-start; background: rgba(255, 255, 255, 0.18); backdrop-filter: blur(6px); border-radius: 999px; padding: 8px 16px; font-weight: 800; font-size: 0.82rem; }
+  .sqb:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .sqhero { position: relative; overflow: hidden; isolation: isolate; border-radius: 22px; padding: 22px; color: #fff; background: linear-gradient(115deg, #05213d 0%, #0a4a73 34%, #0b8a87 68%, #35e3b2 100%); }
+  .sqhero p { margin: 6px 0 0; font-weight: 600; opacity: 0.85; font-size: 0.9rem; }
+  .sqmodes { align-self: flex-start; max-width: 100%; overflow-x: auto; background: var(--surface-2); }
+  .sqmodes button { white-space: nowrap; }
+  .panel input[type="search"] { flex: none; max-width: none; width: 100%; background: var(--surface-2); }
+  .panel .sel select { background: var(--surface-2); }
+  .chk { display: flex; gap: 10px; align-items: center; font-size: 0.85rem; color: var(--muted); font-weight: 600; }
+  .go { font: 800 0.88rem var(--font); height: 42px; border: 0; border-radius: 999px; padding: 0 22px; cursor: pointer; background: var(--accent); color: var(--bg); }
+  .go.alt { background: var(--accent-soft); color: var(--accent); }
+  .hint { margin: 0; color: var(--muted); font-size: 0.78rem; }
+  .hits { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+  .hits button { all: unset; box-sizing: border-box; width: 100%; cursor: pointer; padding: 9px 12px; border-radius: 12px; font-weight: 600; font-size: 0.88rem; }
+  .hits button:hover, .hits button:focus-visible { background: var(--accent-soft); }
+  .hits small { color: var(--muted); margin-left: 6px; }
+  .hits b { color: var(--accent); margin-right: 4px; }
+  .sum { margin-bottom: 4px; }
+  .pitch { background: linear-gradient(180deg, #14825f, #0e6a4d); border-radius: 20px; padding: 18px 8px; display: flex; flex-direction: column; gap: 14px; background-image: repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0 44px, transparent 44px 88px), linear-gradient(180deg, #14825f, #0e6a4d); }
+  .prow { display: flex; justify-content: space-evenly; gap: 6px; }
+  .pc { width: clamp(58px, 17vw, 96px); min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; color: #fff; }
+  .pc b { font-size: clamp(0.6rem, 2.4vw, 0.76rem); font-weight: 700; line-height: 1.15; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .pimg { position: relative; width: 100%; aspect-ratio: 3 / 4; background: rgba(255, 255, 255, 0.12); border-radius: 10px; display: grid; place-items: center; }
+  .pimg img { width: 100%; height: 100%; object-fit: contain; display: block; }
+  .pimg .pr, .pimg .pp2 { position: absolute; left: 5px; z-index: 2; font-weight: 800; font-size: 0.64rem; background: rgba(0, 0, 0, 0.55); padding: 1px 5px; border-radius: 6px; }
+  .pimg .pr { top: 4px; } .pimg .pp2 { bottom: 4px; }
+  .pips { display: flex; gap: 3px; }
+  .pips i { width: 8px; height: 8px; border-radius: 50%; background: rgba(255, 255, 255, 0.28); }
+  .pips i.on { background: #6dffd5; }
+  .chip.lg { display: inline-flex; align-items: center; gap: 6px; }
+  .chip.lg img { width: 18px; height: 18px; object-fit: contain; }
   @media (prefers-reduced-motion: no-preference) { .card { transition: transform .18s ease; } .card:hover { transform: translateY(-2px); } }
 </style>
 
@@ -178,19 +222,25 @@
       <button id="p-pc" type="button" aria-pressed="false">ПК</button>
     </div>
     <input id="q" type="search" placeholder="Найти SBC" aria-label="Найти SBC">
-    <select id="sort" aria-label="Сортировка">
+    <span class="sel"><select id="sort" aria-label="Сортировка">
       <option value="new">Сначала новые</option>
       <option value="score-asc">Меньше кристаллов</option>
       <option value="score-desc">Больше кристаллов</option>
-    </select>
+    </select></span>
   </div>
   <div class="seg cats" id="cats" role="group" aria-label="Категория"></div>
   <p class="upd" id="upd"></p>
+  <button class="sqb" type="button" data-sqopen aria-label="Открыть Squad Builder">
+    <span class="sqb-t"><span>SQUAD</span> <em>BUILDER</em></span>
+    <span class="sqb-s">Тематические составы с максимальной сыгранностью</span>
+    <span class="sqb-go">Собрать →</span>
+  </button>
 
   <div class="grid" id="grid" aria-live="polite"></div>
   <p class="empty" id="empty" hidden>Ничего не найдено.</p>
   <p class="note" id="note"></p>
 </div>
+<div class="dt" id="squad" role="dialog" aria-modal="true" aria-label="Squad Builder" hidden><div class="dt-in" id="sqin"></div></div>
 <div class="dt" id="detail" role="dialog" aria-modal="true" aria-label="Карточка SBC" hidden><div class="dt-in" id="dtin"></div></div>
 
 <script>
@@ -312,7 +362,6 @@
     if (pl.weak_foot) facts.push('Слабая нога ' + pl.weak_foot + '★');
     if (pl.skill_moves) facts.push('Финты ' + pl.skill_moves + '★');
     if (pl.foot) facts.push(pl.foot === "Left" ? 'Левая нога' : 'Правая нога');
-    if (pl.height) facts.push(pl.height + ' см');
     return '<section class="panel"><h3>Игрок</h3>' +
       '<div class="plhead"><div class="plbig"><div class="plrate">' + (pl.rating || "—") + '</div><div class="plpos">' + esc(pl.position || "") + '</div></div>' +
       '<div class="plmain"><div class="plname">' + esc(pl.name) + '</div>' +
@@ -349,12 +398,13 @@
     box.hidden = false;
     box.scrollTop = scroll;
   }
+  function showBack() { if (tg && tg.BackButton) tg.BackButton.show(); }
   function openDetail(id) {
     state.open = id;
     renderDetail();
     $("detail").scrollTop = 0;
     if (String(location.hash) !== "#sbc-" + id) location.hash = "sbc-" + id;
-    if (tg && tg.BackButton) { tg.BackButton.show(); }
+    showBack();
   }
   function closeDetail(fromHash) {
     state.open = null;
@@ -362,10 +412,206 @@
     if (tg && tg.BackButton) tg.BackButton.hide();
     if (!fromHash && /^#sbc-/.test(location.hash)) history.back();
   }
+  // ===== Squad Builder: тематические составы с максимальной сыгранностью =====
+  var LOGO = "https://futmind.com/images/fifa2027/";
+  var FORMS = {
+    "4-3-3": [["LW", "ST", "RW"], ["CM", "CM", "CM"], ["LB", "CB", "CB", "RB"], ["GK"]],
+    "4-4-2": [["ST", "ST"], ["LM", "CM", "CM", "RM"], ["LB", "CB", "CB", "RB"], ["GK"]],
+    "4-2-3-1": [["ST"], ["LW", "CAM", "RW"], ["CDM", "CDM"], ["LB", "CB", "CB", "RB"], ["GK"]],
+    "3-5-2": [["ST", "ST"], ["LM", "CM", "CM", "CM", "RM"], ["CB", "CB", "CB"], ["GK"]]
+  };
+  var COMPAT = { LW: ["LW", "LM"], RW: ["RW", "RM"], ST: ["ST", "CF"], CF: ["CF", "ST"], CM: ["CM", "CAM", "CDM"], CAM: ["CAM", "CM"], CDM: ["CDM", "CM"], LM: ["LM", "LW"], RM: ["RM", "RW"], LB: ["LB", "LWB"], RB: ["RB", "RWB"], LWB: ["LWB", "LB"], RWB: ["RWB", "RB"], CB: ["CB"], GK: ["GK"] };
+  var SQ = { db: null, open: false, mode: "player", form: "4-3-3", anchor: null, club: "", league: "", nation: "", former: true, result: null };
+
+  function sqLoad(cb) {
+    if (SQ.db !== null) return cb();
+    fetch("players.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (j) {
+      var list = j.p.map(function (r) { return { id: r[0], name: r[1], rating: r[2], pos: r[3], sp: r[4], club: r[5], league: r[6], nation: r[7], rarity: r[8] }; });
+      var byName = {};
+      list.forEach(function (p) { (byName[p.name] = byName[p.name] || []).push(p); });
+      SQ.db = { list: list, names: { club: j.clubs || {}, league: j.leagues || {}, nation: j.nations || {} }, byName: byName };
+      cb();
+    }).catch(function () { SQ.db = false; cb(); });
+  }
+  function sqName(kind, id) { return (SQ.db.names[kind] || {})[String(id)] || ("#" + id); }
+  function tier(n, a, b, c) { return n >= c ? 3 : n >= b ? 2 : n >= a ? 1 : 0; }
+  function chemList(sq) {
+    var c = {}, l = {}, n = {};
+    sq.forEach(function (p) { if (p) { c[p.club] = (c[p.club] || 0) + 1; l[p.league] = (l[p.league] || 0) + 1; n[p.nation] = (n[p.nation] || 0) + 1; } });
+    return sq.map(function (p) { return p ? Math.min(3, tier(c[p.club], 2, 4, 7) + tier(n[p.nation], 2, 5, 8) + tier(l[p.league], 3, 5, 8)) : 0; });
+  }
+  function rnd(a) { return a[Math.floor(Math.random() * a.length)]; }
+
+  function sqTheme() {
+    var db = SQ.db, list = db.list, a = SQ.anchor, clubs = {}, nations = {}, leagues = {};
+    if (SQ.mode === "player" && a) {
+      clubs[a.club] = 1; nations[a.nation] = 1; leagues[a.league] = 1;
+      if (SQ.former) (db.byName[a.name] || []).forEach(function (p) { clubs[p.club] = 1; });
+      return { pool: list.filter(function (p) { return clubs[p.club] || nations[p.nation] || leagues[p.league]; }), clubs: clubs, nations: nations, leagues: leagues };
+    }
+    if (SQ.mode === "club" && SQ.club) {
+      var lg = (list.filter(function (p) { return String(p.club) === SQ.club; })[0] || {}).league;
+      clubs[SQ.club] = 1; if (lg) leagues[lg] = 1;
+      return { pool: list.filter(function (p) { return clubs[p.club] || leagues[p.league]; }), clubs: clubs, nations: nations, leagues: leagues };
+    }
+    if (SQ.mode === "league" && SQ.league) { leagues[SQ.league] = 1; return { pool: list.filter(function (p) { return leagues[p.league]; }), clubs: clubs, nations: nations, leagues: leagues }; }
+    if (SQ.mode === "nation" && SQ.nation) { nations[SQ.nation] = 1; return { pool: list.filter(function (p) { return nations[p.nation]; }), clubs: clubs, nations: nations, leagues: leagues }; }
+    return null;
+  }
+
+  function sqGenerate() {
+    var th = sqTheme();
+    if (!th || th.pool.length < 11) return { error: "Для этой темы в базе пока слишком мало игроков. Выберите другую или подождите, пока база пополнится." };
+    var slots = [].concat.apply([], FORMS[SQ.form]), byPos = {};
+    th.pool.forEach(function (p) { (byPos[p.pos] = byPos[p.pos] || []).push(p); });
+    function cands(slot) { var out = []; (COMPAT[slot] || [slot]).forEach(function (q) { out = out.concat(byPos[q] || []); }); return out; }
+    function themed(p) { return (th.clubs[p.club] ? 1.5 : 0) + (th.nations[p.nation] ? 1 : 0) + (th.leagues[p.league] ? 0.5 : 0); }
+    function objective(sq) {
+      if (sq.some(function (p) { return !p; })) return -1e9;
+      var ch = chemList(sq), tot = 0, rat = 0, sp = 0, th_ = 0, names = {}, dup = 0;
+      sq.forEach(function (p, i) { tot += ch[i]; rat += p.rating; sp += p.sp; th_ += themed(p); if (names[p.name]) dup++; names[p.name] = 1; });
+      return tot * 3 + rat / 11 + sp * 0.8 + th_ * 0.6 - dup * 100;
+    }
+    var anchorSlot = -1;
+    if (SQ.mode === "player" && SQ.anchor) {
+      slots.forEach(function (s, i) { if (anchorSlot < 0 && (COMPAT[s] || [s]).indexOf(SQ.anchor.pos) !== -1) anchorSlot = i; });
+      if (anchorSlot < 0) return { error: "Позиция игрока (" + SQ.anchor.pos + ") не подходит под эту схему. Выберите другую схему." };
+    }
+    var best = null, bestV = -1e9, it, i;
+    for (it = 0; it < 160; it++) {
+      var sq = new Array(slots.length), used = {}, order = slots.map(function (_, k) { return k; }).sort(function () { return Math.random() - 0.5; });
+      if (anchorSlot >= 0) { sq[anchorSlot] = SQ.anchor; used[SQ.anchor.name] = 1; }
+      order.forEach(function (k) {
+        if (k === anchorSlot) return;
+        var cs = cands(slots[k]).filter(function (p) { return !used[p.name]; });
+        if (!cs.length) return;
+        var cur = sq.filter(Boolean), cc = {}, nn = {};
+        cur.forEach(function (p) { cc[p.club] = (cc[p.club] || 0) + 1; nn[p.nation] = (nn[p.nation] || 0) + 1; });
+        var scored = cs.map(function (p) { return { p: p, s: p.rating + p.sp * 4 + themed(p) * 3 + (cc[p.club] || 0) * 5 + (nn[p.nation] || 0) * 3 + Math.random() * 14 + ((COMPAT[slots[k]] || [])[0] === p.pos ? 3 : 0) }; });
+        scored.sort(function (x, y) { return y.s - x.s; });
+        var pick = scored[Math.floor(Math.random() * Math.min(5, scored.length))].p;
+        sq[k] = pick; used[pick.name] = 1;
+      });
+      var v = objective(sq);
+      if (v > bestV) { bestV = v; best = sq.slice(); }
+    }
+    if (!best) return { error: "Не удалось собрать состав из доступных игроков." };
+    for (it = 0; it < 500; it++) {
+      var k2 = Math.floor(Math.random() * slots.length);
+      if (k2 === anchorSlot) continue;
+      var pool2 = cands(slots[k2]);
+      if (!pool2.length) continue;
+      var np = rnd(pool2), taken = best.some(function (p, j) { return j !== k2 && p.name === np.name; });
+      if (taken) continue;
+      var old = best[k2]; best[k2] = np;
+      var v2 = objective(best);
+      if (v2 > bestV) bestV = v2; else best[k2] = old;
+    }
+    return { slots: slots, squad: best, chem: chemList(best) };
+  }
+
+  function sqSummary(res) {
+    var cnt = { club: {}, league: {}, nation: {} };
+    res.squad.forEach(function (p) { cnt.club[p.club] = (cnt.club[p.club] || 0) + 1; cnt.league[p.league] = (cnt.league[p.league] || 0) + 1; cnt.nation[p.nation] = (cnt.nation[p.nation] || 0) + 1; });
+    var chips = "";
+    [["club", "clubs", 2], ["nation", "nations", 2], ["league", "leagues", 3]].forEach(function (k) {
+      Object.keys(cnt[k[0]]).filter(function (id) { return cnt[k[0]][id] >= k[2]; }).sort(function (a, b) { return cnt[k[0]][b] - cnt[k[0]][a]; }).forEach(function (id) {
+        chips += '<span class="chip big lg">' + imgTag(LOGO + k[1] + "/" + id + ".png") + esc(sqName(k[0], id)) + ' ×' + cnt[k[0]][id] + '</span>';
+      });
+    });
+    return chips;
+  }
+
+  function sqResultHtml() {
+    var res = SQ.result;
+    if (!res) return '';
+    if (res.error) return '<section class="panel"><p class="none">' + esc(res.error) + '</p></section>';
+    var total = res.chem.reduce(function (a, b) { return a + b; }, 0);
+    var avg = Math.round(res.squad.reduce(function (a, p) { return a + p.rating; }, 0) / 11 * 10) / 10;
+    var sp = res.squad.filter(function (p) { return p.sp; }).length;
+    var i = 0, rows = FORMS[SQ.form].map(function (row) {
+      return '<div class="prow">' + row.map(function () {
+        var p = res.squad[i], ch = res.chem[i]; i++;
+        var pips = [0, 1, 2].map(function (k) { return '<i' + (k < ch ? ' on' : '') + '></i>'; }).join('');
+        return '<div class="pc"><div class="pimg"><span class="pr">' + p.rating + '</span><span class="pp2">' + esc(p.pos) + '</span>' + imgTag("https://card-image.futmind.com/en/27/" + p.id + ".png") + '</div><b>' + esc(p.name) + '</b><span class="pips">' + pips + '</span></div>';
+      }).join('') + '</div>';
+    }).join('');
+    return '<section class="panel"><div class="row sum"><span class="chip big">Сыгранность ' + total + '/33</span><span class="chip big">Средний рейтинг ' + avg + '</span><span class="chip big">Особых карт ' + sp + '</span></div>' +
+      '<div class="pitch">' + rows + '</div>' +
+      '<h3>Связи в составе</h3><div class="row">' + (sqSummary(res) || '<span class="none">Явных связей нет.</span>') + '</div></section>';
+  }
+
+  function optList(kind, selected) {
+    var counts = {};
+    SQ.db.list.forEach(function (p) { counts[p[kind]] = (counts[p[kind]] || 0) + 1; });
+    return '<option value="">Выберите…</option>' + Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; }).map(function (id) {
+      return '<option value="' + id + '"' + (String(selected) === id ? ' selected' : '') + '>' + esc(sqName(kind, id)) + ' (' + counts[id] + ')</option>';
+    }).join('');
+  }
+
+  function sqRender(keepFocus) {
+    var box = $("sqin");
+    if (SQ.db === null) { box.innerHTML = '<button class="back" type="button" data-sqclose>← Назад</button><p class="none">Загружаю базу игроков…</p>'; return; }
+    var head = '<button class="back" type="button" data-sqclose>← Назад</button><section class="sqhero"><div class="sqt"><span>SQUAD</span> <em>BUILDER</em></div><p>Тематические составы с максимальной сыгранностью</p></section>';
+    if (!SQ.db || !SQ.db.list.length) { box.innerHTML = head + '<section class="panel"><p class="none">База игроков ещё собирается. Она пополняется при каждом запуске обновления, обычно за несколько запусков. Загляните позже.</p></section>'; return; }
+    var modes = [["player", "Вокруг игрока"], ["club", "Клуб"], ["league", "Лига"], ["nation", "Нация"]].map(function (m) { return '<button type="button" data-sqmode="' + m[0] + '" aria-pressed="' + (SQ.mode === m[0]) + '">' + m[1] + '</button>'; }).join('');
+    var ctl;
+    if (SQ.mode === "player") {
+      ctl = '<input id="sqq" type="search" placeholder="Имя игрока, например Messi" autocomplete="off" value="' + esc(SQ.anchor ? SQ.anchor.name : (SQ.query || "")) + '"><div id="sqhits"></div>' +
+        '<label class="chk"><input id="sqformer" type="checkbox"' + (SQ.former ? ' checked' : '') + '> Добавить бывшие клубы игрока (по другим его карточкам)</label>';
+    } else {
+      ctl = '<span class="sel"><select id="sqsel" aria-label="Тема">' + optList(SQ.mode, SQ[SQ.mode]) + '</select></span>';
+    }
+    var forms = '<span class="sel"><select id="sqform" aria-label="Схема">' + Object.keys(FORMS).map(function (f) { return '<option' + (f === SQ.form ? ' selected' : '') + '>' + f + '</option>'; }).join('') + '</select></span>';
+    box.innerHTML = head + '<section class="panel"><div class="seg sqmodes">' + modes + '</div>' + ctl +
+      '<div class="row">' + forms + '<button class="go" type="button" data-sqgo>Собрать состав</button><button class="go alt" type="button" data-sqrand>Случайный</button></div>' +
+      '<p class="hint">В расчёте игроки от серебра и выше, приоритет у золотых и особых карточек. Сыгранность считается по клубу, лиге и нации.</p></section>' +
+      '<div id="sqres">' + sqResultHtml() + '</div>';
+    if (keepFocus) { var q = $("sqq"); if (q) { q.focus(); q.setSelectionRange(q.value.length, q.value.length); } }
+  }
+  function sqHits(text) {
+    var t = text.trim().toLowerCase(), box = $("sqhits");
+    if (!box) return;
+    if (t.length < 2) { box.innerHTML = ''; return; }
+    var seen = {}, hits = [];
+    SQ.db.list.forEach(function (p) { if (hits.length < 8 && !seen[p.name] && p.name.toLowerCase().indexOf(t) !== -1) { seen[p.name] = 1; hits.push(p); } });
+    box.innerHTML = hits.length ? '<ul class="hits">' + hits.map(function (p) {
+      return '<li><button type="button" data-sqpick="' + p.id + '"><b>' + p.rating + '</b> ' + esc(p.name) + ' <small>' + esc(p.pos) + ' · ' + esc(sqName("club", p.club)) + '</small></button></li>';
+    }).join('') + '</ul>' : '<p class="none">Не нашёл такого игрока в базе.</p>';
+  }
+  function sqGo() {
+    if (SQ.mode === "player" && !SQ.anchor) { SQ.result = { error: "Выберите игрока из списка подсказок." }; }
+    else SQ.result = sqGenerate();
+    $("sqres").innerHTML = sqResultHtml();
+  }
+  function sqRandom() {
+    var specials = SQ.db.list.filter(function (p) { return p.sp && p.rating >= 85; });
+    var pool = specials.length ? specials : SQ.db.list.filter(function (p) { return p.rating >= 80; });
+    SQ.mode = "player"; SQ.anchor = rnd(pool); SQ.query = "";
+    sqRender();
+    sqGo();
+  }
+  function openSquad(fromHash) {
+    SQ.open = true;
+    $("squad").hidden = false;
+    $("squad").scrollTop = 0;
+    sqRender();
+    sqLoad(function () { if (SQ.open) sqRender(); });
+    if (!fromHash && location.hash !== "#squad") location.hash = "squad";
+    if (tg && tg.BackButton) tg.BackButton.show();
+  }
+  function closeSquad(fromHash) {
+    SQ.open = false;
+    $("squad").hidden = true;
+    if (tg && tg.BackButton) tg.BackButton.hide();
+    if (!fromHash && location.hash === "#squad") history.back();
+  }
+
   function syncHash() {
-    var m = /^#sbc-(\d+)$/.exec(location.hash);
-    if (m && state.data && findSbc(m[1])) { state.open = m[1]; renderDetail(); if (tg && tg.BackButton) tg.BackButton.show(); }
-    else if (state.open != null) closeDetail(true);
+    var h = String(location.hash), m = /^#sbc-(\d+)$/.exec(h);
+    if (m && state.data && findSbc(m[1])) { if (SQ.open) closeSquad(true); state.open = m[1]; renderDetail(); showBack(); }
+    else if (h === "#squad") { if (state.open != null) closeDetail(true); if (!SQ.open) openSquad(true); }
+    else { if (state.open != null) closeDetail(true); if (SQ.open) closeSquad(true); }
   }
 
   function render() {
@@ -400,7 +646,7 @@
     $("p-pc").disabled = d.platforms.indexOf("pc") === -1;
     if (d.platforms.indexOf("pc") === -1) $("p-pc").title = "Цены для ПК пока не собраны";
     try { $("upd").textContent = "Цены от " + new Date(d.updated).toLocaleString("ru-RU", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit", timeZone: "Europe/Moscow" }) + " МСК"; } catch (e) {}
-    $("note").textContent = "«Самый дешёвый» — минимум монет, обычно это много карт низкого рейтинга. «Оптимальный» — золотая середина: к цене каждой карты добавляется 300 монет за потраченное время, поэтому карт заметно меньше, а переплата умеренная. «Самый быстрый» — минимум карт: берутся карты, у которых цена за кристалл не больше чем в 1,5 раза выше самой выгодной, и среди них подбирается самая дешёвая сборка. Цены округлены до 50 монет и берутся по самой дешёвой карте на рынке; при массовой покупке реальная цена будет выше." + ((d.estimates || []).indexOf("pc") !== -1 ? " Цены для ПК приблизительные: они пересчитаны по соотношению цены SBC на ПК и консоли." : "") + " Источник данных: " + (d.source || "—") + ".";
+    $("note").textContent = "«Самый дешёвый» — минимум монет, обычно это много карт низкого рейтинга. «Оптимальный» — золотая середина: к цене каждой карты добавляется 300 монет за потраченное время, поэтому карт заметно меньше, а переплата умеренная. «Самый быстрый» — минимум карт: берутся карты, у которых цена за кристалл не больше чем в 1,5 раза выше самой выгодной, и среди них подбирается самая дешёвая сборка. Цены округлены до 50 монет и берутся по самой дешёвой карте на рынке; при массовой покупке реальная цена будет выше." + ((d.estimates || []).indexOf("pc") !== -1 ? " Цены для ПК приблизительные: они пересчитаны по соотношению цены SBC на ПК и консоли." : "") ;
     render();
     syncHash();
   }).catch(function () { $("empty").hidden = false; $("empty").textContent = "Не удалось загрузить data.json."; });
@@ -413,6 +659,14 @@
   document.addEventListener("click", function (e) {
     var t = e.target;
     if (!t.closest) return;
+    if (t.closest("[data-sqopen]")) { openSquad(); return; }
+    if (t.closest("[data-sqclose]")) { closeSquad(); return; }
+    var sm = t.closest("[data-sqmode]");
+    if (sm) { SQ.mode = sm.getAttribute("data-sqmode"); SQ.result = null; sqRender(); return; }
+    var sp = t.closest("[data-sqpick]");
+    if (sp) { var id = Number(sp.getAttribute("data-sqpick")); SQ.anchor = SQ.db.list.filter(function (p) { return p.id === id; })[0]; SQ.result = null; sqRender(); sqGo(); return; }
+    if (t.closest("[data-sqgo]")) { sqGo(); return; }
+    if (t.closest("[data-sqrand]")) { sqRandom(); return; }
     var o = t.closest("[data-open]");
     if (o) { openDetail(o.getAttribute("data-open")); return; }
     if (t.closest("[data-close]")) { closeDetail(); return; }
@@ -423,10 +677,20 @@
     render();
     if (state.open != null) renderDetail();
   });
+  document.addEventListener("input", function (e) {
+    if (e.target.id === "sqq") { SQ.anchor = null; SQ.query = e.target.value; sqHits(e.target.value); }
+  });
+  document.addEventListener("change", function (e) {
+    var id = e.target.id;
+    if (id === "sqform") SQ.form = e.target.value;
+    else if (id === "sqformer") SQ.former = e.target.checked;
+    else if (id === "sqsel") { SQ[SQ.mode] = e.target.value; if (e.target.value) { sqGo(); } }
+  });
   document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && SQ.open) closeSquad();
     if (e.key === "Escape" && state.open != null) closeDetail();
     if ((e.key === "Enter" || e.key === " ") && e.target.getAttribute && e.target.getAttribute("data-open") && e.target.tagName === "DIV") { e.preventDefault(); openDetail(e.target.getAttribute("data-open")); }
   });
   window.addEventListener("hashchange", syncHash);
-  if (tg && tg.BackButton) tg.BackButton.onClick(function () { closeDetail(); });
+  if (tg && tg.BackButton) tg.BackButton.onClick(function () { if (SQ.open) closeSquad(); else closeDetail(); });
 </script>
