@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T17:00+00:00",
+ "updated": "2026-11-22T12:00+00:00",
  "platforms": [
   "console",
   "pc"
@@ -9,2274 +9,16 @@
  ],
  "sbcs": [
   {
-   "id": 7,
-   "name": "Intro to Streamlined SBCs",
-   "score": 1000,
-   "min_rating": 0,
-   "image": "https://futmind.com/image-generator/sbc/7.png",
-   "expires": "3192 Days 0 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 1
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 650,
-        "qty": 1
-       }
-      ],
-      "cost": 1500,
-      "score": 1170,
-      "surplus": 170,
-      "players": 2
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 1
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 650,
-        "qty": 1
-       }
-      ],
-      "cost": 1500,
-      "score": 1170,
-      "surplus": 170,
-      "players": 2
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 3000,
-        "qty": 1
-       }
-      ],
-      "cost": 3000,
-      "score": 2100,
-      "surplus": 1100,
-      "players": 1
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 900,
-        "qty": 1
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 650,
-        "qty": 1
-       }
-      ],
-      "cost": 1550,
-      "score": 1170,
-      "surplus": 170,
-      "players": 2,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 900,
-        "qty": 1
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 650,
-        "qty": 1
-       }
-      ],
-      "cost": 1550,
-      "score": 1170,
-      "surplus": 170,
-      "players": 2,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 3100,
-        "qty": 1
-       }
-      ],
-      "cost": 3100,
-      "score": 2100,
-      "surplus": 1100,
-      "players": 1,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 8,
-   "name": "Bronze and Silver Re-roll",
-   "score": 500,
-   "min_rating": 0,
-   "image": "https://futmind.com/image-generator/sbc/8.png",
-   "expires": "3192 Days 0 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 1
-       }
-      ],
-      "cost": 850,
-      "score": 830,
-      "surplus": 330,
-      "players": 1
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 1
-       }
-      ],
-      "cost": 850,
-      "score": 830,
-      "surplus": 330,
-      "players": 1
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 1
-       }
-      ],
-      "cost": 850,
-      "score": 830,
-      "surplus": 330,
-      "players": 1
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 1150,
-        "qty": 1
-       }
-      ],
-      "cost": 1150,
-      "score": 830,
-      "surplus": 330,
-      "players": 1,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 1150,
-        "qty": 1
-       }
-      ],
-      "cost": 1150,
-      "score": 830,
-      "surplus": 330,
-      "players": 1,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 1150,
-        "qty": 1
-       }
-      ],
-      "cost": 1150,
-      "score": 830,
-      "surplus": 330,
-      "players": 1,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 9,
-   "name": "Gold Re-Roll",
-   "score": 1250,
-   "min_rating": 0,
-   "image": "https://futmind.com/image-generator/sbc/9.png",
-   "expires": "3192 Days 0 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 2
-       }
-      ],
-      "cost": 1700,
-      "score": 1660,
-      "surplus": 410,
-      "players": 2
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 2
-       }
-      ],
-      "cost": 1700,
-      "score": 1660,
-      "surplus": 410,
-      "players": 2
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 3000,
-        "qty": 1
-       }
-      ],
-      "cost": 3000,
-      "score": 2100,
-      "surplus": 850,
-      "players": 1
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 2
-       }
-      ],
-      "cost": 1700,
-      "score": 1660,
-      "surplus": 410,
-      "players": 2,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 2
-       }
-      ],
-      "cost": 1700,
-      "score": 1660,
-      "surplus": 410,
-      "players": 2,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 3000,
-        "qty": 1
-       }
-      ],
-      "cost": 3000,
-      "score": 2100,
-      "surplus": 850,
-      "players": 1,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 20,
-   "name": "Intro to Player SBCs",
-   "score": 4000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/20.png",
-   "expires": "3203 Days 0 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 5
-       }
-      ],
-      "cost": 4250,
-      "score": 4150,
-      "surplus": 150,
-      "players": 5
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 1
-       }
-      ],
-      "cost": 5400,
-      "score": 4100,
-      "surplus": 100,
-      "players": 1
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 1
-       }
-      ],
-      "cost": 5400,
-      "score": 4100,
-      "surplus": 100,
-      "players": 1
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 5
-       }
-      ],
-      "cost": 4750,
-      "score": 4150,
-      "surplus": 150,
-      "players": 5,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 1
-       }
-      ],
-      "cost": 5950,
-      "score": 4100,
-      "surplus": 100,
-      "players": 1,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 1
-       }
-      ],
-      "cost": 5950,
-      "score": 4100,
-      "surplus": 100,
-      "players": 1,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 91,
-   "name": "Bundesliga & Google Pixel Frauen-Bundesliga",
-   "score": 5000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/91.png",
-   "expires": "13 Days 3 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 6
-       },
-       {
-        "rating": 72,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 1
-       }
-      ],
-      "cost": 5300,
-      "score": 5015,
-      "surplus": 15,
-      "players": 7
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 6
-       },
-       {
-        "rating": 72,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 1
-       }
-      ],
-      "cost": 5300,
-      "score": 5015,
-      "surplus": 15,
-      "players": 7
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 1
-       }
-      ],
-      "cost": 8200,
-      "score": 5500,
-      "surplus": 500,
-      "players": 1
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 6
-       },
-       {
-        "rating": 72,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 1
-       }
-      ],
-      "cost": 5300,
-      "score": 5015,
-      "surplus": 15,
-      "players": 7,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 6
-       },
-       {
-        "rating": 72,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 1
-       }
-      ],
-      "cost": 5300,
-      "score": 5015,
-      "surplus": 15,
-      "players": 7,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 1
-       }
-      ],
-      "cost": 8200,
-      "score": 5500,
-      "surplus": 500,
-      "players": 1,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 92,
-   "name": "Ligue 1 & Arkema Première Ligue",
-   "score": 5000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/92.png",
-   "expires": "13 Days 1 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 6
-       },
-       {
-        "rating": 72,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 1
-       }
-      ],
-      "cost": 5300,
-      "score": 5015,
-      "surplus": 15,
-      "players": 7
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 6
-       },
-       {
-        "rating": 72,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 1
-       }
-      ],
-      "cost": 5300,
-      "score": 5015,
-      "surplus": 15,
-      "players": 7
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 1
-       }
-      ],
-      "cost": 8200,
-      "score": 5500,
-      "surplus": 500,
-      "players": 1
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 6
-       },
-       {
-        "rating": 72,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 1
-       }
-      ],
-      "cost": 5900,
-      "score": 5015,
-      "surplus": 15,
-      "players": 7,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 6
-       },
-       {
-        "rating": 72,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 1
-       }
-      ],
-      "cost": 5900,
-      "score": 5015,
-      "surplus": 15,
-      "players": 7,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8950,
-        "qty": 1
-       }
-      ],
-      "cost": 8950,
-      "score": 5500,
-      "surplus": 500,
-      "players": 1,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 93,
-   "name": "Premier League & Barclays WSL",
-   "score": 9000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/93.png",
-   "expires": "13 Days 1 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 11
-       }
-      ],
-      "cost": 9350,
-      "score": 9130,
-      "surplus": 130,
-      "players": 11
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 2
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 1
-       }
-      ],
-      "cost": 11650,
-      "score": 9030,
-      "surplus": 30,
-      "players": 3
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 1
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 1
-       }
-      ],
-      "cost": 13600,
-      "score": 9600,
-      "surplus": 600,
-      "players": 2
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 11
-       }
-      ],
-      "cost": 10450,
-      "score": 9130,
-      "surplus": 130,
-      "players": 11,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5850,
-        "qty": 2
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 1
-       }
-      ],
-      "cost": 12650,
-      "score": 9030,
-      "surplus": 30,
-      "players": 3,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8900,
-        "qty": 1
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5850,
-        "qty": 1
-       }
-      ],
-      "cost": 14750,
-      "score": 9600,
-      "surplus": 600,
-      "players": 2,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 94,
-   "name": "LALIGA & Liga F",
-   "score": 6000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/94.png",
-   "expires": "13 Days 1 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 7
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 650,
-        "qty": 1
-       }
-      ],
-      "cost": 6600,
-      "score": 6150,
-      "surplus": 150,
-      "players": 8
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 1
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 2
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 650,
-        "qty": 1
-       }
-      ],
-      "cost": 7750,
-      "score": 6100,
-      "surplus": 100,
-      "players": 4
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 1
-       },
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 3000,
-        "qty": 1
-       }
-      ],
-      "cost": 8400,
-      "score": 6200,
-      "surplus": 200,
-      "players": 2
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 7
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 700,
-        "qty": 1
-       }
-      ],
-      "cost": 7350,
-      "score": 6150,
-      "surplus": 150,
-      "players": 8,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 1
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 2
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 700,
-        "qty": 1
-       }
-      ],
-      "cost": 8550,
-      "score": 6100,
-      "surplus": 100,
-      "players": 4,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 1
-       },
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 3300,
-        "qty": 1
-       }
-      ],
-      "cost": 9250,
-      "score": 6200,
-      "surplus": 200,
-      "players": 2,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 99,
-   "name": "Serie A & ROSHN Saudi League",
-   "score": 3000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/99.png",
-   "expires": "13 Days 1 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 4
-       }
-      ],
-      "cost": 3400,
-      "score": 3320,
-      "surplus": 320,
-      "players": 4
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 4
-       }
-      ],
-      "cost": 3400,
-      "score": 3320,
-      "surplus": 320,
-      "players": 4
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 1
-       }
-      ],
-      "cost": 5400,
-      "score": 4100,
-      "surplus": 1100,
-      "players": 1
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 4
-       }
-      ],
-      "cost": 3800,
-      "score": 3320,
-      "surplus": 320,
-      "players": 4,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 4
-       }
-      ],
-      "cost": 3800,
-      "score": 3320,
-      "surplus": 320,
-      "players": 4,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 1
-       }
-      ],
-      "cost": 5950,
-      "score": 4100,
-      "surplus": 1100,
-      "players": 1,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 100,
-   "name": "MLS & NWSL",
-   "score": 3000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/100.png",
-   "expires": "13 Days 3 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 4
-       }
-      ],
-      "cost": 3400,
-      "score": 3320,
-      "surplus": 320,
-      "players": 4
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 4
-       }
-      ],
-      "cost": 3400,
-      "score": 3320,
-      "surplus": 320,
-      "players": 4
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 1
-       }
-      ],
-      "cost": 5400,
-      "score": 4100,
-      "surplus": 1100,
-      "players": 1
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 4
-       }
-      ],
-      "cost": 3400,
-      "score": 3320,
-      "surplus": 320,
-      "players": 4,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 4
-       }
-      ],
-      "cost": 3400,
-      "score": 3320,
-      "surplus": 320,
-      "players": 4,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 1
-       }
-      ],
-      "cost": 5400,
-      "score": 4100,
-      "surplus": 1100,
-      "players": 1,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 121,
-   "name": "Liga F POTM October",
-   "score": 14000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/121.png",
-   "expires": "35 Days 0 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "player",
-    "player": {
-     "v": 2,
-     "id": 50403797,
-     "slug": "ainhoa-marin",
-     "card_image": "https://card-image.futmind.com/en/27/50403797.png",
-     "name": "Ainhoa Marín",
-     "rating": 85,
-     "position": "RM",
-     "pac": 91,
-     "sho": 80,
-     "pas": 78,
-     "dri": 88,
-     "def": 44,
-     "phy": 70,
-     "weak_foot": "3",
-     "skill_moves": "3",
-     "foot": "Right",
-     "height": "165",
-     "rarity": "POTM LIGA F",
-     "detail": {
-      "Acceleration": 92,
-      "Sprint Speed": 91,
-      "Agility": 90,
-      "Balance": 84,
-      "Reactions": 81,
-      "Ball Control": 84,
-      "Dribbling": 91,
-      "Composure": 82,
-      "Attacking Position": 85,
-      "Finishing": 86,
-      "Shot Power": 73,
-      "Long Shots": 79,
-      "Volleys": 65,
-      "Penalties": 77,
-      "Interceptions": 44,
-      "Heading Accuracy": 58,
-      "Defensive Awareness": 35,
-      "Standing Tackle": 47,
-      "Sliding Tackle": 44,
-      "Vision": 82,
-      "Crossing": 80,
-      "FK Accuracy": 65,
-      "Short Pass": 81,
-      "Long Pass": 72,
-      "Curve": 71,
-      "Jumping": 78,
-      "Stamina": 84,
-      "Strength": 68,
-      "Aggression": 54
-     },
-     "positions": {
-      "CB": 65,
-      "LB": 65,
-      "RB": 64,
-      "CDM": 78,
-      "CM": 84,
-      "CAM": 85,
-      "LM": 85,
-      "RM": 85,
-      "LW": 85,
-      "RW": 80,
-      "ST": 85
-     },
-     "playstyles": [],
-     "league": "Liga F Moeve",
-     "nation": "Spain",
-     "club_id": 116336,
-     "league_id": 2222,
-     "nation_id": 45,
-     "club_logo": "https://futmind.com/images/fifa2027/clubs/116336.png",
-     "league_logo": "https://futmind.com/images/fifa2027/leagues/2222.png",
-     "nation_logo": "https://futmind.com/images/fifa2027/nations/45.png",
-     "top": {
-      "nation": [],
-      "league": [],
-      "club": []
-     }
-    }
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 17
-       }
-      ],
-      "cost": 14450,
-      "score": 14110,
-      "surplus": 110,
-      "players": 17
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 2
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 7
-       }
-      ],
-      "cost": 16750,
-      "score": 14010,
-      "surplus": 10,
-      "players": 9
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 2
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 1
-       }
-      ],
-      "cost": 21800,
-      "score": 15100,
-      "surplus": 1100,
-      "players": 3
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 17
-       }
-      ],
-      "cost": 16150,
-      "score": 14110,
-      "surplus": 110,
-      "players": 17,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 2
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 7
-       }
-      ],
-      "cost": 18550,
-      "score": 14010,
-      "surplus": 10,
-      "players": 9,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 9000,
-        "qty": 2
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 1
-       }
-      ],
-      "cost": 23950,
-      "score": 15100,
-      "surplus": 1100,
-      "players": 3,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 128,
-   "name": "LALIGA POTM October",
-   "score": 5200000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/128.png",
-   "expires": "14 Days 3 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "player",
-    "player": {
-     "v": 2,
-     "id": 151226691,
-     "slug": "kylian-mbappe",
-     "card_image": "https://card-image.futmind.com/en/27/151226691.png",
-     "name": "Kylian Mbappé",
-     "rating": 92,
-     "position": "LW",
-     "pac": 97,
-     "sho": 92,
-     "pas": 81,
-     "dri": 93,
-     "def": 30,
-     "phy": 77,
-     "weak_foot": "4",
-     "skill_moves": "5",
-     "foot": "Right",
-     "height": "182",
-     "rarity": "POTM LALIGA EA SPORTS",
-     "detail": {
-      "Acceleration": 98,
-      "Sprint Speed": 97,
-      "Agility": 94,
-      "Balance": 83,
-      "Reactions": 93,
-      "Ball Control": 94,
-      "Dribbling": 93,
-      "Composure": 89,
-      "Attacking Position": 92,
-      "Finishing": 96,
-      "Shot Power": 92,
-      "Long Shots": 87,
-      "Volleys": 88,
-      "Penalties": 87,
-      "Interceptions": 20,
-      "Heading Accuracy": 79,
-      "Defensive Awareness": 16,
-      "Standing Tackle": 35,
-      "Sliding Tackle": 25,
-      "Vision": 84,
-      "Crossing": 75,
-      "FK Accuracy": 71,
-      "Short Pass": 88,
-      "Long Pass": 75,
-      "Curve": 81,
-      "Jumping": 91,
-      "Stamina": 84,
-      "Strength": 78,
-      "Aggression": 62
-     },
-     "positions": {
-      "CB": 60,
-      "LB": 60,
-      "RB": 60,
-      "CDM": 81,
-      "CM": 91,
-      "CAM": 89,
-      "LM": 91,
-      "RM": 91,
-      "LW": 92,
-      "RW": 91
-     },
-     "playstyles": [],
-     "league": "LALIGA EA SPORTS",
-     "nation": "France",
-     "club_id": 243,
-     "league_id": 53,
-     "nation_id": 18,
-     "club_logo": "https://futmind.com/images/fifa2027/clubs/243.png",
-     "league_logo": "https://futmind.com/images/fifa2027/leagues/53.png",
-     "nation_logo": "https://futmind.com/images/fifa2027/nations/18.png",
-     "top": {
-      "nation": [],
-      "league": [],
-      "club": []
-     }
-    }
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 6265
-       },
-       {
-        "rating": 72,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 2
-       }
-      ],
-      "cost": 5325650,
-      "score": 5200020,
-      "surplus": 20,
-      "players": 6267
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 15
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 6191
-       }
-      ],
-      "cost": 5343350,
-      "score": 5200030,
-      "surplus": 30,
-      "players": 6206
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 944
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 2
-       }
-      ],
-      "cost": 7751600,
-      "score": 5200200,
-      "surplus": 200,
-      "players": 946
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 1000,
-        "qty": 6265
-       },
-       {
-        "rating": 72,
-        "rarity": "Common",
-        "score": 35,
-        "price": 250,
-        "qty": 2
-       }
-      ],
-      "cost": 6265500,
-      "score": 5200020,
-      "surplus": 20,
-      "players": 6267,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 6500,
-        "qty": 15
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 1000,
-        "qty": 6191
-       }
-      ],
-      "cost": 6288500,
-      "score": 5200030,
-      "surplus": 30,
-      "players": 6206,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 9850,
-        "qty": 944
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 6500,
-        "qty": 2
-       }
-      ],
-      "cost": 9311400,
-      "score": 5200200,
-      "surplus": 200,
-      "players": 946,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 148,
-   "name": "Premier League POTM October",
-   "score": 17000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/148.png",
-   "expires": "17 Days 20 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "player",
-    "player": {
-     "v": 2,
-     "id": 134476925,
-     "slug": "nicolas-jackson",
-     "card_image": "https://card-image.futmind.com/en/27/134476925.png",
-     "name": "Nicolas Jackson",
-     "rating": 85,
-     "position": "ST",
-     "pac": 84,
-     "sho": 85,
-     "pas": 75,
-     "dri": 85,
-     "def": 46,
-     "phy": 82,
-     "weak_foot": "3",
-     "skill_moves": "4",
-     "foot": "Right",
-     "height": "187",
-     "rarity": "POTM Premier League",
-     "detail": {
-      "Acceleration": 85,
-      "Sprint Speed": 83,
-      "Agility": 80,
-      "Balance": 80,
-      "Reactions": 85,
-      "Ball Control": 85,
-      "Dribbling": 87,
-      "Composure": 83,
-      "Attacking Position": 91,
-      "Finishing": 89,
-      "Shot Power": 87,
-      "Long Shots": 77,
-      "Volleys": 84,
-      "Penalties": 66,
-      "Interceptions": 46,
-      "Heading Accuracy": 87,
-      "Defensive Awareness": 35,
-      "Standing Tackle": 46,
-      "Sliding Tackle": 35,
-      "Vision": 79,
-      "Crossing": 67,
-      "FK Accuracy": 54,
-      "Short Pass": 84,
-      "Long Pass": 67,
-      "Curve": 78,
-      "Jumping": 94,
-      "Stamina": 82,
-      "Strength": 83,
-      "Aggression": 78
-     },
-     "positions": {
-      "CB": 63,
-      "LB": 63,
-      "RB": 65,
-      "CDM": 78,
-      "CM": 84,
-      "CAM": 83,
-      "LM": 84,
-      "RM": 84,
-      "LW": 83,
-      "RW": 87
-     },
-     "playstyles": [],
-     "league": "| Ratings and Prices | FC 27 | FUT Mind",
-     "nation": "Senegal",
-     "club_id": 2,
-     "league_id": 13,
-     "nation_id": 136,
-     "club_logo": "https://futmind.com/images/fifa2027/clubs/2.png",
-     "league_logo": "https://futmind.com/images/fifa2027/leagues/13.png",
-     "nation_logo": "https://futmind.com/images/fifa2027/nations/136.png",
-     "top": {
-      "nation": [],
-      "league": [],
-      "club": []
-     }
-    }
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 20
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 700,
-        "qty": 1
-       }
-      ],
-      "cost": 17700,
-      "score": 17010,
-      "surplus": 10,
-      "players": 21
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 4
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 1
-       }
-      ],
-      "cost": 22450,
-      "score": 17230,
-      "surplus": 230,
-      "players": 5
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 1
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 3
-       }
-      ],
-      "cost": 24400,
-      "score": 17800,
-      "surplus": 800,
-      "players": 4
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 20
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 750,
-        "qty": 1
-       }
-      ],
-      "cost": 19750,
-      "score": 17010,
-      "surplus": 10,
-      "players": 21,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5900,
-        "qty": 4
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 1
-       }
-      ],
-      "cost": 24550,
-      "score": 17230,
-      "surplus": 230,
-      "players": 5,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 9000,
-        "qty": 1
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5900,
-        "qty": 3
-       }
-      ],
-      "cost": 26700,
-      "score": 17800,
-      "surplus": 800,
-      "players": 4,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 150,
-   "name": "Federico Chiesa",
-   "score": 150000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/150.png",
-   "expires": "3 Days 1 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "player",
-    "player": {
-     "v": 2,
-     "id": 50567453,
-     "slug": "federico-chiesa",
-     "card_image": "https://card-image.futmind.com/en/27/50567453.png",
-     "name": "Federico Chiesa",
-     "rating": 86,
-     "position": "RW",
-     "pac": 92,
-     "sho": 85,
-     "pas": 81,
-     "dri": 88,
-     "def": 50,
-     "phy": 77,
-     "weak_foot": "4",
-     "skill_moves": "4",
-     "foot": "Right",
-     "height": "175",
-     "rarity": "FC Heritage",
-     "detail": {
-      "Acceleration": 93,
-      "Sprint Speed": 91,
-      "Agility": 92,
-      "Balance": 90,
-      "Reactions": 83,
-      "Ball Control": 86,
-      "Dribbling": 88,
-      "Composure": 86,
-      "Attacking Position": 85,
-      "Finishing": 85,
-      "Shot Power": 89,
-      "Long Shots": 85,
-      "Volleys": 84,
-      "Penalties": 67,
-      "Interceptions": 52,
-      "Heading Accuracy": 60,
-      "Defensive Awareness": 48,
-      "Standing Tackle": 50,
-      "Sliding Tackle": 44,
-      "Vision": 83,
-      "Crossing": 81,
-      "FK Accuracy": 67,
-      "Short Pass": 83,
-      "Long Pass": 80,
-      "Curve": 84,
-      "Jumping": 81,
-      "Stamina": 80,
-      "Strength": 73,
-      "Aggression": 80
-     },
-     "positions": {
-      "CB": 67,
-      "LB": 67,
-      "RB": 69,
-      "CDM": 80,
-      "CM": 85,
-      "CAM": 85,
-      "LM": 86,
-      "RM": 86,
-      "LW": 85,
-      "RW": 83,
-      "ST": 86
-     },
-     "playstyles": [],
-     "league": "Premier League",
-     "nation": "Italy",
-     "club_id": 9,
-     "league_id": 13,
-     "nation_id": 27,
-     "club_logo": "https://futmind.com/images/fifa2027/clubs/9.png",
-     "league_logo": "https://futmind.com/images/fifa2027/leagues/13.png",
-     "nation_logo": "https://futmind.com/images/fifa2027/nations/27.png",
-     "top": {
-      "nation": [],
-      "league": [],
-      "club": []
-     }
-    }
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 181
-       }
-      ],
-      "cost": 153850,
-      "score": 150230,
-      "surplus": 230,
-      "players": 181
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 4
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 161
-       }
-      ],
-      "cost": 158450,
-      "score": 150030,
-      "surplus": 30,
-      "players": 165
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 26
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 2
-       }
-      ],
-      "cost": 224000,
-      "score": 151200,
-      "surplus": 1200,
-      "players": 28
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 181
-       }
-      ],
-      "cost": 171950,
-      "score": 150230,
-      "surplus": 230,
-      "players": 181,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 4
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 161
-       }
-      ],
-      "cost": 176750,
-      "score": 150030,
-      "surplus": 30,
-      "players": 165,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 9000,
-        "qty": 26
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 2
-       }
-      ],
-      "cost": 245900,
-      "score": 151200,
-      "surplus": 1200,
-      "players": 28,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 152,
-   "name": "Serie A POTM October",
+   "id": 196,
+   "name": "1 of 3 Year in Review Player Pick",
    "score": 23000,
    "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/152.png",
-   "expires": "16 Days 20 Hours",
+   "image": "https://futmind.com/image-generator/sbc/196.png",
+   "expires": null,
    "notes": [],
    "reward": {
-    "kind": "player",
-    "player": {
-     "v": 2,
-     "id": 50583417,
-     "slug": "giacomo-calo",
-     "card_image": "https://card-image.futmind.com/en/27/50583417.png",
-     "name": "Giacomo Calò",
-     "rating": 85,
-     "position": "CM",
-     "pac": 80,
-     "sho": 67,
-     "pas": 82,
-     "dri": 86,
-     "def": 82,
-     "phy": 88,
-     "weak_foot": "3",
-     "skill_moves": "3",
-     "foot": "Right",
-     "height": "180",
-     "rarity": "POTM Serie A",
-     "detail": {
-      "Acceleration": 80,
-      "Sprint Speed": 80,
-      "Agility": 77,
-      "Balance": 87,
-      "Reactions": 86,
-      "Ball Control": 91,
-      "Dribbling": 84,
-      "Composure": 86,
-      "Attacking Position": 71,
-      "Finishing": 59,
-      "Shot Power": 73,
-      "Long Shots": 75,
-      "Volleys": 63,
-      "Penalties": 78,
-      "Interceptions": 83,
-      "Heading Accuracy": 76,
-      "Defensive Awareness": 82,
-      "Standing Tackle": 82,
-      "Sliding Tackle": 82,
-      "Vision": 80,
-      "Crossing": 75,
-      "FK Accuracy": 80,
-      "Short Pass": 87,
-      "Long Pass": 84,
-      "Curve": 82,
-      "Jumping": 86,
-      "Stamina": 94,
-      "Strength": 84,
-      "Aggression": 89
-     },
-     "positions": {
-      "CB": 83,
-      "LB": 83,
-      "RB": 85,
-      "CDM": 84,
-      "CM": 85,
-      "CAM": 82,
-      "LM": 80,
-      "RM": 80,
-      "LW": 82,
-      "RW": 76
-     },
-     "playstyles": [],
-     "league": "Serie A Enilive",
-     "nation": "Italy",
-     "club_id": 111657,
-     "league_id": 31,
-     "nation_id": 27,
-     "club_logo": "https://futmind.com/images/fifa2027/clubs/111657.png",
-     "league_logo": "https://futmind.com/images/fifa2027/leagues/31.png",
-     "nation_logo": "https://futmind.com/images/fifa2027/nations/27.png",
-     "top": {
-      "nation": [],
-      "league": [],
-      "club": []
-     }
-    }
+    "kind": "pick",
+    "player": null
    },
    "builds": {
     "console": {
@@ -2286,11 +28,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 850,
+        "price": 700,
         "qty": 28
        }
       ],
-      "cost": 23800,
+      "cost": 19600,
       "score": 23240,
       "surplus": 240,
       "players": 28
@@ -2301,18 +43,18 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5400,
+        "price": 4600,
         "qty": 4
        },
        {
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 850,
+        "price": 700,
         "qty": 8
        }
       ],
-      "cost": 28400,
+      "cost": 24000,
       "score": 23040,
       "surplus": 40,
       "players": 12
@@ -2323,18 +65,18 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 8200,
+        "price": 6800,
         "qty": 2
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5400,
+        "price": 4600,
         "qty": 3
        }
       ],
-      "cost": 32600,
+      "cost": 27400,
       "score": 23300,
       "surplus": 300,
       "players": 5
@@ -2347,11 +89,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 950,
+        "price": 800,
         "qty": 28
        }
       ],
-      "cost": 26600,
+      "cost": 22400,
       "score": 23240,
       "surplus": 240,
       "players": 28,
@@ -2363,18 +105,18 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5950,
+        "price": 5150,
         "qty": 4
        },
        {
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 950,
+        "price": 800,
         "qty": 8
        }
       ],
-      "cost": 31400,
+      "cost": 27000,
       "score": 23040,
       "surplus": 40,
       "players": 12,
@@ -2386,18 +128,18 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 9000,
+        "price": 7600,
         "qty": 2
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5950,
+        "price": 5150,
         "qty": 3
        }
       ],
-      "cost": 35850,
+      "cost": 30650,
       "score": 23300,
       "surplus": 300,
       "players": 5,
@@ -2407,92 +149,16 @@
    }
   },
   {
-   "id": 154,
-   "name": "Bundesliga POTM October",
-   "score": 12000,
+   "id": 171,
+   "name": "Alphonso Davies",
+   "score": 270000,
    "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/154.png",
-   "expires": "16 Days 22 Hours",
+   "image": "https://futmind.com/image-generator/sbc/171.png",
+   "expires": null,
    "notes": [],
    "reward": {
     "kind": "player",
-    "player": {
-     "v": 2,
-     "id": 67314295,
-     "slug": "niclas-fullkrug",
-     "card_image": "https://card-image.futmind.com/en/27/67314295.png",
-     "name": "Niclas Füllkrug",
-     "rating": 85,
-     "position": "ST",
-     "pac": 74,
-     "sho": 90,
-     "pas": 79,
-     "dri": 86,
-     "def": 60,
-     "phy": 89,
-     "weak_foot": "4",
-     "skill_moves": "3",
-     "foot": "Right",
-     "height": "188",
-     "rarity": "POTM Bundesliga",
-     "detail": {
-      "Acceleration": 67,
-      "Sprint Speed": 80,
-      "Agility": 75,
-      "Balance": 78,
-      "Reactions": 89,
-      "Ball Control": 87,
-      "Dribbling": 87,
-      "Composure": 90,
-      "Attacking Position": 92,
-      "Finishing": 88,
-      "Shot Power": 97,
-      "Long Shots": 87,
-      "Volleys": 91,
-      "Penalties": 97,
-      "Interceptions": 37,
-      "Heading Accuracy": 95,
-      "Defensive Awareness": 61,
-      "Standing Tackle": 68,
-      "Sliding Tackle": 46,
-      "Vision": 85,
-      "Crossing": 73,
-      "FK Accuracy": 77,
-      "Short Pass": 84,
-      "Long Pass": 67,
-      "Curve": 81,
-      "Jumping": 90,
-      "Stamina": 79,
-      "Strength": 93,
-      "Aggression": 92
-     },
-     "positions": {
-      "CB": 68,
-      "LB": 68,
-      "RB": 71,
-      "CDM": 80,
-      "CM": 85,
-      "CAM": 83,
-      "LM": 84,
-      "RM": 84,
-      "LW": 83,
-      "RW": 89
-     },
-     "playstyles": [],
-     "league": "Bundesliga",
-     "nation": "Germany",
-     "club_id": 38,
-     "league_id": 19,
-     "nation_id": 21,
-     "club_logo": "https://futmind.com/images/fifa2027/clubs/38.png",
-     "league_logo": "https://futmind.com/images/fifa2027/leagues/19.png",
-     "nation_logo": "https://futmind.com/images/fifa2027/nations/21.png",
-     "top": {
-      "nation": [],
-      "league": [],
-      "club": []
-     }
-    }
+    "player": null
    },
    "builds": {
     "console": {
@@ -2502,21 +168,21 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 850,
-        "qty": 14
+        "price": 700,
+        "qty": 325
        },
        {
         "rating": 83,
         "rarity": "Common",
         "score": 410,
-        "price": 700,
+        "price": 650,
         "qty": 1
        }
       ],
-      "cost": 12600,
-      "score": 12030,
-      "surplus": 30,
-      "players": 15
+      "cost": 228150,
+      "score": 270160,
+      "surplus": 160,
+      "players": 326
      },
      "optimal": {
       "lines": [
@@ -2524,43 +190,50 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5400,
+        "price": 4600,
+        "qty": 61
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 24
+       }
+      ],
+      "cost": 297400,
+      "score": 270020,
+      "surplus": 20,
+      "players": 85
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 6800,
+        "qty": 48
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
         "qty": 1
        },
        {
         "rating": 85,
         "rarity": "Common",
         "score": 2100,
-        "price": 3000,
+        "price": 2400,
         "qty": 1
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 7
        }
       ],
-      "cost": 14350,
-      "score": 12010,
-      "surplus": 10,
-      "players": 9
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 3
-       }
-      ],
-      "cost": 16200,
-      "score": 12300,
-      "surplus": 300,
-      "players": 3
+      "cost": 333400,
+      "score": 270200,
+      "surplus": 200,
+      "players": 50
      }
     },
     "pc": {
@@ -2570,8 +243,8 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 950,
-        "qty": 14
+        "price": 800,
+        "qty": 325
        },
        {
         "rating": 83,
@@ -2581,10 +254,10 @@
         "qty": 1
        }
       ],
-      "cost": 14050,
-      "score": 12030,
-      "surplus": 30,
-      "players": 15,
+      "cost": 260750,
+      "score": 270160,
+      "surplus": 160,
+      "players": 326,
       "estimate": true
      },
      "optimal": {
@@ -2593,28 +266,350 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5150,
+        "qty": 61
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 24
+       }
+      ],
+      "cost": 333350,
+      "score": 270020,
+      "surplus": 20,
+      "players": 85,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 7600,
+        "qty": 48
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
         "qty": 1
        },
        {
         "rating": 85,
         "rarity": "Common",
         "score": 2100,
-        "price": 3300,
+        "price": 2700,
+        "qty": 1
+       }
+      ],
+      "cost": 372650,
+      "score": 270200,
+      "surplus": 200,
+      "players": 50,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 170,
+   "name": "Mitchell van Bergen",
+   "score": 25000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/170.png",
+   "expires": null,
+   "notes": [],
+   "reward": {
+    "kind": "player",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 30
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 21650,
+      "score": 25310,
+      "surplus": 310,
+      "players": 31
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 5
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2400,
         "qty": 1
        },
        {
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 950,
-        "qty": 7
+        "price": 700,
+        "qty": 3
        }
       ],
-      "cost": 15850,
-      "score": 12010,
-      "surplus": 10,
+      "cost": 27500,
+      "score": 25090,
+      "surplus": 90,
+      "players": 9
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 6800,
+        "qty": 4
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 1
+       }
+      ],
+      "cost": 31800,
+      "score": 26100,
+      "surplus": 1100,
+      "players": 5
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 30
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
+       }
+      ],
+      "cost": 24750,
+      "score": 25310,
+      "surplus": 310,
+      "players": 31,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 5
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2700,
+        "qty": 1
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 3
+       }
+      ],
+      "cost": 30850,
+      "score": 25090,
+      "surplus": 90,
       "players": 9,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 7600,
+        "qty": 4
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 1
+       }
+      ],
+      "cost": 35550,
+      "score": 26100,
+      "surplus": 1100,
+      "players": 5,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 164,
+   "name": "3 of 10 80+ Gold Player Pick",
+   "score": 6000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/164.png",
+   "expires": null,
+   "notes": [],
+   "reward": {
+    "kind": "pick",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 7
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 5550,
+      "score": 6220,
+      "surplus": 220,
+      "players": 8
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2400,
+        "qty": 1
+       }
+      ],
+      "cost": 7000,
+      "score": 6200,
+      "surplus": 200,
+      "players": 2
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2400,
+        "qty": 1
+       }
+      ],
+      "cost": 7000,
+      "score": 6200,
+      "surplus": 200,
+      "players": 2
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 7
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
+       }
+      ],
+      "cost": 6350,
+      "score": 6220,
+      "surplus": 220,
+      "players": 8,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2700,
+        "qty": 1
+       }
+      ],
+      "cost": 7850,
+      "score": 6200,
+      "surplus": 200,
+      "players": 2,
       "estimate": true
      },
      "fast": {
@@ -2623,14 +618,763 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5150,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2700,
+        "qty": 1
+       }
+      ],
+      "cost": 7850,
+      "score": 6200,
+      "surplus": 200,
+      "players": 2,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 147,
+   "name": "Arnaut Danjuma",
+   "score": 50000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/147.png",
+   "expires": null,
+   "notes": [],
+   "reward": {
+    "kind": "player",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 60
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 42650,
+      "score": 50210,
+      "surplus": 210,
+      "players": 61
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 12
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       }
+      ],
+      "cost": 55900,
+      "score": 50030,
+      "surplus": 30,
+      "players": 13
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 6800,
+        "qty": 8
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2400,
+        "qty": 1
+       }
+      ],
+      "cost": 61400,
+      "score": 50200,
+      "surplus": 200,
+      "players": 10
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 60
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
+       }
+      ],
+      "cost": 48750,
+      "score": 50210,
+      "surplus": 210,
+      "players": 61,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 12
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 1
+       }
+      ],
+      "cost": 62600,
+      "score": 50030,
+      "surplus": 30,
+      "players": 13,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 7600,
+        "qty": 8
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2700,
+        "qty": 1
+       }
+      ],
+      "cost": 68650,
+      "score": 50200,
+      "surplus": 200,
+      "players": 10,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 189,
+   "name": "Paulo Dybala",
+   "score": 375000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/189.png",
+   "expires": null,
+   "notes": [],
+   "reward": {
+    "kind": "player",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 452
+       }
+      ],
+      "cost": 316400,
+      "score": 375160,
+      "surplus": 160,
+      "players": 452
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 86
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 27
+       }
+      ],
+      "cost": 414500,
+      "score": 375010,
+      "surplus": 10,
+      "players": 113
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 6800,
+        "qty": 66
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
         "qty": 3
        }
       ],
-      "cost": 17700,
-      "score": 12300,
+      "cost": 462600,
+      "score": 375300,
       "surplus": 300,
-      "players": 3,
+      "players": 69
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 452
+       }
+      ],
+      "cost": 361600,
+      "score": 375160,
+      "surplus": 160,
+      "players": 452,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 86
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 27
+       }
+      ],
+      "cost": 464500,
+      "score": 375010,
+      "surplus": 10,
+      "players": 113,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 7600,
+        "qty": 66
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 3
+       }
+      ],
+      "cost": 517050,
+      "score": 375300,
+      "surplus": 300,
+      "players": 69,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 168,
+   "name": "Moussa Diaby",
+   "score": 42000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/168.png",
+   "expires": null,
+   "notes": [],
+   "reward": {
+    "kind": "player",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 51
+       }
+      ],
+      "cost": 35700,
+      "score": 42330,
+      "surplus": 330,
+      "players": 51
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 6
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 21
+       }
+      ],
+      "cost": 42300,
+      "score": 42030,
+      "surplus": 30,
+      "players": 27
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 6800,
+        "qty": 7
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 1
+       }
+      ],
+      "cost": 52200,
+      "score": 42600,
+      "surplus": 600,
+      "players": 8
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 51
+       }
+      ],
+      "cost": 40800,
+      "score": 42330,
+      "surplus": 330,
+      "players": 51,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 6
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 21
+       }
+      ],
+      "cost": 47700,
+      "score": 42030,
+      "surplus": 30,
+      "players": 27,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 7600,
+        "qty": 7
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 1
+       }
+      ],
+      "cost": 58350,
+      "score": 42600,
+      "surplus": 600,
+      "players": 8,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 150,
+   "name": "Federico Chiesa",
+   "score": 150000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/150.png",
+   "expires": null,
+   "notes": [],
+   "reward": {
+    "kind": "player",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 181
+       }
+      ],
+      "cost": 126700,
+      "score": 150230,
+      "surplus": 230,
+      "players": 181
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 36
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 3
+       }
+      ],
+      "cost": 167700,
+      "score": 150090,
+      "surplus": 90,
+      "players": 39
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 6800,
+        "qty": 27
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2400,
+        "qty": 1
+       }
+      ],
+      "cost": 186000,
+      "score": 150600,
+      "surplus": 600,
+      "players": 28
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 181
+       }
+      ],
+      "cost": 144800,
+      "score": 150230,
+      "surplus": 230,
+      "players": 181,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 36
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 3
+       }
+      ],
+      "cost": 187800,
+      "score": 150090,
+      "surplus": 90,
+      "players": 39,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 7600,
+        "qty": 27
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2700,
+        "qty": 1
+       }
+      ],
+      "cost": 207900,
+      "score": 150600,
+      "surplus": 600,
+      "players": 28,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 159,
+   "name": "Base Icon Matchday Player Pick",
+   "score": 300000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/159.png",
+   "expires": null,
+   "notes": [],
+   "reward": {
+    "kind": "pick",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 361
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 253350,
+      "score": 300040,
+      "surplus": 40,
+      "players": 362
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 73
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       }
+      ],
+      "cost": 336500,
+      "score": 300130,
+      "surplus": 130,
+      "players": 74
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 6800,
+        "qty": 54
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 1
+       }
+      ],
+      "cost": 371800,
+      "score": 301100,
+      "surplus": 1100,
+      "players": 55
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 361
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
+       }
+      ],
+      "cost": 289550,
+      "score": 300040,
+      "surplus": 40,
+      "players": 362,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 73
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 1
+       }
+      ],
+      "cost": 376750,
+      "score": 300130,
+      "surplus": 130,
+      "players": 74,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 7600,
+        "qty": 54
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 1
+       }
+      ],
+      "cost": 415550,
+      "score": 301100,
+      "surplus": 1100,
+      "players": 55,
       "estimate": true
      }
     }
@@ -2642,18 +1386,18 @@
    "score": 380000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/155.png",
-   "expires": "11 Days 1 Hours",
+   "expires": null,
    "notes": [],
    "reward": {
     "kind": "player",
     "player": {
-     "v": 2,
      "id": 50535199,
      "slug": "alessandro-florenzi",
-     "card_image": "https://card-image.futmind.com/en/27/50535199.png",
-     "name": "Alessandro Florenzi",
+     "name": "Florenzi",
      "rating": 87,
-     "position": "LB",
+     "position": "RB",
+     "rarity": "Hall of FUT: Unleashed",
+     "card_image": "https://card-image.futmind.com/en/27/50535199.png",
      "pac": 90,
      "sho": 83,
      "pas": 83,
@@ -2664,7 +1408,6 @@
      "skill_moves": "3",
      "foot": "Right",
      "height": "173",
-     "rarity": "Hall of FUT: Unleashed",
      "detail": {
       "Acceleration": 91,
       "Sprint Speed": 90,
@@ -2697,18 +1440,24 @@
       "Aggression": 82
      },
      "positions": {
-      "CB": 86,
       "LB": 86,
-      "RB": 84,
+      "RB": 86,
       "CDM": 84,
       "CM": 84,
       "CAM": 85,
-      "LM": 87,
-      "RM": 85,
+      "LM": 85,
       "LW": 85,
+      "RM": 85,
       "RW": 83
      },
-     "playstyles": [],
+     "playstyles": [
+      "Anticipate",
+      "Low-Driven Shot",
+      "Whipped Pass",
+      "Jockey",
+      "Quick Step",
+      "Bruiser"
+     ],
      "league": "Serie A Enilive",
      "nation": "Italy",
      "club_id": 132794,
@@ -2718,9 +1467,33 @@
      "league_logo": "https://futmind.com/images/fifa2027/leagues/31.png",
      "nation_logo": "https://futmind.com/images/fifa2027/nations/27.png",
      "top": {
-      "nation": [],
-      "league": [],
-      "club": []
+      "nation": [
+       {
+        "id": 50535199,
+        "name": "Florenzi",
+        "rating": 87,
+        "position": "RB",
+        "card_image": "https://card-image.futmind.com/en/27/50535199.png"
+       }
+      ],
+      "league": [
+       {
+        "id": 50535199,
+        "name": "Florenzi",
+        "rating": 87,
+        "position": "RB",
+        "card_image": "https://card-image.futmind.com/en/27/50535199.png"
+       }
+      ],
+      "club": [
+       {
+        "id": 50535199,
+        "name": "Florenzi",
+        "rating": 87,
+        "position": "RB",
+        "card_image": "https://card-image.futmind.com/en/27/50535199.png"
+       }
+      ]
      }
     }
    },
@@ -2732,11 +1505,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 850,
+        "price": 700,
         "qty": 458
        }
       ],
-      "cost": 389300,
+      "cost": 320600,
       "score": 380140,
       "surplus": 140,
       "players": 458
@@ -2747,21 +1520,21 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5400,
-        "qty": 2
+        "price": 4600,
+        "qty": 85
        },
        {
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 850,
-        "qty": 448
+        "price": 700,
+        "qty": 38
        }
       ],
-      "cost": 391600,
+      "cost": 417600,
       "score": 380040,
       "surplus": 40,
-      "players": 450
+      "players": 123
      },
      "fast": {
       "lines": [
@@ -2769,20 +1542,27 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 8200,
-        "qty": 67
+        "price": 6800,
+        "qty": 68
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5400,
-        "qty": 3
+        "price": 4600,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2400,
+        "qty": 1
        }
       ],
-      "cost": 565600,
-      "score": 380800,
-      "surplus": 800,
+      "cost": 469400,
+      "score": 380200,
+      "surplus": 200,
       "players": 70
      }
     },
@@ -2793,11 +1573,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 950,
+        "price": 800,
         "qty": 458
        }
       ],
-      "cost": 435100,
+      "cost": 366400,
       "score": 380140,
       "surplus": 140,
       "players": 458,
@@ -2809,21 +1589,21 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5950,
-        "qty": 2
+        "price": 5150,
+        "qty": 85
        },
        {
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 950,
-        "qty": 448
+        "price": 800,
+        "qty": 38
        }
       ],
-      "cost": 437500,
+      "cost": 468150,
       "score": 380040,
       "surplus": 40,
-      "players": 450,
+      "players": 123,
       "estimate": true
      },
      "fast": {
@@ -2832,20 +1612,27 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 9000,
-        "qty": 67
+        "price": 7600,
+        "qty": 68
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5950,
-        "qty": 3
+        "price": 5150,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2700,
+        "qty": 1
        }
       ],
-      "cost": 620850,
-      "score": 380800,
-      "surplus": 800,
+      "cost": 524650,
+      "score": 380200,
+      "surplus": 200,
       "players": 70,
       "estimate": true
      }
@@ -2853,15 +1640,15 @@
    }
   },
   {
-   "id": 159,
-   "name": "Base Icon Matchday Player Pick",
-   "score": 300000,
+   "id": 148,
+   "name": "Premier League POTM October",
+   "score": 17000,
    "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/159.png",
-   "expires": "8 Days 1 Hours",
+   "image": "https://futmind.com/image-generator/sbc/148.png",
+   "expires": null,
    "notes": [],
    "reward": {
-    "kind": "pick",
+    "kind": "player",
     "player": null
    },
    "builds": {
@@ -2872,21 +1659,21 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 850,
-        "qty": 361
+        "price": 700,
+        "qty": 20
        },
        {
         "rating": 83,
         "rarity": "Common",
         "score": 410,
-        "price": 700,
+        "price": 650,
         "qty": 1
        }
       ],
-      "cost": 307550,
-      "score": 300040,
-      "surplus": 40,
-      "players": 362
+      "cost": 14650,
+      "score": 17010,
+      "surplus": 10,
+      "players": 21
      },
      "optimal": {
       "lines": [
@@ -2894,21 +1681,21 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5400,
-        "qty": 9
+        "price": 4600,
+        "qty": 4
        },
        {
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 850,
-        "qty": 317
+        "price": 700,
+        "qty": 1
        }
       ],
-      "cost": 318050,
-      "score": 300010,
-      "surplus": 10,
-      "players": 326
+      "cost": 19100,
+      "score": 17230,
+      "surplus": 230,
+      "players": 5
      },
      "fast": {
       "lines": [
@@ -2916,21 +1703,28 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 8200,
-        "qty": 54
+        "price": 6800,
+        "qty": 2
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5400,
+        "price": 4600,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2400,
         "qty": 1
        }
       ],
-      "cost": 448200,
-      "score": 301100,
-      "surplus": 1100,
-      "players": 55
+      "cost": 20600,
+      "score": 17200,
+      "surplus": 200,
+      "players": 4
      }
     },
     "pc": {
@@ -2940,8 +1734,8 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 950,
-        "qty": 361
+        "price": 800,
+        "qty": 20
        },
        {
         "rating": 83,
@@ -2951,10 +1745,10 @@
         "qty": 1
        }
       ],
-      "cost": 343700,
-      "score": 300040,
-      "surplus": 40,
-      "players": 362,
+      "cost": 16750,
+      "score": 17010,
+      "surplus": 10,
+      "players": 21,
       "estimate": true
      },
      "optimal": {
@@ -2963,21 +1757,21 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5950,
-        "qty": 9
+        "price": 5150,
+        "qty": 4
        },
        {
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 950,
-        "qty": 317
+        "price": 800,
+        "qty": 1
        }
       ],
-      "cost": 354700,
-      "score": 300010,
-      "surplus": 10,
-      "players": 326,
+      "cost": 21400,
+      "score": 17230,
+      "surplus": 230,
+      "players": 5,
       "estimate": true
      },
      "fast": {
@@ -2986,36 +1780,43 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 9000,
-        "qty": 54
+        "price": 7600,
+        "qty": 2
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5950,
+        "price": 5150,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2700,
         "qty": 1
        }
       ],
-      "cost": 491950,
-      "score": 301100,
-      "surplus": 1100,
-      "players": 55,
+      "cost": 23050,
+      "score": 17200,
+      "surplus": 200,
+      "players": 4,
       "estimate": true
      }
     }
    }
   },
   {
-   "id": 161,
-   "name": "2x 84+ Upgrade",
-   "score": 9000,
+   "id": 154,
+   "name": "Bundesliga POTM October",
+   "score": 12000,
    "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/161.png",
-   "expires": "15 Days 1 Hours",
+   "image": "https://futmind.com/image-generator/sbc/154.png",
+   "expires": null,
    "notes": [],
    "reward": {
-    "kind": "pack",
+    "kind": "player",
     "player": null
    },
    "builds": {
@@ -3026,154 +1827,21 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 850,
-        "qty": 11
-       }
-      ],
-      "cost": 9350,
-      "score": 9130,
-      "surplus": 130,
-      "players": 11
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 2
+        "price": 700,
+        "qty": 14
        },
        {
-        "rating": 84,
+        "rating": 83,
         "rarity": "Common",
-        "score": 830,
-        "price": 850,
+        "score": 410,
+        "price": 650,
         "qty": 1
-       }
-      ],
-      "cost": 11650,
-      "score": 9030,
-      "surplus": 30,
-      "players": 3
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 1
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 1
-       }
-      ],
-      "cost": 13600,
-      "score": 9600,
-      "surplus": 600,
-      "players": 2
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 11
        }
       ],
       "cost": 10450,
-      "score": 9130,
-      "surplus": 130,
-      "players": 11,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 2
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 1
-       }
-      ],
-      "cost": 12850,
-      "score": 9030,
+      "score": 12030,
       "surplus": 30,
-      "players": 3,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 9000,
-        "qty": 1
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 1
-       }
-      ],
-      "cost": 14950,
-      "score": 9600,
-      "surplus": 600,
-      "players": 2,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 162,
-   "name": "Tradeable 10x 80+ Upgrade",
-   "score": 14000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/162.png",
-   "expires": "4 Days 1 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 17
-       }
-      ],
-      "cost": 14450,
-      "score": 14110,
-      "surplus": 110,
-      "players": 17
+      "players": 15
      },
      "optimal": {
       "lines": [
@@ -3181,42 +1849,42 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5400,
-        "qty": 2
+        "price": 4600,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2400,
+        "qty": 1
        },
        {
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 850,
+        "price": 700,
         "qty": 7
        }
       ],
-      "cost": 16750,
-      "score": 14010,
+      "cost": 11900,
+      "score": 12010,
       "surplus": 10,
       "players": 9
      },
      "fast": {
       "lines": [
        {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 2
-       },
-       {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5400,
-        "qty": 1
+        "price": 4600,
+        "qty": 3
        }
       ],
-      "cost": 21800,
-      "score": 15100,
-      "surplus": 1100,
+      "cost": 13800,
+      "score": 12300,
+      "surplus": 300,
       "players": 3
      }
     },
@@ -3227,14 +1895,21 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 950,
-        "qty": 17
+        "price": 800,
+        "qty": 14
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
        }
       ],
-      "cost": 16150,
-      "score": 14110,
-      "surplus": 110,
-      "players": 17,
+      "cost": 11950,
+      "score": 12030,
+      "surplus": 30,
+      "players": 15,
       "estimate": true
      },
      "optimal": {
@@ -3243,19 +1918,26 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
-        "qty": 2
+        "price": 5150,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2700,
+        "qty": 1
        },
        {
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 950,
+        "price": 800,
         "qty": 7
        }
       ],
-      "cost": 18450,
-      "score": 14010,
+      "cost": 13450,
+      "score": 12010,
       "surplus": 10,
       "players": 9,
       "estimate": true
@@ -3263,23 +1945,16 @@
      "fast": {
       "lines": [
        {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8950,
-        "qty": 2
-       },
-       {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
-        "qty": 1
+        "price": 5150,
+        "qty": 3
        }
       ],
-      "cost": 23800,
-      "score": 15100,
-      "surplus": 1100,
+      "cost": 15450,
+      "score": 12300,
+      "surplus": 300,
       "players": 3,
       "estimate": true
      }
@@ -3287,1726 +1962,15 @@
    }
   },
   {
-   "id": 164,
-   "name": "3 of 10 80+ Gold Player Pick",
-   "score": 6000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/164.png",
-   "expires": "11 Days 1 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "pick",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 7
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 650,
-        "qty": 1
-       }
-      ],
-      "cost": 6600,
-      "score": 6150,
-      "surplus": 150,
-      "players": 8
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 1
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 2
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 650,
-        "qty": 1
-       }
-      ],
-      "cost": 7750,
-      "score": 6100,
-      "surplus": 100,
-      "players": 4
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 1
-       },
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 3000,
-        "qty": 1
-       }
-      ],
-      "cost": 8400,
-      "score": 6200,
-      "surplus": 200,
-      "players": 2
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 7
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 700,
-        "qty": 1
-       }
-      ],
-      "cost": 7350,
-      "score": 6150,
-      "surplus": 150,
-      "players": 8,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 1
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 2
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 700,
-        "qty": 1
-       }
-      ],
-      "cost": 8550,
-      "score": 6100,
-      "surplus": 100,
-      "players": 4,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 1
-       },
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 3300,
-        "qty": 1
-       }
-      ],
-      "cost": 9250,
-      "score": 6200,
-      "surplus": 200,
-      "players": 2,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 168,
-   "name": "Moussa Diaby",
-   "score": 42000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/168.png",
-   "expires": "4 Days 1 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "player",
-    "player": {
-     "v": 2,
-     "id": 67350716,
-     "slug": "moussa-diaby",
-     "card_image": "https://card-image.futmind.com/en/27/67350716.png",
-     "name": "Moussa Diaby",
-     "rating": 86,
-     "position": "RM",
-     "pac": 95,
-     "sho": 81,
-     "pas": 80,
-     "dri": 87,
-     "def": 50,
-     "phy": 63,
-     "weak_foot": "3",
-     "skill_moves": "4",
-     "foot": "Left",
-     "height": "170",
-     "rarity": "Thunderstruck",
-     "detail": {
-      "Acceleration": 95,
-      "Sprint Speed": 95,
-      "Agility": 93,
-      "Balance": 92,
-      "Reactions": 82,
-      "Ball Control": 85,
-      "Dribbling": 88,
-      "Composure": 83,
-      "Attacking Position": 84,
-      "Finishing": 81,
-      "Shot Power": 82,
-      "Long Shots": 83,
-      "Volleys": 77,
-      "Penalties": 70,
-      "Interceptions": 54,
-      "Heading Accuracy": 47,
-      "Defensive Awareness": 55,
-      "Standing Tackle": 42,
-      "Sliding Tackle": 52,
-      "Vision": 80,
-      "Crossing": 83,
-      "FK Accuracy": 60,
-      "Short Pass": 81,
-      "Long Pass": 80,
-      "Curve": 80,
-      "Jumping": 65,
-      "Stamina": 84,
-      "Strength": 51,
-      "Aggression": 66
-     },
-     "positions": {
-      "CB": 68,
-      "LB": 68,
-      "RB": 67,
-      "CDM": 79,
-      "CM": 84,
-      "CAM": 85,
-      "LM": 85,
-      "RM": 85,
-      "LW": 86,
-      "RW": 79
-     },
-     "playstyles": [],
-     "league": "Bundesliga",
-     "nation": "France",
-     "club_id": 32,
-     "league_id": 19,
-     "nation_id": 18,
-     "club_logo": "https://futmind.com/images/fifa2027/clubs/32.png",
-     "league_logo": "https://futmind.com/images/fifa2027/leagues/19.png",
-     "nation_logo": "https://futmind.com/images/fifa2027/nations/18.png",
-     "top": {
-      "nation": [],
-      "league": [],
-      "club": []
-     }
-    }
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 51
-       }
-      ],
-      "cost": 43350,
-      "score": 42330,
-      "surplus": 330,
-      "players": 51
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 6
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 21
-       }
-      ],
-      "cost": 50250,
-      "score": 42030,
-      "surplus": 30,
-      "players": 27
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 7
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 1
-       }
-      ],
-      "cost": 62800,
-      "score": 42600,
-      "surplus": 600,
-      "players": 8
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 51
-       }
-      ],
-      "cost": 48450,
-      "score": 42330,
-      "surplus": 330,
-      "players": 51,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 6
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 21
-       }
-      ],
-      "cost": 55650,
-      "score": 42030,
-      "surplus": 30,
-      "players": 27,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 9000,
-        "qty": 7
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 1
-       }
-      ],
-      "cost": 68950,
-      "score": 42600,
-      "surplus": 600,
-      "players": 8,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 169,
-   "name": "Dunga",
-   "score": 420000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/169.png",
-   "expires": "18 Days 1 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "player",
-    "player": {
-     "v": 2,
-     "id": 84078270,
-     "slug": "dunga",
-     "card_image": "https://card-image.futmind.com/en/27/84078270.png",
-     "name": "Dunga",
-     "rating": 89,
-     "position": "CM",
-     "pac": 80,
-     "sho": 79,
-     "pas": 84,
-     "dri": 83,
-     "def": 89,
-     "phy": 87,
-     "weak_foot": "4",
-     "skill_moves": "3",
-     "foot": "Right",
-     "height": null,
-     "rarity": "Thunderstruck ICON",
-     "detail": {
-      "Acceleration": 80,
-      "Sprint Speed": 80,
-      "Agility": 80,
-      "Balance": 89,
-      "Reactions": 85,
-      "Ball Control": 85,
-      "Dribbling": 81,
-      "Composure": 88,
-      "Attacking Position": 72,
-      "Finishing": 71,
-      "Shot Power": 92,
-      "Long Shots": 87,
-      "Volleys": 85,
-      "Penalties": 77,
-      "Interceptions": 89,
-      "Heading Accuracy": 75,
-      "Defensive Awareness": 90,
-      "Standing Tackle": 91,
-      "Sliding Tackle": 91,
-      "Vision": 81,
-      "Crossing": 80,
-      "FK Accuracy": 87,
-      "Short Pass": 87,
-      "Long Pass": 88,
-      "Curve": 85,
-      "Jumping": 80,
-      "Stamina": 90,
-      "Strength": 85,
-      "Aggression": 90
-     },
-     "positions": {
-      "CB": 86,
-      "LB": 86,
-      "RB": 88,
-      "CDM": 85,
-      "CM": 89,
-      "CAM": 82,
-      "LM": 81,
-      "RM": 81,
-      "LW": 82,
-      "RW": 80
-     },
-     "playstyles": [],
-     "league": "Icons",
-     "nation": "Brazil",
-     "club_id": 112658,
-     "league_id": 2118,
-     "nation_id": 54,
-     "club_logo": "https://futmind.com/images/fifa2027/clubs/112658.png",
-     "league_logo": "https://futmind.com/images/fifa2027/leagues/2118.png",
-     "nation_logo": "https://futmind.com/images/fifa2027/nations/54.png",
-     "top": {
-      "nation": [],
-      "league": [],
-      "club": []
-     }
-    }
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 506
-       },
-       {
-        "rating": 72,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 1
-       }
-      ],
-      "cost": 430300,
-      "score": 420015,
-      "surplus": 15,
-      "players": 507
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 16
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 427
-       }
-      ],
-      "cost": 449350,
-      "score": 420010,
-      "surplus": 10,
-      "players": 443
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 75
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 2
-       }
-      ],
-      "cost": 625800,
-      "score": 420700,
-      "surplus": 700,
-      "players": 77
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 506
-       },
-       {
-        "rating": 72,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 1
-       }
-      ],
-      "cost": 480900,
-      "score": 420015,
-      "surplus": 15,
-      "players": 507,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 16
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 427
-       }
-      ],
-      "cost": 500850,
-      "score": 420010,
-      "surplus": 10,
-      "players": 443,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 9000,
-        "qty": 75
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 2
-       }
-      ],
-      "cost": 686900,
-      "score": 420700,
-      "surplus": 700,
-      "players": 77,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 170,
-   "name": "Mitchell van Bergen",
-   "score": 25000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/170.png",
-   "expires": "5 Days 1 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "player",
-    "player": {
-     "v": 2,
-     "id": 50563512,
-     "slug": "mitchell-van-bergen",
-     "card_image": "https://card-image.futmind.com/en/27/50563512.png",
-     "name": "Mitchell van Bergen",
-     "rating": 86,
-     "position": "RW",
-     "pac": 95,
-     "sho": 82,
-     "pas": 80,
-     "dri": 86,
-     "def": 40,
-     "phy": 65,
-     "weak_foot": "4",
-     "skill_moves": "4",
-     "foot": "Right",
-     "height": "170",
-     "rarity": "FC Heritage",
-     "detail": {
-      "Acceleration": 94,
-      "Sprint Speed": 96,
-      "Agility": 93,
-      "Balance": 89,
-      "Reactions": 84,
-      "Ball Control": 86,
-      "Dribbling": 84,
-      "Composure": 85,
-      "Attacking Position": 83,
-      "Finishing": 82,
-      "Shot Power": 84,
-      "Long Shots": 78,
-      "Volleys": 82,
-      "Penalties": 79,
-      "Interceptions": 36,
-      "Heading Accuracy": 47,
-      "Defensive Awareness": 50,
-      "Standing Tackle": 33,
-      "Sliding Tackle": 35,
-      "Vision": 82,
-      "Crossing": 80,
-      "FK Accuracy": 70,
-      "Short Pass": 83,
-      "Long Pass": 70,
-      "Curve": 82,
-      "Jumping": 60,
-      "Stamina": 96,
-      "Strength": 50,
-      "Aggression": 65
-     },
-     "positions": {
-      "CB": 64,
-      "LB": 64,
-      "RB": 63,
-      "CDM": 77,
-      "CM": 84,
-      "CAM": 85,
-      "LM": 85,
-      "RM": 85,
-      "LW": 85,
-      "RW": 86
-     },
-     "playstyles": [],
-     "league": "Eredivisie",
-     "nation": "Netherlands",
-     "club_id": 100646,
-     "league_id": 10,
-     "nation_id": 34,
-     "club_logo": "https://futmind.com/images/fifa2027/clubs/100646.png",
-     "league_logo": "https://futmind.com/images/fifa2027/leagues/10.png",
-     "nation_logo": "https://futmind.com/images/fifa2027/nations/34.png",
-     "top": {
-      "nation": [],
-      "league": [],
-      "club": []
-     }
-    }
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 30
-       },
-       {
-        "rating": 72,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 3
-       }
-      ],
-      "cost": 26100,
-      "score": 25005,
-      "surplus": 5,
-      "players": 33
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 6
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 700,
-        "qty": 1
-       }
-      ],
-      "cost": 33100,
-      "score": 25010,
-      "surplus": 10,
-      "players": 7
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 4
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 1
-       }
-      ],
-      "cost": 38200,
-      "score": 26100,
-      "surplus": 1100,
-      "players": 5
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 30
-       },
-       {
-        "rating": 72,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 3
-       }
-      ],
-      "cost": 29100,
-      "score": 25005,
-      "surplus": 5,
-      "players": 33,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5900,
-        "qty": 6
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 750,
-        "qty": 1
-       }
-      ],
-      "cost": 36150,
-      "score": 25010,
-      "surplus": 10,
-      "players": 7,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 9000,
-        "qty": 4
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5900,
-        "qty": 1
-       }
-      ],
-      "cost": 41900,
-      "score": 26100,
-      "surplus": 1100,
-      "players": 5,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 171,
-   "name": "Alphonso Davies",
-   "score": 270000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/171.png",
-   "expires": "19 Days 3 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "player",
-    "player": {
-     "v": 2,
-     "id": 67343260,
-     "slug": "alphonso-davies",
-     "card_image": "https://card-image.futmind.com/en/27/67343260.png",
-     "name": "Alphonso Davies",
-     "rating": 87,
-     "position": "LM",
-     "pac": 95,
-     "sho": 73,
-     "pas": 84,
-     "dri": 87,
-     "def": 80,
-     "phy": 82,
-     "weak_foot": "3",
-     "skill_moves": "4",
-     "foot": "Left",
-     "height": "185",
-     "rarity": "Thunderstruck",
-     "detail": {
-      "Acceleration": 96,
-      "Sprint Speed": 94,
-      "Agility": 87,
-      "Balance": 86,
-      "Reactions": 87,
-      "Ball Control": 86,
-      "Dribbling": 88,
-      "Composure": 83,
-      "Attacking Position": 82,
-      "Finishing": 72,
-      "Shot Power": 82,
-      "Long Shots": 71,
-      "Volleys": 65,
-      "Penalties": 60,
-      "Interceptions": 85,
-      "Heading Accuracy": 80,
-      "Defensive Awareness": 78,
-      "Standing Tackle": 80,
-      "Sliding Tackle": 80,
-      "Vision": 83,
-      "Crossing": 90,
-      "FK Accuracy": 50,
-      "Short Pass": 88,
-      "Long Pass": 80,
-      "Curve": 78,
-      "Jumping": 91,
-      "Stamina": 83,
-      "Strength": 81,
-      "Aggression": 80
-     },
-     "positions": {
-      "CB": 85,
-      "LB": 85,
-      "RB": 83,
-      "CDM": 84,
-      "CM": 85,
-      "CAM": 86,
-      "LM": 87,
-      "RM": 86,
-      "LW": 86,
-      "RW": 82
-     },
-     "playstyles": [],
-     "league": "Bundesliga",
-     "nation": "Canada",
-     "club_id": 21,
-     "league_id": 19,
-     "nation_id": 70,
-     "club_logo": "https://futmind.com/images/fifa2027/clubs/21.png",
-     "league_logo": "https://futmind.com/images/fifa2027/leagues/19.png",
-     "nation_logo": "https://futmind.com/images/fifa2027/nations/70.png",
-     "top": {
-      "nation": [],
-      "league": [],
-      "club": []
-     }
-    }
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 325
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 650,
-        "qty": 1
-       }
-      ],
-      "cost": 276900,
-      "score": 270090,
-      "surplus": 90,
-      "players": 326
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 11
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 271
-       }
-      ],
-      "cost": 289750,
-      "score": 270030,
-      "surplus": 30,
-      "players": 282
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 47
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 3
-       }
-      ],
-      "cost": 401600,
-      "score": 270800,
-      "surplus": 800,
-      "players": 50
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 325
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 650,
-        "qty": 1
-       }
-      ],
-      "cost": 276900,
-      "score": 270090,
-      "surplus": 90,
-      "players": 326,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 11
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 271
-       }
-      ],
-      "cost": 289750,
-      "score": 270030,
-      "surplus": 30,
-      "players": 282,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 47
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 3
-       }
-      ],
-      "cost": 401600,
-      "score": 270800,
-      "surplus": 800,
-      "players": 50,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 185,
-   "name": "Max. 88 Base Icon Upgrade",
-   "score": 200000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/185.png",
-   "expires": "3 Days 1 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 241
-       }
-      ],
-      "cost": 204850,
-      "score": 200030,
-      "surplus": 30,
-      "players": 241
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 241
-       }
-      ],
-      "cost": 204850,
-      "score": 200030,
-      "surplus": 30,
-      "players": 241
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 35
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 2
-       }
-      ],
-      "cost": 297800,
-      "score": 200700,
-      "surplus": 700,
-      "players": 37
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 241
-       }
-      ],
-      "cost": 204850,
-      "score": 200030,
-      "surplus": 30,
-      "players": 241,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 241
-       }
-      ],
-      "cost": 204850,
-      "score": 200030,
-      "surplus": 30,
-      "players": 241,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 35
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 2
-       }
-      ],
-      "cost": 297800,
-      "score": 200700,
-      "surplus": 700,
-      "players": 37,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 189,
-   "name": "Paulo Dybala",
-   "score": 375000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/189.png",
-   "expires": "18 Days 1 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "player",
-    "player": {
-     "v": 2,
-     "id": 50542758,
-     "slug": "paulo-dybala",
-     "card_image": "https://card-image.futmind.com/en/27/50542758.png",
-     "name": "Paulo Dybala",
-     "rating": 88,
-     "position": "ST",
-     "pac": 86,
-     "sho": 88,
-     "pas": 89,
-     "dri": 90,
-     "def": 45,
-     "phy": 66,
-     "weak_foot": "4",
-     "skill_moves": "5",
-     "foot": "Left",
-     "height": "177",
-     "rarity": "Flashback",
-     "detail": {
-      "Acceleration": 88,
-      "Sprint Speed": 84,
-      "Agility": 90,
-      "Balance": 93,
-      "Reactions": 90,
-      "Ball Control": 91,
-      "Dribbling": 88,
-      "Composure": 92,
-      "Attacking Position": 85,
-      "Finishing": 85,
-      "Shot Power": 88,
-      "Long Shots": 91,
-      "Volleys": 96,
-      "Penalties": 92,
-      "Interceptions": 48,
-      "Heading Accuracy": 70,
-      "Defensive Awareness": 35,
-      "Standing Tackle": 45,
-      "Sliding Tackle": 42,
-      "Vision": 91,
-      "Crossing": 88,
-      "FK Accuracy": 90,
-      "Short Pass": 88,
-      "Long Pass": 86,
-      "Curve": 92,
-      "Jumping": 78,
-      "Stamina": 80,
-      "Strength": 65,
-      "Aggression": 50
-     },
-     "positions": {
-      "CB": 67,
-      "LB": 67,
-      "RB": 67,
-      "CDM": 84,
-      "CM": 89,
-      "CAM": 88,
-      "LM": 88,
-      "RM": 88,
-      "LW": 88,
-      "RW": 85,
-      "ST": 88
-     },
-     "playstyles": [],
-     "league": "Serie A Enilive",
-     "nation": "Argentina",
-     "club_id": 52,
-     "league_id": 31,
-     "nation_id": 52,
-     "club_logo": "https://futmind.com/images/fifa2027/clubs/52.png",
-     "league_logo": "https://futmind.com/images/fifa2027/leagues/31.png",
-     "nation_logo": "https://futmind.com/images/fifa2027/nations/52.png",
-     "top": {
-      "nation": [],
-      "league": [],
-      "club": []
-     }
-    }
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 452
-       }
-      ],
-      "cost": 384200,
-      "score": 375160,
-      "surplus": 160,
-      "players": 452
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 3
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 437
-       }
-      ],
-      "cost": 387650,
-      "score": 375010,
-      "surplus": 10,
-      "players": 440
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 66
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 3
-       }
-      ],
-      "cost": 557400,
-      "score": 375300,
-      "surplus": 300,
-      "players": 69
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 452
-       }
-      ],
-      "cost": 429400,
-      "score": 375160,
-      "surplus": 160,
-      "players": 452,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 3
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 437
-       }
-      ],
-      "cost": 433000,
-      "score": 375010,
-      "surplus": 10,
-      "players": 440,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 9000,
-        "qty": 66
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 3
-       }
-      ],
-      "cost": 611850,
-      "score": 375300,
-      "surplus": 300,
-      "players": 69,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 190,
-   "name": "Base Hero Upgrade",
-   "score": 60000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/190.png",
-   "expires": "4 Days 1 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 72
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 650,
-        "qty": 1
-       }
-      ],
-      "cost": 61850,
-      "score": 60100,
-      "surplus": 100,
-      "players": 73
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 11
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 18
-       }
-      ],
-      "cost": 74700,
-      "score": 60040,
-      "surplus": 40,
-      "players": 29
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 11
-       }
-      ],
-      "cost": 90200,
-      "score": 60500,
-      "surplus": 500,
-      "players": 11
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 72
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 700,
-        "qty": 1
-       }
-      ],
-      "cost": 69100,
-      "score": 60100,
-      "surplus": 100,
-      "players": 73,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 11
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 18
-       }
-      ],
-      "cost": 82550,
-      "score": 60040,
-      "surplus": 40,
-      "players": 29,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 9000,
-        "qty": 11
-       }
-      ],
-      "cost": 99000,
-      "score": 60500,
-      "surplus": 500,
-      "players": 11,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 191,
-   "name": "Campaign Mix Upgrade",
-   "score": 40000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/191.png",
-   "expires": "4 Days 1 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 48
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 650,
-        "qty": 1
-       }
-      ],
-      "cost": 41450,
-      "score": 40180,
-      "surplus": 180,
-      "players": 49
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 9
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 4
-       }
-      ],
-      "cost": 52000,
-      "score": 40220,
-      "surplus": 220,
-      "players": 13
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 6
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 2
-       }
-      ],
-      "cost": 60000,
-      "score": 41200,
-      "surplus": 1200,
-      "players": 8
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 48
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 700,
-        "qty": 1
-       }
-      ],
-      "cost": 46300,
-      "score": 40180,
-      "surplus": 180,
-      "players": 49,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 9
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 4
-       }
-      ],
-      "cost": 57350,
-      "score": 40220,
-      "surplus": 220,
-      "players": 13,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 9000,
-        "qty": 6
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5950,
-        "qty": 2
-       }
-      ],
-      "cost": 65900,
-      "score": 41200,
-      "surplus": 1200,
-      "players": 8,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 196,
-   "name": "1 of 3 Year in Review Player Pick",
+   "id": 152,
+   "name": "Serie A POTM October",
    "score": 23000,
    "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/196.png",
-   "expires": "11 Days 1 Hours",
+   "image": "https://futmind.com/image-generator/sbc/152.png",
+   "expires": null,
    "notes": [],
    "reward": {
-    "kind": "pick",
+    "kind": "player",
     "player": null
    },
    "builds": {
@@ -5017,11 +1981,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 850,
+        "price": 700,
         "qty": 28
        }
       ],
-      "cost": 23800,
+      "cost": 19600,
       "score": 23240,
       "surplus": 240,
       "players": 28
@@ -5032,18 +1996,18 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5400,
+        "price": 4600,
         "qty": 4
        },
        {
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 850,
+        "price": 700,
         "qty": 8
        }
       ],
-      "cost": 28400,
+      "cost": 24000,
       "score": 23040,
       "surplus": 40,
       "players": 12
@@ -5054,18 +2018,18 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 8200,
+        "price": 6800,
         "qty": 2
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5400,
+        "price": 4600,
         "qty": 3
        }
       ],
-      "cost": 32600,
+      "cost": 27400,
       "score": 23300,
       "surplus": 300,
       "players": 5
@@ -5078,11 +2042,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 950,
+        "price": 800,
         "qty": 28
        }
       ],
-      "cost": 26600,
+      "cost": 22400,
       "score": 23240,
       "surplus": 240,
       "players": 28,
@@ -5094,18 +2058,18 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5950,
+        "price": 5150,
         "qty": 4
        },
        {
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 950,
+        "price": 800,
         "qty": 8
        }
       ],
-      "cost": 31400,
+      "cost": 27000,
       "score": 23040,
       "surplus": 40,
       "players": 12,
@@ -5117,18 +2081,18 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 9000,
+        "price": 7600,
         "qty": 2
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5950,
+        "price": 5150,
         "qty": 3
        }
       ],
-      "cost": 35850,
+      "cost": 30650,
       "score": 23300,
       "surplus": 300,
       "players": 5,
@@ -5138,413 +2102,15 @@
    }
   },
   {
-   "id": 197,
-   "name": "Ultimate Scream Upgrade",
-   "score": 30000,
+   "id": 121,
+   "name": "Liga F POTM October",
+   "score": 14000,
    "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/197.png",
-   "expires": "4 Days 1 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 36
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 650,
-        "qty": 1
-       }
-      ],
-      "cost": 31250,
-      "score": 30220,
-      "surplus": 220,
-      "players": 37
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 6
-       },
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 3000,
-        "qty": 1
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 4
-       }
-      ],
-      "cost": 38800,
-      "score": 30020,
-      "surplus": 20,
-      "players": 11
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 4
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 2
-       }
-      ],
-      "cost": 43600,
-      "score": 30200,
-      "surplus": 200,
-      "players": 6
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 36
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 700,
-        "qty": 1
-       }
-      ],
-      "cost": 34900,
-      "score": 30220,
-      "surplus": 220,
-      "players": 37,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5900,
-        "qty": 6
-       },
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 3250,
-        "qty": 1
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 950,
-        "qty": 4
-       }
-      ],
-      "cost": 42450,
-      "score": 30020,
-      "surplus": 20,
-      "players": 11,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8950,
-        "qty": 4
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5900,
-        "qty": 2
-       }
-      ],
-      "cost": 47600,
-      "score": 30200,
-      "surplus": 200,
-      "players": 6,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 199,
-   "name": "João Félix",
-   "score": 250000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/199.png",
-   "expires": "20 Days 1 Hours",
+   "image": "https://futmind.com/image-generator/sbc/121.png",
+   "expires": null,
    "notes": [],
    "reward": {
     "kind": "player",
-    "player": {
-     "v": 2,
-     "id": 117682956,
-     "slug": "joao-felix",
-     "card_image": "https://card-image.futmind.com/en/27/117682956.png",
-     "name": "João Félix",
-     "rating": 87,
-     "position": "LM",
-     "pac": 86,
-     "sho": 87,
-     "pas": 84,
-     "dri": 88,
-     "def": 50,
-     "phy": 76,
-     "weak_foot": "4",
-     "skill_moves": "5",
-     "foot": "Right",
-     "height": "181",
-     "rarity": "Thunderstruck",
-     "detail": {
-      "Acceleration": 87,
-      "Sprint Speed": 85,
-      "Agility": 92,
-      "Balance": 86,
-      "Reactions": 86,
-      "Ball Control": 86,
-      "Dribbling": 88,
-      "Composure": 87,
-      "Attacking Position": 89,
-      "Finishing": 87,
-      "Shot Power": 88,
-      "Long Shots": 85,
-      "Volleys": 86,
-      "Penalties": 80,
-      "Interceptions": 50,
-      "Heading Accuracy": 75,
-      "Defensive Awareness": 40,
-      "Standing Tackle": 52,
-      "Sliding Tackle": 52,
-      "Vision": 88,
-      "Crossing": 81,
-      "FK Accuracy": 75,
-      "Short Pass": 86,
-      "Long Pass": 78,
-      "Curve": 86,
-      "Jumping": 83,
-      "Stamina": 82,
-      "Strength": 72,
-      "Aggression": 77
-     },
-     "positions": {
-      "CB": 68,
-      "LB": 68,
-      "RB": 69,
-      "CDM": 82,
-      "CM": 87,
-      "CAM": 86,
-      "LM": 87,
-      "RM": 87,
-      "LW": 87,
-      "RW": 85
-     },
-     "playstyles": [],
-     "league": "ROSHN Saudi League",
-     "nation": "Portugal",
-     "club_id": 112139,
-     "league_id": 350,
-     "nation_id": 38,
-     "club_logo": "https://futmind.com/images/fifa2027/clubs/112139.png",
-     "league_logo": "https://futmind.com/images/fifa2027/leagues/350.png",
-     "nation_logo": "https://futmind.com/images/fifa2027/nations/38.png",
-     "top": {
-      "nation": [],
-      "league": [],
-      "club": []
-     }
-    }
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 301
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 650,
-        "qty": 1
-       }
-      ],
-      "cost": 256500,
-      "score": 250170,
-      "surplus": 170,
-      "players": 302
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 13
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 850,
-        "qty": 237
-       }
-      ],
-      "cost": 271650,
-      "score": 250010,
-      "surplus": 10,
-      "players": 250
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8200,
-        "qty": 44
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5400,
-        "qty": 2
-       }
-      ],
-      "cost": 371600,
-      "score": 250200,
-      "surplus": 200,
-      "players": 46
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 900,
-        "qty": 301
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 700,
-        "qty": 1
-       }
-      ],
-      "cost": 271600,
-      "score": 250170,
-      "surplus": 170,
-      "players": 302,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5700,
-        "qty": 13
-       },
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 900,
-        "qty": 237
-       }
-      ],
-      "cost": 287400,
-      "score": 250010,
-      "surplus": 10,
-      "players": 250,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8650,
-        "qty": 44
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5700,
-        "qty": 2
-       }
-      ],
-      "cost": 392000,
-      "score": 250200,
-      "surplus": 200,
-      "players": 46,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 200,
-   "name": "Base Icon Matchday Player Pick",
-   "score": 500000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/200.png",
-   "expires": "20 Days 1 Hours",
-   "notes": [],
-   "reward": {
-    "kind": "pick",
     "player": null
    },
    "builds": {
@@ -5555,21 +2121,14 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 850,
-        "qty": 602
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 650,
-        "qty": 1
+        "price": 700,
+        "qty": 17
        }
       ],
-      "cost": 512350,
-      "score": 500000,
-      "surplus": 0,
-      "players": 603
+      "cost": 11900,
+      "score": 14110,
+      "surplus": 110,
+      "players": 17
      },
      "optimal": {
       "lines": [
@@ -5577,21 +2136,21 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5400,
-        "qty": 9
+        "price": 4600,
+        "qty": 2
        },
        {
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 850,
-        "qty": 558
+        "price": 700,
+        "qty": 7
        }
       ],
-      "cost": 522900,
-      "score": 500040,
-      "surplus": 40,
-      "players": 567
+      "cost": 14100,
+      "score": 14010,
+      "surplus": 10,
+      "players": 9
      },
      "fast": {
       "lines": [
@@ -5599,14 +2158,21 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 8200,
-        "qty": 91
+        "price": 6800,
+        "qty": 2
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 1
        }
       ],
-      "cost": 746200,
-      "score": 500500,
-      "surplus": 500,
-      "players": 91
+      "cost": 18200,
+      "score": 15100,
+      "surplus": 1100,
+      "players": 3
      }
     },
     "pc": {
@@ -5616,21 +2182,14 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 950,
-        "qty": 602
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 700,
-        "qty": 1
+        "price": 800,
+        "qty": 17
        }
       ],
-      "cost": 572600,
-      "score": 500000,
-      "surplus": 0,
-      "players": 603,
+      "cost": 13600,
+      "score": 14110,
+      "surplus": 110,
+      "players": 17,
       "estimate": true
      },
      "optimal": {
@@ -5639,21 +2198,21 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5950,
-        "qty": 9
+        "price": 5150,
+        "qty": 2
        },
        {
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 950,
-        "qty": 558
+        "price": 800,
+        "qty": 7
        }
       ],
-      "cost": 583650,
-      "score": 500040,
-      "surplus": 40,
-      "players": 567,
+      "cost": 15900,
+      "score": 14010,
+      "surplus": 10,
+      "players": 9,
       "estimate": true
      },
      "fast": {
@@ -5662,14 +2221,175 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 9000,
-        "qty": 91
+        "price": 7600,
+        "qty": 2
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 1
        }
       ],
-      "cost": 819000,
-      "score": 500500,
-      "surplus": 500,
-      "players": 91,
+      "cost": 20350,
+      "score": 15100,
+      "surplus": 1100,
+      "players": 3,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 128,
+   "name": "LALIGA POTM October",
+   "score": 5200000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/128.png",
+   "expires": null,
+   "notes": [],
+   "reward": {
+    "kind": "player",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 6265
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 4386150,
+      "score": 5200360,
+      "surplus": 360,
+      "players": 6266
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 1260
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 41
+       }
+      ],
+      "cost": 5824700,
+      "score": 5200030,
+      "surplus": 30,
+      "players": 1301
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 6800,
+        "qty": 944
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 2
+       }
+      ],
+      "cost": 6428400,
+      "score": 5200200,
+      "surplus": 200,
+      "players": 946
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 6265
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
+       }
+      ],
+      "cost": 5012750,
+      "score": 5200360,
+      "surplus": 360,
+      "players": 6266,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 1260
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 41
+       }
+      ],
+      "cost": 6521800,
+      "score": 5200030,
+      "surplus": 30,
+      "players": 1301,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 7600,
+        "qty": 944
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 2
+       }
+      ],
+      "cost": 7184700,
+      "score": 5200200,
+      "surplus": 200,
+      "players": 946,
       "estimate": true
      }
     }
@@ -5681,7 +2401,7 @@
    "score": 15000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/201.png",
-   "expires": "4 Days 1 Hours",
+   "expires": null,
    "notes": [],
    "reward": {
     "kind": "pack",
@@ -5695,21 +2415,21 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 850,
+        "price": 700,
         "qty": 18
        },
        {
-        "rating": 72,
+        "rating": 83,
         "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 2
+        "score": 410,
+        "price": 650,
+        "qty": 1
        }
       ],
-      "cost": 15700,
-      "score": 15010,
-      "surplus": 10,
-      "players": 20
+      "cost": 13250,
+      "score": 15350,
+      "surplus": 350,
+      "players": 19
      },
      "optimal": {
       "lines": [
@@ -5717,28 +2437,28 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5400,
+        "price": 4600,
         "qty": 3
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2400,
+        "qty": 1
        },
        {
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 850,
-        "qty": 3
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 650,
+        "price": 700,
         "qty": 1
        }
       ],
-      "cost": 19400,
-      "score": 15130,
-      "surplus": 130,
-      "players": 7
+      "cost": 16900,
+      "score": 15230,
+      "surplus": 230,
+      "players": 5
      },
      "fast": {
       "lines": [
@@ -5746,18 +2466,18 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 8200,
+        "price": 6800,
         "qty": 2
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5400,
+        "price": 4600,
         "qty": 1
        }
       ],
-      "cost": 21800,
+      "cost": 18200,
       "score": 15100,
       "surplus": 100,
       "players": 3
@@ -5770,21 +2490,21 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 950,
+        "price": 800,
         "qty": 18
        },
        {
-        "rating": 72,
+        "rating": 83,
         "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 2
+        "score": 410,
+        "price": 750,
+        "qty": 1
        }
       ],
-      "cost": 17500,
-      "score": 15010,
-      "surplus": 10,
-      "players": 20,
+      "cost": 15150,
+      "score": 15350,
+      "surplus": 350,
+      "players": 19,
       "estimate": true
      },
      "optimal": {
@@ -5793,28 +2513,28 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5950,
+        "price": 5150,
         "qty": 3
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2700,
+        "qty": 1
        },
        {
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 950,
-        "qty": 3
-       },
-       {
-        "rating": 82,
-        "rarity": "Common",
-        "score": 340,
-        "price": 700,
+        "price": 800,
         "qty": 1
        }
       ],
-      "cost": 21400,
-      "score": 15130,
-      "surplus": 130,
-      "players": 7,
+      "cost": 18950,
+      "score": 15230,
+      "surplus": 230,
+      "players": 5,
       "estimate": true
      },
      "fast": {
@@ -5823,21 +2543,1169 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 9000,
+        "price": 7600,
         "qty": 2
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5950,
+        "price": 5150,
         "qty": 1
        }
       ],
-      "cost": 23950,
+      "cost": 20350,
       "score": 15100,
       "surplus": 100,
       "players": 3,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 191,
+   "name": "Campaign Mix Upgrade",
+   "score": 40000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/191.png",
+   "expires": null,
+   "notes": [],
+   "reward": {
+    "kind": "pack",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 48
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 34250,
+      "score": 40250,
+      "surplus": 250,
+      "players": 49
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 9
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 4
+       }
+      ],
+      "cost": 44200,
+      "score": 40220,
+      "surplus": 220,
+      "players": 13
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 6800,
+        "qty": 7
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2400,
+        "qty": 1
+       }
+      ],
+      "cost": 50000,
+      "score": 40600,
+      "surplus": 600,
+      "players": 8
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 48
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
+       }
+      ],
+      "cost": 39150,
+      "score": 40250,
+      "surplus": 250,
+      "players": 49,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 9
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 4
+       }
+      ],
+      "cost": 49550,
+      "score": 40220,
+      "surplus": 220,
+      "players": 13,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 7600,
+        "qty": 7
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2700,
+        "qty": 1
+       }
+      ],
+      "cost": 55900,
+      "score": 40600,
+      "surplus": 600,
+      "players": 8,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 190,
+   "name": "Base Hero Upgrade",
+   "score": 60000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/190.png",
+   "expires": null,
+   "notes": [],
+   "reward": {
+    "kind": "pack",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 72
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 51050,
+      "score": 60170,
+      "surplus": 170,
+      "players": 73
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 11
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 18
+       }
+      ],
+      "cost": 63200,
+      "score": 60040,
+      "surplus": 40,
+      "players": 29
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 6800,
+        "qty": 11
+       }
+      ],
+      "cost": 74800,
+      "score": 60500,
+      "surplus": 500,
+      "players": 11
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 72
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
+       }
+      ],
+      "cost": 58350,
+      "score": 60170,
+      "surplus": 170,
+      "players": 73,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 11
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 18
+       }
+      ],
+      "cost": 71050,
+      "score": 60040,
+      "surplus": 40,
+      "players": 29,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 7600,
+        "qty": 11
+       }
+      ],
+      "cost": 83600,
+      "score": 60500,
+      "surplus": 500,
+      "players": 11,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 185,
+   "name": "Max. 88 Base Icon Upgrade",
+   "score": 200000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/185.png",
+   "expires": null,
+   "notes": [],
+   "reward": {
+    "kind": "pack",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 241
+       }
+      ],
+      "cost": 168700,
+      "score": 200030,
+      "surplus": 30,
+      "players": 241
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 48
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 4
+       }
+      ],
+      "cost": 223600,
+      "score": 200120,
+      "surplus": 120,
+      "players": 52
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 6800,
+        "qty": 36
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2400,
+        "qty": 1
+       }
+      ],
+      "cost": 247200,
+      "score": 200100,
+      "surplus": 100,
+      "players": 37
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 241
+       }
+      ],
+      "cost": 192800,
+      "score": 200030,
+      "surplus": 30,
+      "players": 241,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 48
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 4
+       }
+      ],
+      "cost": 250400,
+      "score": 200120,
+      "surplus": 120,
+      "players": 52,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 7600,
+        "qty": 36
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2700,
+        "qty": 1
+       }
+      ],
+      "cost": 276300,
+      "score": 200100,
+      "surplus": 100,
+      "players": 37,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 161,
+   "name": "2x 84+ Upgrade",
+   "score": 9000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/161.png",
+   "expires": null,
+   "notes": [],
+   "reward": {
+    "kind": "pack",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 11
+       }
+      ],
+      "cost": 7700,
+      "score": 9130,
+      "surplus": 130,
+      "players": 11
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 2
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       }
+      ],
+      "cost": 9900,
+      "score": 9030,
+      "surplus": 30,
+      "players": 3
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 6800,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 1
+       }
+      ],
+      "cost": 11400,
+      "score": 9600,
+      "surplus": 600,
+      "players": 2
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 11
+       }
+      ],
+      "cost": 8800,
+      "score": 9130,
+      "surplus": 130,
+      "players": 11,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 2
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 1
+       }
+      ],
+      "cost": 11100,
+      "score": 9030,
+      "surplus": 30,
+      "players": 3,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 7600,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 1
+       }
+      ],
+      "cost": 12750,
+      "score": 9600,
+      "surplus": 600,
+      "players": 2,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 93,
+   "name": "Premier League & Barclays WSL",
+   "score": 9000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/93.png",
+   "expires": null,
+   "notes": [],
+   "reward": {
+    "kind": "pack",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 11
+       }
+      ],
+      "cost": 7700,
+      "score": 9130,
+      "surplus": 130,
+      "players": 11
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 2
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       }
+      ],
+      "cost": 9900,
+      "score": 9030,
+      "surplus": 30,
+      "players": 3
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 6800,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 1
+       }
+      ],
+      "cost": 11400,
+      "score": 9600,
+      "surplus": 600,
+      "players": 2
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 11
+       }
+      ],
+      "cost": 8800,
+      "score": 9130,
+      "surplus": 130,
+      "players": 11,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 2
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 1
+       }
+      ],
+      "cost": 11100,
+      "score": 9030,
+      "surplus": 30,
+      "players": 3,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 7600,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 1
+       }
+      ],
+      "cost": 12750,
+      "score": 9600,
+      "surplus": 600,
+      "players": 2,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 94,
+   "name": "LALIGA & Liga F",
+   "score": 6000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/94.png",
+   "expires": null,
+   "notes": [],
+   "reward": {
+    "kind": "pack",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 7
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 5550,
+      "score": 6220,
+      "surplus": 220,
+      "players": 8
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2400,
+        "qty": 1
+       }
+      ],
+      "cost": 7000,
+      "score": 6200,
+      "surplus": 200,
+      "players": 2
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 4600,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2400,
+        "qty": 1
+       }
+      ],
+      "cost": 7000,
+      "score": 6200,
+      "surplus": 200,
+      "players": 2
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 7
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
+       }
+      ],
+      "cost": 6350,
+      "score": 6220,
+      "surplus": 220,
+      "players": 8,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2700,
+        "qty": 1
+       }
+      ],
+      "cost": 7850,
+      "score": 6200,
+      "surplus": 200,
+      "players": 2,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5150,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2700,
+        "qty": 1
+       }
+      ],
+      "cost": 7850,
+      "score": 6200,
+      "surplus": 200,
+      "players": 2,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 92,
+   "name": "Ligue 1 & Arkema Première Ligue",
+   "score": 5000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/92.png",
+   "expires": null,
+   "notes": [],
+   "reward": {
+    "kind": "pack",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 6
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 4850,
+      "score": 5390,
+      "surplus": 390,
+      "players": 7
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2400,
+        "qty": 2
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       }
+      ],
+      "cost": 5500,
+      "score": 5030,
+      "surplus": 30,
+      "players": 3
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 6800,
+        "qty": 1
+       }
+      ],
+      "cost": 6800,
+      "score": 5500,
+      "surplus": 500,
+      "players": 1
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 6
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
+       }
+      ],
+      "cost": 5550,
+      "score": 5390,
+      "surplus": 390,
+      "players": 7,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2700,
+        "qty": 2
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 1
+       }
+      ],
+      "cost": 6200,
+      "score": 5030,
+      "surplus": 30,
+      "players": 3,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 7600,
+        "qty": 1
+       }
+      ],
+      "cost": 7600,
+      "score": 5500,
+      "surplus": 500,
+      "players": 1,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 91,
+   "name": "Bundesliga & Google Pixel Frauen-Bundesliga",
+   "score": 5000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/91.png",
+   "expires": null,
+   "notes": [],
+   "reward": {
+    "kind": "pack",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 6
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 4850,
+      "score": 5390,
+      "surplus": 390,
+      "players": 7
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2400,
+        "qty": 2
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       }
+      ],
+      "cost": 5500,
+      "score": 5030,
+      "surplus": 30,
+      "players": 3
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 6800,
+        "qty": 1
+       }
+      ],
+      "cost": 6800,
+      "score": 5500,
+      "surplus": 500,
+      "players": 1
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 6
+       },
+       {
+        "rating": 83,
+        "rarity": "Common",
+        "score": 410,
+        "price": 750,
+        "qty": 1
+       }
+      ],
+      "cost": 5550,
+      "score": 5390,
+      "surplus": 390,
+      "players": 7,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2700,
+        "qty": 2
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 1
+       }
+      ],
+      "cost": 6200,
+      "score": 5030,
+      "surplus": 30,
+      "players": 3,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 7600,
+        "qty": 1
+       }
+      ],
+      "cost": 7600,
+      "score": 5500,
+      "surplus": 500,
+      "players": 1,
       "estimate": true
      }
     }
