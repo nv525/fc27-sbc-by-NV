@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 root = Path(__file__).parent
-SLIM = ("id", "slug", "name", "rating", "position", "rarity", "club_id", "league_id", "nation_id", "club", "league", "nation")
+SLIM = ("id", "slug", "name", "rating", "position", "rarity", "club_id", "league_id", "nation_id", "club", "league", "nation", "pc")
 PLAIN = {"common", "rare", "gold", "silver", "bronze", "rare gold", "rare silver", "rare bronze", ""}
 
 
@@ -25,6 +25,13 @@ def all_players():
     except Exception:
         pass
     return out
+
+
+def club_names():
+    try:
+        return json.loads((root / "club_names.json").read_text(encoding="utf-8"))
+    except Exception:
+        return {}
 
 
 def is_special(rarity):
