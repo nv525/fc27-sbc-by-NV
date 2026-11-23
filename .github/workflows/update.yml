@@ -25,7 +25,7 @@ jobs:
         run: |
           git config user.name "sbc-bot"
           git config user.email "sbc-bot@users.noreply.github.com"
-          git add raw.json docs/data.json docs/players.json
+          git add raw.json club_names.json docs/data.json docs/players.json
           git diff --cached --quiet || git commit -m "Обновить цены"
           git pull --rebase
           git push
