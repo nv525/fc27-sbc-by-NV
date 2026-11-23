@@ -9,6 +9,7 @@ import json
 import sys
 from pathlib import Path
 
+from playerdb import all_players, club_names
 from solver import solve
 
 root = Path(__file__).parent
@@ -41,19 +42,36 @@ ratios = sorted(s["pc_total"] / s["console_total"] for s in raw["sbcs"] if s.get
 GLOBAL_RATIO = ratios[len(ratios) // 2] if ratios else 1.0
 
 
+POOL = list(all_players().values())
+
+
+def top10(kind, fid):
+    """Лучшие игроки нации/лиги/клуба из собранной базы (рейтинг, без повторов имён)."""
+    if not fid:
+        return []
+    seen, out = set(), []
+    for g in sorted((x for x in POOL if x.get(kind + "_id") == fid and x.get("rating")), key=lambda x: -x["rating"]):
+        if g["name"] in seen:
+            continue
+        seen.add(g["name"])
+        out.append({"id": g["id"], "name": g["name"], "rating": g["rating"], "position": g.get("position"),
+                    "card_image": f"https://card-image.futmind.com/en/27/{g['id']}.png"})
+        if len(out) == 10:
+            break
+    return out
+
+
 def player_view(pl):
     """Игрок для страницы: чистое имя, топ-10 по нации, лиге и клубу."""
     if not pl:
         return None
     pl = dict(pl)
     pl["name"] = (pl.get("name") or "").split(" - ")[0].strip()
+    pl["club"] = club_names().get(str(pl.get("club_id"))) or pl.get("club")
     pl["top"] = {}
     for kind in ("nation", "league", "club"):
         fid = pl.get(kind + "_id")
-        pl["top"][kind] = [
-            {k: g.get(k) for k in ("id", "name", "rating", "position", "card_image")}
-            for g in raw.get("lists", {}).get(f"{kind}:{fid}", [])[:10]
-        ]
+        pl["top"][kind] = top10(kind, fid)
     return pl
 
 
