@@ -74,6 +74,76 @@ def read_sbc_list(page):
     return found
 
 
+DETAIL_STATS = [
+    "Acceleration", "Sprint Speed", "Agility", "Balance", "Reactions", "Ball Control", "Dribbling", "Composure",
+    "Attacking Position", "Finishing", "Shot Power", "Long Shots", "Volleys", "Penalties",
+    "Interceptions", "Heading Accuracy", "Defensive Awareness", "Standing Tackle", "Sliding Tackle",
+    "Vision", "Crossing", "FK Accuracy", "Short Pass", "Long Pass", "Curve",
+    "Jumping", "Stamina", "Strength", "Aggression",
+]
+POSITIONS = ["GK", "CB", "LB", "RB", "LWB", "RWB", "CDM", "CM", "CAM", "LM", "RM", "LW", "RW", "CF", "ST"]
+
+
+def read_player(page, pid, slug):
+    """Карточка игрока со страницы игрока. Каждое поле необязательное: чего нет, того нет."""
+    page.goto(f"{BASE}/players/{pid}/{slug}", wait_until="networkidle")
+    html = page.content()
+    soup = BeautifulSoup(html, "html.parser")
+    text = soup.get_text("\n", strip=True)
+    one = lambda pat: (re.search(pat, text) or [None, None])[1]
+    pl = {"id": pid, "slug": slug, "card_image": f"https://card-image.futmind.com/en/27/{pid}.png"}
+    title = soup.find("h1")
+    pl["name"] = title.get_text(" ", strip=True) if title else slug.replace("-", " ").title()
+    pl["rating"] = int(one(r"\b(\d{2})\s*\n?\s*(?:" + "|".join(POSITIONS) + r")\b") or 0) or None
+    pl["position"] = one(r"\b(" + "|".join(POSITIONS) + r")\b")
+    for key, label in (("pac", "PAC"), ("sho", "SHO"), ("pas", "PAS"), ("dri", "DRI"), ("def", "DEF"), ("phy", "PHY")):
+        v = one(label + r"\s*\n?\s*(\d{2})")
+        pl[key] = int(v) if v else None
+    pl["weak_foot"] = one(r"Weak [Ff]oot\s*\n?\s*(\d)")
+    pl["skill_moves"] = one(r"Skill [Mm]oves\s*\n?\s*(\d)")
+    pl["foot"] = one(r"(?:Preferred [Ff]oot|Foot)\s*\n?\s*(Left|Right)")
+    pl["height"] = one(r"(\d{3})\s*cm")
+    pl["rarity"] = one(r"Rarity\s*\n?\s*(.+)")
+    detail = {}
+    for st in DETAIL_STATS:
+        hits = re.findall(r"(?<![A-Za-z])" + re.escape(st) + r"\s*\n?\s*(\d{1,2})(?!\d)", text)
+        if hits:
+            detail[st] = int(hits[-1])  # у «Dribbling» последнее вхождение — подробная характеристика
+    pl["detail"] = detail
+    pos = {}
+    for p_ in POSITIONS:
+        m = re.search(r"(?<![A-Za-z])" + p_ + r"\s*\n?\s*(\d{2})(?!\d)", text)
+        if m:
+            pos[p_] = int(m.group(1))
+    pl["positions"] = pos
+    ps = re.search(r"Playstyles?\s*\n(.*?)\n(?:Roles|Position|Detailed|Stats)", text, re.S)
+    pl["playstyles"] = [x for x in ps.group(1).split("\n") if 2 < len(x) < 30] if ps else []
+    pl["league"] = one(r"League\s*\n?\s*(.+)")
+    pl["nation"] = one(r"Nation\s*\n?\s*(.+)")
+    for key, folder in (("club_id", "clubs"), ("league_id", "leagues"), ("nation_id", "nations")):
+        m = re.search(r"fifa2027(?:%2F|/)" + folder + r"(?:%2F|/)(\d+)\.png", html)
+        pl[key] = int(m.group(1)) if m else None
+    for key, folder in (("club_logo", "clubs"), ("league_logo", "leagues"), ("nation_logo", "nations")):
+        idk = key.replace("_logo", "_id")
+        pl[key] = f"{BASE}/images/fifa2027/{folder}/{pl[idk]}.png" if pl.get(idk) else None
+    return pl
+
+
+def reward_kind(soup, name):
+    """Игрок, пик или пак. По ссылкам награды на странице SBC."""
+    hrefs = [a["href"] for a in soup.find_all("a", href=True)]
+    desc = soup.find("meta", attrs={"name": "description"})
+    blob = (name + " " + (desc["content"] if desc and desc.has_attr("content") else "")).lower()
+    pm = next((re.search(r"/players/(\d+)/([^/?#]+)", h) for h in hrefs if re.search(r"/players/\d+/", h)), None)
+    if "player pick" in blob or " pick" in blob:
+        return "pick", None
+    if pm:
+        return "player", (int(pm.group(1)), pm.group(2))
+    if any("/pack/" in h for h in hrefs):
+        return "pack", None
+    return "pack", None
+
+
 def read_sbc(page, sbc_id, slug):
     url = f"{BASE}/squad-building-challenges/{sbc_id}/{slug}"
     page.goto(url, wait_until="networkidle")
@@ -91,7 +161,9 @@ def read_sbc(page, sbc_id, slug):
     # два числа перед «Rewards»: цена SBC на консоли и на ПК по данным сайта
     tot = re.search(r"([\d,]{3,})\s+([\d,]{3,})\s+Rewards", text)
     ex = re.search(r"Expires In\s*\n?(.+)", text)
+    kind, pl = reward_kind(soup, name)
     return {
+        "reward": {"kind": kind, "player_id": pl[0] if pl else None, "player_slug": pl[1] if pl else None},
         "id": sbc_id, "name": name, "score": NUM(m.group(1)),
         "min_rating": int(mr.group(1)) if mr else 0,
         "notes": notes, "expires": ex.group(1).strip() if ex else None,
@@ -129,13 +201,34 @@ def main():
                 continue
             if s:
                 sbcs.append(s)
+
+        # игроки-награды: берём из прошлого raw.json, чтобы не ходить на сайт лишний раз
+        old = {}
+        if OUT.exists():
+            try:
+                old = json.loads(OUT.read_text(encoding="utf-8")).get("players", {})
+            except Exception:
+                pass
+        players = {}
+        for s in sbcs:
+            pid, slug = s["reward"].get("player_id"), s["reward"].get("player_slug")
+            if not pid or str(pid) in players:
+                continue
+            if str(pid) in old:
+                players[str(pid)] = old[str(pid)]
+                continue
+            time.sleep(1)
+            try:
+                players[str(pid)] = read_player(page, pid, slug)
+            except Exception as e:
+                log(f"  игрок {pid}: ошибка {e}")
         browser.close()
 
     if not sbcs:
         sys.exit("SBC не найдены. raw.json не тронут.")
     raw = {
         "updated": datetime.now(timezone.utc).replace(minute=0, second=0, microsecond=0).isoformat(timespec="minutes"),
-        "source": "futmind.com", "platforms": platforms, "sbcs": sbcs,
+        "source": "futmind.com", "platforms": platforms, "players": players, "sbcs": sbcs,
     }
     OUT.write_text(json.dumps(raw, ensure_ascii=False, indent=1), encoding="utf-8")
     log(f"Готово: {len(sbcs)} SBC")
