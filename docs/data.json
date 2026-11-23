@@ -1466,29 +1466,219 @@
      "club_logo": "https://futmind.com/images/fifa2027/clubs/132794.png",
      "league_logo": "https://futmind.com/images/fifa2027/leagues/31.png",
      "nation_logo": "https://futmind.com/images/fifa2027/nations/27.png",
+     "club": null,
      "top": {
       "nation": [
        {
-        "id": 50535199,
-        "name": "Florenzi",
-        "rating": 87,
-        "position": "RB",
-        "card_image": "https://card-image.futmind.com/en/27/50535199.png"
+        "id": 238439,
+        "name": "Paolo Maldini",
+        "rating": 93,
+        "position": "CB",
+        "card_image": "https://card-image.futmind.com/en/27/238439.png"
+       },
+       {
+        "id": 67110043,
+        "name": "Gianluigi Buffon",
+        "rating": 92,
+        "position": "GK",
+        "card_image": "https://card-image.futmind.com/en/27/67110043.png"
+       },
+       {
+        "id": 83887168,
+        "name": "Alessandro Nesta",
+        "rating": 91,
+        "position": "CB",
+        "card_image": "https://card-image.futmind.com/en/27/83887168.png"
+       },
+       {
+        "id": 1114,
+        "name": "Roberto Baggio",
+        "rating": 91,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/1114.png"
+       },
+       {
+        "id": 166906,
+        "name": "Franco Baresi",
+        "rating": 91,
+        "position": "CB",
+        "card_image": "https://card-image.futmind.com/en/27/166906.png"
+       },
+       {
+        "id": 50562269,
+        "name": "Gianluigi Donnarumma",
+        "rating": 90,
+        "position": "GK",
+        "card_image": "https://card-image.futmind.com/en/27/50562269.png"
+       },
+       {
+        "id": 238382,
+        "name": "Alessandro Del Piero",
+        "rating": 90,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/238382.png"
+       },
+       {
+        "id": 1238,
+        "name": "Francesco Totti",
+        "rating": 89,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/1238.png"
+       },
+       {
+        "id": 83887281,
+        "name": "Gianfranco Zola",
+        "rating": 89,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/83887281.png"
+       },
+       {
+        "id": 1183,
+        "name": "Fabio Cannavaro",
+        "rating": 89,
+        "position": "CB",
+        "card_image": "https://card-image.futmind.com/en/27/1183.png"
        }
       ],
       "league": [
        {
+        "id": 50500699,
+        "name": "Fredy Guarín",
+        "rating": 88,
+        "position": "CAM",
+        "card_image": "https://card-image.futmind.com/en/27/50500699.png"
+       },
+       {
+        "id": 50511823,
+        "name": "Alexandre Pato",
+        "rating": 88,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/50511823.png"
+       },
+       {
+        "id": 50520076,
+        "name": "Seydou Doumbia",
+        "rating": 88,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/50520076.png"
+       },
+       {
+        "id": 50568886,
+        "name": "Scott McTominay",
+        "rating": 88,
+        "position": "CM",
+        "card_image": "https://card-image.futmind.com/en/27/50568886.png"
+       },
+       {
+        "id": 84165253,
+        "name": "Franco Mastantuono",
+        "rating": 88,
+        "position": "CAM",
+        "card_image": "https://card-image.futmind.com/en/27/84165253.png"
+       },
+       {
+        "id": 50518275,
+        "name": "Mario Balotelli",
+        "rating": 88,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/50518275.png"
+       },
+       {
+        "id": 67346247,
+        "name": "Alessandro Bastoni",
+        "rating": 88,
+        "position": "CB",
+        "card_image": "https://card-image.futmind.com/en/27/67346247.png"
+       },
+       {
+        "id": 120274,
+        "name": "Antonio Di Natale",
+        "rating": 88,
+        "position": "LM",
+        "card_image": "https://card-image.futmind.com/en/27/120274.png"
+       },
+       {
         "id": 50535199,
-        "name": "Florenzi",
+        "name": "Alessandro Florenzi",
         "rating": 87,
         "position": "RB",
         "card_image": "https://card-image.futmind.com/en/27/50535199.png"
+       },
+       {
+        "id": 171877,
+        "name": "Marek Hamšík",
+        "rating": 87,
+        "position": "CAM",
+        "card_image": "https://card-image.futmind.com/en/27/171877.png"
        }
       ],
       "club": [
        {
+        "id": 50496507,
+        "name": "Theo Walcott",
+        "rating": 90,
+        "position": "RW",
+        "card_image": "https://card-image.futmind.com/en/27/50496507.png"
+       },
+       {
+        "id": 50521010,
+        "name": "Hulk",
+        "rating": 90,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/50521010.png"
+       },
+       {
+        "id": 50499553,
+        "name": "Antonio Valencia",
+        "rating": 89,
+        "position": "RB",
+        "card_image": "https://card-image.futmind.com/en/27/50499553.png"
+       },
+       {
+        "id": 50511592,
+        "name": "David Luiz",
+        "rating": 89,
+        "position": "CDM",
+        "card_image": "https://card-image.futmind.com/en/27/50511592.png"
+       },
+       {
+        "id": 50508592,
+        "name": "Marouane Fellaini",
+        "rating": 88,
+        "position": "CDM",
+        "card_image": "https://card-image.futmind.com/en/27/50508592.png"
+       },
+       {
+        "id": 50500699,
+        "name": "Fredy Guarín",
+        "rating": 88,
+        "position": "CAM",
+        "card_image": "https://card-image.futmind.com/en/27/50500699.png"
+       },
+       {
+        "id": 50511823,
+        "name": "Alexandre Pato",
+        "rating": 88,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/50511823.png"
+       },
+       {
+        "id": 50520076,
+        "name": "Seydou Doumbia",
+        "rating": 88,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/50520076.png"
+       },
+       {
+        "id": 50518275,
+        "name": "Mario Balotelli",
+        "rating": 88,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/50518275.png"
+       },
+       {
         "id": 50535199,
-        "name": "Florenzi",
+        "name": "Alessandro Florenzi",
         "rating": 87,
         "position": "RB",
         "card_image": "https://card-image.futmind.com/en/27/50535199.png"
