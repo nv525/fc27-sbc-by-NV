@@ -124,6 +124,21 @@
   .panel h3 { margin: 0; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
   .dt h2.title { margin: 0; font-size: 1.6rem; font-weight: 800; letter-spacing: -0.03em; text-wrap: balance; overflow-wrap: anywhere; }
 
+  .dd { position: relative; flex: 0 0 auto; }
+  .dd-b { position: relative; font: 600 0.88rem var(--font); color: var(--fg); background: var(--surface); border: 0; border-radius: 999px; height: 42px; padding: 0 40px 0 18px; cursor: pointer; text-align: left; white-space: nowrap; }
+  .dd-b::after { content: ""; position: absolute; right: 18px; top: 50%; width: 7px; height: 7px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: translateY(-70%) rotate(45deg); transition: transform 0.15s; }
+  .dd.open .dd-b::after { transform: translateY(-30%) rotate(-135deg); }
+  .panel .dd-b { background: var(--surface-2); }
+  .dd-m { position: absolute; z-index: 70; left: 0; top: calc(100% + 6px); min-width: 100%; max-width: 86vw; max-height: min(60vh, 380px); overflow-y: auto; margin: 0; padding: 6px; list-style: none; background: var(--surface); border-radius: 20px; box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18), 0 0 0 1px var(--surface-2); }
+  .dd-m button { all: unset; box-sizing: border-box; display: block; width: 100%; padding: 10px 14px; border-radius: 14px; cursor: pointer; font: 600 0.88rem var(--font); color: var(--fg); white-space: nowrap; }
+  .dd-m button:hover, .dd-m button:focus-visible { background: var(--accent-soft); }
+  .dd-m button[aria-selected="true"] { color: var(--accent); }
+  .cardstage { display: grid; place-items: center; padding: 20px 12px; border-radius: 20px; background: radial-gradient(circle at 50% 35%, var(--accent-soft), transparent 70%), var(--surface-2); }
+  .cardimg { width: clamp(150px, 52vw, 230px); height: auto; filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.28)); }
+  .psg { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); gap: 8px; }
+  .ps { display: flex; align-items: center; gap: 10px; min-width: 0; background: var(--surface-2); border-radius: 14px; padding: 9px 12px; font-weight: 700; font-size: 0.82rem; }
+  .ps svg { width: 22px; height: 22px; flex: none; stroke: var(--accent); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .warn { margin: 0; padding: 10px 14px; border-radius: 14px; background: var(--accent-soft); color: var(--fg); font-size: 0.85rem; font-weight: 600; }
   .plhead { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 14px 16px; align-items: center; }
   .plrate { font-size: 3.4rem; font-weight: 800; letter-spacing: -0.06em; line-height: 0.9; color: var(--accent); }
   .plpos { font-weight: 800; font-size: 0.95rem; margin-top: 4px; }
@@ -198,7 +213,7 @@
   .sum { margin-bottom: 4px; }
   .pitch { background: linear-gradient(180deg, #14825f, #0e6a4d); border-radius: 20px; padding: 18px 8px; display: flex; flex-direction: column; gap: 14px; background-image: repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0 44px, transparent 44px 88px), linear-gradient(180deg, #14825f, #0e6a4d); }
   .prow { display: flex; justify-content: space-evenly; gap: 6px; }
-  .pc { width: clamp(58px, 17vw, 96px); min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; color: #fff; }
+  .pc { width: clamp(52px, 15.5vw, 96px); min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; color: #fff; }
   .pc b { font-size: clamp(0.6rem, 2.4vw, 0.76rem); font-weight: 700; line-height: 1.15; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .pimg { position: relative; width: 100%; aspect-ratio: 3 / 4; background: rgba(255, 255, 255, 0.12); border-radius: 10px; display: grid; place-items: center; }
   .pimg img { width: 100%; height: 100%; object-fit: contain; display: block; }
@@ -222,11 +237,7 @@
       <button id="p-pc" type="button" aria-pressed="false">ПК</button>
     </div>
     <input id="q" type="search" placeholder="Найти SBC" aria-label="Найти SBC">
-    <span class="sel"><select id="sort" aria-label="Сортировка">
-      <option value="new">Сначала новые</option>
-      <option value="score-asc">Меньше кристаллов</option>
-      <option value="score-desc">Больше кристаллов</option>
-    </select></span>
+    <div id="sortdd"></div>
   </div>
   <div class="seg cats" id="cats" role="group" aria-label="Категория"></div>
   <p class="upd" id="upd"></p>
@@ -273,8 +284,17 @@
     ["Физика", "phy", ["Jumping", "Stamina", "Strength", "Aggression"]]
   ];
   var CRYSTAL = '<img src="data:image/png;base64,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" alt="" width="22" height="19">';
+  function ddHtml(id, opts, val) {
+    var cur = opts.filter(function (o) { return o[0] === val; })[0] || opts[0];
+    return '<div class="dd" data-dd="' + id + '"><button type="button" class="dd-b" aria-haspopup="listbox" aria-expanded="false"><span>' + esc(cur[1]) + '</span></button>' +
+      '<ul class="dd-m" role="listbox" hidden>' + opts.map(function (o) { return '<li><button type="button" role="option" data-ddv="' + esc(o[0]) + '" aria-selected="' + (o[0] === val) + '">' + esc(o[1]) + '</button></li>'; }).join('') + '</ul></div>';
+  }
+  var SORTS = [["new", "Сначала новые"], ["score-asc", "Меньше кристаллов"], ["score-desc", "Больше кристаллов"]];
+  function closeDd(except) {
+    document.querySelectorAll(".dd.open").forEach(function (d) { if (d !== except) { d.classList.remove("open"); d.querySelector(".dd-m").hidden = true; d.querySelector(".dd-b").setAttribute("aria-expanded", "false"); } });
+  }
   var nf = new Intl.NumberFormat("ru-RU");
-  var state = { data: null, platform: "console", cat: "all", expanded: {}, mode: {}, open: null };
+  var state = { sort: "new", data: null, platform: "console", cat: "all", expanded: {}, mode: {}, open: null };
   var $ = function (id) { return document.getElementById(id); };
   var tg = window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initData ? window.Telegram.WebApp : null;
 
@@ -331,6 +351,23 @@
   }
 
   // Экран игрока: статы, позиции, стили игры и переходы по нации/лиге/клубу
+  var PS_ICON = {
+    shoot: '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>',
+    pass: '<path d="M4 17c3-8 9-10 16-9"/><path d="M15 4l5 4-4 5"/>',
+    ball: '<circle cx="12" cy="12" r="9"/><path d="M12 7l4 3-1.5 5h-5L8 10z"/>',
+    defend: '<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/>',
+    phys: '<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>',
+    gk: '<path d="M7 12V6a1.5 1.5 0 013 0v5M10 11V4.5a1.5 1.5 0 013 0V11M13 11V5.5a1.5 1.5 0 013 0V12M16 12V8.5a1.5 1.5 0 013 0V15c0 4-3 7-7 7-3 0-5-2-6.5-5L4 13.5a1.5 1.5 0 012.5-1.5z"/>'
+  };
+  var PS_NAME = { "finesse-shot": "Finesse Shot", "chip-shot": "Chip Shot", "power-shot": "Power Shot", "dead-ball": "Dead Ball", "power-header": "Power Header", "low-driven-shot": "Low Driven Shot", "acrobatic": "Acrobatic", "incisive-pass": "Incisive Pass", "pinged-pass": "Pinged Pass", "long-ball-pass": "Long Ball Pass", "tiki-taka": "Tiki Taka", "whipped-pass": "Whipped Pass", "inventive": "Inventive", "first-touch": "First Touch", "trickster": "Trickster", "technical": "Technical", "rapid": "Rapid", "flair": "Flair", "press-proven": "Press Proven", "quick-step": "Quick Step", "jockey": "Jockey", "block": "Block", "intercept": "Intercept", "anticipate": "Anticipate", "slide-tackle": "Slide Tackle", "bruiser": "Bruiser", "relentless": "Relentless", "aerial-fortress": "Aerial Fortress", "long-throw": "Long Throw", "far-throw": "Far Throw", "footwork": "Footwork", "cross-claimer": "Cross Claimer", "rush-out": "Rush Out", "far-reach": "Far Reach", "quick-reflexes": "Quick Reflexes", "deflector": "Deflector" };
+  function psCat(s) {
+    if (/far-throw|footwork|cross-claimer|rush-out|far-reach|quick-reflexes|deflector/.test(s)) return "gk";
+    if (/shot|header|dead-ball|acrobatic|trivela|volley|finesse|chip/.test(s)) return "shoot";
+    if (/pass|tiki|inventive|whipped|ball-pass/.test(s)) return "pass";
+    if (/touch|trick|technical|rapid|flair|press|quick-step|dribbl/.test(s)) return "ball";
+    if (/jockey|block|intercept|anticipate|tackle|bruiser/.test(s)) return "defend";
+    return "phys";
+  }
   function playerHtml(pl) {
     var six = [["PAC", "pac"], ["SHO", "sho"], ["PAS", "pas"], ["DRI", "dri"], ["DEF", "def"], ["PHY", "phy"]].map(function (x) {
       return '<div><b>' + (pl[x[1]] != null ? pl[x[1]] : "—") + '</b><span>' + x[0] + '</span></div>';
@@ -342,10 +379,14 @@
       }).join('');
       return rows ? '<div class="grp"><h4>' + g[0] + '<span>' + (pl[g[1]] != null ? pl[g[1]] : '') + '</span></h4>' + rows + '</div>' : '';
     }).join('');
-    var pos = Object.keys(pl.positions || {}).map(function (k) { return '<span class="chip big">' + k + ' ' + pl.positions[k] + '</span>'; }).join('');
-    var styles = (pl.playstyles || []).map(function (k) { return '<span class="chip big">' + esc(k) + '</span>'; }).join('');
+    // Рейтинг по позициям временно скрыт (блок оставлен на случай, если понадобится):
+    // var pos = Object.keys(pl.positions || {}).map(function (k) { return '<span class="chip big">' + k + ' ' + pl.positions[k] + '</span>'; }).join('');
+    var styles = (pl.playstyles || []).map(function (k) {
+      var slug = String(k).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+      return '<div class="ps"><svg viewBox="0 0 24 24" aria-hidden="true">' + PS_ICON[psCat(slug)] + '</svg><span>' + esc(PS_NAME[slug] || slug.replace(/-/g, " ").replace(/\b\w/g, function (c) { return c.toUpperCase(); })) + '</span></div>';
+    }).join('');
     var topLabel = { nation: "Сборная", league: "Лига", club: "Клуб" };
-    var names = { nation: pl.nation, league: pl.league, club: "" };
+    var names = { nation: pl.nation, league: pl.league, club: pl.club || "" };
     var logos = { nation: pl.nation_logo, league: pl.league_logo, club: pl.club_logo };
     var chem = ["nation", "league", "club"].map(function (k) {
       if (!pl[k + "_id"] && !names[k]) return '';
@@ -362,7 +403,16 @@
     if (pl.weak_foot) facts.push('Слабая нога ' + pl.weak_foot + '★');
     if (pl.skill_moves) facts.push('Финты ' + pl.skill_moves + '★');
     if (pl.foot) facts.push(pl.foot === "Left" ? 'Левая нога' : 'Правая нога');
+    if (pl.rating) facts.unshift(pl.rating + ' ' + esc(pl.position || ""));
     return '<section class="panel"><h3>Игрок</h3>' +
+      (pl.card_image ? '<div class="cardstage">' + imgTag(pl.card_image, "cardimg") + '</div>' : '') +
+      '<div class="plmain"><div class="plname">' + esc(pl.name) + '</div><div class="row facts">' + facts.map(function (f) { return '<span class="chip">' + f + '</span>'; }).join('') + '</div></div>' +
+      '<div class="six">' + six + '</div></section>' +
+      (styles ? '<section class="panel"><h3>Стили игры</h3><div class="psg">' + styles + '</div></section>' : '') +
+      (groups ? '<section class="panel"><h3>Характеристики</h3><div class="groups">' + groups + '</div></section>' : '') +
+      /* (pos ? '<section class="panel"><h3>Рейтинг по позициям</h3><div class="row">' + pos + '</div></section>' : '') + */
+      (chem ? '<section class="panel"><h3>Сыгранность</h3><div class="chems">' + chem + '</div></section>' : '');
+    /* прежняя шапка карточки:
       '<div class="plhead"><div class="plbig"><div class="plrate">' + (pl.rating || "—") + '</div><div class="plpos">' + esc(pl.position || "") + '</div></div>' +
       '<div class="plmain"><div class="plname">' + esc(pl.name) + '</div>' +
       '<div class="row facts">' + facts.map(function (f) { return '<span class="chip">' + f + '</span>'; }).join('') + '</div></div>' +
@@ -371,7 +421,7 @@
       (groups ? '<section class="panel"><h3>Характеристики</h3><div class="groups">' + groups + '</div></section>' : '') +
       (pos ? '<section class="panel"><h3>Рейтинг по позициям</h3><div class="row">' + pos + '</div></section>' : '') +
       (styles ? '<section class="panel"><h3>Стили игры</h3><div class="row">' + styles + '</div></section>' : '') +
-      (chem ? '<section class="panel"><h3>Сыгранность</h3><div class="chems">' + chem + '</div></section>' : '');
+    */
   }
 
   function detailHtml(s) {
@@ -414,19 +464,45 @@
   }
   // ===== Squad Builder: тематические составы с максимальной сыгранностью =====
   var LOGO = "https://futmind.com/images/fifa2027/";
+  var B4 = ["LB", "CB", "CB", "RB"], B3 = ["CB", "CB", "CB"], B5 = ["LWB", "CB", "CB", "CB", "RWB"];
   var FORMS = {
-    "4-3-3": [["LW", "ST", "RW"], ["CM", "CM", "CM"], ["LB", "CB", "CB", "RB"], ["GK"]],
-    "4-4-2": [["ST", "ST"], ["LM", "CM", "CM", "RM"], ["LB", "CB", "CB", "RB"], ["GK"]],
-    "4-2-3-1": [["ST"], ["LW", "CAM", "RW"], ["CDM", "CDM"], ["LB", "CB", "CB", "RB"], ["GK"]],
-    "3-5-2": [["ST", "ST"], ["LM", "CM", "CM", "CM", "RM"], ["CB", "CB", "CB"], ["GK"]]
+    "3-1-4-2": [["ST", "ST"], ["LM", "CM", "CM", "RM"], ["CDM"], B3, ["GK"]],
+    "3-4-1-2": [["ST", "ST"], ["CAM"], ["LM", "CM", "CM", "RM"], B3, ["GK"]],
+    "3-4-2-1": [["ST"], ["CAM", "CAM"], ["LM", "CM", "CM", "RM"], B3, ["GK"]],
+    "3-4-3": [["LW", "ST", "RW"], ["LM", "CM", "CM", "RM"], B3, ["GK"]],
+    "3-5-2": [["ST", "ST"], ["CAM"], ["LM", "CDM", "CDM", "RM"], B3, ["GK"]],
+    "4-1-2-1-2 (узкая)": [["ST", "ST"], ["CAM"], ["CM", "CM"], ["CDM"], B4, ["GK"]],
+    "4-1-2-1-2 (широкая)": [["ST", "ST"], ["CAM"], ["LM", "RM"], ["CDM"], B4, ["GK"]],
+    "4-1-3-2": [["ST", "ST"], ["LM", "CM", "RM"], ["CDM"], B4, ["GK"]],
+    "4-1-4-1": [["ST"], ["LM", "CM", "CM", "RM"], ["CDM"], B4, ["GK"]],
+    "4-2-2-2": [["ST", "ST"], ["CAM", "CAM"], ["CDM", "CDM"], B4, ["GK"]],
+    "4-2-3-1 (узкая)": [["ST"], ["CAM", "CAM", "CAM"], ["CDM", "CDM"], B4, ["GK"]],
+    "4-2-3-1 (широкая)": [["ST"], ["LM", "CAM", "RM"], ["CDM", "CDM"], B4, ["GK"]],
+    "4-2-4": [["LW", "ST", "ST", "RW"], ["CM", "CM"], B4, ["GK"]],
+    "4-3-1-2": [["ST", "ST"], ["CAM"], ["CM", "CM", "CM"], B4, ["GK"]],
+    "4-3-2-1": [["ST"], ["CAM", "CAM"], ["CM", "CM", "CM"], B4, ["GK"]],
+    "4-3-3": [["LW", "ST", "RW"], ["CM", "CM", "CM"], B4, ["GK"]],
+    "4-3-3 (опорник)": [["LW", "ST", "RW"], ["CM", "CM"], ["CDM"], B4, ["GK"]],
+    "4-3-3 (атака)": [["LW", "ST", "RW"], ["CAM"], ["CM", "CM"], B4, ["GK"]],
+    "4-3-3 (ложная девятка)": [["LW", "CF", "RW"], ["CM", "CM", "CM"], B4, ["GK"]],
+    "4-4-1-1": [["ST"], ["CAM"], ["LM", "CM", "CM", "RM"], B4, ["GK"]],
+    "4-4-2": [["ST", "ST"], ["LM", "CM", "CM", "RM"], B4, ["GK"]],
+    "4-4-2 (опорники)": [["ST", "ST"], ["LM", "RM"], ["CDM", "CDM"], B4, ["GK"]],
+    "4-5-1": [["ST"], ["LM", "CM", "CM", "CM", "RM"], B4, ["GK"]],
+    "4-5-1 (атака)": [["ST"], ["LM", "CAM", "CAM", "RM"], ["CDM"], B4, ["GK"]],
+    "5-2-1-2": [["ST", "ST"], ["CAM"], ["CM", "CM"], B5, ["GK"]],
+    "5-2-3": [["LW", "ST", "RW"], ["CM", "CM"], B5, ["GK"]],
+    "5-3-2": [["ST", "ST"], ["CM", "CM", "CM"], B5, ["GK"]],
+    "5-4-1": [["ST"], ["LM", "CM", "CM", "RM"], B5, ["GK"]]
   };
-  var COMPAT = { LW: ["LW", "LM"], RW: ["RW", "RM"], ST: ["ST", "CF"], CF: ["CF", "ST"], CM: ["CM", "CAM", "CDM"], CAM: ["CAM", "CM"], CDM: ["CDM", "CM"], LM: ["LM", "LW"], RM: ["RM", "RW"], LB: ["LB", "LWB"], RB: ["RB", "RWB"], LWB: ["LWB", "LB"], RWB: ["RWB", "RB"], CB: ["CB"], GK: ["GK"] };
-  var SQ = { db: null, open: false, mode: "player", form: "4-3-3", anchor: null, club: "", league: "", nation: "", former: true, result: null };
+  var COMPAT = { GK: ["GK"], LB: ["LB", "LWB"], RB: ["RB", "RWB"], LWB: ["LWB", "LB"], RWB: ["RWB", "RB"], CB: ["CB"], CDM: ["CDM", "CM"], CM: ["CM", "CDM", "CAM"], CAM: ["CAM", "CM", "CF"], LM: ["LM", "LW"], RM: ["RM", "RW"], LW: ["LW", "LM"], RW: ["RW", "RM"], ST: ["ST", "CF"], CF: ["CF", "ST", "CAM"] };
+  var SQ = { db: null, open: false, form: "auto", anchors: [], query: "", former: true, results: null, msg: "" };
 
+  function nz(s) { return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); }
   function sqLoad(cb) {
     if (SQ.db !== null) return cb();
     fetch("players.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (j) {
-      var list = j.p.map(function (r) { return { id: r[0], name: r[1], rating: r[2], pos: r[3], sp: r[4], club: r[5], league: r[6], nation: r[7], rarity: r[8] }; });
+      var list = j.p.map(function (r) { return { id: r[0], name: r[1], rating: r[2], pos: r[3], sp: r[4], club: r[5], league: r[6], nation: r[7], rarity: r[8], pc: r[10] || 0 }; });
       var byName = {};
       list.forEach(function (p) { (byName[p.name] = byName[p.name] || []).push(p); });
       SQ.db = { list: list, names: { club: j.clubs || {}, league: j.leagues || {}, nation: j.nations || {} }, byName: byName };
@@ -441,73 +517,85 @@
     return sq.map(function (p) { return p ? Math.min(3, tier(c[p.club], 2, 4, 7) + tier(n[p.nation], 2, 5, 8) + tier(l[p.league], 3, 5, 8)) : 0; });
   }
   function rnd(a) { return a[Math.floor(Math.random() * a.length)]; }
+  function pscore(p) { return Math.log(Math.max(p.pc || 2000000, 500) / 500); }
+  function sqFmtPrice(n) { return n >= 1000000 ? (Math.round(n / 100000) / 10) + " млн" : n >= 1000 ? Math.round(n / 1000) + " тыс." : String(n); }
 
-  function sqTheme() {
-    var db = SQ.db, list = db.list, a = SQ.anchor, clubs = {}, nations = {}, leagues = {};
-    if (SQ.mode === "player" && a) {
-      clubs[a.club] = 1; nations[a.nation] = 1; leagues[a.league] = 1;
-      if (SQ.former) (db.byName[a.name] || []).forEach(function (p) { clubs[p.club] = 1; });
-      return { pool: list.filter(function (p) { return clubs[p.club] || nations[p.nation] || leagues[p.league]; }), clubs: clubs, nations: nations, leagues: leagues };
-    }
-    if (SQ.mode === "club" && SQ.club) {
-      var lg = (list.filter(function (p) { return String(p.club) === SQ.club; })[0] || {}).league;
-      clubs[SQ.club] = 1; if (lg) leagues[lg] = 1;
-      return { pool: list.filter(function (p) { return clubs[p.club] || leagues[p.league]; }), clubs: clubs, nations: nations, leagues: leagues };
-    }
-    if (SQ.mode === "league" && SQ.league) { leagues[SQ.league] = 1; return { pool: list.filter(function (p) { return leagues[p.league]; }), clubs: clubs, nations: nations, leagues: leagues }; }
-    if (SQ.mode === "nation" && SQ.nation) { nations[SQ.nation] = 1; return { pool: list.filter(function (p) { return nations[p.nation]; }), clubs: clubs, nations: nations, leagues: leagues }; }
-    return null;
-  }
-
-  function sqGenerate() {
-    var th = sqTheme();
-    if (!th || th.pool.length < 11) return { error: "Для этой темы в базе пока слишком мало игроков. Выберите другую или подождите, пока база пополнится." };
-    var slots = [].concat.apply([], FORMS[SQ.form]), byPos = {};
-    th.pool.forEach(function (p) { (byPos[p.pos] = byPos[p.pos] || []).push(p); });
-    function cands(slot) { var out = []; (COMPAT[slot] || [slot]).forEach(function (q) { out = out.concat(byPos[q] || []); }); return out; }
+  // kind: "rating" — максимум рейтинга и особых карточек; "budget" — дешёвые ценовые группы при той же сыгранности
+  function sqRun(kind) {
+    var anchors = SQ.anchors, pool = SQ.db.list, th = { clubs: {}, nations: {}, leagues: {} };
+    anchors.forEach(function (a) {
+      th.clubs[a.club] = 1; th.nations[a.nation] = 1; th.leagues[a.league] = 1;
+      if (SQ.former) (SQ.db.byName[a.name] || []).forEach(function (p) { th.clubs[p.club] = 1; });
+    });
     function themed(p) { return (th.clubs[p.club] ? 1.5 : 0) + (th.nations[p.nation] ? 1 : 0) + (th.leagues[p.league] ? 0.5 : 0); }
+    function key(p) { return kind === "budget" ? p.rating * 0.5 - pscore(p) * 3 + themed(p) * 6 : p.rating + p.sp * 4 + themed(p) * 6; }
+    var byPos = {}, cache = {};
+    pool.forEach(function (p) { (byPos[p.pos] = byPos[p.pos] || []).push(p); });
+    Object.keys(byPos).forEach(function (k) { byPos[k].sort(function (a, b) { return key(b) - key(a); }); });
+    function cands(slot) {
+      if (cache[slot]) return cache[slot];
+      var out = [], seen = {};
+      (COMPAT[slot] || [slot]).forEach(function (q) {
+        var arr = byPos[q] || [];
+        arr.slice(0, 60).concat(arr.filter(function (p) { return themed(p) >= 1.5; }).slice(0, 60)).forEach(function (p) { if (!seen[p.id]) { seen[p.id] = 1; out.push(p); } });
+      });
+      out.sort(function (a, b) { return key(b) - key(a); });
+      return (cache[slot] = out);
+    }
     function objective(sq) {
       if (sq.some(function (p) { return !p; })) return -1e9;
-      var ch = chemList(sq), tot = 0, rat = 0, sp = 0, th_ = 0, names = {}, dup = 0;
-      sq.forEach(function (p, i) { tot += ch[i]; rat += p.rating; sp += p.sp; th_ += themed(p); if (names[p.name]) dup++; names[p.name] = 1; });
-      return tot * 3 + rat / 11 + sp * 0.8 + th_ * 0.6 - dup * 100;
+      var ch = chemList(sq), tot = 0, rat = 0, sp = 0, th_ = 0, pr = 0, names = {}, dup = 0;
+      sq.forEach(function (p, i) { tot += ch[i]; rat += p.rating; sp += p.sp; th_ += themed(p); pr += pscore(p); if (names[p.name]) dup++; names[p.name] = 1; });
+      return kind === "budget" ? tot * 3 + rat / 11 * 0.6 - pr * 1.1 + th_ * 0.5 - dup * 100 : tot * 3 + rat / 11 + sp * 0.8 + th_ * 0.6 - dup * 100;
     }
-    var anchorSlot = -1;
-    if (SQ.mode === "player" && SQ.anchor) {
-      slots.forEach(function (s, i) { if (anchorSlot < 0 && (COMPAT[s] || [s]).indexOf(SQ.anchor.pos) !== -1) anchorSlot = i; });
-      if (anchorSlot < 0) return { error: "Позиция игрока (" + SQ.anchor.pos + ") не подходит под эту схему. Выберите другую схему." };
+    function tryForm(f, gi, si) {
+      var slots = [].concat.apply([], FORMS[f]), n = slots.length, best = null, bestV = -1e9, it;
+      var anchorIds = {};
+      anchors.forEach(function (a) { anchorIds[a.id] = 1; });
+      for (it = 0; it < gi; it++) {
+        var sq = new Array(n), used = {}, taken = {}, ok = true;
+        anchors.slice().sort(function () { return Math.random() - 0.5; }).forEach(function (a) {
+          var opts = [];
+          slots.forEach(function (s, i) { if (!taken[i] && (COMPAT[s] || [s]).indexOf(a.pos) !== -1) opts.push(i); });
+          if (!opts.length) { ok = false; return; }
+          var exact = opts.filter(function (i) { return slots[i] === a.pos; }), i = (exact.length && Math.random() < 0.75) ? rnd(exact) : rnd(opts);
+          taken[i] = 1; sq[i] = a; used[a.name] = 1;
+        });
+        if (!ok) return null;
+        slots.map(function (_, k) { return k; }).filter(function (k) { return !taken[k]; }).sort(function () { return Math.random() - 0.5; }).forEach(function (k) {
+          var cs = cands(slots[k]).filter(function (p) { return !used[p.name]; });
+          if (!cs.length) return;
+          var cc = {}, nn = {}, ll = {};
+          sq.forEach(function (p) { if (p) { cc[p.club] = (cc[p.club] || 0) + 1; nn[p.nation] = (nn[p.nation] || 0) + 1; ll[p.league] = (ll[p.league] || 0) + 1; } });
+          var scored = cs.map(function (p) { return { p: p, s: key(p) + (cc[p.club] || 0) * 5 + (nn[p.nation] || 0) * 3 + (ll[p.league] || 0) * 1.5 + Math.random() * 12 + (p.pos === slots[k] ? 3 : 0) }; });
+          scored.sort(function (x, y) { return y.s - x.s; });
+          var pick = scored[Math.floor(Math.random() * Math.min(4, scored.length))].p;
+          sq[k] = pick; used[pick.name] = 1;
+        });
+        var v = objective(sq);
+        if (v > bestV) { bestV = v; best = sq.slice(); }
+      }
+      if (!best) return null;
+      for (it = 0; it < si; it++) {
+        var k2 = Math.floor(Math.random() * n);
+        if (anchorIds[best[k2].id]) continue;
+        var pl2 = cands(slots[k2]);
+        if (!pl2.length) continue;
+        var np = rnd(pl2);
+        if (best.some(function (p, j) { return j !== k2 && p.name === np.name; })) continue;
+        var old = best[k2]; best[k2] = np;
+        var v2 = objective(best);
+        if (v2 > bestV) bestV = v2; else best[k2] = old;
+      }
+      return { form: f, squad: best, chem: chemList(best), v: bestV };
     }
-    var best = null, bestV = -1e9, it, i;
-    for (it = 0; it < 160; it++) {
-      var sq = new Array(slots.length), used = {}, order = slots.map(function (_, k) { return k; }).sort(function () { return Math.random() - 0.5; });
-      if (anchorSlot >= 0) { sq[anchorSlot] = SQ.anchor; used[SQ.anchor.name] = 1; }
-      order.forEach(function (k) {
-        if (k === anchorSlot) return;
-        var cs = cands(slots[k]).filter(function (p) { return !used[p.name]; });
-        if (!cs.length) return;
-        var cur = sq.filter(Boolean), cc = {}, nn = {};
-        cur.forEach(function (p) { cc[p.club] = (cc[p.club] || 0) + 1; nn[p.nation] = (nn[p.nation] || 0) + 1; });
-        var scored = cs.map(function (p) { return { p: p, s: p.rating + p.sp * 4 + themed(p) * 3 + (cc[p.club] || 0) * 5 + (nn[p.nation] || 0) * 3 + Math.random() * 14 + ((COMPAT[slots[k]] || [])[0] === p.pos ? 3 : 0) }; });
-        scored.sort(function (x, y) { return y.s - x.s; });
-        var pick = scored[Math.floor(Math.random() * Math.min(5, scored.length))].p;
-        sq[k] = pick; used[pick.name] = 1;
-      });
-      var v = objective(sq);
-      if (v > bestV) { bestV = v; best = sq.slice(); }
+    var res = null;
+    if (SQ.form !== "auto" && FORMS[SQ.form]) res = tryForm(SQ.form, 120, 700);
+    else {
+      var all = Object.keys(FORMS).map(function (f) { return tryForm(f, 14, 140); }).filter(Boolean).sort(function (a, b) { return b.v - a.v; });
+      if (all.length) { var again = tryForm(all[0].form, 80, 600); res = again && again.v > all[0].v ? again : all[0]; }
     }
-    if (!best) return { error: "Не удалось собрать состав из доступных игроков." };
-    for (it = 0; it < 500; it++) {
-      var k2 = Math.floor(Math.random() * slots.length);
-      if (k2 === anchorSlot) continue;
-      var pool2 = cands(slots[k2]);
-      if (!pool2.length) continue;
-      var np = rnd(pool2), taken = best.some(function (p, j) { return j !== k2 && p.name === np.name; });
-      if (taken) continue;
-      var old = best[k2]; best[k2] = np;
-      var v2 = objective(best);
-      if (v2 > bestV) bestV = v2; else best[k2] = old;
-    }
-    return { slots: slots, squad: best, chem: chemList(best) };
+    return res || { error: "Выбранные игроки не помещаются в схему по позициям. Попробуйте другую схему или других игроков." };
   }
 
   function sqSummary(res) {
@@ -522,75 +610,90 @@
     return chips;
   }
 
-  function sqResultHtml() {
-    var res = SQ.result;
+  function sqPitchHtml(res, title, note) {
     if (!res) return '';
-    if (res.error) return '<section class="panel"><p class="none">' + esc(res.error) + '</p></section>';
+    if (res.error) return '<section class="panel"><h3>' + title + '</h3><p class="none">' + esc(res.error) + '</p></section>';
     var total = res.chem.reduce(function (a, b) { return a + b; }, 0);
     var avg = Math.round(res.squad.reduce(function (a, p) { return a + p.rating; }, 0) / 11 * 10) / 10;
     var sp = res.squad.filter(function (p) { return p.sp; }).length;
-    var i = 0, rows = FORMS[SQ.form].map(function (row) {
+    var capSum = res.squad.reduce(function (a, p) { return a + (p.pc || 0); }, 0), unk = res.squad.filter(function (p) { return !p.pc; }).length;
+    var i = 0, rows = FORMS[res.form].map(function (row) {
       return '<div class="prow">' + row.map(function () {
         var p = res.squad[i], ch = res.chem[i]; i++;
         var pips = [0, 1, 2].map(function (k) { return '<i' + (k < ch ? ' on' : '') + '></i>'; }).join('');
         return '<div class="pc"><div class="pimg"><span class="pr">' + p.rating + '</span><span class="pp2">' + esc(p.pos) + '</span>' + imgTag("https://card-image.futmind.com/en/27/" + p.id + ".png") + '</div><b>' + esc(p.name) + '</b><span class="pips">' + pips + '</span></div>';
       }).join('') + '</div>';
     }).join('');
-    return '<section class="panel"><div class="row sum"><span class="chip big">Сыгранность ' + total + '/33</span><span class="chip big">Средний рейтинг ' + avg + '</span><span class="chip big">Особых карт ' + sp + '</span></div>' +
-      '<div class="pitch">' + rows + '</div>' +
-      '<h3>Связи в составе</h3><div class="row">' + (sqSummary(res) || '<span class="none">Явных связей нет.</span>') + '</div></section>';
+    return '<section class="panel"><h3>' + title + '</h3><p class="hint">' + note + '</p><div class="row sum"><span class="chip big">Схема ' + esc(res.form) + '</span><span class="chip big">Сыгранность ' + total + '/33</span><span class="chip big">Средний рейтинг ' + avg + '</span><span class="chip big">Особых карт ' + sp + '</span>' +
+      (capSum ? '<span class="chip big">Цена до ' + sqFmtPrice(capSum) + (unk ? ' + ещё ' + unk + ' без оценки' : '') + '</span>' : '') + '</div>' +
+      '<div class="pitch">' + rows + '</div><h3>Связи в составе</h3><div class="row">' + (sqSummary(res) || '<span class="none">Явных связей нет.</span>') + '</div></section>';
   }
 
-  function optList(kind, selected) {
-    var counts = {};
-    SQ.db.list.forEach(function (p) { counts[p[kind]] = (counts[p[kind]] || 0) + 1; });
-    return '<option value="">Выберите…</option>' + Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; }).map(function (id) {
-      return '<option value="' + id + '"' + (String(selected) === id ? ' selected' : '') + '>' + esc(sqName(kind, id)) + ' (' + counts[id] + ')</option>';
-    }).join('');
+  function sqResultHtml() {
+    var r = SQ.results;
+    if (!r) return '';
+    return sqPitchHtml(r.rating, "Рейтинговый состав", "Максимум рейтинга и особых карточек при высокой сыгранности.") +
+      sqPitchHtml(r.budget, "Бюджетный состав", "Дешёвые ценовые группы при высокой сыгранности. Цена здесь — верхняя оценка по группе («до 25 тыс.» и т. п.), а не точная цена.");
   }
 
   function sqRender(keepFocus) {
-    var box = $("sqin");
-    if (SQ.db === null) { box.innerHTML = '<button class="back" type="button" data-sqclose>← Назад</button><p class="none">Загружаю базу игроков…</p>'; return; }
-    var head = '<button class="back" type="button" data-sqclose>← Назад</button><section class="sqhero"><div class="sqt"><span>SQUAD</span> <em>BUILDER</em></div><p>Тематические составы с максимальной сыгранностью</p></section>';
-    if (!SQ.db || !SQ.db.list.length) { box.innerHTML = head + '<section class="panel"><p class="none">База игроков ещё собирается. Она пополняется при каждом запуске обновления, обычно за несколько запусков. Загляните позже.</p></section>'; return; }
-    var modes = [["player", "Вокруг игрока"], ["club", "Клуб"], ["league", "Лига"], ["nation", "Нация"]].map(function (m) { return '<button type="button" data-sqmode="' + m[0] + '" aria-pressed="' + (SQ.mode === m[0]) + '">' + m[1] + '</button>'; }).join('');
-    var ctl;
-    if (SQ.mode === "player") {
-      ctl = '<input id="sqq" type="search" placeholder="Имя игрока, например Messi" autocomplete="off" value="' + esc(SQ.anchor ? SQ.anchor.name : (SQ.query || "")) + '"><div id="sqhits"></div>' +
-        '<label class="chk"><input id="sqformer" type="checkbox"' + (SQ.former ? ' checked' : '') + '> Добавить бывшие клубы игрока (по другим его карточкам)</label>';
-    } else {
-      ctl = '<span class="sel"><select id="sqsel" aria-label="Тема">' + optList(SQ.mode, SQ[SQ.mode]) + '</select></span>';
-    }
-    var forms = '<span class="sel"><select id="sqform" aria-label="Схема">' + Object.keys(FORMS).map(function (f) { return '<option' + (f === SQ.form ? ' selected' : '') + '>' + f + '</option>'; }).join('') + '</select></span>';
-    box.innerHTML = head + '<section class="panel"><div class="seg sqmodes">' + modes + '</div>' + ctl +
-      '<div class="row">' + forms + '<button class="go" type="button" data-sqgo>Собрать состав</button><button class="go alt" type="button" data-sqrand>Случайный</button></div>' +
-      '<p class="hint">В расчёте игроки от серебра и выше, приоритет у золотых и особых карточек. Сыгранность считается по клубу, лиге и нации.</p></section>' +
+    var box = $("sqin"), back = '<button class="back" type="button" data-sqclose>← Назад</button>';
+    var head = back + '<section class="sqhero"><div class="sqt"><span>SQUAD</span> <em>BUILDER</em></div><p>Тематические составы с максимальной сыгранностью. Выберите до трёх игроков, а я соберу два состава на выбор.</p></section>';
+    if (SQ.db === null) { box.innerHTML = head + '<p class="none">Загружаю базу игроков…</p>'; return; }
+    if (!SQ.db || !SQ.db.list.length) { box.innerHTML = head + '<section class="panel"><p class="none">База игроков ещё собирается. Она пополняется при каждом запуске обновления, загляните позже.</p></section>'; return; }
+    var chips = SQ.anchors.map(function (a) {
+      return '<button class="chip big lg" type="button" data-sqdel="' + a.id + '" aria-label="Убрать ' + esc(a.name) + '"><b>' + a.rating + '</b> ' + esc(a.name) + ' <span aria-hidden="true">×</span></button>';
+    }).join('');
+    var opts = [["auto", "Любая схема (подберу лучшую)"]].concat(Object.keys(FORMS).map(function (f) { return [f, f]; }));
+    box.innerHTML = head + '<section class="panel"><h3>Игроки (до 3)</h3>' + (chips ? '<div class="row">' + chips + '</div>' : '') +
+      (SQ.anchors.length < 3 ? '<input id="sqq" type="search" placeholder="Имя игрока, например Lionel Messi" autocomplete="off" value="' + esc(SQ.query) + '"><div id="sqhits"></div>' : '') +
+      '<label class="chk"><input id="sqformer" type="checkbox"' + (SQ.former ? ' checked' : '') + '> Добавить бывшие клубы игроков (по другим их карточкам)</label>' +
+      '<div class="row">' + ddHtml("form", opts, SQ.form) + '<button class="go" type="button" data-sqgo>Собрать составы</button><button class="go alt" type="button" data-sqrand>Случайный</button></div>' +
+      (SQ.msg ? '<p class="warn" role="status">' + esc(SQ.msg) + '</p>' : '') +
+      '<p class="hint">В расчёте игроки от серебра и выше. Сыгранность считается по клубу, лиге и нации, максимум 33.</p></section>' +
       '<div id="sqres">' + sqResultHtml() + '</div>';
     if (keepFocus) { var q = $("sqq"); if (q) { q.focus(); q.setSelectionRange(q.value.length, q.value.length); } }
   }
+  function sqFind(text) {
+    var t = nz(text).trim(), best = null, exact = null;
+    if (!t) return null;
+    SQ.db.list.forEach(function (p) {
+      var n = nz(p.name);
+      if (n === t && (!exact || p.rating > exact.rating)) exact = p;
+      else if (n.indexOf(t) !== -1 && (!best || p.rating > best.rating)) best = p;
+    });
+    return exact || best;
+  }
   function sqHits(text) {
-    var t = text.trim().toLowerCase(), box = $("sqhits");
+    var t = nz(text).trim(), box = $("sqhits");
     if (!box) return;
     if (t.length < 2) { box.innerHTML = ''; return; }
-    var seen = {}, hits = [];
-    SQ.db.list.forEach(function (p) { if (hits.length < 8 && !seen[p.name] && p.name.toLowerCase().indexOf(t) !== -1) { seen[p.name] = 1; hits.push(p); } });
+    var hits = SQ.db.list.filter(function (p) { return nz(p.name).indexOf(t) !== -1; }).sort(function (a, b) { return b.rating - a.rating; }).slice(0, 8);
     box.innerHTML = hits.length ? '<ul class="hits">' + hits.map(function (p) {
-      return '<li><button type="button" data-sqpick="' + p.id + '"><b>' + p.rating + '</b> ' + esc(p.name) + ' <small>' + esc(p.pos) + ' · ' + esc(sqName("club", p.club)) + '</small></button></li>';
-    }).join('') + '</ul>' : '<p class="none">Не нашёл такого игрока в базе.</p>';
+      return '<li><button type="button" data-sqpick="' + p.id + '"><b>' + p.rating + '</b> ' + esc(p.name) + ' <small>' + esc(p.pos) + ' · ' + esc(sqName("club", p.club)) + (p.sp ? ' · ' + esc(p.rarity) : '') + '</small></button></li>';
+    }).join('') + '</ul>' : '<p class="none">Такого игрока нет в базе: она пополняется при каждом обновлении.</p>';
   }
   function sqGo() {
-    if (SQ.mode === "player" && !SQ.anchor) { SQ.result = { error: "Выберите игрока из списка подсказок." }; }
-    else SQ.result = sqGenerate();
-    $("sqres").innerHTML = sqResultHtml();
+    var q = $("sqq"), typed = q ? q.value.trim() : "";
+    if (typed && SQ.anchors.length < 3) {
+      var m = sqFind(typed);
+      if (m && !SQ.anchors.some(function (a) { return a.name === m.name; })) { SQ.anchors.push(m); SQ.query = ""; }
+      else if (!m) { SQ.msg = "Игрока «" + typed + "» нет в базе. Она пополняется при каждом обновлении (сейчас в ней " + SQ.db.list.length + " игроков)."; SQ.results = null; sqRender(); return; }
+    }
+    if (!SQ.anchors.length) { SQ.msg = "Введите имя игрока и выберите его из подсказок."; SQ.results = null; sqRender(); return; }
+    SQ.msg = "";
+    SQ.results = { rating: sqRun("rating"), budget: sqRun("budget") };
+    sqRender();
+    var el = $("sqres"); if (el && el.scrollIntoView) el.scrollIntoView({ behavior: "smooth", block: "start" });
   }
   function sqRandom() {
     var specials = SQ.db.list.filter(function (p) { return p.sp && p.rating >= 85; });
     var pool = specials.length ? specials : SQ.db.list.filter(function (p) { return p.rating >= 80; });
-    SQ.mode = "player"; SQ.anchor = rnd(pool); SQ.query = "";
-    sqRender();
+    if (!pool.length) pool = SQ.db.list;
+    SQ.anchors = [rnd(pool)]; SQ.query = ""; SQ.msg = "";
     sqGo();
   }
+
   function openSquad(fromHash) {
     SQ.open = true;
     $("squad").hidden = false;
@@ -615,7 +718,7 @@
   }
 
   function render() {
-    var d = state.data, q = $("q").value.trim().toLowerCase(), sort = $("sort").value;
+    var d = state.data, q = $("q").value.trim().toLowerCase(), sort = state.sort;
     var counts = { all: d.sbcs.length, player: 0, pick: 0, pack: 0 };
     d.sbcs.forEach(function (s) { counts[(s.reward && s.reward.kind) || "pack"]++; });
     $("cats").innerHTML = CATS.map(function (c) { return '<button type="button" data-cat="' + c[0] + '" aria-pressed="' + (state.cat === c[0]) + '">' + c[1] + '<span class="n">' + counts[c[0]] + '</span></button>'; }).join('');
@@ -654,17 +757,39 @@
   $("p-console").onclick = function () { setPlatform("console"); };
   $("p-pc").onclick = function () { if (!this.disabled) setPlatform("pc"); };
   $("q").oninput = render;
-  $("sort").onchange = render;
+  $("sortdd").innerHTML = ddHtml("sort", SORTS, state.sort);
   $("cats").onclick = function (e) { var c = e.target.getAttribute && e.target.closest("[data-cat]"); if (c) { state.cat = c.getAttribute("data-cat"); render(); } };
   document.addEventListener("click", function (e) {
     var t = e.target;
     if (!t.closest) return;
     if (t.closest("[data-sqopen]")) { openSquad(); return; }
     if (t.closest("[data-sqclose]")) { closeSquad(); return; }
-    var sm = t.closest("[data-sqmode]");
-    if (sm) { SQ.mode = sm.getAttribute("data-sqmode"); SQ.result = null; sqRender(); return; }
+    var db_ = t.closest(".dd-b");
+    if (db_) {
+      var dd = db_.parentNode, willOpen = !dd.classList.contains("open");
+      closeDd(dd);
+      dd.classList.toggle("open", willOpen);
+      dd.querySelector(".dd-m").hidden = !willOpen;
+      db_.setAttribute("aria-expanded", String(willOpen));
+      return;
+    }
+    var dv = t.closest("[data-ddv]");
+    if (dv) {
+      var box = dv.closest(".dd"), kind = box.getAttribute("data-dd"), val = dv.getAttribute("data-ddv");
+      closeDd();
+      if (kind === "sort") { state.sort = val; box.outerHTML = ddHtml("sort", SORTS, val); render(); }
+      else if (kind === "form") { SQ.form = val; sqRender(); }
+      return;
+    }
+    closeDd();
     var sp = t.closest("[data-sqpick]");
-    if (sp) { var id = Number(sp.getAttribute("data-sqpick")); SQ.anchor = SQ.db.list.filter(function (p) { return p.id === id; })[0]; SQ.result = null; sqRender(); sqGo(); return; }
+    if (sp) {
+      var id = Number(sp.getAttribute("data-sqpick")), pk = SQ.db.list.filter(function (p) { return p.id === id; })[0];
+      if (pk && SQ.anchors.length < 3 && !SQ.anchors.some(function (a) { return a.name === pk.name; })) SQ.anchors.push(pk);
+      SQ.query = ""; SQ.msg = ""; sqRender(true); return;
+    }
+    var sdel = t.closest("[data-sqdel]");
+    if (sdel) { var did = Number(sdel.getAttribute("data-sqdel")); SQ.anchors = SQ.anchors.filter(function (a) { return a.id !== did; }); SQ.results = null; sqRender(); return; }
     if (t.closest("[data-sqgo]")) { sqGo(); return; }
     if (t.closest("[data-sqrand]")) { sqRandom(); return; }
     var o = t.closest("[data-open]");
@@ -678,15 +803,15 @@
     if (state.open != null) renderDetail();
   });
   document.addEventListener("input", function (e) {
-    if (e.target.id === "sqq") { SQ.anchor = null; SQ.query = e.target.value; sqHits(e.target.value); }
+    if (e.target.id === "sqq") { SQ.query = e.target.value; sqHits(e.target.value); }
   });
   document.addEventListener("change", function (e) {
     var id = e.target.id;
-    if (id === "sqform") SQ.form = e.target.value;
-    else if (id === "sqformer") SQ.former = e.target.checked;
-    else if (id === "sqsel") { SQ[SQ.mode] = e.target.value; if (e.target.value) { sqGo(); } }
+    if (id === "sqformer") SQ.former = e.target.checked;
   });
   document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && document.querySelector(".dd.open")) { closeDd(); return; }
+    if (e.key === "Enter" && e.target.id === "sqq") { e.preventDefault(); sqGo(); return; }
     if (e.key === "Escape" && SQ.open) closeSquad();
     if (e.key === "Escape" && state.open != null) closeDetail();
     if ((e.key === "Enter" || e.key === " ") && e.target.getAttribute && e.target.getAttribute("data-open") && e.target.tagName === "DIV") { e.preventDefault(); openDetail(e.target.getAttribute("data-open")); }
