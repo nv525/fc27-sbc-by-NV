@@ -14,6 +14,7 @@ import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import unquote
 
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
@@ -94,7 +95,62 @@ ALIASES = {
 }
 GROUP_NAMES = [("pac", "Pace"), ("sho", "Shooting"), ("pas", "Passing"), ("dri", "Dribbling"), ("def", "Defending"), ("phy", "Physicality")]
 POSITIONS = ["GK", "CB", "LB", "RB", "LWB", "RWB", "CDM", "CM", "CAM", "LM", "RM", "LW", "RW", "CF", "ST"]
-PLAYER_V = 2  # версия разбора карточки игрока: у старых записей из кэша данные перечитываются
+PLAYER_V = 3  # версия разбора карточки игрока: у старых записей из кэша данные перечитываются
+
+
+def logo_name(soup, folder):
+    """Название клуба/лиги/нации из подписи (alt) его логотипа на странице игрока."""
+    for img in soup.find_all("img"):
+        src = unquote((img.get("src") or "") + " " + (img.get("srcset") or ""))
+        if re.search(r"/" + folder + r"/\d+\.png", src):
+            nm = re.sub(r"\s+(logo|badge|flag|crest)$", "", (img.get("alt") or img.get("title") or "").strip(), flags=re.I)
+            if nm and nm.lower() not in ("club", "league", "nation", "country"):
+                return nm
+    return None
+
+
+CLUB_NAMES = Path(__file__).parent / "club_names.json"
+EA = "https://www.ea.com/en/games/ea-sports-fc/ratings/player-ratings"
+
+
+def load_club_names():
+    try:
+        return json.loads(CLUB_NAMES.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def resolve_club_names(page, players, names, limit=40):
+    """Названия клубов: futmind показывает клуб только логотипом, поэтому берём название со страницы
+    игрока на ea.com (поле Team) и связываем с id по логотипу клуба на той же странице (…/l<id>.png).
+    Сохраняем в club_names.json: каждый клуб достаточно узнать один раз."""
+    tried, done = {}, 0
+    # сначала базовые карточки (их клуб совпадает с клубом на ea.com), потом остальные
+    ordered = sorted((p for p in players if p.get("club_id") and p.get("id") and p.get("slug")),
+                     key=lambda p: int(p["id"]) >= (1 << 24))
+    for p in ordered:
+        cid = str(p["club_id"])
+        if cid in names or tried.get(cid, 0) >= 3 or done >= limit:
+            continue
+        tried[cid] = tried.get(cid, 0) + 1
+        pid = int(p["id"])
+        base = pid & 0xFFFFFF if pid >= (1 << 24) else pid
+        try:
+            page.goto(f"{EA}/{p['slug']}/{base}", wait_until="networkidle")
+            html = page.content()
+            soup = BeautifulSoup(html, "html.parser")
+            text = soup.get_text("\n", strip=True)
+            m = re.search(r"\nTeam\s*\n([^\n]{2,40})\n", text)
+            crest = re.search(r"/l(\d+)\.png", unquote(html))
+            if m and crest:
+                names[crest.group(1)] = m.group(1).strip()
+                done += 1
+        except Exception as e:
+            log(f"  клуб {cid}: {e.__class__.__name__}")
+        time.sleep(1)
+    if done:
+        CLUB_NAMES.write_text(json.dumps(names, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+    return names
 
 
 def read_player(page, pid, slug):
@@ -111,7 +167,7 @@ def read_player(page, pid, slug):
     raw_name = (tm.group(1) if tm else (h1.get_text(" ", strip=True) if h1 else slug.replace("-", " ").title()))
     pl["name"] = raw_name.split(" - ")[0].strip()
     pl["rating"] = int(tm.group(2)) if tm else (int(one(r"\b(\d{2})\s*\n?\s*(?:" + "|".join(POSITIONS) + r")\b") or 0) or None)
-    pl["position"] = one(r"\b(" + "|".join(POSITIONS) + r")\b")
+    pl["position"] = one(r"\b\d{2}\s*\n\s*(" + "|".join(POSITIONS) + r")\b") or one(r"\b(" + "|".join(POSITIONS) + r")\b")
     # шесть основных характеристик: строка заголовков PAC SHO ..., следом строка чисел
     row = re.search(r"PAC\s+SHO\s+PAS\s+DRI\s+DEF\s+PHY\s+(\d{2})\s+(\d{2})\s+(\d{2})\s+(\d{2})\s+(\d{2})\s+(\d{2})", text)
     for i, (key, group) in enumerate(GROUP_NAMES):
@@ -138,10 +194,18 @@ def read_player(page, pid, slug):
         if m:
             pos[p_] = int(m.group(1))
     pl["positions"] = pos
-    ps = re.search(r"Playstyles?\s*\n(.*?)\n(?:Roles|Position|Detailed|Stats)", text, re.S)
-    pl["playstyles"] = [x for x in ps.group(1).split("\n") if 2 < len(x) < 30] if ps else []
+    # PlayStyles на странице игрока — ссылки вида /playstyles/20/technical
+    ps = []
+    for a_ in soup.find_all("a", href=True):
+        m = re.search(r"/playstyles/\d+/([^/?#]+)", a_["href"])
+        if m and m.group(1) not in ps:
+            ps.append(m.group(1))
+    pl["playstyles"] = ps
     pl["league"] = one(r"League\s*\n?\s*(.+)")
     pl["nation"] = one(r"(?:Nation|Country/Region)\s*\n?\s*(.+)")
+    pl["club"] = logo_name(soup, "clubs")
+    pl["league"] = pl["league"] or logo_name(soup, "leagues")
+    pl["nation"] = pl["nation"] or logo_name(soup, "nations")
     for key, folder in (("club_id", "clubs"), ("league_id", "leagues"), ("nation_id", "nations")):
         m = re.search(r"fifa2027(?:%2F|/)" + folder + r"(?:%2F|/)(\d+)\.png", html)
         pl[key] = int(m.group(1)) if m else None
@@ -149,45 +213,6 @@ def read_player(page, pid, slug):
         idk = key.replace("_logo", "_id")
         pl[key] = f"{BASE}/images/fifa2027/{folder}/{pl[idk]}.png" if pl.get(idk) else None
     return pl
-
-
-PARAMS = {"nation": ["nation", "nations"], "league": ["league", "leagues"], "club": ["club", "clubs"]}
-
-
-def list_players(page, url):
-    """Игроки из списка на странице в порядке показа: [{id, slug, rating, position, name}]."""
-    page.goto(url, wait_until="networkidle")
-    page.wait_for_timeout(1500)
-    soup = BeautifulSoup(page.content(), "html.parser")
-    out, seen = [], set()
-    for a in soup.find_all("a", href=True):
-        m = re.search(r"/players/(\d+)/([^/?#]+)", a["href"])
-        if not m or m.group(1) in seen:
-            continue
-        seen.add(m.group(1))
-        txt = a.get_text("\n", strip=True).split("\n")
-        nums = [int(x) for x in txt if re.fullmatch(r"\d{2}", x)]
-        pos = next((x for x in txt if x in POSITIONS), None)
-        names = [x for x in txt if len(x) > 2 and not re.fullmatch(r"[\d,. ]+", x) and x not in POSITIONS]
-        out.append({"id": int(m.group(1)), "slug": m.group(2), "rating": nums[0] if nums else None,
-                    "position": pos, "name": names[0] if names else m.group(2).replace("-", " ").title(),
-                    "card_image": f"https://card-image.futmind.com/en/27/{m.group(1)}.png"})
-    return out
-
-
-def read_top(page, kind, fid, baseline):
-    """Топ-10 игроков нации/лиги/клуба. Пробуем параметры фильтра списка; если фильтр не сработал, не пишем ничего."""
-    for param in PARAMS[kind]:
-        try:
-            got = list_players(page, f"{BASE}/players?{param}={fid}")
-        except Exception as e:
-            log(f"  список {kind} {fid}: {e.__class__.__name__}")
-            continue
-        ids = [g["id"] for g in got[:10]]
-        if len(got) >= 3 and ids != [b["id"] for b in baseline[:10]]:
-            return got[:10]
-    log(f"  список {kind} {fid}: фильтр не сработал, пропускаю")
-    return []
 
 
 def reward_kind(soup, name):
@@ -283,39 +308,14 @@ def main():
                 players[str(pid)] = read_player(page, pid, slug)
             except Exception as e:
                 log(f"  игрок {pid}: ошибка {e}")
-
-        # топ-10 по нации, лиге и клубу (список обновляется раз в сутки: берём прошлый, если ему меньше 24 часов)
-        old_lists, old_at = {}, None
-        if OUT.exists():
-            try:
-                prev = json.loads(OUT.read_text(encoding="utf-8"))
-                old_lists, old_at = prev.get("lists", {}), prev.get("lists_at")
-            except Exception:
-                pass
-        fresh = old_at and (datetime.now(timezone.utc) - datetime.fromisoformat(old_at)).total_seconds() < 86400
-        lists = dict(old_lists) if fresh else {}
-        baseline = None
-        for pl in players.values():
-            for kind in ("nation", "league", "club"):
-                fid = pl.get(kind + "_id")
-                key = f"{kind}:{fid}"
-                if not fid or key in lists:
-                    continue
-                if baseline is None:
-                    try:
-                        baseline = list_players(page, f"{BASE}/players")
-                    except Exception:
-                        baseline = []
-                time.sleep(1)
-                lists[key] = read_top(page, kind, fid, baseline)
+        resolve_club_names(page, list(players.values()), load_club_names())
         browser.close()
 
     if not sbcs:
         sys.exit("SBC не найдены. raw.json не тронут.")
     raw = {
         "updated": datetime.now(timezone.utc).replace(minute=0, second=0, microsecond=0).isoformat(timespec="minutes"),
-        "source": "futmind.com", "platforms": platforms, "players": players, "lists": lists,
-        "lists_at": (old_at if fresh else datetime.now(timezone.utc).isoformat(timespec="minutes")), "sbcs": sbcs,
+        "source": "futmind.com", "platforms": platforms, "players": players, "sbcs": sbcs,
     }
     OUT.write_text(json.dumps(raw, ensure_ascii=False, indent=1), encoding="utf-8")
     log(f"Готово: {len(sbcs)} SBC")
