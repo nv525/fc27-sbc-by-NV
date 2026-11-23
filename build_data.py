@@ -14,7 +14,7 @@ from solver import solve
 root = Path(__file__).parent
 raw = json.loads((root / "raw.json").read_text(encoding="utf-8"))
 
-out = {"updated": raw["updated"], "source": raw.get("source", ""), "platforms": [], "estimates": [], "sbcs": []}
+out = {"updated": raw["updated"], "platforms": [], "estimates": [], "sbcs": []}
 for key, block in raw["platforms"].items():
     if block and block.get("cards"):
         out["platforms"].append(key)
@@ -36,10 +36,31 @@ def round50(build):
     return dict(build, lines=lines, cost=sum(l["price"] * l["qty"] for l in lines))
 
 
+# общий коэффициент цены ПК к консоли: медиана по SBC, где есть обе цены (для SBC, где цена ПК не прочиталась)
+ratios = sorted(s["pc_total"] / s["console_total"] for s in raw["sbcs"] if s.get("console_total") and s.get("pc_total"))
+GLOBAL_RATIO = ratios[len(ratios) // 2] if ratios else 1.0
+
+
+def player_view(pl):
+    """Игрок для страницы: чистое имя, топ-10 по нации, лиге и клубу."""
+    if not pl:
+        return None
+    pl = dict(pl)
+    pl["name"] = (pl.get("name") or "").split(" - ")[0].strip()
+    pl["top"] = {}
+    for kind in ("nation", "league", "club"):
+        fid = pl.get(kind + "_id")
+        pl["top"][kind] = [
+            {k: g.get(k) for k in ("id", "name", "rating", "position", "card_image")}
+            for g in raw.get("lists", {}).get(f"{kind}:{fid}", [])[:10]
+        ]
+    return pl
+
+
 for s in raw["sbcs"]:
-    item = {k: s.get(k) for k in ("id", "name", "score", "min_rating", "url", "image", "expires", "notes")}
+    item = {k: s.get(k) for k in ("id", "name", "score", "min_rating", "image", "expires", "notes")}
     rw = s.get("reward") or {"kind": "pack"}
-    item["reward"] = {"kind": rw.get("kind", "pack"), "player": raw.get("players", {}).get(str(rw.get("player_id")))}
+    item["reward"] = {"kind": rw.get("kind", "pack"), "player": player_view(raw.get("players", {}).get(str(rw.get("player_id"))))}
     item["builds"] = {}
     for key in out["platforms"]:
         cards, mr = raw["platforms"][key]["cards"], s.get("min_rating") or 0
@@ -51,11 +72,8 @@ for s in raw["sbcs"]:
     if "pc" not in out["platforms"] and "console" in out["platforms"]:
         con, pc = s.get("console_total"), s.get("pc_total")
         base = item["builds"]["console"]
-        if con and pc:
-            r = pc / con
-            item["builds"]["pc"] = {m: scaled(b, r) for m, b in base.items()}
-        else:
-            item["builds"]["pc"] = None
+        r = pc / con if con and pc else GLOBAL_RATIO
+        item["builds"]["pc"] = {m: scaled(b, r) for m, b in base.items()}
     for per_platform in item["builds"].values():
         for key, b in (per_platform or {}).items():
             per_platform[key] = round50(b)
