@@ -81,7 +81,20 @@ DETAIL_STATS = [
     "Vision", "Crossing", "FK Accuracy", "Short Pass", "Long Pass", "Curve",
     "Jumping", "Stamina", "Strength", "Aggression",
 ]
+# на сайте у части характеристик сокращённые названия
+ALIASES = {
+    "Acceleration": ["Acceleration", "Accel."], "Sprint Speed": ["Sprint Speed", "Sprint Spd."],
+    "Attacking Position": ["Att. Position", "Attacking Position", "Att. Pos."],
+    "Heading Accuracy": ["Heading Acc.", "Heading Accuracy"],
+    "Defensive Awareness": ["Def. Aware", "Def. Awareness", "Defensive Awareness"],
+    "Standing Tackle": ["Stand Tackle", "Standing Tackle"], "Sliding Tackle": ["Slide Tackle", "Sliding Tackle"],
+    "FK Accuracy": ["FK Acc.", "FK Accuracy", "Free Kick Accuracy"],
+    "Short Pass": ["Short Pass", "Short Passing"], "Long Pass": ["Long Pass", "Long Passing"],
+    "Ball Control": ["Ball Control", "Ball Ctrl."],
+}
+GROUP_NAMES = [("pac", "Pace"), ("sho", "Shooting"), ("pas", "Passing"), ("dri", "Dribbling"), ("def", "Defending"), ("phy", "Physicality")]
 POSITIONS = ["GK", "CB", "LB", "RB", "LWB", "RWB", "CDM", "CM", "CAM", "LM", "RM", "LW", "RW", "CF", "ST"]
+PLAYER_V = 2  # версия разбора карточки игрока: у старых записей из кэша данные перечитываются
 
 
 def read_player(page, pid, slug):
@@ -91,24 +104,33 @@ def read_player(page, pid, slug):
     soup = BeautifulSoup(html, "html.parser")
     text = soup.get_text("\n", strip=True)
     one = lambda pat: (re.search(pat, text) or [None, None])[1]
-    pl = {"id": pid, "slug": slug, "card_image": f"https://card-image.futmind.com/en/27/{pid}.png"}
-    title = soup.find("h1")
-    pl["name"] = title.get_text(" ", strip=True) if title else slug.replace("-", " ").title()
-    pl["rating"] = int(one(r"\b(\d{2})\s*\n?\s*(?:" + "|".join(POSITIONS) + r")\b") or 0) or None
+    pl = {"v": PLAYER_V, "id": pid, "slug": slug, "card_image": f"https://card-image.futmind.com/en/27/{pid}.png"}
+    title = soup.title.get_text(" ", strip=True) if soup.title else ""
+    tm = re.match(r"(.+?)\s+(\d{2})\s+(.+?)\s*\|", title)
+    h1 = soup.find("h1")
+    raw_name = (tm.group(1) if tm else (h1.get_text(" ", strip=True) if h1 else slug.replace("-", " ").title()))
+    pl["name"] = raw_name.split(" - ")[0].strip()
+    pl["rating"] = int(tm.group(2)) if tm else (int(one(r"\b(\d{2})\s*\n?\s*(?:" + "|".join(POSITIONS) + r")\b") or 0) or None)
     pl["position"] = one(r"\b(" + "|".join(POSITIONS) + r")\b")
-    for key, label in (("pac", "PAC"), ("sho", "SHO"), ("pas", "PAS"), ("dri", "DRI"), ("def", "DEF"), ("phy", "PHY")):
-        v = one(label + r"\s*\n?\s*(\d{2})")
+    # шесть основных характеристик: строка заголовков PAC SHO ..., следом строка чисел
+    row = re.search(r"PAC\s+SHO\s+PAS\s+DRI\s+DEF\s+PHY\s+(\d{2})\s+(\d{2})\s+(\d{2})\s+(\d{2})\s+(\d{2})\s+(\d{2})", text)
+    for i, (key, group) in enumerate(GROUP_NAMES):
+        v = row.group(i + 1) if row else one(r"(?<![A-Za-z])" + group + r"\s*\n?\s*(\d{2})(?!\d)")
+        if not v:
+            v = one(key.upper() + r"\s*\n?\s*(\d{2})")
         pl[key] = int(v) if v else None
     pl["weak_foot"] = one(r"Weak [Ff]oot\s*\n?\s*(\d)")
     pl["skill_moves"] = one(r"Skill [Mm]oves\s*\n?\s*(\d)")
     pl["foot"] = one(r"(?:Preferred [Ff]oot|Foot)\s*\n?\s*(Left|Right)")
     pl["height"] = one(r"(\d{3})\s*cm")
-    pl["rarity"] = one(r"Rarity\s*\n?\s*(.+)")
+    pl["rarity"] = one(r"Rarity\s*\n?\s*(.+)") or (tm.group(3) if tm else None)
     detail = {}
     for st in DETAIL_STATS:
-        hits = re.findall(r"(?<![A-Za-z])" + re.escape(st) + r"\s*\n?\s*(\d{1,2})(?!\d)", text)
-        if hits:
-            detail[st] = int(hits[-1])  # у «Dribbling» последнее вхождение — подробная характеристика
+        for label in ALIASES.get(st, [st]):
+            hits = re.findall(r"(?<![A-Za-z])" + re.escape(label) + r"\s*\n?\s*(\d{1,2})(?!\d)", text)
+            if hits:
+                detail[st] = int(hits[-1])  # у «Dribbling» последнее вхождение — подробная характеристика
+                break
     pl["detail"] = detail
     pos = {}
     for p_ in POSITIONS:
@@ -119,7 +141,7 @@ def read_player(page, pid, slug):
     ps = re.search(r"Playstyles?\s*\n(.*?)\n(?:Roles|Position|Detailed|Stats)", text, re.S)
     pl["playstyles"] = [x for x in ps.group(1).split("\n") if 2 < len(x) < 30] if ps else []
     pl["league"] = one(r"League\s*\n?\s*(.+)")
-    pl["nation"] = one(r"Nation\s*\n?\s*(.+)")
+    pl["nation"] = one(r"(?:Nation|Country/Region)\s*\n?\s*(.+)")
     for key, folder in (("club_id", "clubs"), ("league_id", "leagues"), ("nation_id", "nations")):
         m = re.search(r"fifa2027(?:%2F|/)" + folder + r"(?:%2F|/)(\d+)\.png", html)
         pl[key] = int(m.group(1)) if m else None
@@ -127,6 +149,45 @@ def read_player(page, pid, slug):
         idk = key.replace("_logo", "_id")
         pl[key] = f"{BASE}/images/fifa2027/{folder}/{pl[idk]}.png" if pl.get(idk) else None
     return pl
+
+
+PARAMS = {"nation": ["nation", "nations"], "league": ["league", "leagues"], "club": ["club", "clubs"]}
+
+
+def list_players(page, url):
+    """Игроки из списка на странице в порядке показа: [{id, slug, rating, position, name}]."""
+    page.goto(url, wait_until="networkidle")
+    page.wait_for_timeout(1500)
+    soup = BeautifulSoup(page.content(), "html.parser")
+    out, seen = [], set()
+    for a in soup.find_all("a", href=True):
+        m = re.search(r"/players/(\d+)/([^/?#]+)", a["href"])
+        if not m or m.group(1) in seen:
+            continue
+        seen.add(m.group(1))
+        txt = a.get_text("\n", strip=True).split("\n")
+        nums = [int(x) for x in txt if re.fullmatch(r"\d{2}", x)]
+        pos = next((x for x in txt if x in POSITIONS), None)
+        names = [x for x in txt if len(x) > 2 and not re.fullmatch(r"[\d,. ]+", x) and x not in POSITIONS]
+        out.append({"id": int(m.group(1)), "slug": m.group(2), "rating": nums[0] if nums else None,
+                    "position": pos, "name": names[0] if names else m.group(2).replace("-", " ").title(),
+                    "card_image": f"https://card-image.futmind.com/en/27/{m.group(1)}.png"})
+    return out
+
+
+def read_top(page, kind, fid, baseline):
+    """Топ-10 игроков нации/лиги/клуба. Пробуем параметры фильтра списка; если фильтр не сработал, не пишем ничего."""
+    for param in PARAMS[kind]:
+        try:
+            got = list_players(page, f"{BASE}/players?{param}={fid}")
+        except Exception as e:
+            log(f"  список {kind} {fid}: {e.__class__.__name__}")
+            continue
+        ids = [g["id"] for g in got[:10]]
+        if len(got) >= 3 and ids != [b["id"] for b in baseline[:10]]:
+            return got[:10]
+    log(f"  список {kind} {fid}: фильтр не сработал, пропускаю")
+    return []
 
 
 def reward_kind(soup, name):
@@ -214,7 +275,7 @@ def main():
             pid, slug = s["reward"].get("player_id"), s["reward"].get("player_slug")
             if not pid or str(pid) in players:
                 continue
-            if str(pid) in old:
+            if str(pid) in old and old[str(pid)].get("v", 1) >= PLAYER_V:
                 players[str(pid)] = old[str(pid)]
                 continue
             time.sleep(1)
@@ -222,13 +283,39 @@ def main():
                 players[str(pid)] = read_player(page, pid, slug)
             except Exception as e:
                 log(f"  игрок {pid}: ошибка {e}")
+
+        # топ-10 по нации, лиге и клубу (список обновляется раз в сутки: берём прошлый, если ему меньше 24 часов)
+        old_lists, old_at = {}, None
+        if OUT.exists():
+            try:
+                prev = json.loads(OUT.read_text(encoding="utf-8"))
+                old_lists, old_at = prev.get("lists", {}), prev.get("lists_at")
+            except Exception:
+                pass
+        fresh = old_at and (datetime.now(timezone.utc) - datetime.fromisoformat(old_at)).total_seconds() < 86400
+        lists = dict(old_lists) if fresh else {}
+        baseline = None
+        for pl in players.values():
+            for kind in ("nation", "league", "club"):
+                fid = pl.get(kind + "_id")
+                key = f"{kind}:{fid}"
+                if not fid or key in lists:
+                    continue
+                if baseline is None:
+                    try:
+                        baseline = list_players(page, f"{BASE}/players")
+                    except Exception:
+                        baseline = []
+                time.sleep(1)
+                lists[key] = read_top(page, kind, fid, baseline)
         browser.close()
 
     if not sbcs:
         sys.exit("SBC не найдены. raw.json не тронут.")
     raw = {
         "updated": datetime.now(timezone.utc).replace(minute=0, second=0, microsecond=0).isoformat(timespec="minutes"),
-        "source": "futmind.com", "platforms": platforms, "players": players, "sbcs": sbcs,
+        "source": "futmind.com", "platforms": platforms, "players": players, "lists": lists,
+        "lists_at": (old_at if fresh else datetime.now(timezone.utc).isoformat(timespec="minutes")), "sbcs": sbcs,
     }
     OUT.write_text(json.dumps(raw, ensure_ascii=False, indent=1), encoding="utf-8")
     log(f"Готово: {len(sbcs)} SBC")
