@@ -76,7 +76,7 @@ def player_view(pl):
 
 
 for s in raw["sbcs"]:
-    item = {k: s.get(k) for k in ("id", "name", "score", "min_rating", "image", "expires", "notes")}
+    item = {k: s.get(k) for k in ("id", "name", "score", "min_rating", "image", "expires", "notes", "order", "first_seen")}
     rw = s.get("reward") or {"kind": "pack"}
     item["reward"] = {"kind": rw.get("kind", "pack"), "player": player_view(raw.get("players", {}).get(str(rw.get("player_id"))))}
     item["builds"] = {}
