@@ -730,6 +730,10 @@
     list.sort(function (a, b) {
       if (sort === "score-asc") return a.score - b.score;
       if (sort === "score-desc") return b.score - a.score;
+      var fa = a.first_seen || "", fb = b.first_seen || "";
+      if (fa !== fb) return fa < fb ? 1 : -1;
+      var oa = a.order == null ? 9999 : a.order, ob = b.order == null ? 9999 : b.order;
+      if (oa !== ob) return oa - ob;
       return (b.id || 0) - (a.id || 0);
     });
     $("grid").innerHTML = list.map(cardHtml).join('');
