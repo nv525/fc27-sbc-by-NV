@@ -277,8 +277,20 @@ def main():
         if not platforms.get("console"):
             sys.exit("Не удалось прочитать таблицу цен (console). raw.json не тронут.")
 
+        # когда SBC впервые увидели и в каком порядке он стоит на сайте (id у futmind не по времени выхода)
+        prev, prev_at = {}, None
+        if OUT.exists():
+            try:
+                pj = json.loads(OUT.read_text(encoding="utf-8"))
+                prev_at = pj.get("updated")
+                prev = {x["id"]: x for x in pj.get("sbcs", [])}
+            except Exception:
+                pass
+        now_iso = datetime.now(timezone.utc).isoformat(timespec="minutes")
+        listing = read_sbc_list(page)
+        order = {sid: i for i, sid in enumerate(listing)}
         sbcs = []
-        for sbc_id, slug in sorted(read_sbc_list(page).items()):
+        for sbc_id, slug in sorted(listing.items()):
             time.sleep(1)
             try:
                 s = read_sbc(page, sbc_id, slug)
@@ -286,6 +298,8 @@ def main():
                 log(f"  SBC {sbc_id}: ошибка {e}")
                 continue
             if s:
+                s["order"] = order.get(sbc_id, 9999)
+                s["first_seen"] = (prev[sbc_id].get("first_seen") or prev_at) if sbc_id in prev else now_iso
                 sbcs.append(s)
 
         # игроки-награды: берём из прошлого raw.json, чтобы не ходить на сайт лишний раз
