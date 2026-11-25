@@ -15,9 +15,9 @@
           выбирается самая дешёвая.
 """
 
-WINDOW = 120_000   # размер точного перебора, остальное закрывается одной картой
-FAST_RATIO = 1.5   # во сколько раз цена за кристалл может быть выше минимальной
-TIME_PENALTY = 300 # сколько монет «стоит» время на одну сданную карту (режим optimal)
+WINDOW = 60_000    # размер точного перебора, остальное закрывается одной картой
+FAST_COST_CAP = 2.0  # режим fast: итог не дороже, чем в 2 раза от самой дешёвой сборки
+OPT_PENALTY = 1.5  # режим optimal: «стоимость» одной сданной карты = 1.5 цены самой выгодной карты
 
 
 def _pareto(cards):
@@ -31,17 +31,15 @@ def _pareto(cards):
     return result
 
 
-def _run(pool, target, key):
-    """key(count, cost) -> что минимизируем. Возвращает {индекс карты: количество}."""
-    if key == "cost":
-        best = min(pool, key=lambda c: c["price"] / c["score"])
-        score = lambda cnt, cost: cost
-    elif key == "balanced":
-        best = min(pool, key=lambda c: (c["price"] + TIME_PENALTY) / c["score"])
-        score = lambda cnt, cost: cost + TIME_PENALTY * cnt
-    else:
+def _run(pool, target, penalty, by_count=False):
+    """Минимизирует cost + penalty * count (penalty=0: просто монеты).
+    by_count=True: сначала минимум карт, потом монеты. Возвращает {индекс карты: количество}."""
+    if by_count:
         best = max(pool, key=lambda c: (c["score"], -c["price"]))
         score = lambda cnt, cost: (cnt, cost)
+    else:
+        best = min(pool, key=lambda c: (c["price"] + penalty) / c["score"])
+        score = lambda cnt, cost: cost + penalty * cnt
 
     bulk = 0
     if target > WINDOW + best["score"]:
@@ -72,18 +70,8 @@ def _run(pool, target, key):
     return counts
 
 
-def solve(cards, target, min_rating=0, mode="cheap"):
-    """Возвращает сборку или None, если подходящих карт нет."""
-    pool = [c for c in cards if c["rating"] >= min_rating and c["score"] > 0 and c["price"] > 0]
-    if not pool or target <= 0:
-        return None
-    if mode == "fast":
-        cheapest = min(c["price"] / c["score"] for c in pool)
-        pool = [c for c in pool if c["price"] / c["score"] <= cheapest * FAST_RATIO]
-    pool = _pareto(pool)
-
-    key = {"cheap": "cost", "optimal": "balanced", "fast": "count"}[mode]
-    counts = _run(pool, target, key)
+def _build(pool, target, penalty, by_count=False):
+    counts = _run(pool, target, penalty, by_count)
     lines = []
     for i, qty in sorted(counts.items(), key=lambda kv: -pool[kv[0]]["score"]):
         c = pool[i]
@@ -97,3 +85,25 @@ def solve(cards, target, min_rating=0, mode="cheap"):
         "surplus": total - target,
         "players": sum(l["qty"] for l in lines),
     }
+
+
+def solve(cards, target, min_rating=0, mode="cheap"):
+    """Возвращает сборку или None, если подходящих карт нет."""
+    pool = [c for c in cards if c["rating"] >= min_rating and c["score"] > 0 and c["price"] > 0]
+    if not pool or target <= 0:
+        return None
+    pool = _pareto(pool)
+    base = min(pool, key=lambda c: c["price"] / c["score"])["price"]  # цена самой выгодной по монетам карты
+    cheap = _build(pool, target, 0)
+    if mode == "cheap":
+        return cheap
+    if mode == "optimal":
+        return _build(pool, target, base * OPT_PENALTY)
+    # fast: увеличиваем «цену карты», пока сборка не станет дороже допустимого, берём с минимумом карт
+    cap = cheap["cost"] * FAST_COST_CAP
+    best = cheap
+    for k in (1, 2, 4, 8, 16, 32, 64):
+        b = _build(pool, target, base * k)
+        if b["cost"] <= cap and (b["players"], b["cost"]) < (best["players"], best["cost"]):
+            best = b
+    return best
