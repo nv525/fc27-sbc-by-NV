@@ -335,7 +335,7 @@
       var diff = '';
       if (mode !== "cheap" && pb.cheap) {
         var dc = b.cost - pb.cheap.cost, dn = pb.cheap.players - b.players;
-        if (dn > 0) diff = '<p class="meta">На ' + nf.format(dn) + ' ' + plural(dn, "карту", "карты", "карт") + ' меньше, чем в дешёвой сборке, но на ' + nf.format(dc) + ' монет дороже.</p>';
+        if (dn > 0) diff = '<p class="meta">На ' + nf.format(dn) + ' ' + plural(dn, "карту", "карты", "карт") + ' меньше, чем в дешёвой сборке' + (dc > 0 ? ', но на ' + nf.format(dc) + ' монет дороже' : '') + '.</p>';
       }
       build = '<div class="cost"><b>' + (b.estimate ? '≈ ' : '') + nf.format(b.cost) + '</b><span class="coin">монет</span></div>' +
         '<p class="meta">' + meta + '</p>' + diff +
