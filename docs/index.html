@@ -101,7 +101,9 @@
   .empty { color: var(--muted); padding: 40px 0; text-align: center; }
   .note { color: var(--muted); font-size: 0.76rem; margin-top: 32px; max-width: 80ch; }
   .cats { margin-bottom: 10px; }
-  .cats button { padding: 8px 14px; }
+  .cats { max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+  .cats::-webkit-scrollbar { display: none; }
+  .cats button { padding: 8px 7px; flex: none; white-space: nowrap; font-size: 0.8rem; }
   .cats .n { opacity: 0.6; font-weight: 600; margin-left: 4px; }
   .pill { display: inline-flex; align-items: center; gap: 8px; background: var(--accent-soft); color: var(--accent); font: 700 0.8rem var(--font); border: 0; border-radius: 999px; padding: 7px 8px 7px 14px; cursor: pointer; margin: 0 0 14px; }
   .pill img { width: 16px; height: 16px; object-fit: contain; }
@@ -109,6 +111,10 @@
   button.link { all: unset; cursor: pointer; font-weight: 700; font-size: 1.05rem; letter-spacing: -0.01em; overflow-wrap: anywhere; }
   button.link:hover { text-decoration: underline; text-underline-offset: 3px; }
   .art[data-open] { cursor: pointer; }
+  .fav { position: absolute; top: 10px; right: 10px; z-index: 3; width: 38px; height: 38px; border: 0; border-radius: 50%; display: grid; place-items: center; cursor: pointer; background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(6px); }
+  .fav svg { width: 20px; height: 20px; fill: none; stroke: #fff; stroke-width: 2; stroke-linejoin: round; }
+  .fav[aria-pressed="true"] svg { fill: #f2b81c; stroke: #f2b81c; }
+  .fav:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .tag { position: absolute; top: 10px; left: 10px; z-index: 2; font: 700 0.68rem var(--font); background: rgba(0, 0, 0, 0.55); color: #fff; padding: 3px 9px; border-radius: 999px; backdrop-filter: blur(6px); }
 
   .dt { position: fixed; inset: 0; z-index: 50; background: var(--bg); overflow-y: auto; overscroll-behavior: contain; }
@@ -256,6 +262,7 @@
 
   <div class="grid" id="grid" aria-live="polite"></div>
   <p class="empty" id="empty" hidden>Ничего не найдено.</p>
+  <p class="note" id="favnote" hidden></p>
   <p class="note" id="note"></p>
 </div>
 <div class="dt" id="squad" role="dialog" aria-modal="true" aria-label="Squad Builder" hidden><div class="dt-in" id="sqin"></div></div>
@@ -279,7 +286,7 @@
 
   var RARITY = { "Common": "Обычная", "Future Stars": "Future Stars", "Destined for Glory": "Destined for Glory", "Base Hero": "Базовый Hero" };
   var KIND = { player: "Игрок", pick: "Пик", pack: "Пак" };
-  var CATS = [["all", "Все"], ["player", "Игроки"], ["pick", "Пики"], ["pack", "Паки"]];
+  var CATS = [["all", "Все"], ["player", "Игроки"], ["pick", "Пики"], ["pack", "Паки"], ["fav", "★"]];
   var FTYPE = { nation: "Нация", league: "Лига", club: "Клуб" };
   var STAT_RU = { "Acceleration": "Ускорение", "Sprint Speed": "Скорость спринта", "Agility": "Ловкость", "Balance": "Баланс", "Reactions": "Реакция", "Ball Control": "Контроль мяча", "Dribbling": "Дриблинг", "Composure": "Хладнокровие", "Attacking Position": "Выход на позицию", "Finishing": "Завершение", "Shot Power": "Сила удара", "Long Shots": "Дальние удары", "Volleys": "Удары с лёта", "Penalties": "Пенальти", "Interceptions": "Перехваты", "Heading Accuracy": "Игра головой", "Defensive Awareness": "Понимание защиты", "Standing Tackle": "Отбор", "Sliding Tackle": "Отбор в подкате", "Vision": "Видение поля", "Crossing": "Навесы", "FK Accuracy": "Штрафные", "Short Pass": "Короткий пас", "Long Pass": "Длинный пас", "Curve": "Закрутка", "Jumping": "Прыжок", "Stamina": "Выносливость", "Strength": "Сила", "Aggression": "Агрессия" };
   var GROUPS = [
@@ -309,12 +316,75 @@
   function plural(n, a, b, c) { var m = n % 100, d = n % 10; return (m > 10 && m < 15) ? c : d === 1 ? a : (d > 1 && d < 5) ? b : c; }
   function hideImg(img) { img.style.display = "none"; }
   function imgTag(src, cls) { return src ? '<img ' + (cls ? 'class="' + cls + '" ' : '') + 'src="' + esc(src) + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">' : ''; }
+  // ----- избранное: хранится на устройстве и в облаке Telegram, а для уведомлений отправляется боту -----
+  state.favs = []; state.api = ""; state.favState = "";
+  function isFav(id) { return state.favs.indexOf(String(id)) !== -1; }
+  function favBtn(s) {
+    var on = isFav(s.id);
+    return '<button class="fav" type="button" data-fav="' + s.id + '" aria-pressed="' + on + '" aria-label="' + (on ? 'Убрать из избранного' : 'В избранное') + '"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9-5.2-2.8-5.2 2.8 1-5.9L3.5 9.7l5.9-.8z"/></svg></button>';
+  }
+  function saveFavsLocal() {
+    var v = JSON.stringify(state.favs);
+    try { localStorage.setItem("sbc-favs", v); } catch (e) {}
+    try { if (tg && tg.CloudStorage) tg.CloudStorage.setItem("favs", v); } catch (e) {}
+  }
+  function loadFavs(done) {
+    try { state.favs = JSON.parse(localStorage.getItem("sbc-favs") || "[]").map(String); } catch (e) { state.favs = []; }
+    if (tg && tg.CloudStorage) {
+      try {
+        tg.CloudStorage.getItem("favs", function (err, val) {
+          try { JSON.parse(val || "[]").forEach(function (id) { if (!isFav(id)) state.favs.push(String(id)); }); } catch (e) {}
+          done();
+        });
+        return;
+      } catch (e) {}
+    }
+    done();
+  }
+  function syncFavs(tries) {
+    if (!tg || !state.api) return;
+    tries = tries || 0;
+    state.favState = "sync";
+    fetch(state.api.replace(/\/$/, "") + "/api/favs", {
+      method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify({ initData: tg.initData, favs: state.favs.map(Number) })
+    }).then(function (r) { return r.json(); }).then(function (j) {
+      if (j && j.ok && j.pending > 0 && tries < 5) return syncFavs(tries + 1);
+      state.favState = j && j.ok ? "ok" : "error"; renderFavNote();
+    }).catch(function () { state.favState = "error"; renderFavNote(); });
+  }
+  function toggleFav(id) {
+    id = String(id);
+    var i = state.favs.indexOf(id);
+    if (i === -1) state.favs.push(id); else state.favs.splice(i, 1);
+    saveFavsLocal(); syncFavs(); render();
+  }
+  function renderFavNote() {
+    var n = $("favnote");
+    if (!n) return;
+    if (state.cat !== "fav") { n.hidden = true; return; }
+    var msg;
+    if (!state.favs.length) msg = "Нажмите ★ на карточке SBC, чтобы добавить его в избранное.";
+    else if (!tg) msg = "Избранное сохранено в этом браузере. Уведомления приходят только в Telegram: откройте приложение через бота.";
+    else if (!state.api) msg = "Уведомления пока не подключены.";
+    else if (state.favState === "error") msg = "Не удалось подключить уведомления. Проверьте, что вы нажимали /start у бота, и попробуйте позже.";
+    else msg = "Бот напишет вам за 2 часа до окончания избранных SBC. Если сообщения не приходят, нажмите /start у бота.";
+    n.textContent = msg; n.hidden = false;
+  }
+  function leftText(s) {
+    var ms = s.expires_at ? Date.parse(s.expires_at) - Date.now() : NaN;
+    if (!(ms > 0)) return "";
+    var h = Math.floor(ms / 3600e3), d = Math.floor(h / 24);
+    return d >= 1 ? "осталось " + d + " дн. " + (h % 24) + " ч" : "осталось " + Math.max(h, 1) + " ч";
+  }
   function artHtml(s) {
     var first = esc(s.name.charAt(0)).replace(/'/g, "");
     return s.image ? '<img src="' + esc(s.image) + '" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),{className:\'ph\',textContent:\'' + first + '\'}))">' : '<span class="ph">' + first + '</span>';
   }
   function chipsHtml(s) {
     var c = '';
+    var lt = leftText(s);
+    if (lt) c += '<span class="chip">' + lt + '</span>';
     if (s.min_rating && s.min_rating > 45) c += '<span class="chip">карты от ' + s.min_rating + '</span>';
     (s.notes || []).filter(function (n) { return n.length <= 40; }).forEach(function (n) { c += '<span class="chip">' + esc(n) + '</span>'; });
     return c ? '<div class="chips">' + c + '</div>' : '';
@@ -351,7 +421,7 @@
 
   function cardHtml(s) {
     var kind = (s.reward && s.reward.kind) || "pack";
-    return '<article class="card"><div class="art" data-open="' + s.id + '" role="button" tabindex="0" aria-label="Открыть ' + esc(s.name) + '">' + artHtml(s) + '<span class="tag">' + KIND[kind] + '</span></div><div class="body">' +
+    return '<article class="card"><div class="art" data-open="' + s.id + '" role="button" tabindex="0" aria-label="Открыть ' + esc(s.name) + '">' + artHtml(s) + '<span class="tag">' + KIND[kind] + '</span>' + favBtn(s) + '</div><div class="body">' +
       '<h2 class="name"><button class="link" type="button" data-open="' + s.id + '">' + esc(s.name) + '</button></h2>' +
       '<div class="need">' + CRYSTAL + '<span class="big">' + nf.format(s.score) + '</span><span class="unit">кристаллов</span></div>' +
       chipsHtml(s) + buildHtml(s) + '</div></article>';
@@ -444,7 +514,7 @@
     else if (kind === "pick") reward = '<section class="panel"><h3>Награда</h3><p class="none">Выбор игрока (пик). Какие именно игроки попадут в выбор, зависит от самого пика.</p></section>';
     else reward = '<section class="panel"><h3>Награда</h3><p class="none">Пак.</p></section>';
     return '<button class="back" type="button" data-close>← Назад</button>' +
-      '<div class="art">' + artHtml(s) + '</div>' +
+      '<div class="art">' + artHtml(s) + favBtn(s) + '</div>' +
       '<section class="panel"><h2 class="title">' + esc(s.name) + '</h2>' +
       '<div class="need">' + CRYSTAL + '<span class="big">' + nf.format(s.score) + '</span><span class="unit">кристаллов</span></div>' +
       chipsHtml(s) + buildHtml(s) + '</section>' + reward +
@@ -734,12 +804,13 @@
 
   function render() {
     var d = state.data, q = $("q").value.trim().toLowerCase(), sort = state.sort;
-    var counts = { all: d.sbcs.length, player: 0, pick: 0, pack: 0 };
-    d.sbcs.forEach(function (s) { counts[(s.reward && s.reward.kind) || "pack"]++; });
-    $("cats").innerHTML = CATS.map(function (c) { return '<button type="button" data-cat="' + c[0] + '" aria-pressed="' + (state.cat === c[0]) + '">' + c[1] + '<span class="n">' + counts[c[0]] + '</span></button>'; }).join('');
+    var counts = { all: d.sbcs.length, player: 0, pick: 0, pack: 0, fav: 0 };
+    d.sbcs.forEach(function (s) { counts[(s.reward && s.reward.kind) || "pack"]++; if (isFav(s.id)) counts.fav++; });
+    $("cats").innerHTML = CATS.map(function (c) { return '<button type="button" data-cat="' + c[0] + '"' + (c[0] === "fav" ? ' aria-label="Избранное" title="Избранное"' : '') + ' aria-pressed="' + (state.cat === c[0]) + '">' + c[1] + '<span class="n">' + counts[c[0]] + '</span></button>'; }).join('');
     var list = d.sbcs.filter(function (s) {
       var kind = (s.reward && s.reward.kind) || "pack";
-      if (state.cat !== "all" && kind !== state.cat) return false;
+      if (state.cat === "fav") { if (!isFav(s.id)) return false; }
+      else if (state.cat !== "all" && kind !== state.cat) return false;
       return !q || s.name.toLowerCase().indexOf(q) !== -1;
     });
     list.sort(function (a, b) {
@@ -752,7 +823,8 @@
       return (b.id || 0) - (a.id || 0);
     });
     $("grid").innerHTML = list.map(cardHtml).join('');
-    $("empty").hidden = list.length > 0;
+    $("empty").hidden = list.length > 0 || state.cat === "fav";
+    renderFavNote();
     if (state.open != null) renderDetail();
   }
 
@@ -763,6 +835,8 @@
     render();
   }
 
+  fetch("config.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (c) { state.api = (c && c.api) || ""; syncFavs(); renderFavNote(); }).catch(function () {});
+  loadFavs(function () { if (state.data) render(); syncFavs(); });
   fetch("data.json").then(function (r) { return r.json(); }).then(function (d) {
     state.data = d;
     $("p-pc").disabled = d.platforms.indexOf("pc") === -1;
@@ -811,6 +885,8 @@
     if (sdel) { var did = Number(sdel.getAttribute("data-sqdel")); SQ.anchors = SQ.anchors.filter(function (a) { return a.id !== did; }); SQ.results = null; sqRender(); return; }
     if (t.closest("[data-sqgo]")) { sqGo(); return; }
     if (t.closest("[data-sqrand]")) { sqRandom(); return; }
+    var fv = t.closest("[data-fav]");
+    if (fv) { e.preventDefault(); toggleFav(fv.getAttribute("data-fav")); return; }
     var o = t.closest("[data-open]");
     if (o) { openDetail(o.getAttribute("data-open")); return; }
     if (t.closest("[data-close]")) { closeDetail(); return; }
