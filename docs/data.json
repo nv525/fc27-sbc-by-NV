@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T17:00+00:00",
+ "updated": "2026-11-25T18:00+00:00",
  "platforms": [
   "console",
   "pc"
@@ -14,7 +14,394 @@
    "score": 1000,
    "min_rating": 0,
    "image": "https://futmind.com/image-generator/sbc/7.png",
-   "expires": "3190 Days 0 Hours",
+   "expires": "3190 Days 1 Hours",
+   "notes": [],
+   "order": 54,
+   "first_seen": "2026-11-24T06:00+00:00",
+   "expires_at": null,
+   "reward": {
+    "kind": "pack",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       },
+       {
+        "rating": 82,
+        "rarity": "Common",
+        "score": 340,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 1350,
+      "score": 1170,
+      "surplus": 170,
+      "players": 2
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       },
+       {
+        "rating": 82,
+        "rarity": "Common",
+        "score": 340,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 1350,
+      "score": 1170,
+      "surplus": 170,
+      "players": 2
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       },
+       {
+        "rating": 82,
+        "rarity": "Common",
+        "score": 340,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 1350,
+      "score": 1170,
+      "surplus": 170,
+      "players": 2
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       },
+       {
+        "rating": 82,
+        "rarity": "Common",
+        "score": 340,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 1350,
+      "score": 1170,
+      "surplus": 170,
+      "players": 2,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       },
+       {
+        "rating": 82,
+        "rarity": "Common",
+        "score": 340,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 1350,
+      "score": 1170,
+      "surplus": 170,
+      "players": 2,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       },
+       {
+        "rating": 82,
+        "rarity": "Common",
+        "score": 340,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 1350,
+      "score": 1170,
+      "surplus": 170,
+      "players": 2,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 8,
+   "name": "Bronze and Silver Re-roll",
+   "score": 500,
+   "min_rating": 0,
+   "image": "https://futmind.com/image-generator/sbc/8.png",
+   "expires": "3189 Days 22 Hours",
+   "notes": [],
+   "order": 53,
+   "first_seen": "2026-11-24T06:00+00:00",
+   "expires_at": null,
+   "reward": {
+    "kind": "pack",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       }
+      ],
+      "cost": 700,
+      "score": 830,
+      "surplus": 330,
+      "players": 1
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       }
+      ],
+      "cost": 700,
+      "score": 830,
+      "surplus": 330,
+      "players": 1
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       }
+      ],
+      "cost": 700,
+      "score": 830,
+      "surplus": 330,
+      "players": 1
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 1
+       }
+      ],
+      "cost": 800,
+      "score": 830,
+      "surplus": 330,
+      "players": 1,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 1
+       }
+      ],
+      "cost": 800,
+      "score": 830,
+      "surplus": 330,
+      "players": 1,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 800,
+        "qty": 1
+       }
+      ],
+      "cost": 800,
+      "score": 830,
+      "surplus": 330,
+      "players": 1,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 9,
+   "name": "Gold Re-Roll",
+   "score": 1250,
+   "min_rating": 0,
+   "image": "https://futmind.com/image-generator/sbc/9.png",
+   "expires": "3189 Days 23 Hours",
+   "notes": [],
+   "order": 52,
+   "first_seen": "2026-11-24T06:00+00:00",
+   "expires_at": null,
+   "reward": {
+    "kind": "pack",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 2
+       }
+      ],
+      "cost": 1400,
+      "score": 1660,
+      "surplus": 410,
+      "players": 2
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 2
+       }
+      ],
+      "cost": 1400,
+      "score": 1660,
+      "surplus": 410,
+      "players": 2
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 2
+       }
+      ],
+      "cost": 1400,
+      "score": 1660,
+      "surplus": 410,
+      "players": 2
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 2
+       }
+      ],
+      "cost": 1400,
+      "score": 1660,
+      "surplus": 410,
+      "players": 2,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 2
+       }
+      ],
+      "cost": 1400,
+      "score": 1660,
+      "surplus": 410,
+      "players": 2,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 2
+       }
+      ],
+      "cost": 1400,
+      "score": 1660,
+      "surplus": 410,
+      "players": 2,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 20,
+   "name": "Intro to Player SBCs",
+   "score": 4000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/20.png",
+   "expires": "3201 Days 4 Hours",
    "notes": [],
    "order": 51,
    "first_seen": "2026-11-24T06:00+00:00",
@@ -31,401 +418,47 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
-        "qty": 1
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
-        "qty": 1
+        "price": 700,
+        "qty": 5
        }
       ],
-      "cost": 1550,
-      "score": 1240,
-      "surplus": 240,
-      "players": 2
+      "cost": 3500,
+      "score": 4150,
+      "surplus": 150,
+      "players": 5
      },
      "optimal": {
       "lines": [
        {
-        "rating": 84,
+        "rating": 86,
         "rarity": "Common",
-        "score": 830,
-        "price": 900,
-        "qty": 1
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
+        "score": 4100,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 1550,
-      "score": 1240,
-      "surplus": 240,
-      "players": 2
+      "cost": 5400,
+      "score": 4100,
+      "surplus": 100,
+      "players": 1
      },
      "fast": {
       "lines": [
        {
-        "rating": 85,
+        "rating": 86,
         "rarity": "Common",
-        "score": 2100,
-        "price": 2900,
+        "score": 4100,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 2900,
-      "score": 2100,
-      "surplus": 1100,
+      "cost": 5400,
+      "score": 4100,
+      "surplus": 100,
       "players": 1
      }
     },
     "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 900,
-        "qty": 1
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
-        "qty": 1
-       }
-      ],
-      "cost": 1550,
-      "score": 1240,
-      "surplus": 240,
-      "players": 2,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 900,
-        "qty": 1
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
-        "qty": 1
-       }
-      ],
-      "cost": 1550,
-      "score": 1240,
-      "surplus": 240,
-      "players": 2,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 2950,
-        "qty": 1
-       }
-      ],
-      "cost": 2950,
-      "score": 2100,
-      "surplus": 1100,
-      "players": 1,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 8,
-   "name": "Bronze and Silver Re-roll",
-   "score": 500,
-   "min_rating": 0,
-   "image": "https://futmind.com/image-generator/sbc/8.png",
-   "expires": "3190 Days 0 Hours",
-   "notes": [],
-   "order": 50,
-   "first_seen": "2026-11-24T06:00+00:00",
-   "expires_at": null,
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 900,
-        "qty": 1
-       }
-      ],
-      "cost": 900,
-      "score": 830,
-      "surplus": 330,
-      "players": 1
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 900,
-        "qty": 1
-       }
-      ],
-      "cost": 900,
-      "score": 830,
-      "surplus": 330,
-      "players": 1
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 900,
-        "qty": 1
-       }
-      ],
-      "cost": 900,
-      "score": 830,
-      "surplus": 330,
-      "players": 1
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 1000,
-        "qty": 1
-       }
-      ],
-      "cost": 1000,
-      "score": 830,
-      "surplus": 330,
-      "players": 1,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 1000,
-        "qty": 1
-       }
-      ],
-      "cost": 1000,
-      "score": 830,
-      "surplus": 330,
-      "players": 1,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 1000,
-        "qty": 1
-       }
-      ],
-      "cost": 1000,
-      "score": 830,
-      "surplus": 330,
-      "players": 1,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 9,
-   "name": "Gold Re-Roll",
-   "score": 1250,
-   "min_rating": 0,
-   "image": "https://futmind.com/image-generator/sbc/9.png",
-   "expires": "3190 Days 0 Hours",
-   "notes": [],
-   "order": 49,
-   "first_seen": "2026-11-24T06:00+00:00",
-   "expires_at": null,
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 900,
-        "qty": 1
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
-        "qty": 1
-       },
-       {
-        "rating": 66,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 1
-       }
-      ],
-      "cost": 1750,
-      "score": 1275,
-      "surplus": 25,
-      "players": 3
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 2900,
-        "qty": 1
-       }
-      ],
-      "cost": 2900,
-      "score": 2100,
-      "surplus": 850,
-      "players": 1
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 2900,
-        "qty": 1
-       }
-      ],
-      "cost": 2900,
-      "score": 2100,
-      "surplus": 850,
-      "players": 1
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 900,
-        "qty": 1
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
-        "qty": 1
-       },
-       {
-        "rating": 66,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 1
-       }
-      ],
-      "cost": 1750,
-      "score": 1275,
-      "surplus": 25,
-      "players": 3,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 2900,
-        "qty": 1
-       }
-      ],
-      "cost": 2900,
-      "score": 2100,
-      "surplus": 850,
-      "players": 1,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 2900,
-        "qty": 1
-       }
-      ],
-      "cost": 2900,
-      "score": 2100,
-      "surplus": 850,
-      "players": 1,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 20,
-   "name": "Intro to Player SBCs",
-   "score": 4000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/20.png",
-   "expires": "3201 Days 0 Hours",
-   "notes": [],
-   "order": 48,
-   "first_seen": "2026-11-24T06:00+00:00",
-   "expires_at": null,
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
      "cheap": {
       "lines": [
        {
@@ -439,53 +472,6 @@
       "cost": 4500,
       "score": 4150,
       "surplus": 150,
-      "players": 5
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5900,
-        "qty": 1
-       }
-      ],
-      "cost": 5900,
-      "score": 4100,
-      "surplus": 100,
-      "players": 1
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5900,
-        "qty": 1
-       }
-      ],
-      "cost": 5900,
-      "score": 4100,
-      "surplus": 100,
-      "players": 1
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 1150,
-        "qty": 5
-       }
-      ],
-      "cost": 5750,
-      "score": 4150,
-      "surplus": 150,
       "players": 5,
       "estimate": true
      },
@@ -495,11 +481,11 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7600,
+        "price": 6800,
         "qty": 1
        }
       ],
-      "cost": 7600,
+      "cost": 6800,
       "score": 4100,
       "surplus": 100,
       "players": 1,
@@ -511,11 +497,11 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7600,
+        "price": 6800,
         "qty": 1
        }
       ],
-      "cost": 7600,
+      "cost": 6800,
       "score": 4100,
       "surplus": 100,
       "players": 1,
@@ -530,9 +516,9 @@
    "score": 5000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/91.png",
-   "expires": "11 Days 5 Hours",
+   "expires": "11 Days 0 Hours",
    "notes": [],
-   "order": 39,
+   "order": 43,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -547,20 +533,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 6
        },
        {
-        "rating": 66,
+        "rating": 64,
         "rarity": "Common",
-        "score": 35,
+        "score": 20,
         "price": 200,
         "qty": 1
        }
       ],
-      "cost": 5600,
-      "score": 5015,
-      "surplus": 15,
+      "cost": 4400,
+      "score": 5000,
+      "surplus": 0,
       "players": 7
      },
      "optimal": {
@@ -601,20 +587,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1050,
+        "price": 900,
         "qty": 6
        },
        {
-        "rating": 66,
+        "rating": 64,
         "rarity": "Common",
-        "score": 35,
+        "score": 20,
         "price": 250,
         "qty": 1
        }
       ],
-      "cost": 6550,
-      "score": 5015,
-      "surplus": 15,
+      "cost": 5650,
+      "score": 5000,
+      "surplus": 0,
       "players": 7,
       "estimate": true
      },
@@ -624,11 +610,11 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 9350,
+        "price": 10250,
         "qty": 1
        }
       ],
-      "cost": 9350,
+      "cost": 10250,
       "score": 5500,
       "surplus": 500,
       "players": 1,
@@ -640,11 +626,11 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 9350,
+        "price": 10250,
         "qty": 1
        }
       ],
-      "cost": 9350,
+      "cost": 10250,
       "score": 5500,
       "surplus": 500,
       "players": 1,
@@ -659,6 +645,550 @@
    "score": 5000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/92.png",
+   "expires": "11 Days 0 Hours",
+   "notes": [],
+   "order": 42,
+   "first_seen": "2026-11-24T06:00+00:00",
+   "expires_at": null,
+   "reward": {
+    "kind": "pack",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 6
+       },
+       {
+        "rating": 64,
+        "rarity": "Common",
+        "score": 20,
+        "price": 200,
+        "qty": 1
+       }
+      ],
+      "cost": 4400,
+      "score": 5000,
+      "surplus": 0,
+      "players": 7
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 8000,
+        "qty": 1
+       }
+      ],
+      "cost": 8000,
+      "score": 5500,
+      "surplus": 500,
+      "players": 1
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 8000,
+        "qty": 1
+       }
+      ],
+      "cost": 8000,
+      "score": 5500,
+      "surplus": 500,
+      "players": 1
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 900,
+        "qty": 6
+       },
+       {
+        "rating": 64,
+        "rarity": "Common",
+        "score": 20,
+        "price": 250,
+        "qty": 1
+       }
+      ],
+      "cost": 5650,
+      "score": 5000,
+      "surplus": 0,
+      "players": 7,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 10250,
+        "qty": 1
+       }
+      ],
+      "cost": 10250,
+      "score": 5500,
+      "surplus": 500,
+      "players": 1,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 10250,
+        "qty": 1
+       }
+      ],
+      "cost": 10250,
+      "score": 5500,
+      "surplus": 500,
+      "players": 1,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 93,
+   "name": "Premier League & Barclays WSL",
+   "score": 9000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/93.png",
+   "expires": "11 Days 0 Hours",
+   "notes": [],
+   "order": 41,
+   "first_seen": "2026-11-24T06:00+00:00",
+   "expires_at": null,
+   "reward": {
+    "kind": "pack",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 11
+       }
+      ],
+      "cost": 7700,
+      "score": 9130,
+      "surplus": 130,
+      "players": 11
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 2
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       }
+      ],
+      "cost": 11500,
+      "score": 9030,
+      "surplus": 30,
+      "players": 3
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 8000,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 1
+       }
+      ],
+      "cost": 13400,
+      "score": 9600,
+      "surplus": 600,
+      "players": 2
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 900,
+        "qty": 11
+       }
+      ],
+      "cost": 9900,
+      "score": 9130,
+      "surplus": 130,
+      "players": 11,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 6800,
+        "qty": 2
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 900,
+        "qty": 1
+       }
+      ],
+      "cost": 14500,
+      "score": 9030,
+      "surplus": 30,
+      "players": 3,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 10100,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 6800,
+        "qty": 1
+       }
+      ],
+      "cost": 16900,
+      "score": 9600,
+      "surplus": 600,
+      "players": 2,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 94,
+   "name": "LALIGA & Liga F",
+   "score": 6000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/94.png",
+   "expires": "11 Days 0 Hours",
+   "notes": [],
+   "order": 40,
+   "first_seen": "2026-11-24T06:00+00:00",
+   "expires_at": null,
+   "reward": {
+    "kind": "pack",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 7
+       },
+       {
+        "rating": 82,
+        "rarity": "Common",
+        "score": 340,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 5550,
+      "score": 6150,
+      "surplus": 150,
+      "players": 8
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2900,
+        "qty": 1
+       }
+      ],
+      "cost": 8300,
+      "score": 6200,
+      "surplus": 200,
+      "players": 2
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2900,
+        "qty": 1
+       }
+      ],
+      "cost": 8300,
+      "score": 6200,
+      "surplus": 200,
+      "players": 2
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 900,
+        "qty": 7
+       },
+       {
+        "rating": 82,
+        "rarity": "Common",
+        "score": 340,
+        "price": 850,
+        "qty": 1
+       }
+      ],
+      "cost": 7150,
+      "score": 6150,
+      "surplus": 150,
+      "players": 8,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 7000,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 3750,
+        "qty": 1
+       }
+      ],
+      "cost": 10750,
+      "score": 6200,
+      "surplus": 200,
+      "players": 2,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 7000,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 3750,
+        "qty": 1
+       }
+      ],
+      "cost": 10750,
+      "score": 6200,
+      "surplus": 200,
+      "players": 2,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 99,
+   "name": "Serie A & ROSHN Saudi League",
+   "score": 3000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/99.png",
+   "expires": "11 Days 0 Hours",
+   "notes": [],
+   "order": 39,
+   "first_seen": "2026-11-24T06:00+00:00",
+   "expires_at": null,
+   "reward": {
+    "kind": "pack",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 4
+       }
+      ],
+      "cost": 2800,
+      "score": 3320,
+      "surplus": 320,
+      "players": 4
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 1
+       }
+      ],
+      "cost": 5400,
+      "score": 4100,
+      "surplus": 1100,
+      "players": 1
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 1
+       }
+      ],
+      "cost": 5400,
+      "score": 4100,
+      "surplus": 1100,
+      "players": 1
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 900,
+        "qty": 4
+       }
+      ],
+      "cost": 3600,
+      "score": 3320,
+      "surplus": 320,
+      "players": 4,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 7000,
+        "qty": 1
+       }
+      ],
+      "cost": 7000,
+      "score": 4100,
+      "surplus": 1100,
+      "players": 1,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 7000,
+        "qty": 1
+       }
+      ],
+      "cost": 7000,
+      "score": 4100,
+      "surplus": 1100,
+      "players": 1,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 100,
+   "name": "MLS & NWSL",
+   "score": 3000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/100.png",
    "expires": "11 Days 0 Hours",
    "notes": [],
    "order": 38,
@@ -676,415 +1206,47 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
-        "qty": 6
-       },
-       {
-        "rating": 66,
-        "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 1
+        "price": 700,
+        "qty": 4
        }
       ],
-      "cost": 5600,
-      "score": 5015,
-      "surplus": 15,
-      "players": 7
+      "cost": 2800,
+      "score": 3320,
+      "surplus": 320,
+      "players": 4
      },
      "optimal": {
       "lines": [
        {
-        "rating": 87,
+        "rating": 86,
         "rarity": "Common",
-        "score": 5500,
-        "price": 8000,
+        "score": 4100,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 8000,
-      "score": 5500,
-      "surplus": 500,
+      "cost": 5400,
+      "score": 4100,
+      "surplus": 1100,
       "players": 1
      },
      "fast": {
       "lines": [
        {
-        "rating": 87,
+        "rating": 86,
         "rarity": "Common",
-        "score": 5500,
-        "price": 8000,
+        "score": 4100,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 8000,
-      "score": 5500,
-      "surplus": 500,
+      "cost": 5400,
+      "score": 4100,
+      "surplus": 1100,
       "players": 1
      }
     },
     "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 1050,
-        "qty": 6
-       },
-       {
-        "rating": 66,
-        "rarity": "Common",
-        "score": 35,
-        "price": 250,
-        "qty": 1
-       }
-      ],
-      "cost": 6550,
-      "score": 5015,
-      "surplus": 15,
-      "players": 7,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 9350,
-        "qty": 1
-       }
-      ],
-      "cost": 9350,
-      "score": 5500,
-      "surplus": 500,
-      "players": 1,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 9350,
-        "qty": 1
-       }
-      ],
-      "cost": 9350,
-      "score": 5500,
-      "surplus": 500,
-      "players": 1,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 93,
-   "name": "Premier League & Barclays WSL",
-   "score": 9000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/93.png",
-   "expires": "11 Days 0 Hours",
-   "notes": [],
-   "order": 37,
-   "first_seen": "2026-11-24T06:00+00:00",
-   "expires_at": null,
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 900,
-        "qty": 11
-       }
-      ],
-      "cost": 9900,
-      "score": 9130,
-      "surplus": 130,
-      "players": 11
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8000,
-        "qty": 1
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5900,
-        "qty": 1
-       }
-      ],
-      "cost": 13900,
-      "score": 9600,
-      "surplus": 600,
-      "players": 2
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8000,
-        "qty": 1
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5900,
-        "qty": 1
-       }
-      ],
-      "cost": 13900,
-      "score": 9600,
-      "surplus": 600,
-      "players": 2
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 1050,
-        "qty": 11
-       }
-      ],
-      "cost": 11550,
-      "score": 9130,
-      "surplus": 130,
-      "players": 11,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 9300,
-        "qty": 1
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 6850,
-        "qty": 1
-       }
-      ],
-      "cost": 16150,
-      "score": 9600,
-      "surplus": 600,
-      "players": 2,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 9300,
-        "qty": 1
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 6850,
-        "qty": 1
-       }
-      ],
-      "cost": 16150,
-      "score": 9600,
-      "surplus": 600,
-      "players": 2,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 94,
-   "name": "LALIGA & Liga F",
-   "score": 6000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/94.png",
-   "expires": "11 Days 1 Hours",
-   "notes": [],
-   "order": 36,
-   "first_seen": "2026-11-24T06:00+00:00",
-   "expires_at": null,
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 900,
-        "qty": 7
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
-        "qty": 1
-       }
-      ],
-      "cost": 6950,
-      "score": 6220,
-      "surplus": 220,
-      "players": 8
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5900,
-        "qty": 1
-       },
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 2900,
-        "qty": 1
-       }
-      ],
-      "cost": 8800,
-      "score": 6200,
-      "surplus": 200,
-      "players": 2
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 88,
-        "rarity": "Common",
-        "score": 8300,
-        "price": 13500,
-        "qty": 1
-       }
-      ],
-      "cost": 13500,
-      "score": 8300,
-      "surplus": 2300,
-      "players": 1
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 1150,
-        "qty": 7
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 850,
-        "qty": 1
-       }
-      ],
-      "cost": 8900,
-      "score": 6220,
-      "surplus": 220,
-      "players": 8,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 7500,
-        "qty": 1
-       },
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 3700,
-        "qty": 1
-       }
-      ],
-      "cost": 11200,
-      "score": 6200,
-      "surplus": 200,
-      "players": 2,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 88,
-        "rarity": "Common",
-        "score": 8300,
-        "price": 17200,
-        "qty": 1
-       }
-      ],
-      "cost": 17200,
-      "score": 8300,
-      "surplus": 2300,
-      "players": 1,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 99,
-   "name": "Serie A & ROSHN Saudi League",
-   "score": 3000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/99.png",
-   "expires": "11 Days 1 Hours",
-   "notes": [],
-   "order": 35,
-   "first_seen": "2026-11-24T06:00+00:00",
-   "expires_at": null,
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
      "cheap": {
       "lines": [
        {
@@ -1098,53 +1260,6 @@
       "cost": 3600,
       "score": 3320,
       "surplus": 320,
-      "players": 4
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5900,
-        "qty": 1
-       }
-      ],
-      "cost": 5900,
-      "score": 4100,
-      "surplus": 1100,
-      "players": 1
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5900,
-        "qty": 1
-       }
-      ],
-      "cost": 5900,
-      "score": 4100,
-      "surplus": 1100,
-      "players": 1
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 1150,
-        "qty": 4
-       }
-      ],
-      "cost": 4600,
-      "score": 3320,
-      "surplus": 320,
       "players": 4,
       "estimate": true
      },
@@ -1154,11 +1269,11 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7650,
+        "price": 7000,
         "qty": 1
        }
       ],
-      "cost": 7650,
+      "cost": 7000,
       "score": 4100,
       "surplus": 1100,
       "players": 1,
@@ -1170,126 +1285,11 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7650,
+        "price": 7000,
         "qty": 1
        }
       ],
-      "cost": 7650,
-      "score": 4100,
-      "surplus": 1100,
-      "players": 1,
-      "estimate": true
-     }
-    }
-   }
-  },
-  {
-   "id": 100,
-   "name": "MLS & NWSL",
-   "score": 3000,
-   "min_rating": 45,
-   "image": "https://futmind.com/image-generator/sbc/100.png",
-   "expires": "11 Days 1 Hours",
-   "notes": [],
-   "order": 34,
-   "first_seen": "2026-11-24T06:00+00:00",
-   "expires_at": null,
-   "reward": {
-    "kind": "pack",
-    "player": null
-   },
-   "builds": {
-    "console": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 900,
-        "qty": 4
-       }
-      ],
-      "cost": 3600,
-      "score": 3320,
-      "surplus": 320,
-      "players": 4
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5900,
-        "qty": 1
-       }
-      ],
-      "cost": 5900,
-      "score": 4100,
-      "surplus": 1100,
-      "players": 1
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5900,
-        "qty": 1
-       }
-      ],
-      "cost": 5900,
-      "score": 4100,
-      "surplus": 1100,
-      "players": 1
-     }
-    },
-    "pc": {
-     "cheap": {
-      "lines": [
-       {
-        "rating": 84,
-        "rarity": "Common",
-        "score": 830,
-        "price": 1150,
-        "qty": 4
-       }
-      ],
-      "cost": 4600,
-      "score": 3320,
-      "surplus": 320,
-      "players": 4,
-      "estimate": true
-     },
-     "optimal": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 7650,
-        "qty": 1
-       }
-      ],
-      "cost": 7650,
-      "score": 4100,
-      "surplus": 1100,
-      "players": 1,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 7650,
-        "qty": 1
-       }
-      ],
-      "cost": 7650,
+      "cost": 7000,
       "score": 4100,
       "surplus": 1100,
       "players": 1,
@@ -1304,9 +1304,9 @@
    "score": 14000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/121.png",
-   "expires": "33 Days 0 Hours",
+   "expires": "32 Days 23 Hours",
    "notes": [],
-   "order": 18,
+   "order": 22,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -1620,11 +1620,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 17
        }
       ],
-      "cost": 15300,
+      "cost": 11900,
       "score": 14110,
       "surplus": 110,
       "players": 17
@@ -1632,46 +1632,46 @@
      "optimal": {
       "lines": [
        {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8000,
-        "qty": 1
-       },
-       {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
-        "qty": 2
+        "price": 5400,
+        "qty": 3
        },
        {
-        "rating": 83,
+        "rating": 85,
         "rarity": "Common",
-        "score": 410,
-        "price": 650,
+        "score": 2100,
+        "price": 2900,
         "qty": 1
        }
       ],
-      "cost": 20450,
-      "score": 14110,
-      "surplus": 110,
+      "cost": 19100,
+      "score": 14400,
+      "surplus": 400,
       "players": 4
      },
      "fast": {
       "lines": [
        {
-        "rating": 90,
+        "rating": 87,
         "rarity": "Common",
-        "score": 14000,
-        "price": 30250,
+        "score": 5500,
+        "price": 8000,
+        "qty": 2
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 30250,
-      "score": 14000,
-      "surplus": 0,
-      "players": 1
+      "cost": 21400,
+      "score": 15100,
+      "surplus": 1100,
+      "players": 3
      }
     },
     "pc": {
@@ -1681,11 +1681,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 17
        }
       ],
-      "cost": 19550,
+      "cost": 15300,
       "score": 14110,
       "surplus": 110,
       "players": 17,
@@ -1694,47 +1694,47 @@
      "optimal": {
       "lines": [
        {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 10400,
-        "qty": 1
-       },
-       {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7650,
-        "qty": 2
+        "price": 7000,
+        "qty": 3
        },
        {
-        "rating": 83,
+        "rating": 85,
         "rarity": "Common",
-        "score": 410,
-        "price": 850,
+        "score": 2100,
+        "price": 3750,
         "qty": 1
        }
       ],
-      "cost": 26550,
-      "score": 14110,
-      "surplus": 110,
+      "cost": 24750,
+      "score": 14400,
+      "surplus": 400,
       "players": 4,
       "estimate": true
      },
      "fast": {
       "lines": [
        {
-        "rating": 90,
+        "rating": 87,
         "rarity": "Common",
-        "score": 14000,
-        "price": 39350,
+        "score": 5500,
+        "price": 10400,
+        "qty": 2
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 7000,
         "qty": 1
        }
       ],
-      "cost": 39350,
-      "score": 14000,
-      "surplus": 0,
-      "players": 1,
+      "cost": 27800,
+      "score": 15100,
+      "surplus": 1100,
+      "players": 3,
       "estimate": true
      }
     }
@@ -1746,9 +1746,9 @@
    "score": 5200000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/128.png",
-   "expires": "12 Days 0 Hours",
+   "expires": "12 Days 2 Hours",
    "notes": [],
-   "order": 19,
+   "order": 23,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -2103,23 +2103,52 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 6265
        },
        {
-        "rating": 66,
+        "rating": 73,
         "rarity": "Common",
         "score": 35,
+        "price": 300,
+        "qty": 1
+       },
+       {
+        "rating": 64,
+        "rarity": "Common",
+        "score": 20,
         "price": 200,
-        "qty": 2
+        "qty": 1
        }
       ],
-      "cost": 5638900,
-      "score": 5200020,
-      "surplus": 20,
+      "cost": 4386000,
+      "score": 5200005,
+      "surplus": 5,
       "players": 6267
      },
      "optimal": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 8000,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 1267
+       }
+      ],
+      "cost": 6849800,
+      "score": 5200200,
+      "surplus": 200,
+      "players": 1268
+     },
+     "fast": {
       "lines": [
        {
         "rating": 87,
@@ -2132,43 +2161,14 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
         "qty": 2
        }
       ],
-      "cost": 7563800,
+      "cost": 7562800,
       "score": 5200200,
       "surplus": 200,
       "players": 946
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 91,
-        "rarity": "Common",
-        "score": 19000,
-        "price": 48000,
-        "qty": 1
-       },
-       {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 30250,
-        "qty": 367
-       },
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 4
-       }
-      ],
-      "cost": 11232750,
-      "score": 5201000,
-      "surplus": 1000,
-      "players": 372
      }
     },
     "pc": {
@@ -2178,20 +2178,27 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 950,
         "qty": 6265
        },
        {
-        "rating": 66,
+        "rating": 73,
         "rarity": "Common",
         "score": 35,
-        "price": 250,
-        "qty": 2
+        "price": 400,
+        "qty": 1
+       },
+       {
+        "rating": 64,
+        "rarity": "Common",
+        "score": 20,
+        "price": 300,
+        "qty": 1
        }
       ],
-      "cost": 7205250,
-      "score": 5200020,
-      "surplus": 20,
+      "cost": 5952450,
+      "score": 5200005,
+      "surplus": 5,
       "players": 6267,
       "estimate": true
      },
@@ -2201,51 +2208,44 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 10400,
+        "price": 11000,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 7450,
+        "qty": 1267
+       }
+      ],
+      "cost": 9450150,
+      "score": 5200200,
+      "surplus": 200,
+      "players": 1268,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 11000,
         "qty": 944
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7650,
+        "price": 7450,
         "qty": 2
        }
       ],
-      "cost": 9832900,
+      "cost": 10398900,
       "score": 5200200,
       "surplus": 200,
       "players": 946,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 91,
-        "rarity": "Common",
-        "score": 19000,
-        "price": 62400,
-        "qty": 1
-       },
-       {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 39300,
-        "qty": 367
-       },
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 27000,
-        "qty": 4
-       }
-      ],
-      "cost": 14593500,
-      "score": 5201000,
-      "surplus": 1000,
-      "players": 372,
       "estimate": true
      }
     }
@@ -2257,9 +2257,9 @@
    "score": 17000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/148.png",
-   "expires": "15 Days 19 Hours",
+   "expires": "15 Days 18 Hours",
    "notes": [],
-   "order": 15,
+   "order": 19,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -2579,72 +2579,65 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
-        "qty": 20
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
-        "qty": 1
+        "price": 700,
+        "qty": 21
        }
       ],
-      "cost": 18650,
-      "score": 17010,
-      "surplus": 10,
+      "cost": 14700,
+      "score": 17430,
+      "surplus": 430,
       "players": 21
      },
      "optimal": {
       "lines": [
        {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 4
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       }
+      ],
+      "cost": 22300,
+      "score": 17230,
+      "surplus": 230,
+      "players": 5
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 88,
+        "rarity": "Common",
+        "score": 8300,
+        "price": 14250,
+        "qty": 1
+       },
+       {
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
         "price": 8000,
-        "qty": 2
+        "qty": 1
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
-        "qty": 1
-       },
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 2900,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 24800,
-      "score": 17200,
-      "surplus": 200,
-      "players": 4
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 1
-       },
-       {
-        "rating": 88,
-        "rarity": "Common",
-        "score": 8300,
-        "price": 13500,
-        "qty": 1
-       }
-      ],
-      "cost": 34250,
-      "score": 19300,
-      "surplus": 2300,
-      "players": 2
+      "cost": 27650,
+      "score": 17900,
+      "surplus": 900,
+      "players": 3
      }
     },
     "pc": {
@@ -2654,74 +2647,67 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
-        "qty": 20
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 850,
-        "qty": 1
+        "price": 900,
+        "qty": 21
        }
       ],
-      "cost": 23850,
-      "score": 17010,
-      "surplus": 10,
+      "cost": 18900,
+      "score": 17430,
+      "surplus": 430,
       "players": 21,
       "estimate": true
      },
      "optimal": {
       "lines": [
        {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 10300,
-        "qty": 2
-       },
-       {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7600,
-        "qty": 1
+        "price": 6950,
+        "qty": 4
        },
        {
-        "rating": 85,
+        "rating": 84,
         "rarity": "Common",
-        "score": 2100,
-        "price": 3750,
+        "score": 830,
+        "price": 900,
         "qty": 1
        }
       ],
-      "cost": 31950,
-      "score": 17200,
-      "surplus": 200,
-      "players": 4,
+      "cost": 28700,
+      "score": 17230,
+      "surplus": 230,
+      "players": 5,
       "estimate": true
      },
      "fast": {
       "lines": [
        {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 26750,
-        "qty": 1
-       },
-       {
         "rating": 88,
         "rarity": "Common",
         "score": 8300,
-        "price": 17400,
+        "price": 18400,
+        "qty": 1
+       },
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 10300,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 6950,
         "qty": 1
        }
       ],
-      "cost": 44150,
-      "score": 19300,
-      "surplus": 2300,
-      "players": 2,
+      "cost": 35650,
+      "score": 17900,
+      "surplus": 900,
+      "players": 3,
       "estimate": true
      }
     }
@@ -2735,7 +2721,7 @@
    "image": "https://futmind.com/image-generator/sbc/149.png",
    "expires": "26 Days 21 Hours",
    "notes": [],
-   "order": 5,
+   "order": 10,
    "first_seen": "2026-11-24T15:59+00:00",
    "expires_at": null,
    "reward": {
@@ -2964,20 +2950,13 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
-        "qty": 14
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
-        "qty": 1
+        "price": 700,
+        "qty": 15
        }
       ],
-      "cost": 13250,
-      "score": 12030,
-      "surplus": 30,
+      "cost": 10500,
+      "score": 12450,
+      "surplus": 450,
       "players": 15
      },
      "optimal": {
@@ -2986,11 +2965,11 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
         "qty": 3
        }
       ],
-      "cost": 17700,
+      "cost": 16200,
       "score": 12300,
       "surplus": 300,
       "players": 3
@@ -3001,18 +2980,18 @@
         "rating": 88,
         "rarity": "Common",
         "score": 8300,
-        "price": 13500,
+        "price": 14250,
         "qty": 1
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 19400,
+      "cost": 19650,
       "score": 12400,
       "surplus": 400,
       "players": 2
@@ -3025,20 +3004,13 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
-        "qty": 14
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 850,
-        "qty": 1
+        "price": 900,
+        "qty": 15
        }
       ],
-      "cost": 16950,
-      "score": 12030,
-      "surplus": 30,
+      "cost": 13500,
+      "score": 12450,
+      "surplus": 450,
       "players": 15,
       "estimate": true
      },
@@ -3048,11 +3020,11 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7600,
+        "price": 6750,
         "qty": 3
        }
       ],
-      "cost": 22800,
+      "cost": 20250,
       "score": 12300,
       "surplus": 300,
       "players": 3,
@@ -3064,18 +3036,18 @@
         "rating": 88,
         "rarity": "Common",
         "score": 8300,
-        "price": 17350,
+        "price": 17800,
         "qty": 1
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7600,
+        "price": 6750,
         "qty": 1
        }
       ],
-      "cost": 24950,
+      "cost": 24550,
       "score": 12400,
       "surplus": 400,
       "players": 2,
@@ -3092,7 +3064,7 @@
    "image": "https://futmind.com/image-generator/sbc/150.png",
    "expires": "1 Days 1 Hours",
    "notes": [],
-   "order": 12,
+   "order": 5,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -3434,11 +3406,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 181
        }
       ],
-      "cost": 162900,
+      "cost": 126700,
       "score": 150230,
       "surplus": 230,
       "players": 181
@@ -3450,42 +3422,49 @@
         "rarity": "Common",
         "score": 5500,
         "price": 8000,
-        "qty": 27
+        "qty": 2
        },
        {
-        "rating": 85,
+        "rating": 86,
         "rarity": "Common",
-        "score": 2100,
-        "price": 2900,
-        "qty": 1
+        "score": 4100,
+        "price": 5400,
+        "qty": 34
        }
       ],
-      "cost": 218900,
-      "score": 150600,
-      "surplus": 600,
-      "players": 28
+      "cost": 199600,
+      "score": 150400,
+      "surplus": 400,
+      "players": 36
      },
      "fast": {
       "lines": [
        {
-        "rating": 90,
+        "rating": 88,
         "rarity": "Common",
-        "score": 14000,
-        "price": 30250,
-        "qty": 6
+        "score": 8300,
+        "price": 14250,
+        "qty": 3
        },
        {
-        "rating": 89,
+        "rating": 87,
         "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 6
+        "score": 5500,
+        "price": 8000,
+        "qty": 22
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 1
        }
       ],
-      "cost": 306000,
+      "cost": 224150,
       "score": 150000,
       "surplus": 0,
-      "players": 12
+      "players": 26
      }
     },
     "pc": {
@@ -3495,11 +3474,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1100,
+        "price": 850,
         "qty": 181
        }
       ],
-      "cost": 199100,
+      "cost": 153850,
       "score": 150230,
       "surplus": 230,
       "players": 181,
@@ -3512,43 +3491,50 @@
         "rarity": "Common",
         "score": 5500,
         "price": 10000,
-        "qty": 27
+        "qty": 2
        },
        {
-        "rating": 85,
+        "rating": 86,
         "rarity": "Common",
-        "score": 2100,
-        "price": 3600,
-        "qty": 1
+        "score": 4100,
+        "price": 6750,
+        "qty": 34
        }
       ],
-      "cost": 273600,
-      "score": 150600,
-      "surplus": 600,
-      "players": 28,
+      "cost": 249500,
+      "score": 150400,
+      "surplus": 400,
+      "players": 36,
       "estimate": true
      },
      "fast": {
       "lines": [
        {
-        "rating": 90,
+        "rating": 88,
         "rarity": "Common",
-        "score": 14000,
-        "price": 37750,
-        "qty": 6
+        "score": 8300,
+        "price": 17750,
+        "qty": 3
        },
        {
-        "rating": 89,
+        "rating": 87,
         "rarity": "Common",
-        "score": 11000,
-        "price": 25900,
-        "qty": 6
+        "score": 5500,
+        "price": 10000,
+        "qty": 22
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 6750,
+        "qty": 1
        }
       ],
-      "cost": 381900,
+      "cost": 280000,
       "score": 150000,
       "surplus": 0,
-      "players": 12,
+      "players": 26,
       "estimate": true
      }
     }
@@ -3560,9 +3546,9 @@
    "score": 23000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/152.png",
-   "expires": "14 Days 20 Hours",
+   "expires": "14 Days 19 Hours",
    "notes": [],
-   "order": 17,
+   "order": 21,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -3847,11 +3833,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 28
        }
       ],
-      "cost": 25200,
+      "cost": 19600,
       "score": 23240,
       "surplus": 240,
       "players": 28
@@ -3869,11 +3855,11 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
         "qty": 3
        }
       ],
-      "cost": 33700,
+      "cost": 32200,
       "score": 23300,
       "surplus": 300,
       "players": 5
@@ -3881,31 +3867,24 @@
      "fast": {
       "lines": [
        {
-        "rating": 89,
+        "rating": 87,
         "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 1
-       },
-       {
-        "rating": 88,
-        "rarity": "Common",
-        "score": 8300,
-        "price": 13500,
-        "qty": 1
+        "score": 5500,
+        "price": 8000,
+        "qty": 2
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
-        "qty": 1
+        "price": 5400,
+        "qty": 3
        }
       ],
-      "cost": 40150,
-      "score": 23400,
-      "surplus": 400,
-      "players": 3
+      "cost": 32200,
+      "score": 23300,
+      "surplus": 300,
+      "players": 5
      }
     },
     "pc": {
@@ -3915,11 +3894,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1050,
+        "price": 900,
         "qty": 28
        }
       ],
-      "cost": 29400,
+      "cost": 25200,
       "score": 23240,
       "surplus": 240,
       "players": 28,
@@ -3931,18 +3910,18 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 9450,
+        "price": 10100,
         "qty": 2
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 6950,
+        "price": 6800,
         "qty": 3
        }
       ],
-      "cost": 39750,
+      "cost": 40600,
       "score": 23300,
       "surplus": 300,
       "players": 5,
@@ -3951,31 +3930,24 @@
      "fast": {
       "lines": [
        {
-        "rating": 89,
+        "rating": 87,
         "rarity": "Common",
-        "score": 11000,
-        "price": 24500,
-        "qty": 1
-       },
-       {
-        "rating": 88,
-        "rarity": "Common",
-        "score": 8300,
-        "price": 15950,
-        "qty": 1
+        "score": 5500,
+        "price": 10100,
+        "qty": 2
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 6950,
-        "qty": 1
+        "price": 6800,
+        "qty": 3
        }
       ],
-      "cost": 47400,
-      "score": 23400,
-      "surplus": 400,
-      "players": 3,
+      "cost": 40600,
+      "score": 23300,
+      "surplus": 300,
+      "players": 5,
       "estimate": true
      }
     }
@@ -3987,9 +3959,9 @@
    "score": 12000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/154.png",
-   "expires": "14 Days 22 Hours",
+   "expires": "14 Days 20 Hours",
    "notes": [],
-   "order": 16,
+   "order": 20,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -4274,20 +4246,13 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
-        "qty": 14
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
-        "qty": 1
+        "price": 700,
+        "qty": 15
        }
       ],
-      "cost": 13250,
-      "score": 12030,
-      "surplus": 30,
+      "cost": 10500,
+      "score": 12450,
+      "surplus": 450,
       "players": 15
      },
      "optimal": {
@@ -4296,11 +4261,11 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
         "qty": 3
        }
       ],
-      "cost": 17700,
+      "cost": 16200,
       "score": 12300,
       "surplus": 300,
       "players": 3
@@ -4311,18 +4276,18 @@
         "rating": 88,
         "rarity": "Common",
         "score": 8300,
-        "price": 13500,
+        "price": 14250,
         "qty": 1
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 19400,
+      "cost": 19650,
       "score": 12400,
       "surplus": 400,
       "players": 2
@@ -4335,20 +4300,13 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
-        "qty": 14
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 850,
-        "qty": 1
+        "price": 900,
+        "qty": 15
        }
       ],
-      "cost": 16950,
-      "score": 12030,
-      "surplus": 30,
+      "cost": 13500,
+      "score": 12450,
+      "surplus": 450,
       "players": 15,
       "estimate": true
      },
@@ -4358,11 +4316,11 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7600,
+        "price": 6850,
         "qty": 3
        }
       ],
-      "cost": 22800,
+      "cost": 20550,
       "score": 12300,
       "surplus": 300,
       "players": 3,
@@ -4374,18 +4332,18 @@
         "rating": 88,
         "rarity": "Common",
         "score": 8300,
-        "price": 17350,
+        "price": 18050,
         "qty": 1
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7600,
+        "price": 6850,
         "qty": 1
        }
       ],
-      "cost": 24950,
+      "cost": 24900,
       "score": 12400,
       "surplus": 400,
       "players": 2,
@@ -4400,9 +4358,9 @@
    "score": 380000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/155.png",
-   "expires": "9 Days 1 Hours",
+   "expires": "9 Days 0 Hours",
    "notes": [],
-   "order": 14,
+   "order": 18,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -4750,11 +4708,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 458
        }
       ],
-      "cost": 412200,
+      "cost": 320600,
       "score": 380140,
       "surplus": 140,
       "players": 458
@@ -4766,49 +4724,42 @@
         "rarity": "Common",
         "score": 5500,
         "price": 8000,
-        "qty": 68
+        "qty": 2
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
-        "qty": 1
-       },
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 2900,
-        "qty": 1
+        "price": 5400,
+        "qty": 90
        }
       ],
-      "cost": 552800,
-      "score": 380200,
-      "surplus": 200,
-      "players": 70
+      "cost": 502000,
+      "score": 380000,
+      "surplus": 0,
+      "players": 92
      },
      "fast": {
       "lines": [
        {
-        "rating": 90,
+        "rating": 87,
         "rarity": "Common",
-        "score": 14000,
-        "price": 30250,
-        "qty": 24
+        "score": 5500,
+        "price": 8000,
+        "qty": 67
        },
        {
-        "rating": 89,
+        "rating": 86,
         "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 4
+        "score": 4100,
+        "price": 5400,
+        "qty": 3
        }
       ],
-      "cost": 809000,
-      "score": 380000,
-      "surplus": 0,
-      "players": 28
+      "cost": 552200,
+      "score": 380800,
+      "surplus": 800,
+      "players": 70
      }
     },
     "pc": {
@@ -4818,11 +4769,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 458
        }
       ],
-      "cost": 526700,
+      "cost": 412200,
       "score": 380140,
       "surplus": 140,
       "players": 458,
@@ -4835,50 +4786,43 @@
         "rarity": "Common",
         "score": 5500,
         "price": 10400,
-        "qty": 68
+        "qty": 2
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7650,
-        "qty": 1
-       },
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 3750,
-        "qty": 1
+        "price": 7000,
+        "qty": 90
        }
       ],
-      "cost": 718600,
-      "score": 380200,
-      "surplus": 200,
-      "players": 70,
+      "cost": 650800,
+      "score": 380000,
+      "surplus": 0,
+      "players": 92,
       "estimate": true
      },
      "fast": {
       "lines": [
        {
-        "rating": 90,
+        "rating": 87,
         "rarity": "Common",
-        "score": 14000,
-        "price": 39350,
-        "qty": 24
+        "score": 5500,
+        "price": 10400,
+        "qty": 67
        },
        {
-        "rating": 89,
+        "rating": 86,
         "rarity": "Common",
-        "score": 11000,
-        "price": 27000,
-        "qty": 4
+        "score": 4100,
+        "price": 7000,
+        "qty": 3
        }
       ],
-      "cost": 1052400,
-      "score": 380000,
-      "surplus": 0,
-      "players": 28,
+      "cost": 717800,
+      "score": 380800,
+      "surplus": 800,
+      "players": 70,
       "estimate": true
      }
     }
@@ -4890,9 +4834,9 @@
    "score": 300000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/159.png",
-   "expires": "6 Days 4 Hours",
+   "expires": "5 Days 23 Hours",
    "notes": [],
-   "order": 13,
+   "order": 17,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -4907,79 +4851,58 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
-        "qty": 361
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
-        "qty": 1
+        "price": 700,
+        "qty": 362
        }
       ],
-      "cost": 325550,
-      "score": 300040,
-      "surplus": 40,
+      "cost": 253400,
+      "score": 300460,
+      "surplus": 460,
       "players": 362
      },
      "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 73
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       }
+      ],
+      "cost": 394900,
+      "score": 300130,
+      "surplus": 130,
+      "players": 74
+     },
+     "fast": {
       "lines": [
        {
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
         "price": 8000,
-        "qty": 53
+        "qty": 54
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
-        "qty": 2
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 436450,
-      "score": 300110,
-      "surplus": 110,
-      "players": 56
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 91,
-        "rarity": "Common",
-        "score": 19000,
-        "price": 48000,
-        "qty": 1
-       },
-       {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 30250,
-        "qty": 17
-       },
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 4
-       }
-      ],
-      "cost": 645250,
-      "score": 301000,
-      "surplus": 1000,
-      "players": 22
+      "cost": 437400,
+      "score": 301100,
+      "surplus": 1100,
+      "players": 55
      }
     },
     "pc": {
@@ -4989,81 +4912,60 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
-        "qty": 361
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 850,
-        "qty": 1
+        "price": 900,
+        "qty": 362
        }
       ],
-      "cost": 416000,
-      "score": 300040,
-      "surplus": 40,
+      "cost": 325800,
+      "score": 300460,
+      "surplus": 460,
       "players": 362,
       "estimate": true
      },
      "optimal": {
       "lines": [
        {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 10300,
-        "qty": 53
-       },
-       {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7600,
-        "qty": 2
+        "price": 6800,
+        "qty": 73
        },
        {
-        "rating": 83,
+        "rating": 84,
         "rarity": "Common",
-        "score": 410,
-        "price": 850,
+        "score": 830,
+        "price": 900,
         "qty": 1
        }
       ],
-      "cost": 561950,
-      "score": 300110,
-      "surplus": 110,
-      "players": 56,
+      "cost": 497300,
+      "score": 300130,
+      "surplus": 130,
+      "players": 74,
       "estimate": true
      },
      "fast": {
       "lines": [
        {
-        "rating": 91,
+        "rating": 87,
         "rarity": "Common",
-        "score": 19000,
-        "price": 61900,
+        "score": 5500,
+        "price": 10100,
+        "qty": 54
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 6800,
         "qty": 1
-       },
-       {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 39000,
-        "qty": 17
-       },
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 26750,
-        "qty": 4
        }
       ],
-      "cost": 831900,
-      "score": 301000,
-      "surplus": 1000,
-      "players": 22,
+      "cost": 552200,
+      "score": 301100,
+      "surplus": 1100,
+      "players": 55,
       "estimate": true
      }
     }
@@ -5075,9 +4977,9 @@
    "score": 6500,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/160.png",
-   "expires": "13 Days 0 Hours",
+   "expires": "12 Days 23 Hours",
    "notes": [],
-   "order": 3,
+   "order": 24,
    "first_seen": "2026-11-24T18:52+00:00",
    "expires_at": null,
    "reward": {
@@ -5092,11 +4994,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 8
        }
       ],
-      "cost": 7200,
+      "cost": 5600,
       "score": 6640,
       "surplus": 140,
       "players": 8
@@ -5107,43 +5009,36 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
         "qty": 1
        },
        {
-        "rating": 85,
+        "rating": 84,
         "rarity": "Common",
-        "score": 2100,
-        "price": 2900,
-        "qty": 1
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
-        "qty": 1
+        "score": 830,
+        "price": 700,
+        "qty": 3
        }
       ],
-      "cost": 9450,
-      "score": 6610,
-      "surplus": 110,
-      "players": 3
+      "cost": 7500,
+      "score": 6590,
+      "surplus": 90,
+      "players": 4
      },
      "fast": {
       "lines": [
        {
-        "rating": 88,
+        "rating": 86,
         "rarity": "Common",
-        "score": 8300,
-        "price": 13500,
-        "qty": 1
+        "score": 4100,
+        "price": 5400,
+        "qty": 2
        }
       ],
-      "cost": 13500,
-      "score": 8300,
-      "surplus": 1800,
-      "players": 1
+      "cost": 10800,
+      "score": 8200,
+      "surplus": 1700,
+      "players": 2
      }
     },
     "pc": {
@@ -5153,11 +5048,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 8
        }
       ],
-      "cost": 9200,
+      "cost": 7200,
       "score": 6640,
       "surplus": 140,
       "players": 8,
@@ -5169,44 +5064,37 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7650,
+        "price": 7000,
         "qty": 1
        },
        {
-        "rating": 85,
+        "rating": 84,
         "rarity": "Common",
-        "score": 2100,
-        "price": 3750,
-        "qty": 1
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 850,
-        "qty": 1
+        "score": 830,
+        "price": 900,
+        "qty": 3
        }
       ],
-      "cost": 12250,
-      "score": 6610,
-      "surplus": 110,
-      "players": 3,
+      "cost": 9700,
+      "score": 6590,
+      "surplus": 90,
+      "players": 4,
       "estimate": true
      },
      "fast": {
       "lines": [
        {
-        "rating": 88,
+        "rating": 86,
         "rarity": "Common",
-        "score": 8300,
-        "price": 17550,
-        "qty": 1
+        "score": 4100,
+        "price": 7000,
+        "qty": 2
        }
       ],
-      "cost": 17550,
-      "score": 8300,
-      "surplus": 1800,
-      "players": 1,
+      "cost": 14000,
+      "score": 8200,
+      "surplus": 1700,
+      "players": 2,
       "estimate": true
      }
     }
@@ -5218,9 +5106,9 @@
    "score": 9000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/161.png",
-   "expires": "13 Days 1 Hours",
+   "expires": "12 Days 23 Hours",
    "notes": [],
-   "order": 32,
+   "order": 36,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -5235,11 +5123,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 11
        }
       ],
-      "cost": 9900,
+      "cost": 7700,
       "score": 9130,
       "surplus": 130,
       "players": 11
@@ -5247,24 +5135,24 @@
      "optimal": {
       "lines": [
        {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8000,
-        "qty": 1
-       },
-       {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
+        "qty": 2
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
         "qty": 1
        }
       ],
-      "cost": 13900,
-      "score": 9600,
-      "surplus": 600,
-      "players": 2
+      "cost": 11500,
+      "score": 9030,
+      "surplus": 30,
+      "players": 3
      },
      "fast": {
       "lines": [
@@ -5279,11 +5167,11 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 13900,
+      "cost": 13400,
       "score": 9600,
       "surplus": 600,
       "players": 2
@@ -5296,11 +5184,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 11
        }
       ],
-      "cost": 12650,
+      "cost": 9900,
       "score": 9130,
       "surplus": 130,
       "players": 11,
@@ -5309,24 +5197,24 @@
      "optimal": {
       "lines": [
        {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 10400,
-        "qty": 1
-       },
-       {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7650,
+        "price": 6800,
+        "qty": 2
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 900,
         "qty": 1
        }
       ],
-      "cost": 18050,
-      "score": 9600,
-      "surplus": 600,
-      "players": 2,
+      "cost": 14500,
+      "score": 9030,
+      "surplus": 30,
+      "players": 3,
       "estimate": true
      },
      "fast": {
@@ -5335,18 +5223,18 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 10400,
+        "price": 10050,
         "qty": 1
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7650,
+        "price": 6800,
         "qty": 1
        }
       ],
-      "cost": 18050,
+      "cost": 16850,
       "score": 9600,
       "surplus": 600,
       "players": 2,
@@ -5361,9 +5249,9 @@
    "score": 14000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/162.png",
-   "expires": "2 Days 1 Hours",
+   "expires": "2 Days 0 Hours",
    "notes": [],
-   "order": 23,
+   "order": 28,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -5378,11 +5266,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 17
        }
       ],
-      "cost": 15300,
+      "cost": 11900,
       "score": 14110,
       "surplus": 110,
       "players": 17
@@ -5390,46 +5278,46 @@
      "optimal": {
       "lines": [
        {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 8000,
-        "qty": 1
-       },
-       {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
-        "qty": 2
+        "price": 5400,
+        "qty": 3
        },
        {
-        "rating": 83,
+        "rating": 85,
         "rarity": "Common",
-        "score": 410,
-        "price": 650,
+        "score": 2100,
+        "price": 2900,
         "qty": 1
        }
       ],
-      "cost": 20450,
-      "score": 14110,
-      "surplus": 110,
+      "cost": 19100,
+      "score": 14400,
+      "surplus": 400,
       "players": 4
      },
      "fast": {
       "lines": [
        {
-        "rating": 90,
+        "rating": 87,
         "rarity": "Common",
-        "score": 14000,
-        "price": 30250,
+        "score": 5500,
+        "price": 8000,
+        "qty": 2
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 30250,
-      "score": 14000,
-      "surplus": 0,
-      "players": 1
+      "cost": 21400,
+      "score": 15100,
+      "surplus": 1100,
+      "players": 3
      }
     },
     "pc": {
@@ -5439,11 +5327,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 17
        }
       ],
-      "cost": 19550,
+      "cost": 15300,
       "score": 14110,
       "surplus": 110,
       "players": 17,
@@ -5452,47 +5340,47 @@
      "optimal": {
       "lines": [
        {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 10000,
-        "qty": 1
-       },
-       {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7400,
-        "qty": 2
+        "price": 7000,
+        "qty": 3
        },
        {
-        "rating": 83,
+        "rating": 85,
         "rarity": "Common",
-        "score": 410,
-        "price": 800,
+        "score": 2100,
+        "price": 3750,
         "qty": 1
        }
       ],
-      "cost": 25600,
-      "score": 14110,
-      "surplus": 110,
+      "cost": 24750,
+      "score": 14400,
+      "surplus": 400,
       "players": 4,
       "estimate": true
      },
      "fast": {
       "lines": [
        {
-        "rating": 90,
+        "rating": 87,
         "rarity": "Common",
-        "score": 14000,
-        "price": 37850,
+        "score": 5500,
+        "price": 10400,
+        "qty": 2
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 7000,
         "qty": 1
        }
       ],
-      "cost": 37850,
-      "score": 14000,
-      "surplus": 0,
-      "players": 1,
+      "cost": 27800,
+      "score": 15100,
+      "surplus": 1100,
+      "players": 3,
       "estimate": true
      }
     }
@@ -5504,9 +5392,9 @@
    "score": 6000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/164.png",
-   "expires": "9 Days 0 Hours",
+   "expires": "8 Days 23 Hours",
    "notes": [],
-   "order": 25,
+   "order": 30,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -5521,20 +5409,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 7
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
+        "score": 340,
         "price": 650,
         "qty": 1
        }
       ],
-      "cost": 6950,
-      "score": 6220,
-      "surplus": 220,
+      "cost": 5550,
+      "score": 6150,
+      "surplus": 150,
       "players": 8
      },
      "optimal": {
@@ -5543,7 +5431,7 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
         "qty": 1
        },
        {
@@ -5554,7 +5442,7 @@
         "qty": 1
        }
       ],
-      "cost": 8800,
+      "cost": 8300,
       "score": 6200,
       "surplus": 200,
       "players": 2
@@ -5562,17 +5450,24 @@
      "fast": {
       "lines": [
        {
-        "rating": 88,
+        "rating": 86,
         "rarity": "Common",
-        "score": 8300,
-        "price": 13500,
+        "score": 4100,
+        "price": 5400,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2900,
         "qty": 1
        }
       ],
-      "cost": 13500,
-      "score": 8300,
-      "surplus": 2300,
-      "players": 1
+      "cost": 8300,
+      "score": 6200,
+      "surplus": 200,
+      "players": 2
      }
     },
     "pc": {
@@ -5582,20 +5477,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 7
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
-        "price": 850,
+        "score": 340,
+        "price": 800,
         "qty": 1
        }
       ],
-      "cost": 8900,
-      "score": 6220,
-      "surplus": 220,
+      "cost": 7100,
+      "score": 6150,
+      "surplus": 150,
       "players": 8,
       "estimate": true
      },
@@ -5605,18 +5500,18 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7600,
+        "price": 6800,
         "qty": 1
        },
        {
         "rating": 85,
         "rarity": "Common",
         "score": 2100,
-        "price": 3750,
+        "price": 3650,
         "qty": 1
        }
       ],
-      "cost": 11350,
+      "cost": 10450,
       "score": 6200,
       "surplus": 200,
       "players": 2,
@@ -5625,17 +5520,24 @@
      "fast": {
       "lines": [
        {
-        "rating": 88,
+        "rating": 86,
         "rarity": "Common",
-        "score": 8300,
-        "price": 17400,
+        "score": 4100,
+        "price": 6800,
+        "qty": 1
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 3650,
         "qty": 1
        }
       ],
-      "cost": 17400,
-      "score": 8300,
-      "surplus": 2300,
-      "players": 1,
+      "cost": 10450,
+      "score": 6200,
+      "surplus": 200,
+      "players": 2,
       "estimate": true
      }
     }
@@ -5647,9 +5549,9 @@
    "score": 42000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/168.png",
-   "expires": "2 Days 1 Hours",
+   "expires": "2 Days 0 Hours",
    "notes": [],
-   "order": 11,
+   "order": 16,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -5983,16 +5885,38 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 51
        }
       ],
-      "cost": 45900,
+      "cost": 35700,
       "score": 42330,
       "surplus": 330,
       "players": 51
      },
      "optimal": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 8000,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 9
+       }
+      ],
+      "cost": 56600,
+      "score": 42400,
+      "surplus": 400,
+      "players": 10
+     },
+     "fast": {
       "lines": [
        {
         "rating": 87,
@@ -6005,29 +5929,14 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 61900,
+      "cost": 61400,
       "score": 42600,
       "surplus": 600,
       "players": 8
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 30250,
-        "qty": 3
-       }
-      ],
-      "cost": 90750,
-      "score": 42000,
-      "surplus": 0,
-      "players": 3
      }
     },
     "pc": {
@@ -6037,11 +5946,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 51
        }
       ],
-      "cost": 58650,
+      "cost": 45900,
       "score": 42330,
       "surplus": 330,
       "players": 51,
@@ -6054,36 +5963,43 @@
         "rarity": "Common",
         "score": 5500,
         "price": 10400,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 7000,
+        "qty": 9
+       }
+      ],
+      "cost": 73400,
+      "score": 42400,
+      "surplus": 400,
+      "players": 10,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 10400,
         "qty": 7
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7650,
+        "price": 7000,
         "qty": 1
        }
       ],
-      "cost": 80450,
+      "cost": 79800,
       "score": 42600,
       "surplus": 600,
       "players": 8,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 39350,
-        "qty": 3
-       }
-      ],
-      "cost": 118050,
-      "score": 42000,
-      "surplus": 0,
-      "players": 3,
       "estimate": true
      }
     }
@@ -6095,9 +6011,9 @@
    "score": 420000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/169.png",
-   "expires": "16 Days 1 Hours",
+   "expires": "15 Days 23 Hours",
    "notes": [],
-   "order": 46,
+   "order": 49,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -6445,30 +6361,30 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 506
        },
        {
-        "rating": 66,
+        "rating": 64,
         "rarity": "Common",
-        "score": 35,
+        "score": 20,
         "price": 200,
         "qty": 1
        }
       ],
-      "cost": 455600,
-      "score": 420015,
-      "surplus": 15,
+      "cost": 354400,
+      "score": 420000,
+      "surplus": 0,
       "players": 507
      },
      "optimal": {
       "lines": [
        {
-        "rating": 87,
+        "rating": 86,
         "rarity": "Common",
-        "score": 5500,
-        "price": 8000,
-        "qty": 76
+        "score": 4100,
+        "price": 5400,
+        "qty": 102
        },
        {
         "rating": 85,
@@ -6478,25 +6394,32 @@
         "qty": 1
        }
       ],
-      "cost": 610900,
-      "score": 420100,
-      "surplus": 100,
-      "players": 77
+      "cost": 553700,
+      "score": 420300,
+      "surplus": 300,
+      "players": 103
      },
      "fast": {
       "lines": [
        {
-        "rating": 90,
+        "rating": 87,
         "rarity": "Common",
-        "score": 14000,
-        "price": 30250,
-        "qty": 30
+        "score": 5500,
+        "price": 8000,
+        "qty": 75
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 2
        }
       ],
-      "cost": 907500,
-      "score": 420000,
-      "surplus": 0,
-      "players": 30
+      "cost": 610800,
+      "score": 420700,
+      "surplus": 700,
+      "players": 77
      }
     },
     "pc": {
@@ -6506,60 +6429,67 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 506
        },
        {
-        "rating": 66,
+        "rating": 64,
         "rarity": "Common",
-        "score": 35,
+        "score": 20,
         "price": 250,
         "qty": 1
        }
       ],
-      "cost": 582150,
-      "score": 420015,
-      "surplus": 15,
+      "cost": 455650,
+      "score": 420000,
+      "surplus": 0,
       "players": 507,
       "estimate": true
      },
      "optimal": {
       "lines": [
        {
-        "rating": 87,
+        "rating": 86,
         "rarity": "Common",
-        "score": 5500,
-        "price": 10400,
-        "qty": 76
+        "score": 4100,
+        "price": 6800,
+        "qty": 102
        },
        {
         "rating": 85,
         "rarity": "Common",
         "score": 2100,
-        "price": 3750,
+        "price": 3650,
         "qty": 1
        }
       ],
-      "cost": 794150,
-      "score": 420100,
-      "surplus": 100,
-      "players": 77,
+      "cost": 697250,
+      "score": 420300,
+      "surplus": 300,
+      "players": 103,
       "estimate": true
      },
      "fast": {
       "lines": [
        {
-        "rating": 90,
+        "rating": 87,
         "rarity": "Common",
-        "score": 14000,
-        "price": 39300,
-        "qty": 30
+        "score": 5500,
+        "price": 10100,
+        "qty": 75
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 6800,
+        "qty": 2
        }
       ],
-      "cost": 1179000,
-      "score": 420000,
-      "surplus": 0,
-      "players": 30,
+      "cost": 771100,
+      "score": 420700,
+      "surplus": 700,
+      "players": 77,
       "estimate": true
      }
     }
@@ -6571,9 +6501,9 @@
    "score": 25000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/170.png",
-   "expires": "3 Days 1 Hours",
+   "expires": "2 Days 23 Hours",
    "notes": [],
-   "order": 9,
+   "order": 14,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -6851,72 +6781,65 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 30
        },
        {
-        "rating": 66,
+        "rating": 82,
         "rarity": "Common",
-        "score": 35,
-        "price": 200,
-        "qty": 3
+        "score": 340,
+        "price": 650,
+        "qty": 1
        }
       ],
-      "cost": 27600,
-      "score": 25005,
-      "surplus": 5,
-      "players": 33
+      "cost": 21650,
+      "score": 25240,
+      "surplus": 240,
+      "players": 31
      },
      "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 6
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 1
+       }
+      ],
+      "cost": 33100,
+      "score": 25430,
+      "surplus": 430,
+      "players": 7
+     },
+     "fast": {
       "lines": [
        {
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
         "price": 8000,
-        "qty": 3
+        "qty": 4
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
-        "qty": 2
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 36450,
-      "score": 25110,
-      "surplus": 110,
-      "players": 6
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 30250,
-        "qty": 1
-       },
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 1
-       }
-      ],
-      "cost": 51000,
-      "score": 25000,
-      "surplus": 0,
-      "players": 2
+      "cost": 37400,
+      "score": 26100,
+      "surplus": 1100,
+      "players": 5
      }
     },
     "pc": {
@@ -6926,74 +6849,67 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1100,
+        "price": 850,
         "qty": 30
        },
        {
-        "rating": 66,
+        "rating": 82,
         "rarity": "Common",
-        "score": 35,
-        "price": 250,
-        "qty": 3
+        "score": 340,
+        "price": 800,
+        "qty": 1
        }
       ],
-      "cost": 33750,
-      "score": 25005,
-      "surplus": 5,
-      "players": 33,
+      "cost": 26300,
+      "score": 25240,
+      "surplus": 240,
+      "players": 31,
       "estimate": true
      },
      "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 6700,
+        "qty": 6
+       },
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 850,
+        "qty": 1
+       }
+      ],
+      "cost": 41050,
+      "score": 25430,
+      "surplus": 430,
+      "players": 7,
+      "estimate": true
+     },
+     "fast": {
       "lines": [
        {
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
         "price": 9900,
-        "qty": 3
+        "qty": 4
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7300,
-        "qty": 2
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 800,
+        "price": 6700,
         "qty": 1
        }
       ],
-      "cost": 45100,
-      "score": 25110,
-      "surplus": 110,
-      "players": 6,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 37350,
-        "qty": 1
-       },
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 25600,
-        "qty": 1
-       }
-      ],
-      "cost": 62950,
-      "score": 25000,
-      "surplus": 0,
-      "players": 2,
+      "cost": 46300,
+      "score": 26100,
+      "surplus": 1100,
+      "players": 5,
       "estimate": true
      }
     }
@@ -7005,9 +6921,9 @@
    "score": 270000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/171.png",
-   "expires": "17 Days 1 Hours",
+   "expires": "16 Days 23 Hours",
    "notes": [],
-   "order": 8,
+   "order": 13,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -7348,72 +7264,58 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 325
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
+        "score": 340,
         "price": 650,
         "qty": 1
        }
       ],
-      "cost": 293150,
-      "score": 270160,
-      "surplus": 160,
+      "cost": 228150,
+      "score": 270090,
+      "surplus": 90,
       "players": 326
      },
      "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 66
+       }
+      ],
+      "cost": 356400,
+      "score": 270600,
+      "surplus": 600,
+      "players": 66
+     },
+     "fast": {
       "lines": [
        {
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
         "price": 8000,
-        "qty": 48
+        "qty": 47
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
-        "qty": 1
-       },
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 2900,
-        "qty": 1
-       }
-      ],
-      "cost": 392800,
-      "score": 270200,
-      "surplus": 200,
-      "players": 50
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 30250,
-        "qty": 17
-       },
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
+        "price": 5400,
         "qty": 3
        }
       ],
-      "cost": 576500,
-      "score": 271000,
-      "surplus": 1000,
-      "players": 20
+      "cost": 392200,
+      "score": 270800,
+      "surplus": 800,
+      "players": 50
      }
     },
     "pc": {
@@ -7423,74 +7325,60 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 325
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
-        "price": 850,
+        "score": 340,
+        "price": 800,
         "qty": 1
        }
       ],
-      "cost": 374600,
-      "score": 270160,
-      "surplus": 160,
+      "cost": 293300,
+      "score": 270090,
+      "surplus": 90,
       "players": 326,
       "estimate": true
      },
      "optimal": {
       "lines": [
        {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 10400,
-        "qty": 48
-       },
-       {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7650,
-        "qty": 1
-       },
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 3750,
-        "qty": 1
+        "price": 6800,
+        "qty": 66
        }
       ],
-      "cost": 510600,
-      "score": 270200,
-      "surplus": 200,
-      "players": 50,
+      "cost": 448800,
+      "score": 270600,
+      "surplus": 600,
+      "players": 66,
       "estimate": true
      },
      "fast": {
       "lines": [
        {
-        "rating": 90,
+        "rating": 87,
         "rarity": "Common",
-        "score": 14000,
-        "price": 39300,
-        "qty": 17
+        "score": 5500,
+        "price": 10100,
+        "qty": 47
        },
        {
-        "rating": 89,
+        "rating": 86,
         "rarity": "Common",
-        "score": 11000,
-        "price": 26950,
+        "score": 4100,
+        "price": 6800,
         "qty": 3
        }
       ],
-      "cost": 748950,
-      "score": 271000,
-      "surplus": 1000,
-      "players": 20,
+      "cost": 495100,
+      "score": 270800,
+      "surplus": 800,
+      "players": 50,
       "estimate": true
      }
     }
@@ -7502,9 +7390,9 @@
    "score": 80000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/186.png",
-   "expires": "5 Days 0 Hours",
+   "expires": "4 Days 23 Hours",
    "notes": [],
-   "order": 6,
+   "order": 11,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -7845,72 +7733,65 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 96
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
+        "score": 340,
         "price": 650,
         "qty": 1
        }
       ],
-      "cost": 87050,
-      "score": 80090,
-      "surplus": 90,
+      "cost": 67850,
+      "score": 80020,
+      "surplus": 20,
       "players": 97
      },
      "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 19
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2900,
+        "qty": 1
+       }
+      ],
+      "cost": 105500,
+      "score": 80000,
+      "surplus": 0,
+      "players": 20
+     },
+     "fast": {
       "lines": [
        {
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
         "price": 8000,
-        "qty": 13
+        "qty": 14
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
-        "qty": 2
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 116450,
-      "score": 80110,
-      "surplus": 110,
-      "players": 16
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 30250,
-        "qty": 1
-       },
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 6
-       }
-      ],
-      "cost": 154750,
-      "score": 80000,
-      "surplus": 0,
-      "players": 7
+      "cost": 117400,
+      "score": 81100,
+      "surplus": 1100,
+      "players": 15
      }
     },
     "pc": {
@@ -7920,74 +7801,67 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 96
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
-        "price": 850,
+        "score": 340,
+        "price": 800,
         "qty": 1
        }
       ],
-      "cost": 111250,
-      "score": 80090,
-      "surplus": 90,
+      "cost": 87200,
+      "score": 80020,
+      "surplus": 20,
       "players": 97,
       "estimate": true
      },
      "optimal": {
       "lines": [
        {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 10400,
-        "qty": 13
-       },
-       {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7650,
-        "qty": 2
+        "price": 6750,
+        "qty": 19
        },
        {
-        "rating": 83,
+        "rating": 85,
         "rarity": "Common",
-        "score": 410,
-        "price": 850,
+        "score": 2100,
+        "price": 3650,
         "qty": 1
        }
       ],
-      "cost": 151350,
-      "score": 80110,
-      "surplus": 110,
-      "players": 16,
+      "cost": 131900,
+      "score": 80000,
+      "surplus": 0,
+      "players": 20,
       "estimate": true
      },
      "fast": {
       "lines": [
        {
-        "rating": 90,
+        "rating": 87,
         "rarity": "Common",
-        "score": 14000,
-        "price": 39250,
-        "qty": 1
+        "score": 5500,
+        "price": 10050,
+        "qty": 14
        },
        {
-        "rating": 89,
+        "rating": 86,
         "rarity": "Common",
-        "score": 11000,
-        "price": 26950,
-        "qty": 6
+        "score": 4100,
+        "price": 6750,
+        "qty": 1
        }
       ],
-      "cost": 200950,
-      "score": 80000,
-      "surplus": 0,
-      "players": 7,
+      "cost": 147450,
+      "score": 81100,
+      "surplus": 1100,
+      "players": 15,
       "estimate": true
      }
     }
@@ -7999,9 +7873,9 @@
    "score": 80000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/187.png",
-   "expires": "6 Days 0 Hours",
+   "expires": "5 Days 23 Hours",
    "notes": [],
-   "order": 2,
+   "order": 9,
    "first_seen": "2026-11-24T18:52+00:00",
    "expires_at": null,
    "reward": {
@@ -8321,72 +8195,65 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 96
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
+        "score": 340,
         "price": 650,
         "qty": 1
        }
       ],
-      "cost": 87050,
-      "score": 80090,
-      "surplus": 90,
+      "cost": 67850,
+      "score": 80020,
+      "surplus": 20,
       "players": 97
      },
      "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 19
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2900,
+        "qty": 1
+       }
+      ],
+      "cost": 105500,
+      "score": 80000,
+      "surplus": 0,
+      "players": 20
+     },
+     "fast": {
       "lines": [
        {
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
         "price": 8000,
-        "qty": 13
+        "qty": 14
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
-        "qty": 2
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 116450,
-      "score": 80110,
-      "surplus": 110,
-      "players": 16
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 30250,
-        "qty": 1
-       },
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 6
-       }
-      ],
-      "cost": 154750,
-      "score": 80000,
-      "surplus": 0,
-      "players": 7
+      "cost": 117400,
+      "score": 81100,
+      "surplus": 1100,
+      "players": 15
      }
     },
     "pc": {
@@ -8396,21 +8263,455 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 96
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
-        "price": 850,
+        "score": 340,
+        "price": 800,
         "qty": 1
        }
       ],
-      "cost": 111250,
-      "score": 80090,
-      "surplus": 90,
+      "cost": 87200,
+      "score": 80020,
+      "surplus": 20,
       "players": 97,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 6800,
+        "qty": 19
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 3650,
+        "qty": 1
+       }
+      ],
+      "cost": 132850,
+      "score": 80000,
+      "surplus": 0,
+      "players": 20,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 10100,
+        "qty": 14
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 6800,
+        "qty": 1
+       }
+      ],
+      "cost": 148200,
+      "score": 81100,
+      "surplus": 1100,
+      "players": 15,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 188,
+   "name": "Asier Villalibre",
+   "score": 15000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/188.png",
+   "expires": "6 Days 23 Hours",
+   "notes": [],
+   "order": 2,
+   "first_seen": "2026-11-25T18:45+00:00",
+   "expires_at": null,
+   "reward": {
+    "kind": "player",
+    "player": {
+     "v": 4,
+     "id": 50525442,
+     "slug": "villalibre",
+     "card_image": "https://card-image.futmind.com/en/27/50525442.png",
+     "name": "Villalibre",
+     "rating": 85,
+     "position": "ST",
+     "pac": 86,
+     "sho": 86,
+     "pas": 70,
+     "dri": 81,
+     "def": 50,
+     "phy": 91,
+     "weak_foot": "4",
+     "skill_moves": "3",
+     "foot": "Left",
+     "height": "184",
+     "rarity": "Thunderstruck",
+     "detail": {
+      "Acceleration": 84,
+      "Sprint Speed": 88,
+      "Agility": 76,
+      "Balance": 90,
+      "Reactions": 85,
+      "Ball Control": 82,
+      "Dribbling": 80,
+      "Composure": 85,
+      "Attacking Position": 89,
+      "Finishing": 89,
+      "Shot Power": 92,
+      "Long Shots": 76,
+      "Volleys": 85,
+      "Penalties": 81,
+      "Interceptions": 42,
+      "Heading Accuracy": 87,
+      "Defensive Awareness": 52,
+      "Standing Tackle": 43,
+      "Sliding Tackle": 41,
+      "Vision": 70,
+      "Crossing": 53,
+      "FK Accuracy": 50,
+      "Short Pass": 85,
+      "Long Pass": 61,
+      "Curve": 75,
+      "Jumping": 96,
+      "Stamina": 83,
+      "Strength": 96,
+      "Aggression": 89
+     },
+     "positions": {
+      "CB": 63,
+      "LB": 63,
+      "RB": 66,
+      "CDM": 75,
+      "CM": 81,
+      "CAM": 79,
+      "LM": 80,
+      "RM": 80,
+      "LW": 79,
+      "RW": 87
+     },
+     "playstyles": [
+      {
+       "slug": "enforcer",
+       "plus": true,
+       "icon": {
+        "svg": "<svg height=\"100%\" preserveaspectratio=\"xMidYMid meet\" viewbox=\"0 0 506 456\" width=\"100%\"><path d=\"M500,177l-250,279L0,177,114,0h272l114,177Z\" fill=\"#FFD781\"></path></svg>"
+       }
+      },
+      {
+       "slug": "power-shot",
+       "plus": false,
+       "icon": {
+        "svg": "<svg height=\"100%\" preserveaspectratio=\"xMidYMid meet\" viewbox=\"-15 -10 550 550\" width=\"100%\"><path d=\"M256 0l256 256l-256 256l-256 -256z\" fill=\"#FFD781\"></path></svg>"
+       }
+      },
+      {
+       "slug": "precision-header",
+       "plus": false,
+       "icon": {
+        "svg": "<svg height=\"100%\" preserveaspectratio=\"xMidYMid meet\" viewbox=\"-15 -10 550 550\" width=\"100%\"><path d=\"M256 0l256 256l-256 256l-256 -256z\" fill=\"#FFD781\"></path></svg>"
+       }
+      },
+      {
+       "slug": "low-driven-shot",
+       "plus": false,
+       "icon": {
+        "svg": "<svg height=\"100%\" preserveaspectratio=\"xMidYMid meet\" viewbox=\"-15 -10 550 550\" width=\"100%\"><path d=\"M256 0l256 256l-256 256l-256 -256z\" fill=\"#FFD781\"></path></svg>"
+       }
+      },
+      {
+       "slug": "press-proven",
+       "plus": false,
+       "icon": {
+        "svg": "<svg height=\"100%\" preserveaspectratio=\"xMidYMid meet\" viewbox=\"-15 -10 550 550\" width=\"100%\"><path d=\"M256 0l256 256l-256 256l-256 -256z\" fill=\"#FFD781\"></path></svg>"
+       }
+      },
+      {
+       "slug": "bruiser",
+       "plus": false,
+       "icon": {
+        "svg": "<svg height=\"100%\" preserveaspectratio=\"xMidYMid meet\" viewbox=\"-15 -10 550 550\" width=\"100%\"><path d=\"M256 0l256 256l-256 256l-256 -256z\" fill=\"#FFD781\"></path></svg>"
+       }
+      }
+     ],
+     "league": "LALIGA EA SPORTS",
+     "nation": "Spain",
+     "club": "R. Racing Club",
+     "club_id": 456,
+     "league_id": 53,
+     "nation_id": 45,
+     "club_logo": "https://futmind.com/images/fifa2027/clubs/456.png",
+     "league_logo": "https://futmind.com/images/fifa2027/leagues/53.png",
+     "nation_logo": "https://futmind.com/images/fifa2027/nations/45.png",
+     "top": {
+      "nation": [
+       {
+        "id": 50558851,
+        "name": "Alexia Putellas",
+        "rating": 92,
+        "position": "CAM",
+        "card_image": "https://card-image.futmind.com/en/27/50558851.png"
+       },
+       {
+        "id": 117718155,
+        "name": "Lamine Yamal",
+        "rating": 92,
+        "position": "RW",
+        "card_image": "https://card-image.futmind.com/en/27/117718155.png"
+       },
+       {
+        "id": 41,
+        "name": "Iniesta",
+        "rating": 92,
+        "position": "CM",
+        "card_image": "https://card-image.futmind.com/en/27/41.png"
+       },
+       {
+        "id": 50583502,
+        "name": "Pedri",
+        "rating": 91,
+        "position": "CM",
+        "card_image": "https://card-image.futmind.com/en/27/50583502.png"
+       },
+       {
+        "id": 10535,
+        "name": "Xavi",
+        "rating": 91,
+        "position": "CM",
+        "card_image": "https://card-image.futmind.com/en/27/10535.png"
+       },
+       {
+        "id": 50573315,
+        "name": "Aitana Bonmatí",
+        "rating": 90,
+        "position": "CM",
+        "card_image": "https://card-image.futmind.com/en/27/50573315.png"
+       },
+       {
+        "id": 50568936,
+        "name": "Mariona",
+        "rating": 90,
+        "position": "CM",
+        "card_image": "https://card-image.futmind.com/en/27/50568936.png"
+       },
+       {
+        "id": 45661,
+        "name": "Raúl",
+        "rating": 90,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/45661.png"
+       },
+       {
+        "id": 5479,
+        "name": "Casillas",
+        "rating": 90,
+        "position": "GK",
+        "card_image": "https://card-image.futmind.com/en/27/5479.png"
+       },
+       {
+        "id": 231866,
+        "name": "Rodri",
+        "rating": 90,
+        "position": "CDM",
+        "card_image": "https://card-image.futmind.com/en/27/231866.png"
+       }
+      ],
+      "league": [
+       {
+        "id": 117718155,
+        "name": "Lamine Yamal",
+        "rating": 92,
+        "position": "RW",
+        "card_image": "https://card-image.futmind.com/en/27/117718155.png"
+       },
+       {
+        "id": 84117827,
+        "name": "Kylian Mbappé",
+        "rating": 92,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/84117827.png"
+       },
+       {
+        "id": 50583502,
+        "name": "Pedri",
+        "rating": 91,
+        "position": "CM",
+        "card_image": "https://card-image.futmind.com/en/27/50583502.png"
+       },
+       {
+        "id": 117692883,
+        "name": "Jude Bellingham",
+        "rating": 91,
+        "position": "CAM",
+        "card_image": "https://card-image.futmind.com/en/27/117692883.png"
+       },
+       {
+        "id": 100896715,
+        "name": "Raphinha",
+        "rating": 90,
+        "position": "CAM",
+        "card_image": "https://card-image.futmind.com/en/27/100896715.png"
+       },
+       {
+        "id": 192119,
+        "name": "Thibaut Courtois",
+        "rating": 90,
+        "position": "GK",
+        "card_image": "https://card-image.futmind.com/en/27/192119.png"
+       },
+       {
+        "id": 231866,
+        "name": "Rodri",
+        "rating": 90,
+        "position": "CDM",
+        "card_image": "https://card-image.futmind.com/en/27/231866.png"
+       },
+       {
+        "id": 238794,
+        "name": "Vini Jr.",
+        "rating": 89,
+        "position": "LW",
+        "card_image": "https://card-image.futmind.com/en/27/238794.png"
+       },
+       {
+        "id": 50597687,
+        "name": "Pubill",
+        "rating": 89,
+        "position": "CB",
+        "card_image": "https://card-image.futmind.com/en/27/50597687.png"
+       },
+       {
+        "id": 50570701,
+        "name": "Federico Valverde",
+        "rating": 88,
+        "position": "RB",
+        "card_image": "https://card-image.futmind.com/en/27/50570701.png"
+       }
+      ],
+      "club": [
+       {
+        "id": 50525442,
+        "name": "Villalibre",
+        "rating": 85,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/50525442.png"
+       },
+       {
+        "id": 246044,
+        "name": "Andrés Martín",
+        "rating": 77,
+        "position": "RW",
+        "card_image": "https://card-image.futmind.com/en/27/246044.png"
+       }
+      ]
+     }
+    }
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 18
+       },
+       {
+        "rating": 64,
+        "rarity": "Common",
+        "score": 20,
+        "price": 200,
+        "qty": 3
+       }
+      ],
+      "cost": 13200,
+      "score": 15000,
+      "surplus": 0,
+      "players": 21
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 8000,
+        "qty": 2
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 1
+       }
+      ],
+      "cost": 21400,
+      "score": 15100,
+      "surplus": 100,
+      "players": 3
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 89,
+        "rarity": "Common",
+        "score": 11000,
+        "price": 19750,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 1
+       }
+      ],
+      "cost": 25150,
+      "score": 15100,
+      "surplus": 100,
+      "players": 2
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 900,
+        "qty": 18
+       },
+       {
+        "rating": 64,
+        "rarity": "Common",
+        "score": 20,
+        "price": 250,
+        "qty": 3
+       }
+      ],
+      "cost": 16950,
+      "score": 15000,
+      "surplus": 0,
+      "players": 21,
       "estimate": true
      },
      "optimal": {
@@ -8419,51 +8720,44 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 10400,
-        "qty": 13
+        "price": 10100,
+        "qty": 2
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7650,
-        "qty": 2
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 850,
+        "price": 6800,
         "qty": 1
        }
       ],
-      "cost": 151350,
-      "score": 80110,
-      "surplus": 110,
-      "players": 16,
+      "cost": 27000,
+      "score": 15100,
+      "surplus": 100,
+      "players": 3,
       "estimate": true
      },
      "fast": {
       "lines": [
        {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 39250,
-        "qty": 1
-       },
-       {
         "rating": 89,
         "rarity": "Common",
         "score": 11000,
-        "price": 26950,
-        "qty": 6
+        "price": 24950,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 6800,
+        "qty": 1
        }
       ],
-      "cost": 200950,
-      "score": 80000,
-      "surplus": 0,
-      "players": 7,
+      "cost": 31750,
+      "score": 15100,
+      "surplus": 100,
+      "players": 2,
       "estimate": true
      }
     }
@@ -8475,9 +8769,9 @@
    "score": 375000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/189.png",
-   "expires": "16 Days 1 Hours",
+   "expires": "15 Days 23 Hours",
    "notes": [],
-   "order": 10,
+   "order": 15,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -8819,16 +9113,38 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 452
        }
       ],
-      "cost": 406800,
+      "cost": 316400,
       "score": 375160,
       "surplus": 160,
       "players": 452
      },
      "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 91
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2900,
+        "qty": 1
+       }
+      ],
+      "cost": 494300,
+      "score": 375200,
+      "surplus": 200,
+      "players": 92
+     },
+     "fast": {
       "lines": [
        {
         "rating": 87,
@@ -8841,36 +9157,14 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
         "qty": 3
        }
       ],
-      "cost": 545700,
+      "cost": 544200,
       "score": 375300,
       "surplus": 300,
       "players": 69
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 30250,
-        "qty": 26
-       },
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 1
-       }
-      ],
-      "cost": 807250,
-      "score": 375000,
-      "surplus": 0,
-      "players": 27
      }
     },
     "pc": {
@@ -8880,11 +9174,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1100,
+        "price": 900,
         "qty": 452
        }
       ],
-      "cost": 497200,
+      "cost": 406800,
       "score": 375160,
       "surplus": 160,
       "players": 452,
@@ -8893,47 +9187,47 @@
      "optimal": {
       "lines": [
        {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 6800,
+        "qty": 91
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 3650,
+        "qty": 1
+       }
+      ],
+      "cost": 622450,
+      "score": 375200,
+      "surplus": 200,
+      "players": 92,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 10000,
+        "price": 10050,
         "qty": 66
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7350,
+        "price": 6800,
         "qty": 3
        }
       ],
-      "cost": 682050,
+      "cost": 683700,
       "score": 375300,
       "surplus": 300,
       "players": 69,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 37750,
-        "qty": 26
-       },
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 25900,
-        "qty": 1
-       }
-      ],
-      "cost": 1007400,
-      "score": 375000,
-      "surplus": 0,
-      "players": 27,
       "estimate": true
      }
     }
@@ -8945,9 +9239,9 @@
    "score": 60000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/190.png",
-   "expires": "2 Days 1 Hours",
+   "expires": "2 Days 0 Hours",
    "notes": [],
-   "order": 29,
+   "order": 34,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -8962,23 +9256,45 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 72
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
+        "score": 340,
         "price": 650,
         "qty": 1
        }
       ],
-      "cost": 65450,
-      "score": 60170,
-      "surplus": 170,
+      "cost": 51050,
+      "score": 60100,
+      "surplus": 100,
       "players": 73
      },
      "optimal": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 8000,
+        "qty": 2
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 12
+       }
+      ],
+      "cost": 80800,
+      "score": 60200,
+      "surplus": 200,
+      "players": 14
+     },
+     "fast": {
       "lines": [
        {
         "rating": 87,
@@ -8992,28 +9308,6 @@
       "score": 60500,
       "surplus": 500,
       "players": 11
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 30250,
-        "qty": 2
-       },
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 3
-       }
-      ],
-      "cost": 122750,
-      "score": 61000,
-      "surplus": 1000,
-      "players": 5
      }
     },
     "pc": {
@@ -9023,20 +9317,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1100,
+        "price": 900,
         "qty": 72
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
-        "price": 800,
+        "score": 340,
+        "price": 850,
         "qty": 1
        }
       ],
-      "cost": 80000,
-      "score": 60170,
-      "surplus": 170,
+      "cost": 65650,
+      "score": 60100,
+      "surplus": 100,
       "players": 73,
       "estimate": true
      },
@@ -9046,37 +9340,37 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 9950,
-        "qty": 11
+        "price": 10400,
+        "qty": 2
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 7000,
+        "qty": 12
        }
       ],
-      "cost": 109450,
-      "score": 60500,
-      "surplus": 500,
-      "players": 11,
+      "cost": 104800,
+      "score": 60200,
+      "surplus": 200,
+      "players": 14,
       "estimate": true
      },
      "fast": {
       "lines": [
        {
-        "rating": 90,
+        "rating": 87,
         "rarity": "Common",
-        "score": 14000,
-        "price": 37650,
-        "qty": 2
-       },
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 25850,
-        "qty": 3
+        "score": 5500,
+        "price": 10400,
+        "qty": 11
        }
       ],
-      "cost": 152850,
-      "score": 61000,
-      "surplus": 1000,
-      "players": 5,
+      "cost": 114400,
+      "score": 60500,
+      "surplus": 500,
+      "players": 11,
       "estimate": true
      }
     }
@@ -9088,9 +9382,9 @@
    "score": 40000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/191.png",
-   "expires": "2 Days 1 Hours",
+   "expires": "1 Days 23 Hours",
    "notes": [],
-   "order": 28,
+   "order": 33,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -9105,43 +9399,36 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 48
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
+        "score": 340,
         "price": 650,
         "qty": 1
        }
       ],
-      "cost": 43850,
-      "score": 40250,
-      "surplus": 250,
+      "cost": 34250,
+      "score": 40180,
+      "surplus": 180,
       "players": 49
      },
      "optimal": {
       "lines": [
        {
-        "rating": 87,
+        "rating": 86,
         "rarity": "Common",
-        "score": 5500,
-        "price": 8000,
-        "qty": 7
-       },
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 2900,
-        "qty": 1
+        "score": 4100,
+        "price": 5400,
+        "qty": 10
        }
       ],
-      "cost": 58900,
-      "score": 40600,
-      "surplus": 600,
-      "players": 8
+      "cost": 54000,
+      "score": 41000,
+      "surplus": 1000,
+      "players": 10
      },
      "fast": {
       "lines": [
@@ -9149,25 +9436,25 @@
         "rating": 89,
         "rarity": "Common",
         "score": 11000,
-        "price": 20750,
+        "price": 19750,
         "qty": 1
        },
        {
         "rating": 88,
         "rarity": "Common",
         "score": 8300,
-        "price": 13500,
+        "price": 14250,
         "qty": 3
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 67150,
+      "cost": 67900,
       "score": 40000,
       "surplus": 0,
       "players": 5
@@ -9180,44 +9467,37 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 48
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
-        "price": 850,
+        "score": 340,
+        "price": 800,
         "qty": 1
        }
       ],
-      "cost": 56050,
-      "score": 40250,
-      "surplus": 250,
+      "cost": 44000,
+      "score": 40180,
+      "surplus": 180,
       "players": 49,
       "estimate": true
      },
      "optimal": {
       "lines": [
        {
-        "rating": 87,
+        "rating": 86,
         "rarity": "Common",
-        "score": 5500,
-        "price": 10400,
-        "qty": 7
-       },
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 3750,
-        "qty": 1
+        "score": 4100,
+        "price": 6800,
+        "qty": 10
        }
       ],
-      "cost": 76550,
-      "score": 40600,
-      "surplus": 600,
-      "players": 8,
+      "cost": 68000,
+      "score": 41000,
+      "surplus": 1000,
+      "players": 10,
       "estimate": true
      },
      "fast": {
@@ -9226,25 +9506,25 @@
         "rating": 89,
         "rarity": "Common",
         "score": 11000,
-        "price": 26900,
+        "price": 24900,
         "qty": 1
        },
        {
         "rating": 88,
         "rarity": "Common",
         "score": 8300,
-        "price": 17500,
+        "price": 17950,
         "qty": 3
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7650,
+        "price": 6800,
         "qty": 1
        }
       ],
-      "cost": 87050,
+      "cost": 85550,
       "score": 40000,
       "surplus": 0,
       "players": 5,
@@ -9259,9 +9539,9 @@
    "score": 200000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/192.png",
-   "expires": "3 Days 1 Hours",
+   "expires": "2 Days 23 Hours",
    "notes": [],
-   "order": 20,
+   "order": 25,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -9276,11 +9556,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 241
        }
       ],
-      "cost": 216900,
+      "cost": 168700,
       "score": 200030,
       "surplus": 30,
       "players": 241
@@ -9288,46 +9568,39 @@
      "optimal": {
       "lines": [
        {
-        "rating": 87,
+        "rating": 86,
         "rarity": "Common",
-        "score": 5500,
-        "price": 8000,
-        "qty": 36
-       },
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 2900,
-        "qty": 1
+        "score": 4100,
+        "price": 5400,
+        "qty": 49
        }
       ],
-      "cost": 290900,
-      "score": 200100,
-      "surplus": 100,
-      "players": 37
+      "cost": 264600,
+      "score": 200900,
+      "surplus": 900,
+      "players": 49
      },
      "fast": {
       "lines": [
        {
-        "rating": 90,
+        "rating": 87,
         "rarity": "Common",
-        "score": 14000,
-        "price": 30250,
-        "qty": 12
+        "score": 5500,
+        "price": 8000,
+        "qty": 35
        },
        {
-        "rating": 89,
+        "rating": 86,
         "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 3
+        "score": 4100,
+        "price": 5400,
+        "qty": 2
        }
       ],
-      "cost": 425250,
-      "score": 201000,
-      "surplus": 1000,
-      "players": 15
+      "cost": 290800,
+      "score": 200700,
+      "surplus": 700,
+      "players": 37
      }
     },
     "pc": {
@@ -9337,11 +9610,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 241
        }
       ],
-      "cost": 277150,
+      "cost": 216900,
       "score": 200030,
       "surplus": 30,
       "players": 241,
@@ -9350,47 +9623,40 @@
      "optimal": {
       "lines": [
        {
-        "rating": 87,
+        "rating": 86,
         "rarity": "Common",
-        "score": 5500,
-        "price": 10400,
-        "qty": 36
-       },
-       {
-        "rating": 85,
-        "rarity": "Common",
-        "score": 2100,
-        "price": 3750,
-        "qty": 1
+        "score": 4100,
+        "price": 6800,
+        "qty": 49
        }
       ],
-      "cost": 378150,
-      "score": 200100,
-      "surplus": 100,
-      "players": 37,
+      "cost": 333200,
+      "score": 200900,
+      "surplus": 900,
+      "players": 49,
       "estimate": true
      },
      "fast": {
       "lines": [
        {
-        "rating": 90,
+        "rating": 87,
         "rarity": "Common",
-        "score": 14000,
-        "price": 39350,
-        "qty": 12
+        "score": 5500,
+        "price": 10100,
+        "qty": 35
        },
        {
-        "rating": 89,
+        "rating": 86,
         "rarity": "Common",
-        "score": 11000,
-        "price": 27000,
-        "qty": 3
+        "score": 4100,
+        "price": 6800,
+        "qty": 2
        }
       ],
-      "cost": 553200,
-      "score": 201000,
-      "surplus": 1000,
-      "players": 15,
+      "cost": 367100,
+      "score": 200700,
+      "surplus": 700,
+      "players": 37,
       "estimate": true
      }
     }
@@ -9402,9 +9668,9 @@
    "score": 10000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/194.png",
-   "expires": "3 Days 19 Hours",
+   "expires": "3 Days 18 Hours",
    "notes": [],
-   "order": 1,
+   "order": 8,
    "first_seen": "2026-11-24T18:52+00:00",
    "expires_at": null,
    "reward": {
@@ -9703,65 +9969,58 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 12
        },
        {
-        "rating": 66,
+        "rating": 64,
         "rarity": "Common",
-        "score": 35,
+        "score": 20,
         "price": 200,
         "qty": 2
        }
       ],
-      "cost": 11200,
-      "score": 10030,
-      "surplus": 30,
+      "cost": 8800,
+      "score": 10000,
+      "surplus": 0,
       "players": 14
      },
      "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 2
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2900,
+        "qty": 1
+       }
+      ],
+      "cost": 13700,
+      "score": 10300,
+      "surplus": 300,
+      "players": 3
+     },
+     "fast": {
       "lines": [
        {
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
         "price": 8000,
-        "qty": 1
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5900,
-        "qty": 1
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
-        "qty": 1
+        "qty": 2
        }
       ],
-      "cost": 14550,
-      "score": 10010,
-      "surplus": 10,
-      "players": 3
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 1
-       }
-      ],
-      "cost": 20750,
+      "cost": 16000,
       "score": 11000,
       "surplus": 1000,
-      "players": 1
+      "players": 2
      }
     },
     "pc": {
@@ -9771,67 +10030,60 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 12
        },
        {
-        "rating": 66,
+        "rating": 64,
         "rarity": "Common",
-        "score": 35,
+        "score": 20,
         "price": 250,
         "qty": 2
        }
       ],
-      "cost": 14300,
-      "score": 10030,
-      "surplus": 30,
+      "cost": 11300,
+      "score": 10000,
+      "surplus": 0,
       "players": 14,
       "estimate": true
      },
      "optimal": {
       "lines": [
        {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 10250,
-        "qty": 1
-       },
-       {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7550,
-        "qty": 1
+        "price": 6750,
+        "qty": 2
        },
        {
-        "rating": 83,
+        "rating": 85,
         "rarity": "Common",
-        "score": 410,
-        "price": 850,
+        "score": 2100,
+        "price": 3650,
         "qty": 1
        }
       ],
-      "cost": 18650,
-      "score": 10010,
-      "surplus": 10,
+      "cost": 17150,
+      "score": 10300,
+      "surplus": 300,
       "players": 3,
       "estimate": true
      },
      "fast": {
       "lines": [
        {
-        "rating": 89,
+        "rating": 87,
         "rarity": "Common",
-        "score": 11000,
-        "price": 26600,
-        "qty": 1
+        "score": 5500,
+        "price": 10050,
+        "qty": 2
        }
       ],
-      "cost": 26600,
+      "cost": 20100,
       "score": 11000,
       "surplus": 1000,
-      "players": 1,
+      "players": 2,
       "estimate": true
      }
     }
@@ -9843,9 +10095,9 @@
    "score": 10000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/195.png",
-   "expires": "3 Days 19 Hours",
+   "expires": "3 Days 18 Hours",
    "notes": [],
-   "order": 0,
+   "order": 7,
    "first_seen": "2026-11-24T18:52+00:00",
    "expires_at": null,
    "reward": {
@@ -10130,65 +10382,58 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 12
        },
        {
-        "rating": 66,
+        "rating": 64,
         "rarity": "Common",
-        "score": 35,
+        "score": 20,
         "price": 200,
         "qty": 2
        }
       ],
-      "cost": 11200,
-      "score": 10030,
-      "surplus": 30,
+      "cost": 8800,
+      "score": 10000,
+      "surplus": 0,
       "players": 14
      },
      "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 2
+       },
+       {
+        "rating": 85,
+        "rarity": "Common",
+        "score": 2100,
+        "price": 2900,
+        "qty": 1
+       }
+      ],
+      "cost": 13700,
+      "score": 10300,
+      "surplus": 300,
+      "players": 3
+     },
+     "fast": {
       "lines": [
        {
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
         "price": 8000,
-        "qty": 1
-       },
-       {
-        "rating": 86,
-        "rarity": "Common",
-        "score": 4100,
-        "price": 5900,
-        "qty": 1
-       },
-       {
-        "rating": 83,
-        "rarity": "Common",
-        "score": 410,
-        "price": 650,
-        "qty": 1
+        "qty": 2
        }
       ],
-      "cost": 14550,
-      "score": 10010,
-      "surplus": 10,
-      "players": 3
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 1
-       }
-      ],
-      "cost": 20750,
+      "cost": 16000,
       "score": 11000,
       "surplus": 1000,
-      "players": 1
+      "players": 2
      }
     },
     "pc": {
@@ -10198,67 +10443,60 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 12
        },
        {
-        "rating": 66,
+        "rating": 64,
         "rarity": "Common",
-        "score": 35,
+        "score": 20,
         "price": 250,
         "qty": 2
        }
       ],
-      "cost": 14300,
-      "score": 10030,
-      "surplus": 30,
+      "cost": 11300,
+      "score": 10000,
+      "surplus": 0,
       "players": 14,
       "estimate": true
      },
      "optimal": {
       "lines": [
        {
-        "rating": 87,
-        "rarity": "Common",
-        "score": 5500,
-        "price": 10250,
-        "qty": 1
-       },
-       {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7550,
-        "qty": 1
+        "price": 6750,
+        "qty": 2
        },
        {
-        "rating": 83,
+        "rating": 85,
         "rarity": "Common",
-        "score": 410,
-        "price": 850,
+        "score": 2100,
+        "price": 3650,
         "qty": 1
        }
       ],
-      "cost": 18650,
-      "score": 10010,
-      "surplus": 10,
+      "cost": 17150,
+      "score": 10300,
+      "surplus": 300,
       "players": 3,
       "estimate": true
      },
      "fast": {
       "lines": [
        {
-        "rating": 89,
+        "rating": 87,
         "rarity": "Common",
-        "score": 11000,
-        "price": 26600,
-        "qty": 1
+        "score": 5500,
+        "price": 10050,
+        "qty": 2
        }
       ],
-      "cost": 26600,
+      "cost": 20100,
       "score": 11000,
       "surplus": 1000,
-      "players": 1,
+      "players": 2,
       "estimate": true
      }
     }
@@ -10270,9 +10508,9 @@
    "score": 23000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/196.png",
-   "expires": "9 Days 1 Hours",
+   "expires": "8 Days 23 Hours",
    "notes": [],
-   "order": 24,
+   "order": 29,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -10287,11 +10525,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 28
        }
       ],
-      "cost": 25200,
+      "cost": 19600,
       "score": 23240,
       "surplus": 240,
       "players": 28
@@ -10309,11 +10547,11 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
         "qty": 3
        }
       ],
-      "cost": 33700,
+      "cost": 32200,
       "score": 23300,
       "surplus": 300,
       "players": 5
@@ -10321,31 +10559,24 @@
      "fast": {
       "lines": [
        {
-        "rating": 89,
+        "rating": 87,
         "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 1
-       },
-       {
-        "rating": 88,
-        "rarity": "Common",
-        "score": 8300,
-        "price": 13500,
-        "qty": 1
+        "score": 5500,
+        "price": 8000,
+        "qty": 2
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
-        "qty": 1
+        "price": 5400,
+        "qty": 3
        }
       ],
-      "cost": 40150,
-      "score": 23400,
-      "surplus": 400,
-      "players": 3
+      "cost": 32200,
+      "score": 23300,
+      "surplus": 300,
+      "players": 5
      }
     },
     "pc": {
@@ -10355,11 +10586,11 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 28
        }
       ],
-      "cost": 32200,
+      "cost": 25200,
       "score": 23240,
       "surplus": 240,
       "players": 28,
@@ -10371,18 +10602,18 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 10300,
+        "price": 10100,
         "qty": 2
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7600,
+        "price": 6800,
         "qty": 3
        }
       ],
-      "cost": 43400,
+      "cost": 40600,
       "score": 23300,
       "surplus": 300,
       "players": 5,
@@ -10391,31 +10622,24 @@
      "fast": {
       "lines": [
        {
-        "rating": 89,
+        "rating": 87,
         "rarity": "Common",
-        "score": 11000,
-        "price": 26750,
-        "qty": 1
-       },
-       {
-        "rating": 88,
-        "rarity": "Common",
-        "score": 8300,
-        "price": 17400,
-        "qty": 1
+        "score": 5500,
+        "price": 10100,
+        "qty": 2
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7600,
-        "qty": 1
+        "price": 6800,
+        "qty": 3
        }
       ],
-      "cost": 51750,
-      "score": 23400,
-      "surplus": 400,
-      "players": 3,
+      "cost": 40600,
+      "score": 23300,
+      "surplus": 300,
+      "players": 5,
       "estimate": true
      }
     }
@@ -10427,9 +10651,9 @@
    "score": 30000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/197.png",
-   "expires": "2 Days 1 Hours",
+   "expires": "1 Days 23 Hours",
    "notes": [],
-   "order": 22,
+   "order": 27,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -10444,23 +10668,45 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 36
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
+        "score": 340,
         "price": 650,
         "qty": 1
        }
       ],
-      "cost": 33050,
-      "score": 30290,
-      "surplus": 290,
+      "cost": 25850,
+      "score": 30220,
+      "surplus": 220,
       "players": 37
      },
      "optimal": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 8000,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 6
+       }
+      ],
+      "cost": 40400,
+      "score": 30100,
+      "surplus": 100,
+      "players": 7
+     },
+     "fast": {
       "lines": [
        {
         "rating": 87,
@@ -10473,36 +10719,14 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
         "qty": 2
        }
       ],
-      "cost": 43800,
+      "cost": 42800,
       "score": 30200,
       "surplus": 200,
       "players": 6
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 2
-       },
-       {
-        "rating": 88,
-        "rarity": "Common",
-        "score": 8300,
-        "price": 13500,
-        "qty": 1
-       }
-      ],
-      "cost": 55000,
-      "score": 30300,
-      "surplus": 300,
-      "players": 3
      }
     },
     "pc": {
@@ -10512,20 +10736,20 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 36
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
-        "price": 850,
+        "score": 340,
+        "price": 800,
         "qty": 1
        }
       ],
-      "cost": 42250,
-      "score": 30290,
-      "surplus": 290,
+      "cost": 33200,
+      "score": 30220,
+      "surplus": 220,
       "players": 37,
       "estimate": true
      },
@@ -10535,44 +10759,499 @@
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 10350,
+        "price": 10100,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 6800,
+        "qty": 6
+       }
+      ],
+      "cost": 50900,
+      "score": 30100,
+      "surplus": 100,
+      "players": 7,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 10100,
         "qty": 4
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7650,
+        "price": 6800,
         "qty": 2
        }
       ],
-      "cost": 56700,
+      "cost": 54000,
       "score": 30200,
       "surplus": 200,
       "players": 6,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 198,
+   "name": "Bahoya",
+   "score": 30000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/198.png",
+   "expires": "6 Days 23 Hours",
+   "notes": [],
+   "order": 1,
+   "first_seen": "2026-11-25T18:45+00:00",
+   "expires_at": null,
+   "reward": {
+    "kind": "player",
+    "player": {
+     "v": 4,
+     "id": 67378592,
+     "slug": "jean-matteo-bahoya",
+     "card_image": "https://card-image.futmind.com/en/27/67378592.png",
+     "name": "Jean-Mattéo Bahoya",
+     "rating": 86,
+     "position": "LM",
+     "pac": 96,
+     "sho": 83,
+     "pas": 79,
+     "dri": 87,
+     "def": 56,
+     "phy": 70,
+     "weak_foot": "3",
+     "skill_moves": "4",
+     "foot": "Right",
+     "height": "180",
+     "rarity": "Thunderstruck",
+     "detail": {
+      "Acceleration": 93,
+      "Sprint Speed": 98,
+      "Agility": 89,
+      "Balance": 85,
+      "Reactions": 83,
+      "Ball Control": 85,
+      "Dribbling": 88,
+      "Composure": 83,
+      "Attacking Position": 86,
+      "Finishing": 85,
+      "Shot Power": 83,
+      "Long Shots": 82,
+      "Volleys": 67,
+      "Penalties": 75,
+      "Interceptions": 46,
+      "Heading Accuracy": 55,
+      "Defensive Awareness": 55,
+      "Standing Tackle": 62,
+      "Sliding Tackle": 66,
+      "Vision": 83,
+      "Crossing": 82,
+      "FK Accuracy": 60,
+      "Short Pass": 80,
+      "Long Pass": 75,
+      "Curve": 78,
+      "Jumping": 78,
+      "Stamina": 82,
+      "Strength": 70,
+      "Aggression": 53
+     },
+     "positions": {
+      "CB": 72,
+      "LB": 72,
+      "RB": 69,
+      "CDM": 79,
+      "CM": 85,
+      "CAM": 85,
+      "LM": 86,
+      "RM": 86,
+      "LW": 86,
+      "RW": 82
+     },
+     "playstyles": [
+      {
+       "slug": "pinged-pass",
+       "plus": false,
+       "icon": {
+        "svg": "<svg height=\"100%\" preserveaspectratio=\"xMidYMid meet\" viewbox=\"-15 -10 550 550\" width=\"100%\"><path d=\"M256 0l256 256l-256 256l-256 -256z\" fill=\"#FFD781\"></path></svg>"
+       }
+      },
+      {
+       "slug": "inventive",
+       "plus": false,
+       "icon": {
+        "svg": "<svg height=\"100%\" preserveaspectratio=\"xMidYMid meet\" viewbox=\"-15 -10 550 550\" width=\"100%\"><path d=\"M256 0l256 256l-256 256l-256 -256z\" fill=\"#FFD781\"></path></svg>"
+       }
+      },
+      {
+       "slug": "rapid",
+       "plus": false,
+       "icon": {
+        "svg": "<svg height=\"100%\" preserveaspectratio=\"xMidYMid meet\" viewbox=\"-15 -10 550 550\" width=\"100%\"><path d=\"M256 0l256 256l-256 256l-256 -256z\" fill=\"#FFD781\"></path></svg>"
+       }
+      },
+      {
+       "slug": "press-proven",
+       "plus": false,
+       "icon": {
+        "svg": "<svg height=\"100%\" preserveaspectratio=\"xMidYMid meet\" viewbox=\"-15 -10 550 550\" width=\"100%\"><path d=\"M256 0l256 256l-256 256l-256 -256z\" fill=\"#FFD781\"></path></svg>"
+       }
+      },
+      {
+       "slug": "quick-step",
+       "plus": false,
+       "icon": {
+        "svg": "<svg height=\"100%\" preserveaspectratio=\"xMidYMid meet\" viewbox=\"-15 -10 550 550\" width=\"100%\"><path d=\"M256 0l256 256l-256 256l-256 -256z\" fill=\"#FFD781\"></path></svg>"
+       }
+      }
+     ],
+     "league": "Premier League",
+     "nation": "France",
+     "club": "Leeds United",
+     "club_id": 8,
+     "league_id": 13,
+     "nation_id": 18,
+     "club_logo": "https://futmind.com/images/fifa2027/clubs/8.png",
+     "league_logo": "https://futmind.com/images/fifa2027/leagues/13.png",
+     "nation_logo": "https://futmind.com/images/fifa2027/nations/18.png",
+     "top": {
+      "nation": [
+       {
+        "id": 1397,
+        "name": "Zinedine Zidane",
+        "rating": 94,
+        "position": "CAM",
+        "card_image": "https://card-image.futmind.com/en/27/1397.png"
+       },
+       {
+        "id": 84117827,
+        "name": "Kylian Mbappé",
+        "rating": 92,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/84117827.png"
+       },
+       {
+        "id": 50563091,
+        "name": "Ousmane Dembélé",
+        "rating": 91,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/50563091.png"
+       },
+       {
+        "id": 1625,
+        "name": "Thierry Henry",
+        "rating": 91,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/1625.png"
+       },
+       {
+        "id": 84133907,
+        "name": "Michael Olise",
+        "rating": 91,
+        "position": "RW",
+        "card_image": "https://card-image.futmind.com/en/27/84133907.png"
+       },
+       {
+        "id": 84078052,
+        "name": "David Ginola",
+        "rating": 90,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/84078052.png"
+       },
+       {
+        "id": 227324,
+        "name": "Camille Abily",
+        "rating": 90,
+        "position": "CM",
+        "card_image": "https://card-image.futmind.com/en/27/227324.png"
+       },
+       {
+        "id": 50602321,
+        "name": "Warren Zaïre-Emery",
+        "rating": 89,
+        "position": "RB",
+        "card_image": "https://card-image.futmind.com/en/27/50602321.png"
+       },
+       {
+        "id": 1615,
+        "name": "Lilian Thuram",
+        "rating": 89,
+        "position": "RB",
+        "card_image": "https://card-image.futmind.com/en/27/1615.png"
+       },
+       {
+        "id": 50561206,
+        "name": "Dayot Upamecano",
+        "rating": 89,
+        "position": "CB",
+        "card_image": "https://card-image.futmind.com/en/27/50561206.png"
+       }
+      ],
+      "league": [
+       {
+        "id": 239085,
+        "name": "Erling Haaland",
+        "rating": 91,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/239085.png"
+       },
+       {
+        "id": 50543846,
+        "name": "Bruno Fernandes",
+        "rating": 90,
+        "position": "CAM",
+        "card_image": "https://card-image.futmind.com/en/27/50543846.png"
+       },
+       {
+        "id": 50562269,
+        "name": "Gianluigi Donnarumma",
+        "rating": 90,
+        "position": "GK",
+        "card_image": "https://card-image.futmind.com/en/27/50562269.png"
+       },
+       {
+        "id": 50496507,
+        "name": "Theo Walcott",
+        "rating": 90,
+        "position": "RW",
+        "card_image": "https://card-image.futmind.com/en/27/50496507.png"
+       },
+       {
+        "id": 50415142,
+        "name": "Rayan",
+        "rating": 90,
+        "position": "RM",
+        "card_image": "https://card-image.futmind.com/en/27/50415142.png"
+       },
+       {
+        "id": 50564228,
+        "name": "Gabriel",
+        "rating": 90,
+        "position": "CB",
+        "card_image": "https://card-image.futmind.com/en/27/50564228.png"
+       },
+       {
+        "id": 50499553,
+        "name": "Antonio Valencia",
+        "rating": 89,
+        "position": "RB",
+        "card_image": "https://card-image.futmind.com/en/27/50499553.png"
+       },
+       {
+        "id": 50600784,
+        "name": "Kobbie Mainoo",
+        "rating": 89,
+        "position": "CDM",
+        "card_image": "https://card-image.futmind.com/en/27/50600784.png"
+       },
+       {
+        "id": 83887281,
+        "name": "Gianfranco Zola",
+        "rating": 89,
+        "position": "ST",
+        "card_image": "https://card-image.futmind.com/en/27/83887281.png"
+       },
+       {
+        "id": 183277,
+        "name": "Eden Hazard",
+        "rating": 89,
+        "position": "LM",
+        "card_image": "https://card-image.futmind.com/en/27/183277.png"
+       }
+      ],
+      "club": [
+       {
+        "id": 67378592,
+        "name": "Jean-Mattéo Bahoya",
+        "rating": 86,
+        "position": "LM",
+        "card_image": "https://card-image.futmind.com/en/27/67378592.png"
+       },
+       {
+        "id": 67344599,
+        "name": "Ethan Ampadu",
+        "rating": 85,
+        "position": "CM",
+        "card_image": "https://card-image.futmind.com/en/27/67344599.png"
+       },
+       {
+        "id": 50553139,
+        "name": "Nico Elvedi",
+        "rating": 80,
+        "position": "CB",
+        "card_image": "https://card-image.futmind.com/en/27/50553139.png"
+       },
+       {
+        "id": 263063,
+        "name": "James Trafford",
+        "rating": 79,
+        "position": "GK",
+        "card_image": "https://card-image.futmind.com/en/27/263063.png"
+       },
+       {
+        "id": 236822,
+        "name": "Gabriel Gudmundsson",
+        "rating": 78,
+        "position": "LB",
+        "card_image": "https://card-image.futmind.com/en/27/236822.png"
+       },
+       {
+        "id": 232104,
+        "name": "Daniel James",
+        "rating": 75,
+        "position": "RW",
+        "card_image": "https://card-image.futmind.com/en/27/232104.png"
+       }
+      ]
+     }
+    }
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 36
+       },
+       {
+        "rating": 82,
+        "rarity": "Common",
+        "score": 340,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 25850,
+      "score": 30220,
+      "surplus": 220,
+      "players": 37
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 8000,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 6
+       }
+      ],
+      "cost": 40400,
+      "score": 30100,
+      "surplus": 100,
+      "players": 7
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 8000,
+        "qty": 4
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 2
+       }
+      ],
+      "cost": 42800,
+      "score": 30200,
+      "surplus": 200,
+      "players": 6
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 900,
+        "qty": 36
+       },
+       {
+        "rating": 82,
+        "rarity": "Common",
+        "score": 340,
+        "price": 800,
+        "qty": 1
+       }
+      ],
+      "cost": 33200,
+      "score": 30220,
+      "surplus": 220,
+      "players": 37,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 10050,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 6800,
+        "qty": 6
+       }
+      ],
+      "cost": 50850,
+      "score": 30100,
+      "surplus": 100,
+      "players": 7,
       "estimate": true
      },
      "fast": {
       "lines": [
        {
-        "rating": 89,
+        "rating": 87,
         "rarity": "Common",
-        "score": 11000,
-        "price": 26900,
-        "qty": 2
+        "score": 5500,
+        "price": 10050,
+        "qty": 4
        },
        {
-        "rating": 88,
+        "rating": 86,
         "rarity": "Common",
-        "score": 8300,
-        "price": 17500,
-        "qty": 1
+        "score": 4100,
+        "price": 6800,
+        "qty": 2
        }
       ],
-      "cost": 71300,
-      "score": 30300,
-      "surplus": 300,
-      "players": 3,
+      "cost": 53800,
+      "score": 30200,
+      "surplus": 200,
+      "players": 6,
       "estimate": true
      }
     }
@@ -10584,9 +11263,9 @@
    "score": 250000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/199.png",
-   "expires": "18 Days 0 Hours",
+   "expires": "17 Days 23 Hours",
    "notes": [],
-   "order": 7,
+   "order": 12,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -10906,23 +11585,38 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 301
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
+        "score": 340,
         "price": 650,
         "qty": 1
        }
       ],
-      "cost": 271550,
-      "score": 250240,
-      "surplus": 240,
+      "cost": 211350,
+      "score": 250170,
+      "surplus": 170,
       "players": 302
      },
      "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 61
+       }
+      ],
+      "cost": 329400,
+      "score": 250100,
+      "surplus": 100,
+      "players": 61
+     },
+     "fast": {
       "lines": [
        {
         "rating": 87,
@@ -10935,36 +11629,14 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
         "qty": 2
        }
       ],
-      "cost": 363800,
+      "cost": 362800,
       "score": 250200,
       "surplus": 200,
       "players": 46
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 30250,
-        "qty": 14
-       },
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 5
-       }
-      ],
-      "cost": 527250,
-      "score": 251000,
-      "surplus": 1000,
-      "players": 19
      }
     },
     "pc": {
@@ -10974,67 +11646,60 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 301
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
-        "price": 850,
+        "score": 340,
+        "price": 800,
         "qty": 1
        }
       ],
-      "cost": 347000,
-      "score": 250240,
-      "surplus": 240,
+      "cost": 271700,
+      "score": 250170,
+      "surplus": 170,
       "players": 302,
       "estimate": true
      },
      "optimal": {
       "lines": [
        {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 6750,
+        "qty": 61
+       }
+      ],
+      "cost": 411750,
+      "score": 250100,
+      "surplus": 100,
+      "players": 61,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
         "rating": 87,
         "rarity": "Common",
         "score": 5500,
-        "price": 10400,
+        "price": 10050,
         "qty": 44
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7650,
+        "price": 6750,
         "qty": 2
        }
       ],
-      "cost": 472900,
+      "cost": 455700,
       "score": 250200,
       "surplus": 200,
       "players": 46,
-      "estimate": true
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 39300,
-        "qty": 14
-       },
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 26950,
-        "qty": 5
-       }
-      ],
-      "cost": 684950,
-      "score": 251000,
-      "surplus": 1000,
-      "players": 19,
       "estimate": true
      }
     }
@@ -11046,9 +11711,9 @@
    "score": 500000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/200.png",
-   "expires": "18 Days 1 Hours",
+   "expires": "17 Days 23 Hours",
    "notes": [],
-   "order": 45,
+   "order": 48,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -11063,23 +11728,38 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 602
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
+        "score": 340,
         "price": 650,
         "qty": 1
        }
       ],
-      "cost": 542450,
-      "score": 500070,
-      "surplus": 70,
+      "cost": 422050,
+      "score": 500000,
+      "surplus": 0,
       "players": 603
      },
      "optimal": {
+      "lines": [
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 122
+       }
+      ],
+      "cost": 658800,
+      "score": 500200,
+      "surplus": 200,
+      "players": 122
+     },
+     "fast": {
       "lines": [
        {
         "rating": 87,
@@ -11093,28 +11773,6 @@
       "score": 500500,
       "surplus": 500,
       "players": 91
-     },
-     "fast": {
-      "lines": [
-       {
-        "rating": 90,
-        "rarity": "Common",
-        "score": 14000,
-        "price": 30250,
-        "qty": 31
-       },
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 20750,
-        "qty": 6
-       }
-      ],
-      "cost": 1062250,
-      "score": 500000,
-      "surplus": 0,
-      "players": 37
      }
     },
     "pc": {
@@ -11124,60 +11782,53 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 602
        },
        {
-        "rating": 83,
+        "rating": 82,
         "rarity": "Common",
-        "score": 410,
-        "price": 850,
+        "score": 340,
+        "price": 800,
         "qty": 1
        }
       ],
-      "cost": 693150,
-      "score": 500070,
-      "surplus": 70,
+      "cost": 542600,
+      "score": 500000,
+      "surplus": 0,
       "players": 603,
       "estimate": true
      },
      "optimal": {
       "lines": [
        {
-        "rating": 87,
+        "rating": 86,
         "rarity": "Common",
-        "score": 5500,
-        "price": 10300,
-        "qty": 91
+        "score": 4100,
+        "price": 6800,
+        "qty": 122
        }
       ],
-      "cost": 937300,
-      "score": 500500,
-      "surplus": 500,
-      "players": 91,
+      "cost": 829600,
+      "score": 500200,
+      "surplus": 200,
+      "players": 122,
       "estimate": true
      },
      "fast": {
       "lines": [
        {
-        "rating": 90,
+        "rating": 87,
         "rarity": "Common",
-        "score": 14000,
-        "price": 39000,
-        "qty": 31
-       },
-       {
-        "rating": 89,
-        "rarity": "Common",
-        "score": 11000,
-        "price": 26750,
-        "qty": 6
+        "score": 5500,
+        "price": 10100,
+        "qty": 91
        }
       ],
-      "cost": 1369500,
-      "score": 500000,
-      "surplus": 0,
-      "players": 37,
+      "cost": 919100,
+      "score": 500500,
+      "surplus": 500,
+      "players": 91,
       "estimate": true
      }
     }
@@ -11189,9 +11840,9 @@
    "score": 15000,
    "min_rating": 45,
    "image": "https://futmind.com/image-generator/sbc/201.png",
-   "expires": "2 Days 2 Hours",
+   "expires": "2 Days 0 Hours",
    "notes": [],
-   "order": 26,
+   "order": 31,
    "first_seen": "2026-11-24T06:00+00:00",
    "expires_at": null,
    "reward": {
@@ -11206,21 +11857,21 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 900,
+        "price": 700,
         "qty": 18
        },
        {
-        "rating": 66,
+        "rating": 64,
         "rarity": "Common",
-        "score": 35,
+        "score": 20,
         "price": 200,
-        "qty": 2
+        "qty": 3
        }
       ],
-      "cost": 16600,
-      "score": 15010,
-      "surplus": 10,
-      "players": 20
+      "cost": 13200,
+      "score": 15000,
+      "surplus": 0,
+      "players": 21
      },
      "optimal": {
       "lines": [
@@ -11235,11 +11886,11 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 21900,
+      "cost": 21400,
       "score": 15100,
       "surplus": 100,
       "players": 3
@@ -11250,18 +11901,18 @@
         "rating": 89,
         "rarity": "Common",
         "score": 11000,
-        "price": 20750,
+        "price": 19750,
         "qty": 1
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 5900,
+        "price": 5400,
         "qty": 1
        }
       ],
-      "cost": 26650,
+      "cost": 25150,
       "score": 15100,
       "surplus": 100,
       "players": 2
@@ -11274,21 +11925,21 @@
         "rating": 84,
         "rarity": "Common",
         "score": 830,
-        "price": 1150,
+        "price": 900,
         "qty": 18
        },
        {
-        "rating": 66,
+        "rating": 64,
         "rarity": "Common",
-        "score": 35,
+        "score": 20,
         "price": 250,
-        "qty": 2
+        "qty": 3
        }
       ],
-      "cost": 21200,
-      "score": 15010,
-      "surplus": 10,
-      "players": 20,
+      "cost": 16950,
+      "score": 15000,
+      "surplus": 0,
+      "players": 21,
       "estimate": true
      },
      "optimal": {
@@ -11304,11 +11955,11 @@
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7600,
+        "price": 6950,
         "qty": 1
        }
       ],
-      "cost": 28200,
+      "cost": 27550,
       "score": 15100,
       "surplus": 100,
       "players": 3,
@@ -11320,21 +11971,178 @@
         "rating": 89,
         "rarity": "Common",
         "score": 11000,
-        "price": 26750,
+        "price": 25400,
         "qty": 1
        },
        {
         "rating": 86,
         "rarity": "Common",
         "score": 4100,
-        "price": 7600,
+        "price": 6950,
         "qty": 1
        }
       ],
-      "cost": 34350,
+      "cost": 32350,
       "score": 15100,
       "surplus": 100,
       "players": 2,
+      "estimate": true
+     }
+    }
+   }
+  },
+  {
+   "id": 216,
+   "name": "UEFA Road to the Knockouts Upgrade",
+   "score": 30000,
+   "min_rating": 45,
+   "image": "https://futmind.com/image-generator/sbc/216.png",
+   "expires": "4 Days 23 Hours",
+   "notes": [],
+   "order": 0,
+   "first_seen": "2026-11-25T18:45+00:00",
+   "expires_at": null,
+   "reward": {
+    "kind": "pack",
+    "player": null
+   },
+   "builds": {
+    "console": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 700,
+        "qty": 36
+       },
+       {
+        "rating": 82,
+        "rarity": "Common",
+        "score": 340,
+        "price": 650,
+        "qty": 1
+       }
+      ],
+      "cost": 25850,
+      "score": 30220,
+      "surplus": 220,
+      "players": 37
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 8000,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 6
+       }
+      ],
+      "cost": 40400,
+      "score": 30100,
+      "surplus": 100,
+      "players": 7
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 8000,
+        "qty": 4
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 5400,
+        "qty": 2
+       }
+      ],
+      "cost": 42800,
+      "score": 30200,
+      "surplus": 200,
+      "players": 6
+     }
+    },
+    "pc": {
+     "cheap": {
+      "lines": [
+       {
+        "rating": 84,
+        "rarity": "Common",
+        "score": 830,
+        "price": 900,
+        "qty": 36
+       },
+       {
+        "rating": 82,
+        "rarity": "Common",
+        "score": 340,
+        "price": 800,
+        "qty": 1
+       }
+      ],
+      "cost": 33200,
+      "score": 30220,
+      "surplus": 220,
+      "players": 37,
+      "estimate": true
+     },
+     "optimal": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 10100,
+        "qty": 1
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 6800,
+        "qty": 6
+       }
+      ],
+      "cost": 50900,
+      "score": 30100,
+      "surplus": 100,
+      "players": 7,
+      "estimate": true
+     },
+     "fast": {
+      "lines": [
+       {
+        "rating": 87,
+        "rarity": "Common",
+        "score": 5500,
+        "price": 10100,
+        "qty": 4
+       },
+       {
+        "rating": 86,
+        "rarity": "Common",
+        "score": 4100,
+        "price": 6800,
+        "qty": 2
+       }
+      ],
+      "cost": 54000,
+      "score": 30200,
+      "surplus": 200,
+      "players": 6,
       "estimate": true
      }
     }
