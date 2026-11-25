@@ -136,8 +136,15 @@
   .cardstage { display: grid; place-items: center; padding: 20px 12px; border-radius: 20px; background: radial-gradient(circle at 50% 35%, var(--accent-soft), transparent 70%), var(--surface-2); }
   .cardimg { width: clamp(150px, 52vw, 230px); height: auto; filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.28)); }
   .psg { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); gap: 8px; }
-  .ps { display: flex; align-items: center; gap: 10px; min-width: 0; background: var(--surface-2); border-radius: 14px; padding: 9px 12px; font-weight: 700; font-size: 0.82rem; }
-  .ps svg { width: 22px; height: 22px; flex: none; stroke: var(--accent); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .ps { display: flex; align-items: center; gap: 10px; min-width: 0; background: var(--surface-2); border-radius: 14px; padding: 9px 12px; box-shadow: inset 0 0 0 1.5px #aeb5bf; }
+  .ps.plus { background: linear-gradient(135deg, rgba(240, 190, 60, 0.28), var(--surface-2) 70%); box-shadow: inset 0 0 0 1.5px #d6a21c; }
+  .psi { width: 28px; height: 28px; flex: none; display: grid; place-items: center; }
+  .psi img, .psi > svg { width: 100%; height: 100%; object-fit: contain; }
+  .ps .psi > svg:not([fill]) { stroke: var(--accent); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .psn { min-width: 0; display: flex; flex-direction: column; }
+  .psn b { font-weight: 700; font-size: 0.82rem; overflow-wrap: anywhere; }
+  .psn small { font-size: 0.66rem; font-weight: 700; color: #8a919c; }
+  .ps.plus small { color: #b98a10; }
   .warn { margin: 0; padding: 10px 14px; border-radius: 14px; background: var(--accent-soft); color: var(--fg); font-size: 0.85rem; font-weight: 600; }
   .plhead { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 14px 16px; align-items: center; }
   .plrate { font-size: 3.4rem; font-weight: 800; letter-spacing: -0.06em; line-height: 0.9; color: var(--accent); }
@@ -382,8 +389,14 @@
     // Рейтинг по позициям временно скрыт (блок оставлен на случай, если понадобится):
     // var pos = Object.keys(pl.positions || {}).map(function (k) { return '<span class="chip big">' + k + ' ' + pl.positions[k] + '</span>'; }).join('');
     var styles = (pl.playstyles || []).map(function (k) {
-      var slug = String(k).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-      return '<div class="ps"><svg viewBox="0 0 24 24" aria-hidden="true">' + PS_ICON[psCat(slug)] + '</svg><span>' + esc(PS_NAME[slug] || slug.replace(/-/g, " ").replace(/\b\w/g, function (c) { return c.toUpperCase(); })) + '</span></div>';
+      var o = typeof k === "string" ? { slug: k, plus: false, icon: null } : k;
+      var slug = String(o.slug).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+      var ic;
+      if (o.icon && o.icon.svg) ic = '<span class="psi">' + o.icon.svg + '</span>';
+      else if (o.icon && o.icon.src) ic = '<span class="psi"><img src="' + esc(o.icon.src) + '" alt="" loading="lazy"></span>';
+      else ic = '<span class="psi"><svg viewBox="0 0 24 24" aria-hidden="true">' + PS_ICON[psCat(slug)] + '</svg></span>';
+      var nm = PS_NAME[slug] || slug.replace(/-/g, " ").replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+      return '<div class="ps' + (o.plus ? ' plus' : '') + '">' + ic + '<span class="psn"><b>' + esc(nm) + '</b><small>' + (o.plus ? 'PlayStyle+ · золото' : 'PlayStyle · серебро') + '</small></span></div>';
     }).join('');
     var topLabel = { nation: "Сборная", league: "Лига", club: "Клуб" };
     var names = { nation: pl.nation, league: pl.league, club: pl.club || "" };
@@ -502,14 +515,14 @@
   function sqLoad(cb) {
     if (SQ.db !== null) return cb();
     fetch("players.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (j) {
-      var list = j.p.map(function (r) { return { id: r[0], name: r[1], rating: r[2], pos: r[3], sp: r[4], club: r[5], league: r[6], nation: r[7], rarity: r[8], pc: r[10] || 0 }; });
+      var list = j.p.map(function (r) { return { id: r[0], name: r[1], rating: r[2], pos: r[3], sp: r[4], club: r[5], league: r[6], nation: r[7], rarity: r[8], pc: r[10] || 0, leg: /icon|hero|legend|hall of fut/i.test(r[8] || "") }; });
       var byName = {};
       list.forEach(function (p) { (byName[p.name] = byName[p.name] || []).push(p); });
       SQ.db = { list: list, names: { club: j.clubs || {}, league: j.leagues || {}, nation: j.nations || {} }, byName: byName };
       cb();
     }).catch(function () { SQ.db = false; cb(); });
   }
-  function sqName(kind, id) { return (SQ.db.names[kind] || {})[String(id)] || ("#" + id); }
+  function sqName(kind, id) { return (SQ.db.names[kind] || {})[String(id)] || ({ club: "Клуб", league: "Лига", nation: "Нация" }[kind] + " №" + id); }
   function tier(n, a, b, c) { return n >= c ? 3 : n >= b ? 2 : n >= a ? 1 : 0; }
   function chemList(sq) {
     var c = {}, l = {}, n = {};
@@ -528,7 +541,7 @@
       if (SQ.former) (SQ.db.byName[a.name] || []).forEach(function (p) { th.clubs[p.club] = 1; });
     });
     function themed(p) { return (th.clubs[p.club] ? 1.5 : 0) + (th.nations[p.nation] ? 1 : 0) + (th.leagues[p.league] ? 0.5 : 0); }
-    function key(p) { return kind === "budget" ? p.rating * 0.5 - pscore(p) * 3 + themed(p) * 6 : p.rating + p.sp * 4 + themed(p) * 6; }
+    function key(p) { var lg = p.leg ? 14 : 0, sp = p.sp && !p.leg ? 4 : 0; return kind === "budget" ? p.rating * 0.5 - pscore(p) * 3 + themed(p) * 6 - lg : p.rating + sp + themed(p) * 6 - lg; }
     var byPos = {}, cache = {};
     pool.forEach(function (p) { (byPos[p.pos] = byPos[p.pos] || []).push(p); });
     Object.keys(byPos).forEach(function (k) { byPos[k].sort(function (a, b) { return key(b) - key(a); }); });
@@ -542,16 +555,17 @@
       out.sort(function (a, b) { return key(b) - key(a); });
       return (cache[slot] = out);
     }
+    var anchorIds = {};
+    anchors.forEach(function (a) { anchorIds[a.id] = 1; });
     function objective(sq) {
       if (sq.some(function (p) { return !p; })) return -1e9;
-      var ch = chemList(sq), tot = 0, rat = 0, sp = 0, th_ = 0, pr = 0, names = {}, dup = 0;
-      sq.forEach(function (p, i) { tot += ch[i]; rat += p.rating; sp += p.sp; th_ += themed(p); pr += pscore(p); if (names[p.name]) dup++; names[p.name] = 1; });
-      return kind === "budget" ? tot * 3 + rat / 11 * 0.6 - pr * 1.1 + th_ * 0.5 - dup * 100 : tot * 3 + rat / 11 + sp * 0.8 + th_ * 0.6 - dup * 100;
+      var ch = chemList(sq), tot = 0, rat = 0, sp = 0, th_ = 0, pr = 0, names = {}, dup = 0, legs = 0;
+      sq.forEach(function (p, i) { tot += ch[i]; rat += p.rating; sp += (p.sp && !p.leg ? 1 : 0); th_ += themed(p); pr += pscore(p); if (names[p.name]) dup++; names[p.name] = 1; if (p.leg && !anchorIds[p.id]) legs++; });
+      if (legs > 1) dup += legs - 1;
+      return kind === "budget" ? tot * 3 + rat / 11 * 0.6 - pr * 1.1 + th_ * 0.5 - dup * 100 - legs * 6 : tot * 3 + rat / 11 + sp * 0.8 + th_ * 0.6 - dup * 100 - legs * 6;
     }
     function tryForm(f, gi, si) {
       var slots = [].concat.apply([], FORMS[f]), n = slots.length, best = null, bestV = -1e9, it;
-      var anchorIds = {};
-      anchors.forEach(function (a) { anchorIds[a.id] = 1; });
       for (it = 0; it < gi; it++) {
         var sq = new Array(n), used = {}, taken = {}, ok = true;
         anchors.slice().sort(function () { return Math.random() - 0.5; }).forEach(function (a) {
@@ -563,7 +577,8 @@
         });
         if (!ok) return null;
         slots.map(function (_, k) { return k; }).filter(function (k) { return !taken[k]; }).sort(function () { return Math.random() - 0.5; }).forEach(function (k) {
-          var cs = cands(slots[k]).filter(function (p) { return !used[p.name]; });
+          var legUsed = sq.filter(function (p) { return p && p.leg && !anchorIds[p.id]; }).length;
+          var cs = cands(slots[k]).filter(function (p) { return !used[p.name] && !(p.leg && legUsed >= 1); });
           if (!cs.length) return;
           var cc = {}, nn = {}, ll = {};
           sq.forEach(function (p) { if (p) { cc[p.club] = (cc[p.club] || 0) + 1; nn[p.nation] = (nn[p.nation] || 0) + 1; ll[p.league] = (ll[p.league] || 0) + 1; } });
@@ -615,7 +630,7 @@
     if (res.error) return '<section class="panel"><h3>' + title + '</h3><p class="none">' + esc(res.error) + '</p></section>';
     var total = res.chem.reduce(function (a, b) { return a + b; }, 0);
     var avg = Math.round(res.squad.reduce(function (a, p) { return a + p.rating; }, 0) / 11 * 10) / 10;
-    var sp = res.squad.filter(function (p) { return p.sp; }).length;
+    var sp = res.squad.filter(function (p) { return p.sp && !p.leg; }).length, lg = res.squad.filter(function (p) { return p.leg; }).length;
     var capSum = res.squad.reduce(function (a, p) { return a + (p.pc || 0); }, 0), unk = res.squad.filter(function (p) { return !p.pc; }).length;
     var i = 0, rows = FORMS[res.form].map(function (row) {
       return '<div class="prow">' + row.map(function () {
@@ -624,7 +639,7 @@
         return '<div class="pc"><div class="pimg"><span class="pr">' + p.rating + '</span><span class="pp2">' + esc(p.pos) + '</span>' + imgTag("https://card-image.futmind.com/en/27/" + p.id + ".png") + '</div><b>' + esc(p.name) + '</b><span class="pips">' + pips + '</span></div>';
       }).join('') + '</div>';
     }).join('');
-    return '<section class="panel"><h3>' + title + '</h3><p class="hint">' + note + '</p><div class="row sum"><span class="chip big">Схема ' + esc(res.form) + '</span><span class="chip big">Сыгранность ' + total + '/33</span><span class="chip big">Средний рейтинг ' + avg + '</span><span class="chip big">Особых карт ' + sp + '</span>' +
+    return '<section class="panel"><h3>' + title + '</h3><p class="hint">' + note + '</p><div class="row sum"><span class="chip big">Схема ' + esc(res.form) + '</span><span class="chip big">Сыгранность ' + total + '/33</span><span class="chip big">Средний рейтинг ' + avg + '</span><span class="chip big">Особых карт ' + sp + '</span>' + (lg ? '<span class="chip big">Героев/Легенд ' + lg + '</span>' : '') +
       (capSum ? '<span class="chip big">Цена до ' + sqFmtPrice(capSum) + (unk ? ' + ещё ' + unk + ' без оценки' : '') + '</span>' : '') + '</div>' +
       '<div class="pitch">' + rows + '</div><h3>Связи в составе</h3><div class="row">' + (sqSummary(res) || '<span class="none">Явных связей нет.</span>') + '</div></section>';
   }
