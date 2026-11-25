@@ -20,6 +20,10 @@ FAST_COST_CAP = 2.0  # режим fast: итог не дороже, чем в 2 
 OPT_PENALTY = 1.5  # режим optimal: «стоимость» одной сданной карты = 1.5 цены самой выгодной карты
 
 
+# обычные карты; особые (TOTW, Ultimate Scream, Icon, Hero и т. д.) в быстрых режимах не используем
+PLAIN = {"common", "rare", "gold", "silver", "bronze", "rare gold", "rare silver", "rare bronze", "common gold", "common silver", "common bronze"}
+
+
 def _pareto(cards):
     """Убирает карты, которые хуже другой (меньше очков и не дешевле)."""
     cards = sorted(cards, key=lambda c: (c["price"], -c["score"]))
@@ -39,7 +43,8 @@ def _run(pool, target, penalty, by_count=False):
         score = lambda cnt, cost: (cnt, cost)
     else:
         best = min(pool, key=lambda c: (c["price"] + penalty) / c["score"])
-        score = lambda cnt, cost: cost + penalty * cnt
+        # при penalty=0 не умножаем на счётчик: inf * 0 дало бы nan и сломало сравнения
+        score = (lambda cnt, cost: cost + penalty * cnt) if penalty else (lambda cnt, cost: cost)
 
     bulk = 0
     if target > WINDOW + best["score"]:
@@ -92,9 +97,12 @@ def solve(cards, target, min_rating=0, mode="cheap"):
     pool = [c for c in cards if c["rating"] >= min_rating and c["score"] > 0 and c["price"] > 0]
     if not pool or target <= 0:
         return None
+    plain = [c for c in pool if (c["rarity"] or "").strip().lower() in PLAIN]
+    if mode != "cheap" and plain:
+        pool = plain
     pool = _pareto(pool)
     base = min(pool, key=lambda c: c["price"] / c["score"])["price"]  # цена самой выгодной по монетам карты
-    cheap = _build(pool, target, 0)
+    cheap = _build(pool, target, 0)  # для сравнения в режимах optimal/fast
     if mode == "cheap":
         return cheap
     if mode == "optimal":
