@@ -16,6 +16,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import unquote
 
+from urllib.parse import parse_qs, unquote, urlparse
+from urllib.request import Request, urlopen
+
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
@@ -95,7 +98,7 @@ ALIASES = {
 }
 GROUP_NAMES = [("pac", "Pace"), ("sho", "Shooting"), ("pas", "Passing"), ("dri", "Dribbling"), ("def", "Defending"), ("phy", "Physicality")]
 POSITIONS = ["GK", "CB", "LB", "RB", "LWB", "RWB", "CDM", "CM", "CAM", "LM", "RM", "LW", "RW", "CF", "ST"]
-PLAYER_V = 3  # версия разбора карточки игрока: у старых записей из кэша данные перечитываются
+PLAYER_V = 4  # версия разбора карточки игрока: у старых записей из кэша данные перечитываются
 
 
 def logo_name(soup, folder):
@@ -120,11 +123,34 @@ def load_club_names():
         return {}
 
 
+def api_club_name(cid):
+    """Название клуба по id через публичный список рейтингов EA (проверяем, что id совпал)."""
+    for param in ("team", "teams"):
+        try:
+            req = Request(f"https://drop-api.ea.com/rating/ea-sports-fc?locale=en&limit=5&offset=0&{param}={cid}",
+                          headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"})
+            data = json.loads(urlopen(req, timeout=20).read().decode("utf-8"))
+        except Exception:
+            continue
+        for it in data.get("items", []):
+            t = it.get("team") or {}
+            if str(t.get("id")) == str(cid) and t.get("label"):
+                return t["label"]
+    return None
+
+
 def resolve_club_names(page, players, names, limit=40):
     """Названия клубов: futmind показывает клуб только логотипом, поэтому берём название со страницы
     игрока на ea.com (поле Team) и связываем с id по логотипу клуба на той же странице (…/l<id>.png).
     Сохраняем в club_names.json: каждый клуб достаточно узнать один раз."""
     tried, done = {}, 0
+    for cid in sorted({str(p["club_id"]) for p in players if p.get("club_id")} - set(names))[:150]:
+        nm = api_club_name(cid)
+        if nm:
+            names[cid] = nm
+            done += 1
+        time.sleep(0.3)
+    log(f"  клубы: названий известно {len(names)}")
     # сначала базовые карточки (их клуб совпадает с клубом на ea.com), потом остальные
     ordered = sorted((p for p in players if p.get("club_id") and p.get("id") and p.get("slug")),
                      key=lambda p: int(p["id"]) >= (1 << 24))
@@ -151,6 +177,31 @@ def resolve_club_names(page, players, names, limit=40):
     if done:
         CLUB_NAMES.write_text(json.dumps(names, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
     return names
+
+
+def clean_svg(svg):
+    """Встроенная иконка: без скриптов и обработчиков событий."""
+    out = re.sub(r"<script.*?</script>", "", str(svg), flags=re.S | re.I)
+    out = re.sub(r"\son\w+\s*=\s*(\"[^\"]*\"|'[^']*')", "", out, flags=re.I)
+    return out if len(out) <= 6000 else None
+
+
+def ps_info(a, slug):
+    """Иконка PlayStyle со страницы и признак золотого PlayStyle+."""
+    icon = None
+    img = a.find("img")
+    if img and (img.get("src") or img.get("data-src")):
+        src = img.get("src") or img.get("data-src")
+        q = parse_qs(urlparse(src).query).get("url")
+        src = unquote(q[0]) if q else src
+        icon = {"src": src if src.startswith("http") else BASE + src}
+    elif a.find("svg"):
+        svg = clean_svg(a.find("svg"))
+        icon = {"svg": svg} if svg else None
+    blob = " ".join(str(v) for el in [a] + a.find_all(True) for k, v in el.attrs.items() if k != "href")
+    blob += " " + a.get_text(" ") + " " + (icon.get("src", "") if icon else "")
+    plus = bool(re.search(r"plus|gold|\+", blob, re.I))
+    return {"slug": slug, "plus": plus, "icon": icon}
 
 
 def read_player(page, pid, slug):
@@ -194,12 +245,12 @@ def read_player(page, pid, slug):
         if m:
             pos[p_] = int(m.group(1))
     pl["positions"] = pos
-    # PlayStyles на странице игрока — ссылки вида /playstyles/20/technical
+    # PlayStyles: ссылки вида /playstyles/20/technical; иконку берём из самой ссылки как на сайте
     ps = []
     for a_ in soup.find_all("a", href=True):
         m = re.search(r"/playstyles/\d+/([^/?#]+)", a_["href"])
-        if m and m.group(1) not in ps:
-            ps.append(m.group(1))
+        if m and not any(x["slug"] == m.group(1) for x in ps):
+            ps.append(ps_info(a_, m.group(1)))
     pl["playstyles"] = ps
     pl["league"] = one(r"League\s*\n?\s*(.+)")
     pl["nation"] = one(r"(?:Nation|Country/Region)\s*\n?\s*(.+)")
